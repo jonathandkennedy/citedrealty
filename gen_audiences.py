@@ -128,8 +128,9 @@ PAGE = """<!DOCTYPE html>
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{url}">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
-<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="/assets/icon-square.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:type" content="website">

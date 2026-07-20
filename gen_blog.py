@@ -761,8 +761,9 @@ ARTICLE = """<!DOCTYPE html>
 <title>{title} | CitedRealty</title>
 <meta name="description" content="{excerpt}">
 <link rel="canonical" href="{url}">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
-<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="/assets/icon-square.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{excerpt}">
 <meta property="og:type" content="article">
@@ -868,8 +869,9 @@ INDEX = """<!DOCTYPE html>
 <title>Resources &amp; News — Marketing Answers for Realtors | CitedRealty</title>
 <meta name="description" content="Straight answers to the marketing questions realtors and brokers actually ask: seller leads, buyer leads, AI search visibility, and local SEO.">
 <link rel="canonical" href="{brand}/blog/index.html">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
-<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="/assets/icon-square.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
