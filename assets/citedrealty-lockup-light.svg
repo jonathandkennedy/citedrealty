@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 200" font-family="Inter, 'Avenir Next', -apple-system, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="crgl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4F46E5"/>
+      <stop offset="0.6" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+  </defs>
+  <!-- transparent background: for light surfaces -->
+  <path d="M 66 48 h 72 a 20 20 0 0 1 20 20 v 52 a 20 20 0 0 1 -20 20 h -50 l -22 20 v -20 h 0 a 20 20 0 0 1 -20 -20 v -52 a 20 20 0 0 1 20 -20 z" fill="url(#crgl)"/>
+  <path d="M 102 72 L 128 92 L 128 122 L 76 122 L 76 92 Z" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 134 56 q 2 8 10 10 q -8 2 -10 10 q -2 -8 -10 -10 q 8 -2 10 -10 z" fill="#FFFFFF"/>
+  <text x="200" y="105" font-size="44" font-weight="700" fill="#0B0B14" letter-spacing="-1">Cited<tspan fill="url(#crgl)">Realty</tspan><tspan dx="6" dy="-20" font-size="21" letter-spacing="0" fill="url(#crgl)">[1]</tspan></text>
+  <text x="202" y="138" font-size="15" font-weight="500" fill="#5C5C78" letter-spacing="0.4">When buyers ask AI, you're the answer.</text>
+</svg>
