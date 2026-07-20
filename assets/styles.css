@@ -192,3 +192,14 @@ footer a:hover{color:var(--text)}
 .article-figure img{width:100%; border-radius:16px; border:1px solid var(--line); display:block}
 .post-card .thumb{width:calc(100% + 52px); margin:-26px -26px 20px; border-radius:17px 17px 0 0; aspect-ratio:3/2; object-fit:cover; display:block; border-bottom:1px solid var(--line)}
 .post-card.featured .thumb{aspect-ratio:auto; max-height:340px}
+
+/* header dropdowns (server-rendered) */
+.nav-links > li{position:relative}
+.nav-links .dd{position:absolute; top:calc(100% + 14px); left:50%; transform:translateX(-50%) translateY(4px); min-width:238px; background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:8px; margin:0; list-style:none; opacity:0; visibility:hidden; transition:opacity .18s ease, transform .18s ease, visibility .18s; box-shadow:0 18px 50px -12px rgba(10,10,30,.35); z-index:60}
+.nav-links .dd::before{content:""; position:absolute; left:0; right:0; top:-16px; height:16px}
+.nav-links > li:hover > .dd, .nav-links > li:focus-within > .dd{opacity:1; visibility:visible; transform:translateX(-50%) translateY(0)}
+.nav-links .dd a{display:block; padding:9px 13px; border-radius:9px; font-size:13.5px; white-space:nowrap}
+.nav-links .dd a:hover{background:var(--panel2); color:var(--text)}
+.mobile-menu{overflow-y:auto}
+.mobile-menu .mm-sub{font-family:var(--body); font-size:16px; font-weight:600; color:var(--muted); border-bottom:none; padding:7px 0 7px 16px}
+.mobile-menu .mm-sub:hover{color:var(--text)}

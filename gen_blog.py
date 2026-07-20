@@ -63,7 +63,7 @@ POSTS = [
              "<li><b>69% of Realtors use AI at least monthly</b> (20% daily, 22% weekly, 27% a few times monthly); 32% haven't used it. <b>58% of surveyed Realtors have used ChatGPT</b> — Gemini (20%) and Copilot (15%) trail far behind. 50% report a positive business impact. (<a href='https://www.nar.realtor/newsroom/realtors-embrace-ai-digital-tools-to-enhance-client-service-nar-survey-finds' rel='nofollow'>NAR 2025 Technology Survey</a>, 1,241 respondents)</li>"
              "<li><b>97% of brokerage leaders say their agents now use AI</b>, up from 80% in 2024; 82% report agents use it for listing descriptions, 74% for content creation. (<a href='https://www.globenewswire.com/news-release/2026/01/29/3228775/0/en/Delta-Media-AI-Survey-Shows-Ubiquitous-AI-Use-Across-Real-Estate-Brokerages.html' rel='nofollow'>Delta Media 2026 survey of 100+ brokerage leaders</a>)</li>"
              "</ul>"
-             "<p>Notice what's missing from that list: almost every agent is using AI to <i>produce content</i>; almost none are working on being the agent AI <i>recommends</i>. Writing listing descriptions with ChatGPT doesn't make ChatGPT cite you. Those are different games — and the second one is nearly empty.</p>"),
+             "<p>Notice what's missing from that list: almost every agent is using AI to <i>produce content</i>; almost none are working on being the agent AI <a href='../services/ai-citations.html'><i>recommends</i></a>. Writing listing descriptions with ChatGPT doesn't make ChatGPT cite you. Those are different games — and the second one is nearly empty.</p>"),
             ("What didn't survive verification (read this before quoting stats)",
              "<ul>"
              "<li><b>Refuted:</b> \"More than half of consumers now start their searches in an AI app.\" This circulates widely; adversarial review found it's a misreading of the underlying survey. Don't repeat it.</li>"
@@ -95,7 +95,7 @@ POSTS = [
         "sections": [
             ("The honest version of \"work your sphere\"",
              "<p>Every trainer says \"tell everyone you know.\" Fine — but if you're 24, new in town, or switching careers, your sphere is thin and everyone in it already knows an agent. The real question is how to generate <b>stranger trust</b>, and stranger trust comes from being visible and verifiably competent where people actually look.</p>"
-             "<p>That's mostly free in year one: a fully completed Google Business Profile (most new agents skip it entirely — instant advantage), a simple site with one genuinely useful neighborhood page, and consistent proof-of-work posting. None of it requires budget. All of it requires weeks of consistency, which is the actual price.</p>"),
+             "<p>That's mostly free in year one: a fully completed <a href='../services/google-business-profile.html'>Google Business Profile</a> (most new agents skip it entirely — instant advantage), a simple site with one genuinely useful neighborhood page, and consistent proof-of-work posting. None of it requires budget. All of it requires weeks of consistency, which is the actual price.</p>"),
             ("The 90-day plan that produces a first deal",
              "<ul>"
              "<li><b>Weeks 1–2:</b> GBP claimed and 100% complete, photos included. Domain in your name. One neighborhood chosen — ideally where you live.</li>"
@@ -105,7 +105,7 @@ POSTS = [
              "</ul>"),
             ("What to skip in year one",
              "<p>Skip bought leads until you can afford to lose the spend — portal leads punish slow, part-time follow-up, and new agents convert them worst. Skip paid social until there's something to retarget. Skip the $3,000 branding package; nobody hires a new agent for their logo.</p>"
-             "<p>And know why the free path works: every open-house visitor, group answer, and neighbor conversation ends the same way — <b>they Google you</b>. The profile, reviews, and answers you built are what turn contact into a client. Visibility isn't a marketing channel for new agents; it's the conversion layer under every channel.</p>"),
+             "<p>And know why the free path works: every open-house visitor, group answer, and neighbor conversation ends the same way — <b>they Google you</b>. The profile, reviews, and answers you built are what turn contact into a client. Visibility isn't a marketing channel for new agents; it's the conversion layer under every channel. (Our <a href='../audiences/solo-agents.html'>solo-agent plan</a> exists to build exactly that.)</p>"),
         ],
         "faqs": [
             ("How long until a brand-new agent gets their first client?",
@@ -133,7 +133,7 @@ POSTS = [
              "<p>If the thought of it drains you, skip it guiltlessly — reluctance reads at the door, and the same hours put into open houses, community answering, or content compound just as well. It also underperforms in security-building-heavy areas, gated communities, and no-solicitation neighborhoods, where the math never had a chance.</p>"),
             ("The part every door-knocking thread misses",
              "<p>What happens after a good doorstep conversation? The homeowner looks you up. If they find a bare profile, three reviews, and no evidence you know their neighborhood, the conversation dies online — you paid the hardest marketing cost (showing up in person) and lost the cheapest conversion (being credible when checked).</p>"
-             "<p>So the real answer to \"is door knocking worth it\" is: it's a <b>traffic source</b>, and like every traffic source — ads, open houses, referrals — it converts through your name's online layer. Build the neighborhood page for the farm you knock. The postcard-and-doorstep agents who seem unusually lucky almost always have the strongest Google presence in the farm.</p>"),
+             "<p>So the real answer to \"is door knocking worth it\" is: it's a <b>traffic source</b>, and like every traffic source — ads, open houses, referrals — it converts through your name's online layer. Build the <a href='../services/local-seo.html'>neighborhood page</a> for the farm you knock. The postcard-and-doorstep agents who seem unusually lucky almost always have the strongest Google presence in the farm.</p>"),
         ],
         "faqs": [
             ("What's a realistic door knocking conversion rate?",
@@ -162,7 +162,7 @@ POSTS = [
              "<p>The \"open houses are dead\" agents are usually describing their follow-through, not the format.</p>"),
             ("The system that makes them compound",
              "<p>Before: promote it (a well-run open house is also content — neighbors see the marketing). During: conversations over sign-in bureaucracy; offer a neighborhood guide, not a business card. After: same-day follow-up with the thing you promised, and add every genuine conversation to a simple nurture rhythm.</p>"
-             "<p>And underneath all of it: the online layer. The host with a strong profile, real reviews, and a page about <i>that neighborhood</i> converts the same foot traffic at a multiple of the host without them. Open houses aren't dead — unGoogleable hosts are.</p>"),
+             "<p>And underneath all of it: the online layer. The host with a strong profile, <a href='../services/reviews.html'>real reviews</a>, and a <a href='../services/local-seo.html'>page about <i>that neighborhood</i></a> converts the same foot traffic at a multiple of the host without them. Open houses aren't dead — unGoogleable hosts are.</p>"),
         ],
         "faqs": [
             ("How many open houses should a new agent host?",
@@ -190,7 +190,7 @@ POSTS = [
              "<p>Unknown-number answer rates have collapsed as carriers auto-label suspected spam, and the compliance surface keeps growing — the federal Do-Not-Call registry, state-level telemarketing rules, and TCPA exposure around auto-dialers are real liabilities, not paperwork. The hours-to-appointment math that worked a decade ago now only pencils for high-volume specialists.</p>"
              "<p>If calling drains you, the same hours in open houses, community answering, or content produce with none of the regulatory risk. Forcing dread into your calendar five mornings a week is how agents quit the business.</p>"),
             ("The variable the debate ignores",
-             "<p>Watch what a prospect does during a decent cold call: they put you on speaker and Google you. Mid-call. The agent with reviews, a real site, and a page about the prospect's own neighborhood survives that check; the invisible agent gets the polite brush-off — same script, same list.</p>"
+             "<p>Watch what a prospect does during a decent cold call: they put you on speaker and Google you. Mid-call. The agent with <a href='../services/reviews.html'>reviews</a>, a real site, and a page about the prospect's own neighborhood survives that check; the invisible agent gets the polite brush-off — same script, same list.</p>"
              "<p>So the honest verdict: cold calling is a personality-fit specialist channel that, like every outreach channel, converts through your owned visibility. If you love the phone, work expireds with clean compliance and a strong online layer. If you don't, nothing about 2026 says you have to.</p>"),
         ],
         "faqs": [
@@ -216,10 +216,10 @@ POSTS = [
              "<p>Nobody interrupts dinner to call a postcard. Measured as direct response, real estate mail has always been dismal — the forum horror stories are accurately describing the wrong metric. Mail is a <b>frequency medium</b>: its job is that when a homeowner in your farm reaches the selling moment, your name is the one that feels familiar and local.</p>"
              "<p>That takes a year of consistent presence, which is why the one-and-done spring blast \"proves postcards don't work\" every single spring.</p>"),
             ("The mail that earns the fridge",
-             "<p>The glamour headshot with \"#1 Agent\" goes straight to recycling. What survives: a quarterly one-pager of <i>that neighborhood's</i> actual numbers — what sold, for how much, days on market, what it means. Homeowners keep market intelligence about their own street; it's the same content as a neighborhood page, printed.</p>"
+             "<p>The glamour headshot with \"#1 Agent\" goes straight to recycling. What survives: a quarterly one-pager of <i>that neighborhood's</i> actual numbers — what sold, for how much, days on market, what it means. Homeowners keep market intelligence about their own street; it's the same content as a <a href='../services/local-seo.html'>neighborhood page</a>, printed.</p>"
              "<p>Which is the efficient secret: one well-built neighborhood update is a mailer, a web page, a social post, and an open-house handout. Agents who farm well don't create four things; they create one thing four ways.</p>"),
             ("The Google check decides the ROI",
-             "<p>Follow the fate of a good mailer: months of repetition, the owner decides to explore selling, picks your card off the fridge — and Googles you. Strong profile, neighborhood-specific reviews, a page about their community: the mail spend just converted. Thin presence: they interview the agent Google recommended instead, and your postcards funded a competitor's closing.</p>"
+             "<p>Follow the fate of a good mailer: months of repetition, the owner decides to explore selling, picks your card off the fridge — and Googles you. Strong profile, <a href='../services/reviews.html'>neighborhood-specific reviews</a>, a page about their community: the mail spend just converted. Thin presence: they interview the agent Google recommended instead, and your postcards funded a competitor's closing.</p>"
              "<p>So: yes, mail still works — as the offline arm of a neighborhood-ownership system. As a standalone tactic, the forums are right about it.</p>"),
         ],
         "faqs": [
@@ -245,7 +245,7 @@ POSTS = [
              "<p>The comparison confuses agents because these products don't compete for the same moment. A Local Services Ad meets someone typing \"real estate agent near me\" — the decision is already in motion; the ad just decides who gets the call. A Facebook ad interrupts someone scrolling who wasn't thinking about real estate at all — it plants a seed that might sprout in six months.</p>"
              "<p>So the real question isn't \"which is better.\" It's \"which moment am I paying for, and do I have the system that moment requires?\" Intent capture requires answering the phone. Demand creation requires nurture. Neither works without its system.</p>"),
             ("Google LSAs for realtors: pay-per-lead, with strings",
-             "<p>Real estate agents are an eligible \"Google Screened\" category: pass license verification and a background check, keep your Google Business Profile in good standing, and your ad can sit above everything else on the page — you pay only when someone actually contacts you, and you can dispute clearly-invalid leads for credit.</p>"
+             "<p>Real estate agents are an eligible \"Google Screened\" category: pass license verification and a background check, keep your <a href='../services/google-business-profile.html'>Google Business Profile</a> in good standing, and your ad can sit above everything else on the page — you pay only when someone actually contacts you, and you can dispute clearly-invalid leads for credit.</p>"
              "<ul><li><b>Ranking isn't bought, it's earned:</b> responsiveness is the biggest factor — missed calls tank you — followed by review score and count, then proximity. Budget matters least.</li>"
              "<li><b>No keyword control:</b> Google decides what matches; the lead lands on a Google-hosted profile, not your website.</li>"
              "<li><b>The economics only work if you answer:</b> per-lead costs vary widely by market (commonly tens of dollars per lead in real estate; check your market), and an unanswered call is money burned plus a ranking penalty in one.</li></ul>"
@@ -255,7 +255,7 @@ POSTS = [
              "<p>What still works within the rules: promoting listings with strong video (the listing itself is the targeting — people who care, engage), open-house and just-sold campaigns in a broad radius, retargeting people who visited your website or engaged with your page, and lead forms for valuation or buyer guides. The catch is stage, not volume: Facebook leads are cheap and plentiful and mostly 6–18 months from transacting. Without a real follow-up system, you're buying a list you'll never work.</p>"),
             ("The verdict: sequence them, and aim both at what you own",
              "<p><b>Run LSAs first</b> if your market has them and you (or someone) reliably answers the phone — they're the closest thing to buying bottom-of-funnel agent-intent, and the setup cost is mostly reviews you should be building anyway. <b>Add Facebook</b> when you have listings to promote and a nurture system (CRM, drip, actual follow-up) to justify early-stage leads. Compare them on cost per <i>closing</i> over six months, never cost per lead — the metric each platform shows you is the one that flatters it.</p>"
-             "<p>And remember what happens after either ad works: the lead Googles you. Ads rent the introduction; your profile, reviews, website, and AI citations decide whether the introduction converts. That owned layer makes every ad dollar work harder — which is why we build it first.</p>"),
+             "<p>And remember what happens after either ad works: the lead Googles you. Ads rent the introduction; your profile, reviews, website, and <a href='../services/ai-citations.html'>AI citations</a> decide whether the introduction converts. That owned layer makes every ad dollar work harder — which is why we build it first.</p>"),
         ],
         "faqs": [
             ("Are real estate agents eligible for Google Local Services Ads?",
@@ -288,7 +288,7 @@ POSTS = [
              "<li><b>AgentFire — best value for hyperlocal sites.</b> From ~$129/mo with no setup fee; strong neighborhood-guide DNA. Lighter on done-for-you marketing.</li>"
              "<li><b>Sierra Interactive — best for SEO-driven teams.</b> IDX + CRM platform (~$500–$700/mo plus setup) with a reputation for search-friendly architecture. Platform lock-in applies.</li>"
              "<li><b>Real Geeks — best budget all-in-one.</b> ~$299/mo for IDX, CRM, valuations, and ad tools. Templated look; you're renting.</li>"
-             "<li><b>CitedRealty — best for being found by AI, and for ownership.</b> Custom, schema-first sites with neighborhood architecture built in, designed to be the source ChatGPT and AI Overviews cite. Included with our $3,999/mo Local Hero plan (or as a standalone project); you own the site outright. We're new and website design is one piece of our retainer — if you want a website alone with no marketing engine, Agent Image or AgentFire may fit better.</li>"
+             "<li><b>CitedRealty — best for being found by AI, and for ownership.</b> <a href='../services/website-design.html'>Custom, schema-first sites</a> with neighborhood architecture built in, designed to be the source ChatGPT and AI Overviews cite. Included with our $3,999/mo Local Hero plan (or as a standalone project); you own the site outright. We're new and website design is one piece of our retainer — if you want a website alone with no marketing engine, Agent Image or AgentFire may fit better.</li>"
              "</ul>"),
             ("The two questions that sort the whole market",
              "<p><b>Ownership:</b> platforms (Luxury Presence, Sierra, Real Geeks) rent you a site that vanishes when you churn; builders (Agent Image, CitedRealty) hand you the keys. Renting is fine for speed; just price in the rebuild when you leave.</p>"
@@ -325,7 +325,7 @@ POSTS = [
              "</ul>"),
             ("Match the alternative to your reason",
              "<ul>"
-             "<li><b>Want to own it:</b> Agent Image (custom WordPress, project-priced) — or CitedRealty, where the custom build is included with our $3,999/mo plan and the site is yours outright.</li>"
+             "<li><b>Want to own it:</b> Agent Image (custom WordPress, project-priced) — or CitedRealty, where the <a href='../services/website-design.html'>custom build</a> is included with our $3,999/mo plan and the site is yours outright.</li>"
              "<li><b>Want hyperlocal on a budget:</b> AgentFire, from ~$129/mo with real neighborhood-guide tooling.</li>"
              "<li><b>Want an SEO/lead platform for a team:</b> Sierra Interactive (~$500+/mo) — still rented, but strong architecture.</li>"
              "<li><b>Want cheapest all-in-one:</b> Real Geeks (~$299/mo).</li>"
@@ -358,7 +358,7 @@ POSTS = [
              "<li><b>DIY builders ($10–$50/mo):</b> Squarespace/Wix with an IDX widget. Fine as a business card; effectively invisible to search and AI.</li>"
              "<li><b>Template IDX platforms ($100–$300/mo):</b> Real Geeks (~$299/mo), AgentFire entry tiers (from ~$129/mo). Real functionality, shared templates, rented.</li>"
              "<li><b>Premium platforms ($300–$1,500/mo + setup):</b> Sierra Interactive, Luxury Presence. Custom-designed fronts on SaaS backends; independent reviews put typical Luxury Presence first years at $7,000–$23,000 all-in. Still rented.</li>"
-             "<li><b>Custom builds you own ($3,000–$15,000+ once):</b> Agent Image and similar shops, or bundled with marketing (our builds are included with Local Hero at $3,999/mo, or standalone projects). Highest upfront, only band where the asset is yours.</li>"
+             "<li><b>Custom builds you own ($3,000–$15,000+ once):</b> Agent Image and similar shops, or bundled with marketing (our <a href='../services/website-design.html'>builds</a> are included with Local Hero at $3,999/mo, or standalone projects). Highest upfront, only band where the asset is yours.</li>"
              "</ul>"
              "<p>All figures are mid-2026 market ranges from vendor sites and independent comparisons — confirm current quotes.</p>"),
             ("What actually drives the price",
@@ -401,7 +401,7 @@ POSTS = [
             ("When you can honestly wait",
              "<p>If you're brand-new and cash-constrained, the right sequence is: fully work your free Google Business Profile first (it's the highest-leverage free asset in local search), systematize reviews from your first closings, and buy the domain for your name today even if it just parks. Add the real site when you can do it properly — a thin template site helps almost nothing and false-signals \"done.\"</p>"),
             ("What 'a real website' means now",
-             "<p>Not a digital business card: an owned domain with pages for the neighborhoods you actually work, direct answers to the questions your market asks, RealEstateAgent and FAQ schema underneath, and speed that doesn't fight you. That's the checklist whether you build it yourself, hire a design shop, or run it through a retainer like ours — the standard is machine-readable local authority, not prettiness.</p>"),
+             "<p>Not a digital business card: an owned domain with pages for the neighborhoods you actually work, direct answers to the questions your market asks, RealEstateAgent and FAQ schema underneath, and speed that doesn't fight you. That's the checklist whether you build it yourself, hire a design shop, or run it through a <a href='../services/website-design.html'>retainer like ours</a> — the standard is machine-readable local authority, not prettiness.</p>"),
         ],
         "faqs": [
             ("Isn't my Google Business Profile enough?",
@@ -433,7 +433,7 @@ POSTS = [
              "<li><b>Exit value</b> — what do you keep if you cancel next quarter? Usually: nothing.</li></ul>"),
             ("The question none of them answer",
              "<p>Every portal comparison quietly assumes the demand must be rented from someone. But the fastest-growing surface — AI assistants answering \"who should I work with?\" — doesn't belong to any portal, and it names individual agents, not marketplaces.</p>"
-             "<p>That's the arbitrage this decade: while competitors argue over which rent is cheapest, the agents building owned visibility (profiles, neighborhood authority, reviews, citations) are being handed the client before the portals see the search.</p>"),
+             "<p>That's the arbitrage this decade: while competitors argue over which rent is cheapest, the agents building <a href='../services/ai-citations.html'>owned visibility</a> (profiles, neighborhood authority, reviews, citations) are being handed the client before the portals see the search.</p>"),
             ("A practical verdict",
              "<p>If a portal program is profitably closing deals for you today at current terms, keep it — profitable rent is still profit. Cap it at a level that doesn't crowd out investment in owned assets, and re-run the cost-per-closing math quarterly as terms change.</p>"
              "<p>If you're choosing between them fresh: get current quotes for your market, weight exclusivity and relationship ownership over raw lead volume, and treat every portal dollar as bridge financing while your owned engine matures.</p>"),
@@ -458,7 +458,7 @@ POSTS = [
         "tldr": "Zillow Premier Agent buys immediate visibility next to listings — fast to start, easy to scale, but shared attention with costs that recur forever and nothing kept when you stop. Local SEO plus AI citations builds owned visibility — slower to start (weeks to months), but exclusive, compounding, and increasingly the source AI assistants use when recommending agents. Speed favors Premier Agent; economics over time favor owned. The honest answer for many agents is a phased split: enough portal spend to keep deals flowing now, with a growing share invested in the owned assets that permanently lower acquisition cost.",
         "sections": [
             ("What each dollar actually buys",
-             "<p>A Premier Agent dollar buys impressions and inquiries in your chosen ZIPs, at whatever the current auction-style market rate is. It works immediately and stops immediately. A local SEO / GEO dollar buys work product: profile optimization, neighborhood pages, schema, reviews, content — assets that keep producing after the invoice.</p>"
+             "<p>A Premier Agent dollar buys impressions and inquiries in your chosen ZIPs, at whatever the current auction-style market rate is. It works immediately and stops immediately. A <a href='../services/local-seo.html'>local SEO / GEO</a> dollar buys work product: profile optimization, neighborhood pages, schema, reviews, content — assets that keep producing after the invoice.</p>"
              "<p>Neither is wrong. They're different financial instruments: one is operating expense, the other is capital investment.</p>"),
             ("Speed vs. slope",
              "<p>Premier Agent wins the first 90 days — there's no organic program that outruns paid placement in month one. Owned visibility wins the slope: rankings, citations, and AI mentions accumulate, so year two costs less per closing than year one, and year three less again.</p>"
@@ -494,11 +494,11 @@ POSTS = [
              "<p>The traditional guidance — around a tenth of your gross commission income — remains a sane anchor because marketing spend should scale with production, not with anxiety. Newer agents typically need to spend above the anchor (visibility is being built from zero); veterans with deep referral networks can sit below it.</p>"
              "<p>Whatever the number, make it a deliberate line item. The most common agent budgeting failure isn't overspending — it's reactive spending: a portal invoice here, a boosted post there, no system anywhere.</p>"),
             ("The split that matters: owned vs. rented",
-             "<ul><li><b>Owned (build):</b> your website and neighborhood pages, Google Business Profile work, content, reviews, AI citation building. Compounds; survives budget cuts.</li>"
+             "<ul><li><b>Owned (build):</b> your website and neighborhood pages, Google Business Profile work, content, reviews, <a href='../services/ai-citations.html'>AI citation building</a>. Compounds; survives budget cuts.</li>"
              "<li><b>Rented (buy):</b> portal placements, PPC, social ads. Immediate; evaporates.</li></ul>"
              "<p>There's no universal correct ratio, but the trajectory should move toward owned as assets mature — many established agents end up majority-owned within a couple of years and keep a tactical rented layer for launches and gaps.</p>"),
             ("What a serious owned program costs",
-             "<p>For context, done-for-you owned programs in real estate typically run from around $1,000/month for a solo-agent foundation (profile, a handful of neighborhoods, content) to $4,000–$7,000/month for team- and brokerage-scale coverage with social and strategy included. That's comparable to what many agents already hand portals — with a completely different trajectory. (Our own plans run $999–$6,999, priced on exactly this logic.)</p>"),
+             "<p>For context, done-for-you owned programs in real estate typically run from around $1,000/month for a solo-agent foundation (profile, a handful of neighborhoods, content) to $4,000–$7,000/month for <a href='../audiences/teams.html'>team- and brokerage-scale coverage</a> with social and strategy included. That's comparable to what many agents already hand portals — with a completely different trajectory. (Our own plans run $999–$6,999, priced on exactly this logic.)</p>"),
             ("Judge everything on cost per closing",
              "<p>Cost per lead is the metric platforms sell; cost per closing is the metric your P&L feels. Track each channel's spend against closings it actually produced, quarterly. Kill or cap what can't prove itself; feed what compounds.</p>"
              "<p>And log the trend line, not just the level: rented channels drift more expensive as competition bids up; owned channels drift cheaper as assets accumulate. The budget follows the slopes.</p>"),
@@ -535,7 +535,7 @@ POSTS = [
              "<p>These aren't independent channels. Closings feed reviews; reviews feed the profile; the profile and neighborhood pages feed Google and AI; visibility makes circle prospecting warm and open houses convert. The agents who look effortless are running that loop on purpose.</p>"
              "<p>Practical sequence: systematize past-client follow-up first (cheapest wins), build owned visibility second (the compounding layer), then decide whether paid channels still earn a slot.</p>"),
             ("What we'd build first for a listing agent",
-             "<p>A worked Google Business Profile with a post-closing review system, then a real page for each farm neighborhood, then seller-intent content (\"should I sell now\", \"what's my home worth here\") published monthly. That stack targets every moment a future seller researches — and it's the exact evidence AI assistants cite when someone asks who should sell their home.</p>"),
+             "<p>A worked <a href='../services/google-business-profile.html'>Google Business Profile</a> with a <a href='../services/reviews.html'>post-closing review system</a>, then a real page for each farm neighborhood, then seller-intent content (\"should I sell now\", \"what's my home worth here\") published monthly. That stack targets every moment a future seller researches — and it's the exact evidence AI assistants cite when someone asks who should sell their home — and the spine of our <a href='../audiences/listing-agents.html'>listing-agent program</a>.</p>"),
         ],
         "faqs": [
             ("Are FSBO and expired listings still worth prospecting?",
@@ -563,8 +563,8 @@ POSTS = [
              "<p>Sellers behave differently from buyers. They interview two or three agents, usually sourced from neighbors, past clients, open houses — and increasingly from what Google and AI assistants say about their specific neighborhood.</p>"
              "<p>That means seller lead generation is really <b>reputation placement</b>: being the name attached to the neighborhood before the seller starts looking. The agent who \"seems to be everywhere\" in a farm area is on the interview list by default.</p>"),
             ("The owned-asset playbook",
-             "<ul><li><b>Google Business Profile, worked weekly.</b> Agent-intent searches (\"realtor near me\", \"listing agent in [area]\") resolve to the map pack — a surface portals can't own.</li>"
-             "<li><b>Neighborhood pages.</b> A genuinely useful page per farm area — market conditions, recent activity, seller guidance — outranks thin portal pages for neighborhood-level searches and gives AI a citable source.</li>"
+             "<ul><li><b><a href='../services/google-business-profile.html'>Google Business Profile</a>, worked weekly.</b> Agent-intent searches (\"realtor near me\", \"listing agent in [area]\") resolve to the map pack — a surface portals can't own.</li>"
+             "<li><b><a href='../services/local-seo.html'>Neighborhood pages</a>.</b> A genuinely useful page per farm area — market conditions, recent activity, seller guidance — outranks thin portal pages for neighborhood-level searches and gives AI a citable source.</li>"
              "<li><b>Reviews that tell seller stories.</b> Reviews mentioning your neighborhood, sale results, and process become the snippets Google shows and the evidence AI weighs.</li>"
              "<li><b>Seller-question content.</b> \"Should I sell now or wait?\" \"What's my home worth?\" Publish direct, local answers under your name.</li></ul>"
              "<p>None of this is a hack. It's the work of being findable and provable — done systematically instead of occasionally.</p>"),
@@ -605,7 +605,7 @@ POSTS = [
              "<p>Be equally skeptical of anyone guaranteeing placement in AI answers. These systems change constantly and nobody controls them. What's durable is the underlying evidence: real expertise, made machine-readable and independently confirmed.</p>"),
             ("How to start this week",
              "<p>Run the audit yourself: ask ChatGPT, Gemini, and Perplexity the questions your clients would ask — \"best listing agent in [your area]\", \"who should I use to buy in [neighborhood]\". Note who gets named and which sources get cited.</p>"
-             "<p>Then work the gap: fix your entity consistency, add schema, deepen your reviews, and publish one genuinely excellent local answer per month. The agents doing this now are building a moat while the shortlist is still short.</p>"),
+             "<p>Then work the gap: fix your <a href='../services/ai-citations.html'>entity consistency</a>, add schema, deepen your reviews, and publish one genuinely excellent local answer per month. The agents doing this now are building a moat while the shortlist is still short.</p>"),
         ],
         "faqs": [
             ("Can I pay to be recommended by ChatGPT?",
@@ -631,7 +631,7 @@ POSTS = [
              "<p>None of this makes portal leads worthless. It makes them <b>rent</b>. Rent can be worth paying — but nobody builds equity paying it.</p>"),
             ("What owned demand looks like",
              "<p>Owned demand is when the seller or buyer finds <i>you</i> — through the map pack, a neighborhood page, a review, an article, or an AI recommendation — and contacts you directly. No auction, no sharing, no per-lead fee.</p>"
-             "<p>The defining property is compounding: a neighborhood page written this year still ranks next year; reviews accumulate; every published answer is one more reason for AI to cite you. The work stacks instead of evaporating.</p>"),
+             "<p>The defining property is compounding: a <a href='../services/local-seo.html'>neighborhood page</a> written this year still ranks next year; reviews accumulate; every published answer is one more reason for AI to cite you. The work stacks instead of evaporating.</p>"),
             ("The math that matters: cost per closing over time",
              "<p>Compare the trajectories, not the first month. Portal cost per closing is roughly flat-to-rising forever — you re-buy every closing at market price. Owned cost per closing starts high (you're paying for work before it produces) and then falls, because the same assets keep converting without new spend.</p>"
              "<p>The crossover typically arrives within the first year for agents who commit to a defined territory — and after it, every portal-free closing widens the gap. The agents who feel trapped on portals are usually the ones who never started the owned clock.</p>"),
@@ -662,8 +662,8 @@ POSTS = [
              "<p>\"Homes for sale in [city]\" returns Zillow, Redfin, Realtor.com, and their IDX shadows — sites with millions of pages and domain authority no agent site will match. Chasing those rankings burns budgets and morale for a search that mostly produces window-shoppers anyway.</p>"
              "<p>The searches that produce clients are different: <b>agent-intent</b> (\"best realtor in [area]\", \"listing agent near me\") and <b>neighborhood-intent</b> (\"[neighborhood] real estate agent\", \"selling a house in [neighborhood]\"). Portals serve these badly — their pages are templated and nobody at Zillow knows your cul-de-sac.</p>"),
             ("The stack that ranks agents in 2026",
-             "<ul><li><b>Google Business Profile:</b> the single highest-leverage asset — categories, services, weekly activity, Q&A, and review velocity.</li>"
-             "<li><b>Neighborhood pages:</b> one genuinely useful page per farm area, refreshed with real market data.</li>"
+             "<ul><li><b><a href='../services/google-business-profile.html'>Google Business Profile</a>:</b> the single highest-leverage asset — categories, services, weekly activity, Q&A, and review velocity.</li>"
+             "<li><b><a href='../services/local-seo.html'>Neighborhood pages</a>:</b> one genuinely useful page per farm area, refreshed with real market data.</li>"
              "<li><b>Schema:</b> RealEstateAgent + FAQ markup so machines parse your expertise, service area, and answers.</li>"
              "<li><b>Citations:</b> identical name/brokerage/market data across every directory that matters.</li>"
              "<li><b>Reviews:</b> volume, recency, and neighborhood-specific language.</li></ul>"),
@@ -698,7 +698,7 @@ POSTS = [
              "<p>Portals dominate the listing stage — but the <b>question stage comes earlier</b>, and it's where loyalty forms. The agent who answers the question owns the relationship before the portal ever sees the buyer.</p>"),
             ("Build the answers buyers are searching for",
              "<ul><li><b>Affordability and process answers:</b> \"How much do I need to buy in [city]?\" \"What does closing cost here?\" Local numbers, straight talk.</li>"
-             "<li><b>Neighborhood guides:</b> the honest comparisons buyers can't get from listing data — commute, schools, vibe, trade-offs.</li>"
+             "<li><b><a href='../services/content.html'>Neighborhood guides</a>:</b> the honest comparisons buyers can't get from listing data — commute, schools, vibe, trade-offs.</li>"
              "<li><b>First-timer content:</b> the anxieties nobody types into a portal search bar but everyone asks an AI.</li></ul>"
              "<p>Each answer is findable in Google, citable by AI, and shareable in a DM — three lead channels from one piece of work.</p>"),
             ("Be the recommended agent, not the fastest responder",
@@ -740,7 +740,7 @@ POSTS = [
              "<p>Pair the page with reviews from the same area and the effect stacks — the page claims expertise, the reviews prove it, and Google shows both.</p>"),
             ("How many, and in what order",
              "<p>Start with the neighborhoods where you have evidence: closings, reviews, personal history. Five deep pages beat thirty thin ones — thin location pages are the most common local SEO mistake in real estate.</p>"
-             "<p>Then expand outward in rings: adjacent areas where your evidence partially transfers, then the aspirational territories. Refresh each page quarterly with real market data so it stays citable. (Our plans cover 5, 15, or 30 neighborhoods for exactly this reason.)</p>"),
+             "<p>Then expand outward in rings: adjacent areas where your evidence partially transfers, then the aspirational territories. Refresh each page quarterly with real market data so it stays citable. (Our <a href='../services/local-seo.html'>plans cover 5, 15, or 30 neighborhoods</a> for exactly this reason.)</p>"),
         ],
         "faqs": [
             ("Aren't neighborhood pages just doorway pages?",
@@ -788,8 +788,25 @@ ARTICLE = """<!DOCTYPE html>
       <span>Cited<span class="r">Realty</span><sup>[1]</sup></span>
     </a>
     <ul class="nav-links">
-      <li><a href="../index.html#services">Services</a></li>
-      <li><a href="../index.html#who">Who we help</a></li>
+      <li><a href="../index.html#services" aria-haspopup="true">Services</a>
+        <ul class="dd">
+          <li><a href='../services/ai-citations.html'>AI Citations (GEO)</a></li>
+          <li><a href='../services/website-design.html'>Website Design</a></li>
+          <li><a href='../services/google-business-profile.html'>Google Business Profile</a></li>
+          <li><a href='../services/local-seo.html'>Local SEO &amp; Neighborhoods</a></li>
+          <li><a href='../services/content.html'>Blog &amp; Content</a></li>
+          <li><a href='../services/social-media.html'>Social Media</a></li>
+          <li><a href='../services/reviews.html'>Reviews &amp; Reputation</a></li>
+        </ul>
+      </li>
+      <li><a href="../index.html#who" aria-haspopup="true">Who we help</a>
+        <ul class="dd">
+          <li><a href='../audiences/solo-agents.html'>Solo Agents</a></li>
+          <li><a href='../audiences/teams.html'>Teams</a></li>
+          <li><a href='../audiences/brokerages.html'>Brokerages</a></li>
+          <li><a href='../audiences/listing-agents.html'>Listing Agents</a></li>
+        </ul>
+      </li>
       <li><a href="../index.html#pricing">Pricing</a></li>
       <li><a href="index.html">Resources</a></li>
       <li><a href="../index.html#faq">FAQ</a></li>
@@ -802,7 +819,18 @@ ARTICLE = """<!DOCTYPE html>
 <div class="mobile-menu" id="mobileMenu">
   <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
   <a href="../index.html#services">Services</a>
+  <a class="mm-sub" href="../services/ai-citations.html">AI Citations (GEO)</a>
+  <a class="mm-sub" href="../services/website-design.html">Website Design</a>
+  <a class="mm-sub" href="../services/google-business-profile.html">Google Business Profile</a>
+  <a class="mm-sub" href="../services/local-seo.html">Local SEO &amp; Neighborhoods</a>
+  <a class="mm-sub" href="../services/content.html">Blog &amp; Content</a>
+  <a class="mm-sub" href="../services/social-media.html">Social Media</a>
+  <a class="mm-sub" href="../services/reviews.html">Reviews &amp; Reputation</a>
   <a href="../index.html#who">Who we help</a>
+  <a class="mm-sub" href="../audiences/solo-agents.html">Solo Agents</a>
+  <a class="mm-sub" href="../audiences/teams.html">Teams</a>
+  <a class="mm-sub" href="../audiences/brokerages.html">Brokerages</a>
+  <a class="mm-sub" href="../audiences/listing-agents.html">Listing Agents</a>
   <a href="../index.html#pricing">Pricing</a>
   <a href="index.html">Resources</a>
   <a href="../index.html#faq">FAQ</a>
@@ -888,8 +916,25 @@ INDEX = """<!DOCTYPE html>
       <span>Cited<span class="r">Realty</span><sup>[1]</sup></span>
     </a>
     <ul class="nav-links">
-      <li><a href="../index.html#services">Services</a></li>
-      <li><a href="../index.html#who">Who we help</a></li>
+      <li><a href="../index.html#services" aria-haspopup="true">Services</a>
+        <ul class="dd">
+          <li><a href='../services/ai-citations.html'>AI Citations (GEO)</a></li>
+          <li><a href='../services/website-design.html'>Website Design</a></li>
+          <li><a href='../services/google-business-profile.html'>Google Business Profile</a></li>
+          <li><a href='../services/local-seo.html'>Local SEO &amp; Neighborhoods</a></li>
+          <li><a href='../services/content.html'>Blog &amp; Content</a></li>
+          <li><a href='../services/social-media.html'>Social Media</a></li>
+          <li><a href='../services/reviews.html'>Reviews &amp; Reputation</a></li>
+        </ul>
+      </li>
+      <li><a href="../index.html#who" aria-haspopup="true">Who we help</a>
+        <ul class="dd">
+          <li><a href='../audiences/solo-agents.html'>Solo Agents</a></li>
+          <li><a href='../audiences/teams.html'>Teams</a></li>
+          <li><a href='../audiences/brokerages.html'>Brokerages</a></li>
+          <li><a href='../audiences/listing-agents.html'>Listing Agents</a></li>
+        </ul>
+      </li>
       <li><a href="../index.html#pricing">Pricing</a></li>
       <li><a href="index.html">Resources</a></li>
       <li><a href="../index.html#faq">FAQ</a></li>
@@ -902,7 +947,18 @@ INDEX = """<!DOCTYPE html>
 <div class="mobile-menu" id="mobileMenu">
   <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
   <a href="../index.html#services">Services</a>
+  <a class="mm-sub" href="../services/ai-citations.html">AI Citations (GEO)</a>
+  <a class="mm-sub" href="../services/website-design.html">Website Design</a>
+  <a class="mm-sub" href="../services/google-business-profile.html">Google Business Profile</a>
+  <a class="mm-sub" href="../services/local-seo.html">Local SEO &amp; Neighborhoods</a>
+  <a class="mm-sub" href="../services/content.html">Blog &amp; Content</a>
+  <a class="mm-sub" href="../services/social-media.html">Social Media</a>
+  <a class="mm-sub" href="../services/reviews.html">Reviews &amp; Reputation</a>
   <a href="../index.html#who">Who we help</a>
+  <a class="mm-sub" href="../audiences/solo-agents.html">Solo Agents</a>
+  <a class="mm-sub" href="../audiences/teams.html">Teams</a>
+  <a class="mm-sub" href="../audiences/brokerages.html">Brokerages</a>
+  <a class="mm-sub" href="../audiences/listing-agents.html">Listing Agents</a>
   <a href="../index.html#pricing">Pricing</a>
   <a href="index.html">Resources</a>
   <a href="../index.html#faq">FAQ</a>
