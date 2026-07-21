@@ -64,6 +64,41 @@ POSTS = [
         ],
     },
     {
+        "slug": "california-ai-listing-photo-law",
+        "img": "img/california-ai-listing-photo-law.jpg",
+        "img_alt": "Illustration of a framed house photo with an AI sparkle wand and a small disclosure tag",
+        "cat": "news",
+        "title": "California's AI Listing Photo Law (AB 723): What Agents Must Disclose Now",
+        "date": "2026-07-20",
+        "excerpt": "The first state law on AI-edited listing photos is in effect — and studies suggest most altered listings still aren't complying. What AB 723 requires, what's exempt, and why disclosure is becoming a trust play.",
+        "tldr": "California's AB 723, signed October 10, 2025 and effective January 1, 2026, is the first state law specifically governing digitally altered and AI-edited listing photos. It adds Business & Professions Code §10140.8, requiring two things whenever a listing image changes how a property or its surroundings actually look: a clear, conspicuous disclosure on the listing (e.g. \"digitally altered\" or \"virtually staged\"), and access to the original unaltered photo — via link, URL, or QR code when AI is used. Routine edits (lighting, color correction, cropping, sharpening, straightening) are exempt, and virtual staging remains legal with disclosure. The compliance gap is huge: one study found over 90% of digitally altered portal listings carried no disclosure — which makes clean disclosure both a legal necessity in California and an easy trust differentiator everywhere.",
+        "sections": [
+            ("What AB 723 actually requires",
+             "<p>The law is narrow and specific. If a listing photo has been digitally altered — by editing software or AI — in a way that changes how the property or its surroundings actually look, two obligations kick in: the listing must carry a clear, reasonably conspicuous disclosure that the image is altered, and viewers must be able to access the original, unaltered photo. When AI did the altering, that access means a link, URL, or QR code to the original image.</p>"
+             "<p>It took effect January 1, 2026 as Business &amp; Professions Code §10140.8. (Coverage: <a href='https://www.sfchronicle.com/realestate/article/california-law-home-listing-photos-21308040.php' rel='nofollow'>San Francisco Chronicle</a>, <a href='https://www.housingwire.com/articles/most-ai-altered-listings-go-undisclosed-california-law-bans-it/' rel='nofollow'>HousingWire</a>, and a useful legal breakdown from <a href='https://barneswalker.com/starting-january-1-2026-california-turns-ai-edited-listing-photos-into-a-legal-compliance-issue-not-just-an-mls-issue-is-florida-next/' rel='nofollow'>Barnes Walker</a>.)</p>"),
+            ("What counts as altered — and what doesn't",
+             "<ul><li><b>Requires disclosure:</b> virtual staging (furniture that isn't there), removing or adding objects, altering lawns or skies to look better than reality, AI renovations of dated rooms — anything that changes what the place actually looks like.</li>"
+             "<li><b>Exempt routine edits:</b> lighting and exposure adjustments, white balance, color correction, sharpening, cropping, and straightening — normal photography workflow is fine undisclosed.</li>"
+             "<li><b>Still legal:</b> virtual staging itself. California didn't ban the tool; it banned the pretense. Disclose it, provide the original, and stage away.</li></ul>"),
+            ("The 90% problem",
+             "<p>Here's the striking part: research cited in HousingWire's coverage found roughly one in nine listing photos on major portals showed digital alterations — and more than 90% of those carried no disclosure. In California, that gap is now a legal exposure. Everywhere else, it's a trust time bomb: buyers who tour a home that doesn't match its photos remember the agent who showed it to them.</p>"
+             "<p>Expect the pattern from our <a href='connecticut-private-listings-ban.html'>Connecticut SB 340 coverage</a> to repeat here too — first-state laws in real estate marketing rarely stay single-state, and commentators are already asking whether Florida follows.</p>"),
+            ("The marketing takeaway: disclosure is a differentiator now",
+             "<p>The agents who treat AB 723 as annoying paperwork are missing the play. In a market where 90% of altered photos hide it, <i>\"virtually staged — original photo here\"</i> reads as integrity, and integrity is precisely what sellers are vetting when they Google you. Clean disclosure practices belong in the same trust stack as your reviews and your <a href='../services/content.html'>published answers</a> — evidence that what you say matches what's real.</p>"
+             "<p>Practical workflow, whatever your state: label every virtually staged image in the MLS and on socials, keep originals organized and linkable, brief your photographer and your <a href='../services/social-media.html'>social workflow</a> on which edits cross the line, and when in doubt, disclose. (California agents: confirm specifics with your broker or counsel — this is reporting, not legal advice.)</p>"),
+        ],
+        "faqs": [
+            ("Is virtual staging still legal in California?",
+             "Yes — AB 723 doesn't ban virtual staging. It requires that virtually staged or AI-altered images carry a clear disclosure on the listing and that viewers can access the original unaltered photo (via link, URL, or QR code when AI is used)."),
+            ("Do I have to disclose basic photo edits like brightness or color correction?",
+             "No. Routine adjustments — lighting, exposure, white balance, color correction, sharpening, cropping, straightening — are exempt. The disclosure duty applies to edits that change how the property or its surroundings actually look."),
+            ("When did AB 723 take effect, and who does it apply to?",
+             "It was signed October 10, 2025 and took effect January 1, 2026, adding §10140.8 to California's Business & Professions Code. It governs California listing marketing; agents elsewhere should watch their own states — legal commentators are already predicting copycat bills."),
+            ("Does AI-generated listing photography hurt or help marketing?",
+             "Used honestly, it helps: staged visuals demonstrably improve engagement, and disclosure doesn't reduce that. What hurts is the gap between photos and reality — buyers who feel misled at the showing blame the agent, and that reputation cost outlasts any click-through gain."),
+        ],
+    },
+    {
         "slug": "nar-coming-soon-listings-rules",
         "img": "img/nar-coming-soon-listings-rules.jpg",
         "img_alt": "Illustration of a house glowing softly behind a partially lifted curtain",
