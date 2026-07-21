@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Add RealEstateAgent Schema to Your Website: A Walkthrough | CitedRealty</title>
+<meta name="description" content="Copy-paste JSON-LD for agents, field by field — plus how to validate it and the one-character mistake that silently broke our own homepage.">
+<link rel="canonical" href="https://citedrealty.com/blog/realestateagent-schema-walkthrough.html">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="/assets/icon-square.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:title" content="How to Add RealEstateAgent Schema to Your Website: A Walkthrough">
+<meta property="og:description" content="Copy-paste JSON-LD for agents, field by field — plus how to validate it and the one-character mistake that silently broke our own homepage.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://citedrealty.com/blog/realestateagent-schema-walkthrough.html">
+<meta property="og:image" content="https://citedrealty.com/blog/img/realestateagent-schema-walkthrough.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<script src="../assets/theme.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://citedrealty.com/blog/realestateagent-schema-walkthrough.html#article",
+      "headline": "How to Add RealEstateAgent Schema to Your Website: A Walkthrough",
+      "description": "Copy-paste JSON-LD for agents, field by field \u2014 plus how to validate it and the one-character mistake that silently broke our own homepage.",
+      "datePublished": "2026-07-20",
+      "dateModified": "2026-07-20",
+      "url": "https://citedrealty.com/blog/realestateagent-schema-walkthrough.html",
+      "image": "https://citedrealty.com/blog/img/realestateagent-schema-walkthrough.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "CitedRealty",
+        "@id": "https://citedrealty.com/#business"
+      },
+      "publisher": {
+        "@id": "https://citedrealty.com/#business"
+      },
+      "mainEntityOfPage": "https://citedrealty.com/blog/realestateagent-schema-walkthrough.html",
+      "articleSection": "How-To Guides"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://citedrealty.com/blog/realestateagent-schema-walkthrough.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does schema markup directly improve rankings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google's guidance treats structured data as enabling eligibility (rich results) and better understanding, not as a direct ranking boost \u2014 claims beyond that are correlation or opinion. Its clearest payoff in 2026 is machine-readability for AI systems deciding what to cite, plus rich-result eligibility."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where exactly do I paste the JSON-LD?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In your site's <head> (or before the closing body tag \u2014 both work). WordPress users can use a header-scripts plugin or an SEO plugin's schema feature; site-builder users should check for a custom-code or head-injection setting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should the schema go on every page or just the homepage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The RealEstateAgent entity belongs on your homepage or about page (with an @id other pages can reference). Page-specific schema \u2014 FAQPage on Q&A pages, place markup on neighborhood pages \u2014 goes on the pages it describes."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://citedrealty.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Resources",
+          "item": "https://citedrealty.com/blog/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How to Add RealEstateAgent Schema to Your Website: A Walkthrough",
+          "item": "https://citedrealty.com/blog/realestateagent-schema-walkthrough.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="../index.html" aria-label="CitedRealty home">
+      <img src="../assets/icon-square.svg" alt="" width="34" height="34">
+      <span>Cited<span class="r">Realty</span><sup>[1]</sup></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#services" aria-haspopup="true">Services</a>
+        <ul class="dd">
+          <li><a href='../services/ai-citations.html'>AI Citations (GEO)</a></li>
+          <li><a href='../services/website-design.html'>Website Design</a></li>
+          <li><a href='../services/google-business-profile.html'>Google Business Profile</a></li>
+          <li><a href='../services/local-seo.html'>Local SEO &amp; Neighborhoods</a></li>
+          <li><a href='../services/content.html'>Blog &amp; Content</a></li>
+          <li><a href='../services/social-media.html'>Social Media</a></li>
+          <li><a href='../services/reviews.html'>Reviews &amp; Reputation</a></li>
+        </ul>
+      </li>
+      <li><a href="../index.html#who" aria-haspopup="true">Who we help</a>
+        <ul class="dd">
+          <li><a href='../audiences/solo-agents.html'>Solo Agents</a></li>
+          <li><a href='../audiences/teams.html'>Teams</a></li>
+          <li><a href='../audiences/brokerages.html'>Brokerages</a></li>
+          <li><a href='../audiences/listing-agents.html'>Listing Agents</a></li>
+        </ul>
+      </li>
+      <li><a href="../index.html#pricing">Pricing</a></li>
+      <li><a href="index.html">Resources</a></li>
+      <li><a href="../index.html#faq">FAQ</a></li>
+    </ul>
+    <a class="nav-cta" href="../index.html#contact">Free AI visibility audit</a>
+    <button class="theme-toggle" aria-label="Switch to light mode">☀</button>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+  <a href="../index.html#services">Services</a>
+  <a class="mm-sub" href="../services/ai-citations.html">AI Citations (GEO)</a>
+  <a class="mm-sub" href="../services/website-design.html">Website Design</a>
+  <a class="mm-sub" href="../services/google-business-profile.html">Google Business Profile</a>
+  <a class="mm-sub" href="../services/local-seo.html">Local SEO &amp; Neighborhoods</a>
+  <a class="mm-sub" href="../services/content.html">Blog &amp; Content</a>
+  <a class="mm-sub" href="../services/social-media.html">Social Media</a>
+  <a class="mm-sub" href="../services/reviews.html">Reviews &amp; Reputation</a>
+  <a href="../index.html#who">Who we help</a>
+  <a class="mm-sub" href="../audiences/solo-agents.html">Solo Agents</a>
+  <a class="mm-sub" href="../audiences/teams.html">Teams</a>
+  <a class="mm-sub" href="../audiences/brokerages.html">Brokerages</a>
+  <a class="mm-sub" href="../audiences/listing-agents.html">Listing Agents</a>
+  <a href="../index.html#pricing">Pricing</a>
+  <a href="index.html">Resources</a>
+  <a href="../index.html#faq">FAQ</a>
+  <a href="../index.html#contact" class="grad">Free AI visibility audit →</a>
+</div>
+
+<main id="main">
+<header class="article-hero">
+  <div class="wrap">
+    <p class="crumb"><a href="../index.html">Home</a> / <a href="index.html">Resources</a> / How-To Guides</p>
+    <span class="cat">How-To Guides</span>
+    <h1>How to Add RealEstateAgent Schema to Your Website: A Walkthrough</h1>
+    <p class="meta">CitedRealty · July 20, 2026 · For realtors &amp; brokers</p>
+  </div>
+</header>
+
+<div class="wrap article-grid">
+  <article>
+    <figure class="article-figure"><img src="img/realestateagent-schema-walkthrough.jpg" alt="Illustration of a house blueprint transforming into neat code brackets" width="1200" height="800"></figure>
+    <div class="tldr"><div class="label">TL;DR — the short answer</div><p>RealEstateAgent schema is JSON-LD structured data that tells search engines and AI systems exactly who you are, where you work, and what you do — in a format machines can quote instead of guess. Implementation: paste a script tag of type application/ld+json into your site&#x27;s head with your name, brokerage, URL, phone, service areas, and sameAs links to your profiles; match every fact to your Google Business Profile exactly; validate with Google&#x27;s Rich Results Test before shipping. Validation isn&#x27;t optional — one missing brace makes the entire block invisible to machines (we know, because we shipped exactly that bug on this site and Google flagged it within hours).</p></div>
+    <div class="article-body">
+      <h2 id="what-schema-does-and-why-agents-specifically-need-it">What schema does — and why agents specifically need it</h2>
+<p>Your website says "Jane Rivera is a Scottsdale realtor" in prose a human parses instantly. Schema says it in a structure a machine parses <i>reliably</i> — which matters now that your most influential readers are crawlers deciding whether to cite you. For agents, the payoff is entity clarity: search and AI systems can confirm your name, brokerage, service area, and specialties without inference, which is the foundation every <a href='../services/ai-citations.html'>AI citation</a> stands on.</p>
+      <h2 id="the-template-field-by-field">The template, field by field</h2>
+<p>Paste this inside your site's <code>&lt;head&gt;</code>, edited to your facts:</p><pre><code>&lt;script type=&quot;application/ld+json&quot;&gt;
+{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;RealEstateAgent&quot;,
+  &quot;@id&quot;: &quot;https://YOURSITE.com/#agent&quot;,
+  &quot;name&quot;: &quot;Jane Rivera&quot;,
+  &quot;url&quot;: &quot;https://YOURSITE.com/&quot;,
+  &quot;image&quot;: &quot;https://YOURSITE.com/headshot.jpg&quot;,
+  &quot;telephone&quot;: &quot;+1-480-555-0100&quot;,
+  &quot;email&quot;: &quot;jane@YOURSITE.com&quot;,
+  &quot;worksFor&quot;: {&quot;@type&quot;: &quot;RealEstateAgency&quot;, &quot;name&quot;: &quot;Rivera Realty Group&quot;},
+  &quot;areaServed&quot;: [
+    {&quot;@type&quot;: &quot;City&quot;, &quot;name&quot;: &quot;Scottsdale&quot;},
+    {&quot;@type&quot;: &quot;City&quot;, &quot;name&quot;: &quot;Paradise Valley&quot;}
+  ],
+  &quot;knowsAbout&quot;: [&quot;Seller representation&quot;, &quot;First-time buyers&quot;, &quot;North Scottsdale&quot;],
+  &quot;sameAs&quot;: [
+    &quot;https://www.google.com/maps/place/YOUR-GBP-LINK&quot;,
+    &quot;https://www.instagram.com/YOURHANDLE&quot;,
+    &quot;https://www.linkedin.com/in/YOURPROFILE&quot;
+  ]
+}
+&lt;/script&gt;</code></pre><p>The fields that do the heavy lifting: <b>areaServed</b> (your neighborhoods — the machine-readable version of your farm), <b>sameAs</b> (links your identity across every profile, collapsing you into one unambiguous entity), and <b>worksFor</b> (ties you to your brokerage's entity). Every value must match your Google Business Profile exactly — mismatched facts read as two different Janes.</p>
+      <h2 id="validate-before-you-ship-a-cautionary-tale-from-this-very-site">Validate before you ship (a cautionary tale from this very site)</h2>
+<p>Run the page through Google's <b>Rich Results Test</b> (search.google.com/test/rich-results) or validator.schema.org before and after publishing. This step is not optional, and we're the proof: this website launched with a single missing closing brace in its FAQ schema — one character — which made the <i>entire</i> structured-data graph unparsable. Google Search Console flagged "unparsable structured data" within hours of first crawl. The fix took a minute; catching it before launch would have taken thirty seconds.</p><p>JSON is unforgiving: every brace opened must close, every property quoted, no trailing commas. If you hand-edit, re-validate every time.</p>
+      <h2 id="going-further">Going further</h2>
+<p>Once the agent entity is in place: add <b>FAQPage</b> schema to pages that answer questions (marking up real on-page Q&amp;A), <b>BreadcrumbList</b> for site structure, and place-level markup on neighborhood pages. If your platform won't let you touch the head, that's a real limitation worth weighing — schema-first architecture is a core reason we build <a href='../services/website-design.html'>agent websites</a> the way we do.</p>
+    </div>
+    <div class="article-faq">
+      <h2 id="faq">FAQ</h2>
+      <details><summary>Does schema markup directly improve rankings?</summary><p>Google&#x27;s guidance treats structured data as enabling eligibility (rich results) and better understanding, not as a direct ranking boost — claims beyond that are correlation or opinion. Its clearest payoff in 2026 is machine-readability for AI systems deciding what to cite, plus rich-result eligibility.</p></details>
+      <details><summary>Where exactly do I paste the JSON-LD?</summary><p>In your site&#x27;s &lt;head&gt; (or before the closing body tag — both work). WordPress users can use a header-scripts plugin or an SEO plugin&#x27;s schema feature; site-builder users should check for a custom-code or head-injection setting.</p></details>
+      <details><summary>Should the schema go on every page or just the homepage?</summary><p>The RealEstateAgent entity belongs on your homepage or about page (with an @id other pages can reference). Page-specific schema — FAQPage on Q&amp;A pages, place markup on neighborhood pages — goes on the pages it describes.</p></details>
+    </div>
+    <div class="outcome article-cta reveal">
+      <h2>Want this done for you?</h2>
+      <p>CitedRealty runs the whole system — Google Business Profile, neighborhood pages, content, reviews, and AI citations — for realtors and brokers. Start with a free AI visibility audit of your market.</p>
+      <a class="btn btn-primary" href="../index.html#contact">Get your free audit</a>
+    </div>
+  </article>
+  <aside class="toc" aria-label="On this page">
+    <div class="label">On this page</div>
+    <ol>
+      <li><a href="#what-schema-does-and-why-agents-specifically-need-it">What schema does — and why agents specifically need it</a></li>
+      <li><a href="#the-template-field-by-field">The template, field by field</a></li>
+      <li><a href="#validate-before-you-ship-a-cautionary-tale-from-this-very-site">Validate before you ship (a cautionary tale from this very site)</a></li>
+      <li><a href="#going-further">Going further</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </aside>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-legal" style="border:none; margin:0; padding:0">
+      <span>© 2026 CitedRealty · <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a> · <a href="#" data-cookie-prefs>Cookie preferences</a> · <a href="https://www.google.com/preferences/source?q=citedrealty.com" target="_blank" rel="noopener" title="Add CitedRealty as a preferred source in Google Search"><span style="color:#F59E0B">★</span> Make us a preferred source on Google</a></span>
+      <span>When buyers ask AI, you're the answer.<sup>[1]</sup></span>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta"><a href="../index.html#contact">Get your free AI visibility audit</a></div>
+<script src="../assets/app.js"></script>
+<script src="../assets/consent.js" defer></script>
+</body>
+</html>

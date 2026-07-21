@@ -203,3 +203,8 @@ footer a:hover{color:var(--text)}
 .mobile-menu{overflow-y:auto}
 .mobile-menu .mm-sub{font-family:var(--body); font-size:16px; font-weight:600; color:var(--muted); border-bottom:none; padding:7px 0 7px 16px}
 .mobile-menu .mm-sub:hover{color:var(--text)}
+
+/* code blocks in guides */
+.article-body pre{background:var(--panel2); border:1px solid var(--line); border-radius:12px; padding:18px 20px; overflow-x:auto; margin:0 0 18px}
+.article-body pre code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:12.5px; line-height:1.55; color:var(--text)}
+.article-body :not(pre)>code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.9em; background:var(--panel2); border:1px solid var(--line); border-radius:6px; padding:1px 6px}

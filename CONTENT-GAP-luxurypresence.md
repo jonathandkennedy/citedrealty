@@ -1,3 +1,42 @@
+# Content & Positioning Gaps: CitedRealty vs. Competitors
+
+## Addendum (2026-07-20): vs. Stridec (stridec.com) — the GEO-agency comp
+
+Stridec = Singapore GEO/AIO agency for e-commerce & SaaS. Not a market competitor, but the
+closest *positioning* comp found so far (they sell "AI Overview Mastery" the way we sell
+AI Citations) — so their content library shows what a mature GEO shop publishes.
+
+**Their formats we LACK:**
+1. **Procedural how-to guides** (their entire blog): "How to Optimize Google Business
+   Profile: Step-by-Step", "How to Implement Schema Markup: A Practitioner Walkthrough",
+   "How to Rank in Google Maps", "What Data Does AI Overview Use?", "What Is E-E-A-T".
+   Long-form (11–16 min), practitioner-voiced, no fluff. We have ZERO pure how-to guides —
+   our library is comparisons/stats/Q&A/news. How-to queries are a distinct citation
+   surface ("how do I..." prompts), and guides prove practitioner authority in a way
+   opinion posts can't.
+2. **Free self-serve tools**: AIO Visibility Checker + AIO Readiness Audit. Our "free AI
+   visibility audit" is a contact form (human-delivered); theirs is instant self-serve.
+   A realtor-facing "Does ChatGPT know you?" mini-tool would be a strong lead magnet —
+   bigger build, roadmap item.
+3. **Newsletter** (2,400+ subscribers claimed): owned audience + nurture. We capture
+   leads but have no recurring email asset.
+
+**What we have that they DON'T:** news/newsjacking, verified stats roundup, vendor
+comparisons, transparent pricing content, Agent Q&A. Our formats are more citation-bait;
+theirs are more authority-proof. A complete library needs both.
+
+**P1 how-to batch (realtor-specific versions beat their generic ones for our queries):**
+- [ ] "How to Optimize Your Google Business Profile as a Realtor: Step-by-Step"
+- [ ] "How to Get More Google Reviews as a Real Estate Agent (Ethical Playbook)"
+- [ ] "What Data Do ChatGPT & AI Overviews Use? (And How Realtors Get Into It)"
+- [ ] "How to Add RealEstateAgent Schema to Your Website: A Walkthrough"
+- [ ] "What Is E-E-A-T for Real Estate Agents — and How AI Uses It"
+**P2:** "How to Build a Neighborhood Page (With Template)", "How to Do a DIY AI Visibility
+Audit" (give away the method — the audit form converts the ones who want it done).
+**P3 (product, not content):** self-serve AI visibility checker tool; email newsletter.
+
+---
+
 # Content & Positioning Gap: CitedRealty vs. Luxury Presence
 
 Analyzed 2026-07-20 (luxurypresence.com homepage, /real-estate-websites/, /blog/).

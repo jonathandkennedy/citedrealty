@@ -17,6 +17,7 @@ OUT = pathlib.Path(__file__).parent / "blog"
 
 CATS = {
     "news": "Industry News",
+    "howto": "How-To Guides",
     "questions": "Agent Q&A",
     "websites": "Websites",
     "seller-leads": "Seller Leads",
@@ -126,6 +127,173 @@ POSTS = [
              "It depends on your MLS. NAR clarified that national policy doesn't require DOM or price-reduction tracking at all — it's local discretion. Where an MLS does track it, participants may share that data with consumers. Check your local rules before promising a seller anything about DOM."),
             ("Can I post a coming-soon listing on social media?",
              "Generally yes — but social promotion is public marketing, which starts CCP's one-business-day MLS submission clock, and in some states (Connecticut, from October 2026) the listing must be publicly available simultaneously. Know both your MLS rules and your state law; this is reporting, not legal advice."),
+        ],
+    },
+    {
+        "slug": "optimize-google-business-profile-realtor",
+        "img": "img/optimize-google-business-profile-realtor.jpg",
+        "img_alt": "Illustration of a glowing map pin above a storefront-style house with checklist marks",
+        "cat": "howto",
+        "title": "How to Optimize Your Google Business Profile as a Realtor: Step-by-Step",
+        "date": "2026-07-20",
+        "excerpt": "The complete 2026 walkthrough — categories, hours, reviews, posts — with the current algorithm shift most guides miss: Google now rewards profiles that look alive.",
+        "tldr": "To optimize a realtor Google Business Profile in 2026: claim and verify it under your exact real-world name (keyword-stuffed names risk suspension), set \"Real Estate Agent\" as your primary category (the strongest controllable ranking lever), complete every field including accurate hours — being open at search time is now a confirmed ranking factor — then work the profile weekly: posts, fresh photos, review velocity, and responses. The big 2026 shift: Google's local algorithm has moved weight from static prominence toward engagement and activity signals, so an actively worked profile now outranks an established-but-dormant one. Setup is a weekend; ranking is a habit.",
+        "sections": [
+            ("Step 1: Get the foundation exactly right",
+             "<p>Claim the profile at business.google.com and verify. Use your <b>exact real-world name</b> — \"Jane Rivera, Realtor\" not \"Jane Rivera | Scottsdale Homes For Sale Top Agent.\" Keyword-stuffed names are the #1 local spam tactic and a genuine suspension risk. Use a local phone number you answer, and link the website page most relevant to your work (your site's homepage, or your team page — with UTM tags so you can see GBP traffic in analytics).</p>"
+             "<p>One 2026 housekeeping note: Google is retiring GBP chat/messaging (fully ends July 31, 2026) — so make the call button and website your conversion paths, not chat.</p>"),
+            ("Step 2: Categories — the biggest lever you control",
+             "<p>Primary category is the strongest ranking signal after proximity. For most agents that's <b>Real Estate Agent</b>; teams and offices may fit \"Real Estate Agency.\" Then add every legitimately applicable additional category (up to 9) — e.g. \"Real Estate Consultant,\" \"Property Management Company\" only if you actually do it. Aspirational categories hurt relevance; check what the agents actually ranking in your map pack use.</p>"),
+            ("Step 3: Fill everything — including hours (yes, hours rank)",
+             "<p>Write the 750-character description: what you do, where, for whom, what's different — no keyword stuffing, no phone numbers. List every service with a description (\"Seller representation in [neighborhoods]\", \"First-time buyer guidance\"). Complete every applicable attribute.</p>"
+             "<p>Then hours — the ranking factor most agents shrug past: <b>businesses open at the moment of search rank better</b>, and rankings degrade in the final hour before closing. If you genuinely answer your phone evenings and weekends (most agents do), your stated hours should say so. Never fake hours you won't answer — a missed call is its own penalty.</p>"),
+            ("Step 4: Photos, posts, and the \"looks alive\" test",
+             "<p>Ten to fifteen real photos minimum — you working, your listings, your neighborhoods, your team — then two or three new ones monthly. No stock photography; Google and humans both notice. (Skip the geo-tagging folklore: Google strips photo EXIF data on upload — it has no ranking effect.)</p>"
+             "<p>Post weekly: a listing, a closing, a market note, a neighborhood spotlight. This is where the 2026 algorithm shift bites — Google has moved weight toward <i>engagement and activity</i>: clicks, calls, direction requests, post and photo activity, review velocity. A dormant profile with 100 old reviews now loses to a worked profile with 60 fresh ones. The same activity data feeds Google's AI-generated local answers, which is why this step does double duty for <a href='../services/ai-citations.html'>AI visibility</a>.</p>"),
+            ("Step 5: Reviews — velocity beats totals",
+             "<p>Recent reviews matter more than lifetime count: a steady drip signals a business that's alive. Build a systematic post-closing ask (full playbook in our <a href='get-more-google-reviews-real-estate-agent.html'>review generation guide</a>), and respond to every review — responses are read by the next seller and parsed by AI. One more 2026 note: Google is replacing user Q&A with AI-generated Q&A drawn from your profile, reviews, and website — another reason the underlying data must be complete and accurate.</p>"
+             "<p>Then maintain the rhythm: weekly reviews/posts check, monthly photos and insights, quarterly category and competitor audit. Or have us <a href='../services/google-business-profile.html'>run the whole thing</a> — this checklist is literally the service.</p>"),
+        ],
+        "faqs": [
+            ("What's the most important GBP ranking factor for realtors?",
+             "After proximity (which you can't control): your primary category, then overall profile completeness and activity. In 2026, engagement signals — calls, clicks, review velocity, posting activity — have gained weight over static factors, per current industry consensus analysis of local rankings."),
+            ("Should each agent on a team have their own Google Business Profile?",
+             "Individual practitioner profiles are allowed alongside the office profile if the agent is directly contactable at that location. Keep names clean (agent name, not keywords), categories accurate, and never create multiple profiles for the same person."),
+            ("How long until GBP optimization improves my map pack ranking?",
+             "Foundational fixes (category, completeness) often show movement within weeks; engagement-driven gains build over one to three months of consistent activity. Measure with a geogrid scan rather than searching yourself — your own results are skewed by your location and history."),
+        ],
+    },
+    {
+        "slug": "get-more-google-reviews-real-estate-agent",
+        "img": "img/get-more-google-reviews-real-estate-agent.jpg",
+        "img_alt": "Illustration of five glowing stars rising from a house like lanterns",
+        "cat": "howto",
+        "title": "How to Get More Google Reviews as a Real Estate Agent (an Ethical Playbook)",
+        "date": "2026-07-20",
+        "excerpt": "No bought reviews, no gating, no begging — a system that turns closings into a steady review stream, plus the compliance lines you can't cross.",
+        "tldr": "The ethical way to get more Google reviews as a realtor: build the ask into your closing workflow (the moment keys change hands is peak goodwill), make leaving a review effortless with a direct link or QR code, ask specifically but honestly (\"would you mind mentioning the neighborhood and what the process was like?\"), and respond to every review — responses are read by future sellers and parsed by AI. Never buy reviews, never incentivize them (against Google policy and FTC rules), and never \"gate\" by filtering unhappy clients away from the ask. Velocity beats totals: a review a month for a year outranks a one-week blast of twelve, and steady recency is what both Google and AI assistants read as a live, trusted business.",
+        "sections": [
+            ("The system: ask at the moment of maximum goodwill",
+             "<p>Reviews don't come from wanting them; they come from a workflow. The trigger is closing day — clients holding keys are at peak gratitude, and a personal ask converts far better than any automated email: <i>\"It would genuinely help my business if you'd share what this was like — I'll text you the link.\"</i> Then send that text within the hour, while the moment is warm.</p>"
+             "<p>Make it effortless: your GBP short link (or a QR code on the closing-gift card) straight to the review box. Every extra tap loses reviewers. For past clients you never asked, one honest campaign — \"I'm building my online presence and your words would mean a lot\" — recovers years of goodwill; space those asks out rather than blasting.</p>"),
+            ("Ask for specifics — honestly",
+             "<p>A five-star \"great agent!\" helps a little. A review mentioning <i>your neighborhood, the service type, and a real moment</i> helps enormously — those phrases become the review snippets Google shows under your name and the evidence AI assistants weigh. The ethical way to get them is a gentle prompt, not a script: \"If you're up for it, mentioning the neighborhood and how the sale went helps other sellers find me.\" You're suggesting topics, never words — the review must be theirs.</p>"),
+            ("The lines you cannot cross",
+             "<ul><li><b>Never buy reviews</b> — from anyone, ever. It violates Google policy and, in the US, FTC rules on fake reviews carry real penalties.</li>"
+             "<li><b>Never incentivize</b> — discounts, gift cards, or raffle entries for reviews are against Google's policy even when the review is genuine.</li>"
+             "<li><b>Never gate</b> — surveying clients first and only asking happy ones for public reviews (\"review gating\") violates policy. Ask everyone; earn the outcome.</li>"
+             "<li><b>Never review yourself</b> or have family/colleagues pose as clients. Google's detection keeps improving, and a wiped profile costs more than slow-earned reviews ever would.</li></ul>"),
+            ("Respond to everything — including the bad one",
+             "<p>Every review gets a response in your voice within a few days: specific, warm, brief. The audience isn't the reviewer — it's the next seller reading your profile and the AI summarizing it. For a negative review: respond once, calmly, with facts and an offline path (\"I'd welcome the chance to talk this through\"). Never argue, never reveal client details, and let one measured response sit beside their words. One bad review answered gracefully often builds more trust than ten unanswered five-stars.</p>"
+             "<p>The compounding effect ties the whole <a href='../services/reviews.html'>reputation system</a> together: reviews feed your map-pack rank, the snippets under your name, and the evidence behind every <a href='../services/ai-citations.html'>AI recommendation</a>. It's the single highest-leverage habit in agent marketing — and it costs nothing but consistency.</p>"),
+        ],
+        "faqs": [
+            ("Can I ask clients for Google reviews at all?",
+             "Yes — asking is completely allowed and expected. What's prohibited is paying or incentivizing reviews, filtering who you ask based on predicted sentiment (gating), or writing/buying fake ones."),
+            ("How many Google reviews does a realtor need?",
+             "Enough to be credible against your local competitors, arriving steadily. Recency and velocity now matter more than raw totals — a consistent monthly stream signals an active business better than a large stale pile. Check the agents ranking in your map pack for your market's bar."),
+            ("What do I do about a fake or malicious review?",
+             "Flag it through your Business Profile for policy violation, respond publicly and calmly noting you have no record of the reviewer as a client, and document everything. Persistent attacks can be escalated through Google's review-removal process."),
+        ],
+    },
+    {
+        "slug": "what-data-do-ai-assistants-use",
+        "img": "img/what-data-do-ai-assistants-use.jpg",
+        "img_alt": "Illustration of data streams flowing from documents, stars, and a globe into an AI chat bubble",
+        "cat": "howto",
+        "title": "What Data Do ChatGPT and Google's AI Actually Use? (And How Realtors Get Into It)",
+        "date": "2026-07-20",
+        "excerpt": "Demystifying the pipeline: training data vs. live retrieval, why ChatGPT search runs on Bing, and the specific assets that get an agent into AI answers.",
+        "tldr": "AI assistants answer from two layers: training data (a frozen snapshot of the web — you can't edit it, only influence the next one) and live retrieval (real-time search the model runs when you ask something current). Retrieval is where realtors can act now: ChatGPT's web search draws on Bing's index, Google's AI Overviews and AI Mode draw on Google's index, and Perplexity runs its own crawl — so being indexed and authoritative in BOTH Google and Bing is the entry ticket. What gets cited from those indexes: pages that answer questions directly, consistent entity data (schema, profiles that agree with each other), reviews, and independent third-party mentions. Being cited matters commercially: brands cited inside AI answers earn roughly 120% more clicks than brands that aren't (Seer Interactive, 2026).",
+        "sections": [
+            ("The two layers: what's baked in vs. what's fetched live",
+             "<p><b>Training data</b> is the web snapshot a model learned from — months old by the time you're talking to it. If your name is well-represented there (consistent profiles, published content, mentions), the model \"knows\" you; if not, you don't exist to it until retrieval saves you. You can't edit training data retroactively — you can only be present enough that the <i>next</i> training run picks you up.</p>"
+             "<p><b>Live retrieval</b> is what happens when the assistant searches the web mid-conversation — which local and \"who should I hire\" questions almost always trigger, because they're current. This is the layer you can influence this quarter.</p>"),
+            ("Which index feeds which assistant",
+             "<ul><li><b>ChatGPT</b> web search draws on <b>Bing's index</b> — which makes Bing Webmaster Tools (free, imports from Search Console in two clicks) quietly one of the highest-leverage registrations in agent marketing.</li>"
+             "<li><b>Google AI Overviews / AI Mode</b> draw on Google's index and ranking systems — your classic SEO work feeds them directly.</li>"
+             "<li><b>Perplexity</b> maintains its own crawl with an emphasis on citing sources.</li>"
+             "<li><b>Gemini</b> draws on Google's index and infrastructure.</li></ul>"
+             "<p>Practical consequence: \"AI SEO\" isn't a separate universe — it's being findable and credible in the two indexes that matter, plus structure that makes you quotable.</p>"),
+            ("What actually gets cited",
+             "<p>Across the systems, the pattern of citable sources is consistent: pages that <b>answer a question directly</b> (a clear question-shaped heading with a concise answer up top), <b>entity consistency</b> (your name, brokerage, and markets identical across your site, GBP, and profiles — contradictions read as noise), <b>structured data</b> (schema that makes facts machine-readable — see our <a href='realestateagent-schema-walkthrough.html'>schema walkthrough</a>), <b>reviews</b> as third-party evidence, and <b>independent mentions</b> — your own site claims, other sites confirm.</p>"
+             "<p>The commercial stakes, from our <a href='real-estate-ai-search-statistics.html'>verified statistics roundup</a>: when an AI Overview appears, brands cited inside it earn about 120% more clicks per impression than brands that aren't — while uncited brands lost 67% of their click-through over 2025 (Seer Interactive).</p>"),
+            ("The realtor checklist",
+             "<ul><li>Verify your site in <b>Google Search Console AND Bing Webmaster Tools</b>; submit your sitemap to both.</li>"
+             "<li>Add RealEstateAgent and FAQ schema; keep it valid (test it — even one missing brace makes it unreadable).</li>"
+             "<li>Publish direct answers to your market's questions, each opening with a liftable summary.</li>"
+             "<li>Align every profile — GBP, site, socials, directories — on identical name/brokerage/market facts.</li>"
+             "<li>Build review velocity and pursue genuine third-party mentions (local press, community sites).</li>"
+             "<li>Then audit: ask each assistant your market's questions monthly and track who gets named — that measurement loop is the core of our <a href='../services/ai-citations.html'>AI citations service</a>.</li></ul>"),
+        ],
+        "faqs": [
+            ("Does ChatGPT really use Bing for search?",
+             "Yes — ChatGPT's live web search capability draws on Bing's index. That's why an agent invisible to Bing is invisible to a large share of AI-assisted research, and why registering with Bing Webmaster Tools is a five-minute task with outsized payoff."),
+            ("Can I pay to appear in AI answers?",
+             "Not in the organic answers themselves — there's no placement to buy today. Presence is earned through the retrieval layer: indexed, structured, corroborated content. Be skeptical of anyone selling guaranteed AI placement."),
+            ("How often do AI models update their training data?",
+             "Major models retrain on cycles measured in months, and cutoffs vary by model. That lag is exactly why live retrieval dominates local answers — and why the durable strategy is strong presence in the underlying indexes rather than trying to game any single model."),
+        ],
+    },
+    {
+        "slug": "realestateagent-schema-walkthrough",
+        "img": "img/realestateagent-schema-walkthrough.jpg",
+        "img_alt": "Illustration of a house blueprint transforming into neat code brackets",
+        "cat": "howto",
+        "title": "How to Add RealEstateAgent Schema to Your Website: A Walkthrough",
+        "date": "2026-07-20",
+        "excerpt": "Copy-paste JSON-LD for agents, field by field — plus how to validate it and the one-character mistake that silently broke our own homepage.",
+        "tldr": "RealEstateAgent schema is JSON-LD structured data that tells search engines and AI systems exactly who you are, where you work, and what you do — in a format machines can quote instead of guess. Implementation: paste a script tag of type application/ld+json into your site's head with your name, brokerage, URL, phone, service areas, and sameAs links to your profiles; match every fact to your Google Business Profile exactly; validate with Google's Rich Results Test before shipping. Validation isn't optional — one missing brace makes the entire block invisible to machines (we know, because we shipped exactly that bug on this site and Google flagged it within hours).",
+        "sections": [
+            ("What schema does — and why agents specifically need it",
+             "<p>Your website says \"Jane Rivera is a Scottsdale realtor\" in prose a human parses instantly. Schema says it in a structure a machine parses <i>reliably</i> — which matters now that your most influential readers are crawlers deciding whether to cite you. For agents, the payoff is entity clarity: search and AI systems can confirm your name, brokerage, service area, and specialties without inference, which is the foundation every <a href='../services/ai-citations.html'>AI citation</a> stands on.</p>"),
+            ("The template, field by field",
+             "<p>Paste this inside your site's <code>&lt;head&gt;</code>, edited to your facts:</p>"
+             "<pre><code>&lt;script type=&quot;application/ld+json&quot;&gt;\n{\n  &quot;@context&quot;: &quot;https://schema.org&quot;,\n  &quot;@type&quot;: &quot;RealEstateAgent&quot;,\n  &quot;@id&quot;: &quot;https://YOURSITE.com/#agent&quot;,\n  &quot;name&quot;: &quot;Jane Rivera&quot;,\n  &quot;url&quot;: &quot;https://YOURSITE.com/&quot;,\n  &quot;image&quot;: &quot;https://YOURSITE.com/headshot.jpg&quot;,\n  &quot;telephone&quot;: &quot;+1-480-555-0100&quot;,\n  &quot;email&quot;: &quot;jane@YOURSITE.com&quot;,\n  &quot;worksFor&quot;: {&quot;@type&quot;: &quot;RealEstateAgency&quot;, &quot;name&quot;: &quot;Rivera Realty Group&quot;},\n  &quot;areaServed&quot;: [\n    {&quot;@type&quot;: &quot;City&quot;, &quot;name&quot;: &quot;Scottsdale&quot;},\n    {&quot;@type&quot;: &quot;City&quot;, &quot;name&quot;: &quot;Paradise Valley&quot;}\n  ],\n  &quot;knowsAbout&quot;: [&quot;Seller representation&quot;, &quot;First-time buyers&quot;, &quot;North Scottsdale&quot;],\n  &quot;sameAs&quot;: [\n    &quot;https://www.google.com/maps/place/YOUR-GBP-LINK&quot;,\n    &quot;https://www.instagram.com/YOURHANDLE&quot;,\n    &quot;https://www.linkedin.com/in/YOURPROFILE&quot;\n  ]\n}\n&lt;/script&gt;</code></pre>"
+             "<p>The fields that do the heavy lifting: <b>areaServed</b> (your neighborhoods — the machine-readable version of your farm), <b>sameAs</b> (links your identity across every profile, collapsing you into one unambiguous entity), and <b>worksFor</b> (ties you to your brokerage's entity). Every value must match your Google Business Profile exactly — mismatched facts read as two different Janes.</p>"),
+            ("Validate before you ship (a cautionary tale from this very site)",
+             "<p>Run the page through Google's <b>Rich Results Test</b> (search.google.com/test/rich-results) or validator.schema.org before and after publishing. This step is not optional, and we're the proof: this website launched with a single missing closing brace in its FAQ schema — one character — which made the <i>entire</i> structured-data graph unparsable. Google Search Console flagged \"unparsable structured data\" within hours of first crawl. The fix took a minute; catching it before launch would have taken thirty seconds.</p>"
+             "<p>JSON is unforgiving: every brace opened must close, every property quoted, no trailing commas. If you hand-edit, re-validate every time.</p>"),
+            ("Going further",
+             "<p>Once the agent entity is in place: add <b>FAQPage</b> schema to pages that answer questions (marking up real on-page Q&amp;A), <b>BreadcrumbList</b> for site structure, and place-level markup on neighborhood pages. If your platform won't let you touch the head, that's a real limitation worth weighing — schema-first architecture is a core reason we build <a href='../services/website-design.html'>agent websites</a> the way we do.</p>"),
+        ],
+        "faqs": [
+            ("Does schema markup directly improve rankings?",
+             "Google's guidance treats structured data as enabling eligibility (rich results) and better understanding, not as a direct ranking boost — claims beyond that are correlation or opinion. Its clearest payoff in 2026 is machine-readability for AI systems deciding what to cite, plus rich-result eligibility."),
+            ("Where exactly do I paste the JSON-LD?",
+             "In your site's <head> (or before the closing body tag — both work). WordPress users can use a header-scripts plugin or an SEO plugin's schema feature; site-builder users should check for a custom-code or head-injection setting."),
+            ("Should the schema go on every page or just the homepage?",
+             "The RealEstateAgent entity belongs on your homepage or about page (with an @id other pages can reference). Page-specific schema — FAQPage on Q&A pages, place markup on neighborhood pages — goes on the pages it describes."),
+        ],
+    },
+    {
+        "slug": "eeat-for-real-estate-agents",
+        "img": "img/eeat-for-real-estate-agents.jpg",
+        "img_alt": "Illustration of four glowing pillars supporting a house-shaped roof",
+        "cat": "howto",
+        "title": "What Is E-E-A-T for Real Estate Agents — and Why AI Cares",
+        "date": "2026-07-20",
+        "excerpt": "Experience, Expertise, Authoritativeness, Trust — what the framework actually is (and isn't), translated into the assets an agent can build this quarter.",
+        "tldr": "E-E-A-T — Experience, Expertise, Authoritativeness, and Trustworthiness — is the framework from Google's Search Quality Rater Guidelines for judging content credibility. Important honesty up front: it is not a direct ranking factor or a score; it's the rubric human raters use to evaluate results, which in turn shapes Google's systems. For realtors it translates cleanly: Experience = proof you've done the work (transaction history, client stories, photos of you working); Expertise = demonstrated market knowledge (neighborhood pages with real data, direct answers); Authoritativeness = others vouching for you (mentions, links, citations, profile consistency); Trust = reviews, accurate information, and a secure professional site. The same signals are what AI assistants proxy when deciding which agent to name — E-E-A-T is the closest thing to a shared rubric between Google and the answer engines.",
+        "sections": [
+            ("What E-E-A-T actually is (evidence-tier honesty first)",
+             "<p>E-E-A-T comes from Google's Search Quality Rater Guidelines — the manual human evaluators use to judge whether results are credible, with the second E (Experience) added in 2022. Precision matters here: <b>it is not a ranking factor, a score, or an algorithm input you can directly optimize</b>. Rater judgments inform how Google builds and tunes its systems, so the framework describes what those systems are <i>aiming</i> at. Anyone selling you an \"E-E-A-T score\" is selling weather reports as weather control.</p>"
+             "<p>Why bother, then? Because it's the best public documentation of what \"credible\" means to the systems deciding your visibility — including, increasingly, the AI ones.</p>"),
+            ("The four letters, translated into agent assets",
+             "<ul><li><b>Experience — you've actually done this.</b> Closed-transaction references in your content (\"in the 40+ Scottsdale sales I've handled...\"), real photos of you working, client stories with specifics. First-hand experience is exactly what separates your neighborhood page from a portal's template.</li>"
+             "<li><b>Expertise — you know the domain.</b> Market analysis with real numbers, direct answers to buyer/seller questions, content that teaches rather than advertises. Credentials help; demonstrated knowledge helps more.</li>"
+             "<li><b>Authoritativeness — others say so.</b> Mentions in local press, community sites and directories, consistent profiles that agree with each other, links from real local organizations. You claim; third parties confirm.</li>"
+             "<li><b>Trust — the load-bearing letter.</b> Google calls trust the most important member of the family: reviews and responses, accurate NAP everywhere, HTTPS, a real about page, honest content (see our <a href='california-ai-listing-photo-law.html'>AB 723 coverage</a> for where disclosure law is heading). Weak trust nullifies the other three.</li></ul>"),
+            ("Why AI assistants care about the same things",
+             "<p>LLM-based systems deciding \"which agent should I recommend?\" don't read the Rater Guidelines — but they proxy the same constructs: corroboration across independent sources (authoritativeness), specificity and first-hand detail (experience/expertise), and review-backed consistency (trust). That overlap is convenient: <b>one asset-building program serves both Google and the answer engines.</b> It's the premise our whole <a href='../services/ai-citations.html'>citation service</a> is built on — and you can start the same program yourself with a worked profile, evidence-rich neighborhood pages, systematic reviews, and a handful of genuine local mentions.</p>"),
+        ],
+        "faqs": [
+            ("Is E-E-A-T a Google ranking factor?",
+             "Not directly — Google has been explicit that E-E-A-T itself isn't an algorithm input or score. It's the rubric human quality raters apply, which informs how ranking systems are built and evaluated. The practical move is building the underlying signals (experience proof, expertise content, third-party corroboration, trust markers), not chasing a mythical score."),
+            ("What's the fastest E-E-A-T win for a real estate agent?",
+             "Trust signals: a complete, accurate, consistent presence — reviews with responses, identical business facts across your site and profiles, HTTPS, and a real about page with your license info. Trust is the component Google's guidelines weight most, and it's mostly housekeeping."),
+            ("Does E-E-A-T apply to my blog posts too?",
+             "Yes — arguably most there. Real estate content touches major financial decisions (what raters call \"Your Money or Your Life\" topics), which get the strictest credibility scrutiny. First-hand experience, named authorship, and honest sourcing in your content matter more in this industry than almost any other."),
         ],
     },
     {
