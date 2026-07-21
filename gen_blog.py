@@ -978,7 +978,7 @@ ARTICLE = """<!DOCTYPE html>
 <footer>
   <div class="wrap">
     <div class="foot-legal" style="border:none; margin:0; padding:0">
-      <span>© 2026 CitedRealty · <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a> · <a href="#" data-cookie-prefs>Cookie preferences</a></span>
+      <span>© 2026 CitedRealty · <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a> · <a href="#" data-cookie-prefs>Cookie preferences</a> · <a href="https://www.google.com/preferences/source?q=citedrealty.com" target="_blank" rel="noopener" title="Add CitedRealty as a preferred source in Google Search"><span style="color:#F59E0B">★</span> Make us a preferred source on Google</a></span>
       <span>When buyers ask AI, you're the answer.<sup>[1]</sup></span>
     </div>
   </div>
@@ -1090,7 +1090,7 @@ INDEX = """<!DOCTYPE html>
 <footer>
   <div class="wrap">
     <div class="foot-legal" style="border:none; margin:0; padding:0">
-      <span>© 2026 CitedRealty · <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a> · <a href="#" data-cookie-prefs>Cookie preferences</a></span>
+      <span>© 2026 CitedRealty · <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a> · <a href="#" data-cookie-prefs>Cookie preferences</a> · <a href="https://www.google.com/preferences/source?q=citedrealty.com" target="_blank" rel="noopener" title="Add CitedRealty as a preferred source in Google Search"><span style="color:#F59E0B">★</span> Make us a preferred source on Google</a></span>
       <span>When buyers ask AI, you're the answer.<sup>[1]</sup></span>
     </div>
   </div>
