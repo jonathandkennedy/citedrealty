@@ -73,6 +73,26 @@ export default async function handler(req, res) {
     }
 
     const named = text.toLowerCase().includes(name.toLowerCase());
+
+    // Lead notification: every completed check emails the details (same FormSubmit
+    // channel as the site's lead form — one activation covers both).
+    try {
+      await fetch("https://formsubmit.co/ajax/jondkennedy.com@gmail.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({
+          _subject: `Checker lead: ${name} (${market}) — ${named ? "NAMED by AI" : "NOT NAMED — sales opportunity"}`,
+          _template: "table",
+          tool: "AI Visibility Checker",
+          agent_name: name,
+          brokerage: brokerage || "(not given)",
+          market,
+          ai_named: named ? "yes" : "no",
+          sources_cited: sources.slice(0, 5).map(s => s.title).join(", ") || "(none)",
+        }),
+      });
+    } catch { /* never block the visitor's result on notification failure */ }
+
     return res.status(200).json({ ok: true, named, text, sources: sources.slice(0, 10) });
   } catch (e) {
     return res.status(502).json({ error: "upstream",
