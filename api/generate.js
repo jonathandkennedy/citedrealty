@@ -28,6 +28,27 @@ function buildPrompt(mode, f) {
       `REVIEW:\n"${f.review}"`
     );
   }
+  if (mode === "social-hook") {
+    return (
+      `Write 10 scroll-stopping opening lines (hooks) for a real estate agent's social content. ` +
+      `Topic: ${f.details}. Platform: ${f.platform}. Audience: ${f.audience}. ` +
+      `Rules: each hook is ONE line under 15 words, no hashtags, no emojis, no clickbait lies, ` +
+      `no fair-housing red flags, vary the styles (question, bold claim, curiosity gap, number, ` +
+      `contrarian take, local-specific). Number them 1-10. Output ONLY the numbered list.`
+    );
+  }
+  if (mode === "attention-anchor") {
+    return (
+      `Create 5 video opening "attention anchors" for a real estate agent's short-form video. ` +
+      `Topic: ${f.details}. Style: ${f.tone}. ` +
+      `Each anchor has exactly three labeled parts:\n` +
+      `SAY: the first spoken sentence (under 12 words, pattern-interrupt, no greeting, no "hey guys")\n` +
+      `SHOW: what should be on camera in the first 3 seconds (one specific visual)\n` +
+      `TEXT: the on-screen text overlay (under 7 words)\n` +
+      `Rules: no clickbait lies, no fair-housing issues, make each anchor a different psychological angle ` +
+      `(curiosity, stakes, contrarian, specificity, direct address). Number them 1-5. Output ONLY the anchors.`
+    );
+  }
   // listing-description
   return (
     `Write a real estate listing description. ` +
@@ -68,24 +89,28 @@ export default async function handler(req, res) {
     details: clean(req.body?.details, 1200),
     neighborhood: clean(req.body?.neighborhood, 120),
     market: clean(req.body?.market, 80),
+    platform: clean(req.body?.platform, 30) || "Instagram",
+    audience: clean(req.body?.audience, 30) || "buyers and sellers",
   };
 
   if (mode === "review-reply" && (!fields.name || !fields.review))
     return res.status(400).json({ error: "bad_input", message: "Your name and the review text are required." });
   if (mode === "listing-description" && !fields.details)
     return res.status(400).json({ error: "bad_input", message: "Property details are required." });
-  if (mode !== "review-reply" && mode !== "listing-description")
+  if ((mode === "social-hook" || mode === "attention-anchor") && !fields.details)
+    return res.status(400).json({ error: "bad_input", message: "A topic is required." });
+  if (!["review-reply", "listing-description", "social-hook", "attention-anchor"].includes(mode))
     return res.status(400).json({ error: "bad_input", message: "Unknown tool." });
 
   try {
     const r = await fetch(
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
+      "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent",
       {
         method: "POST",
         headers: { "x-goog-api-key": key, "Content-Type": "application/json" },
         body: JSON.stringify({
           contents: [{ parts: [{ text: buildPrompt(mode, fields) }] }],
-          generationConfig: { temperature: 0.7, maxOutputTokens: 500 },
+          generationConfig: { temperature: 0.7, maxOutputTokens: 700 },
         }),
       }
     );

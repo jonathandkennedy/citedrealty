@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Attention Anchor Generator for Realtor Videos | CitedRealty</title>
+<meta name="description" content="Win the first 3 seconds of your real estate videos: get 5 complete openers — what to say, what to show, and the on-screen text — free.">
+<link rel="canonical" href="https://citedrealty.com/tools/attention-anchor-generator.html">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="/assets/icon-square.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:title" content="Free Attention Anchor Generator for Realtor Videos">
+<meta property="og:description" content="5 complete video openers: say / show / on-screen text — free.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://citedrealty.com/tools/attention-anchor-generator.html">
+<meta property="og:image" content="https://citedrealty.com/assets/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<script src="../assets/theme.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"WebApplication","name":"Attention Anchor Generator for Realtor Videos","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@id":"https://citedrealty.com/#business"},"url":"https://citedrealty.com/tools/attention-anchor-generator.html"},
+ {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://citedrealty.com/"},{"@type":"ListItem","position":2,"name":"Free Tools","item":"https://citedrealty.com/tools/"},{"@type":"ListItem","position":3,"name":"Attention Anchor Generator","item":"https://citedrealty.com/tools/attention-anchor-generator.html"}]}]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="../index.html" aria-label="CitedRealty home">
+      <img src="../assets/icon-square.svg" alt="" width="34" height="34">
+      <span>Cited<span class="r">Realty</span><sup>[1]</sup></span>
+    </a>
+    <a class="nav-cta" href="../index.html#contact">Free AI visibility audit</a>
+    <button class="theme-toggle" aria-label="Toggle theme">☀</button>
+  </div>
+</nav>
+
+<main id="main">
+<header class="page-hero" style="padding-bottom:40px">
+  <div class="wrap">
+    <p class="crumb"><a href="../index.html">Home</a> / <a href="index.html">Free Tools</a> / Attention Anchor Generator</p>
+    <span class="cite-tag">Free tool</span>
+    <h1>Win the first <span class="grad">three seconds.</span></h1>
+    <p class="lede">Short-form video lives or dies before your second sentence. Get five complete openers — the exact line to say, what to show on camera, and the text overlay — each built on a different psychological angle.</p>
+  </div>
+</header>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <form class="tool-card" id="toolForm">
+      <label>What's the video about?<textarea name="details" required maxlength="600" placeholder="Walkthrough of a new listing / why homes are sitting longer this month / the mistake sellers make with pricing"></textarea></label>
+      <label>Style
+        <select name="tone">
+          <option>Energetic and direct</option>
+          <option>Calm and authoritative</option>
+          <option>Conversational and warm</option>
+          <option>Luxury / cinematic</option>
+        </select>
+      </label>
+      <label>Your name &amp; market (optional — helps us help you)<input type="text" name="name" maxlength="80" placeholder="Jane Rivera — Scottsdale, AZ"></label>
+      <button class="btn btn-primary" type="submit">Give me 5 openers</button>
+    </form>
+    <p class="tool-spin" id="spin">Building your anchors…</p>
+    <div class="tool-result" id="result"></div>
+    <p class="tool-note">An anchor buys you three seconds — the next twenty need a real payoff (a number, a place, a take). Film the SHOW shot first; retention starts with the frame, not the words. Using this tool shares your entries with our team. Video and social run for you: <a href="../services/social-media.html">Social Media service</a>.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-legal" style="border:none; margin:0; padding:0">
+      <span>© 2026 CitedRealty · <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a> · <a href="#" data-cookie-prefs>Cookie preferences</a> · <a href="https://www.google.com/preferences/source?q=citedrealty.com" target="_blank" rel="noopener"><span style="color:#F59E0B">★</span> Make us a preferred source on Google</a></span>
+      <span>When buyers ask AI, you're the answer.<sup>[1]</sup></span>
+    </div>
+  </div>
+</footer>
+<script src="../assets/app.js"></script>
+<script src="../assets/consent.js" defer></script>
+<script>
+(function(){
+  var form=document.getElementById('toolForm'), spin=document.getElementById('spin'), out=document.getElementById('result');
+  function esc(s){var d=document.createElement('div'); d.textContent=s; return d.innerHTML}
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var btn=form.querySelector('button[type=submit]'); btn.disabled=true; btn.textContent='Building…';
+    out.classList.remove('show'); spin.classList.add('show');
+    fetch('/api/generate', {method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({mode:'attention-anchor', details:form.details.value, tone:form.tone.value, name:form.name.value, market:form.name.value})})
+      .then(function(r){return r.json().then(function(j){return {s:r.status,j:j}})})
+      .then(function(res){
+        spin.classList.remove('show'); btn.disabled=false; btn.textContent='Give me 5 openers';
+        if(res.s!==200){ out.innerHTML='<div class="tool-out"><h3>Couldn\'t generate</h3><p>'+esc(res.j.message||'Try again shortly.')+'</p></div>'; }
+        else{ out.innerHTML='<div class="tool-out"><h3>Your five openers</h3><p class="txt" id="genText">'+esc(res.j.text)+'</p><button class="copybtn" id="copyBtn">Copy all</button></div>'
+          +'<a class="btn btn-ghost" style="display:block;text-align:center;margin-top:14px" href="../services/social-media.html">Want your whole video pipeline planned?</a>';
+          var c=document.getElementById('copyBtn'); c.addEventListener('click',function(){navigator.clipboard.writeText(document.getElementById('genText').textContent).then(function(){c.textContent='Copied ✓'})}); }
+        out.classList.add('show');
+      })
+      .catch(function(){ spin.classList.remove('show'); btn.disabled=false; btn.textContent='Give me 5 openers';
+        out.innerHTML='<div class="tool-out"><h3>Network hiccup</h3><p>Try again in a moment.</p></div>'; out.classList.add('show'); });
+  });
+})();
+</script>
+</body>
+</html>

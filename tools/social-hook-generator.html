@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Social Hook Generator for Realtors | CitedRealty</title>
+<meta name="description" content="Enter your topic, get 10 scroll-stopping opening lines for Instagram, TikTok, Facebook, or LinkedIn — free, built for real estate agents.">
+<link rel="canonical" href="https://citedrealty.com/tools/social-hook-generator.html">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="/assets/icon-square.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:title" content="Free Social Hook Generator for Realtors">
+<meta property="og:description" content="10 scroll-stopping first lines for your next post — free.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://citedrealty.com/tools/social-hook-generator.html">
+<meta property="og:image" content="https://citedrealty.com/assets/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<script src="../assets/theme.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"WebApplication","name":"Social Hook Generator for Realtors","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@id":"https://citedrealty.com/#business"},"url":"https://citedrealty.com/tools/social-hook-generator.html"},
+ {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://citedrealty.com/"},{"@type":"ListItem","position":2,"name":"Free Tools","item":"https://citedrealty.com/tools/"},{"@type":"ListItem","position":3,"name":"Social Hook Generator","item":"https://citedrealty.com/tools/social-hook-generator.html"}]}]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="../index.html" aria-label="CitedRealty home">
+      <img src="../assets/icon-square.svg" alt="" width="34" height="34">
+      <span>Cited<span class="r">Realty</span><sup>[1]</sup></span>
+    </a>
+    <a class="nav-cta" href="../index.html#contact">Free AI visibility audit</a>
+    <button class="theme-toggle" aria-label="Toggle theme">☀</button>
+  </div>
+</nav>
+
+<main id="main">
+<header class="page-hero" style="padding-bottom:40px">
+  <div class="wrap">
+    <p class="crumb"><a href="../index.html">Home</a> / <a href="index.html">Free Tools</a> / Social Hook Generator</p>
+    <span class="cite-tag">Free tool</span>
+    <h1>The first line decides <span class="grad">everything.</span></h1>
+    <p class="lede">Nobody scrolls back up for a good middle. Enter your topic, get ten first lines built to stop the thumb — questions, bold claims, curiosity gaps, contrarian takes.</p>
+  </div>
+</header>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <form class="tool-card" id="toolForm">
+      <label>What's the post about?<textarea name="details" required maxlength="600" placeholder="New listing in McCormick Ranch / why spring isn't always the best time to sell / what $500k buys here now"></textarea></label>
+      <div class="row2">
+        <label>Platform
+          <select name="platform"><option>Instagram</option><option>TikTok</option><option>Facebook</option><option>LinkedIn</option></select>
+        </label>
+        <label>Audience
+          <select name="audience"><option>Sellers</option><option>Buyers</option><option>Buyers and sellers</option><option>Other agents</option></select>
+        </label>
+      </div>
+      <label>Your name &amp; market (optional — helps us help you)<input type="text" name="name" maxlength="80" placeholder="Jane Rivera — Scottsdale, AZ"></label>
+      <button class="btn btn-primary" type="submit">Give me 10 hooks</button>
+    </form>
+    <p class="tool-spin" id="spin">Writing your hooks…</p>
+    <div class="tool-result" id="result"></div>
+    <p class="tool-note">Hooks earn the attention — the post still has to deserve it. Pair with substance (a real number, a real neighborhood, a real take) or the algorithm learns you overpromise. Using this tool shares your entries with our team. Social handled for you: <a href="../services/social-media.html">Social Media service</a>.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-legal" style="border:none; margin:0; padding:0">
+      <span>© 2026 CitedRealty · <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a> · <a href="#" data-cookie-prefs>Cookie preferences</a> · <a href="https://www.google.com/preferences/source?q=citedrealty.com" target="_blank" rel="noopener"><span style="color:#F59E0B">★</span> Make us a preferred source on Google</a></span>
+      <span>When buyers ask AI, you're the answer.<sup>[1]</sup></span>
+    </div>
+  </div>
+</footer>
+<script src="../assets/app.js"></script>
+<script src="../assets/consent.js" defer></script>
+<script>
+(function(){
+  var form=document.getElementById('toolForm'), spin=document.getElementById('spin'), out=document.getElementById('result');
+  function esc(s){var d=document.createElement('div'); d.textContent=s; return d.innerHTML}
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var btn=form.querySelector('button[type=submit]'); btn.disabled=true; btn.textContent='Writing…';
+    out.classList.remove('show'); spin.classList.add('show');
+    fetch('/api/generate', {method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({mode:'social-hook', details:form.details.value, platform:form.platform.value, audience:form.audience.value, name:form.name.value, market:form.name.value})})
+      .then(function(r){return r.json().then(function(j){return {s:r.status,j:j}})})
+      .then(function(res){
+        spin.classList.remove('show'); btn.disabled=false; btn.textContent='Give me 10 hooks';
+        if(res.s!==200){ out.innerHTML='<div class="tool-out"><h3>Couldn\'t generate</h3><p>'+esc(res.j.message||'Try again shortly.')+'</p></div>'; }
+        else{ out.innerHTML='<div class="tool-out"><h3>Your hooks</h3><p class="txt" id="genText">'+esc(res.j.text)+'</p><button class="copybtn" id="copyBtn">Copy all</button></div>'
+          +'<a class="btn btn-ghost" style="display:block;text-align:center;margin-top:14px" href="../services/social-media.html">Want a month of posts planned around hooks like these?</a>';
+          var c=document.getElementById('copyBtn'); c.addEventListener('click',function(){navigator.clipboard.writeText(document.getElementById('genText').textContent).then(function(){c.textContent='Copied ✓'})}); }
+        out.classList.add('show');
+      })
+      .catch(function(){ spin.classList.remove('show'); btn.disabled=false; btn.textContent='Give me 10 hooks';
+        out.innerHTML='<div class="tool-out"><h3>Network hiccup</h3><p>Try again in a moment.</p></div>'; out.classList.add('show'); });
+  });
+})();
+</script>
+</body>
+</html>
