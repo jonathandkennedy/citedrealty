@@ -30,8 +30,9 @@ theirs are more authority-proof. A complete library needs both.
 reviews ethical playbook, what-data-does-AI-use, RealEstateAgent schema walkthrough (with
 copy-paste JSON-LD + our own missing-brace war story), E-E-A-T explainer (evidence-tier
 honest: not a ranking factor). Stridec format gap CLOSED.
-**P2:** "How to Build a Neighborhood Page (With Template)", "How to Do a DIY AI Visibility
-Audit" (give away the method — the audit form converts the ones who want it done).
+**P2 — SHIPPED 07-20:** "How to Build a Neighborhood Page (With Template)" (howto, with
+outline template in code block) + "How to Do a DIY AI Visibility Audit" (howto, exact
+method + prompt set given away; audit-form CTA closes it).
 **P3 (product, not content):** self-serve AI visibility checker tool; email newsletter.
 
 ---
@@ -89,7 +90,7 @@ Their blog is a citation machine aimed at *agents researching marketing* — sam
       "what didn't survive verification" section + Pichai quote). **P1 fully complete.**
 
 **P2 — cluster depth (month 2)**
-- [ ] "What Is IDX — and Do You Actually Need It?"
+- [x] "What Is IDX — and Does Your Website Actually Need It?" — SHIPPED 07-20 (Websites cat; honest need-test, noindex guidance).
 - [ ] "Agent Website Teardowns: what great (and terrible) sites do" — recurring format.
 - [ ] "Best Real Estate CRMs" + "Best Lead Generation Companies" listicles.
 - [ ] Comparison category chip on the blog (we now have 3+ comparison posts).

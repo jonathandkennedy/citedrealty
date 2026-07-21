@@ -125,6 +125,19 @@ fails. Currently pointed at `jondkennedy.com@gmail.com`.
 3. Optional: FormSubmit gives you a random alias string after activation — use it in
    the action URL instead of the raw email to keep the address out of the page source.
 
+## 5b. Free tool: AI Visibility Checker (needs one env var)
+
+`tools/ai-visibility-checker.html` + `api/check.js` (a Vercel serverless function).
+Visitor enters name/brokerage/market → the function asks Gemini (with live Google
+Search grounding) who AI recommends there and whether the visitor is named →
+result shows the verdict, the agents named, and the sources cited, with audit CTAs.
+
+**To activate:** Vercel dashboard → Project → Settings → Environment Variables →
+add `GEMINI_API_KEY` (same key as the image scripts) → redeploy. Until then the
+tool degrades gracefully ("warming up") and routes to the audit form.
+Guardrails: 5 checks/IP/hour (per instance), input sanitization, 900-token cap,
+CORS locked to citedrealty.com. Each check costs a fraction of a cent on the key.
+
 ## 6. Generators — how to edit pages
 
 - **Service pages:** edit the `SERVICES` list in `gen_services.py`, run

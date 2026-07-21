@@ -373,6 +373,7 @@ PAGE = """<!DOCTYPE html>
           <li><a href="../index.html#who">Who we help</a></li>
           <li><a href="../index.html#pricing">Pricing</a></li>
           <li><a href="../blog/index.html">Resources &amp; News</a></li>
+          <li><a href="../tools/ai-visibility-checker.html">Free AI Visibility Checker</a></li>
           <li><a href="../index.html#faq">FAQ</a></li>
           <li><a href="../index.html#contact">Contact</a></li>
         </ul>
