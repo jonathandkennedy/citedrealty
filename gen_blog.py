@@ -16,6 +16,7 @@ BRAND_URL = "https://citedrealty.com"
 OUT = pathlib.Path(__file__).parent / "blog"
 
 CATS = {
+    "news": "Industry News",
     "questions": "Agent Q&A",
     "websites": "Websites",
     "seller-leads": "Seller Leads",
@@ -26,6 +27,72 @@ CATS = {
 }
 
 POSTS = [
+    {
+        "slug": "connecticut-private-listings-ban",
+        "img": "img/connecticut-private-listings-ban.jpg",
+        "img_alt": "Illustration of a house stepping out from behind a velvet rope into open public light",
+        "cat": "news",
+        "title": "Connecticut's Private Listings Ban (SB 340): What Agents Need to Know",
+        "date": "2026-07-20",
+        "excerpt": "Connecticut just became the biggest state to outlaw hidden listings. What SB 340 requires by October 1, who it applies to, and what it signals about where listing marketing is headed.",
+        "tldr": "Connecticut Governor Ned Lamont signed SB 340 on May 27, 2026 — effective October 1, 2026 — requiring that any 1–4 unit residential listing be made available to the general public (via an MLS, consumer portal, or unrestricted platform) at the same time any marketing begins, including social posts, email blasts, yard signs, and brokerage-network promotion. Sellers can still opt out of public marketing by signing a standardized form; violations carry penalties up to $5,000 or license suspension. It's the sharpest state-level answer yet to the growth of private listing networks, New York is weighing a similar bill, and the strategic takeaway for agents is blunt: exclusivity-as-lead-generation is being legislated away — owned visibility is what remains.",
+        "sections": [
+            ("What SB 340 actually requires",
+             "<p>The core rule is simultaneity: the moment an agent markets a residential listing (1–4 units) <i>anywhere</i> — a teaser on Instagram, an email to a buyer list, a lawn sign, a private brokerage network — that listing must also be available to the general public through an MLS, a consumer-facing portal, or another unrestricted online platform. No more marketing to a favored audience first and the public later.</p>"
+             "<p>The seller escape hatch is real but deliberate: a homeowner can decline public marketing entirely by signing a standardized opt-out. What's gone is the gray zone where \"the seller wanted privacy\" justified selective exposure that mostly served the brokerage's lead funnel. Penalties reach $5,000 per violation or license suspension. Effective date: <b>October 1, 2026</b>. (Coverage: <a href='https://www.realtor.com/news/real-estate-news/connecticut-private-listings-ban-ned-lamont/' rel='nofollow'>Realtor.com</a>, <a href='https://www.inman.com/2026/06/03/connecticut-restricting-private-listings/' rel='nofollow'>Inman</a>, <a href='https://www.housingwire.com/articles/connecticut-private-listing-law/' rel='nofollow'>HousingWire</a>.)</p>"),
+            ("Why states are doing this",
+             "<p>Private listing networks grew fast after the industry began fighting over NAR's Clear Cooperation Policy — some large brokerages built \"exclusive inventory\" strategies where listings premiered inside their own walls. Proponents call it seller choice; critics call it demand-hoarding that shrinks exposure (often costing sellers money) and walls off inventory from buyers outside the network.</p>"
+             "<p>Connecticut's legislature sided with exposure. New York has a similar bill moving, and several states are watching. Whatever your view of the policy, the direction of travel is consistent: regulators keep choosing the open market over the velvet rope.</p>"),
+            ("What Connecticut agents should do before October 1",
+             "<ul><li><b>Audit your pre-launch workflow.</b> If your listing launch sequence includes any audience-facing step before MLS/public availability — socials, database emails, sign installs — it now needs the public listing live first or simultaneously.</li>"
+             "<li><b>Get the opt-out process right.</b> Sellers who genuinely want privacy need the standardized form signed <i>before</i> any marketing decisions, documented in the file.</li>"
+             "<li><b>Brief your team.</b> The $5,000-per-violation exposure lands on licensees; a casual \"sneak peek\" story post by a team member is now a compliance event.</li>"
+             "<li><b>Ask your MLS and broker counsel</b> how they're interpreting edge cases — this article is reporting, not legal advice.</li></ul>"),
+            ("The bigger signal: exclusivity is dying as a marketing strategy",
+             "<p>Here's the strategic read. For a decade, some brokerages recruited agents and captured buyers with a simple pitch: <i>we have inventory nobody else can show you.</i> Laws like SB 340 dismantle that pitch one state at a time. When every listing must be public the moment it's marketed, hoarded inventory stops being a moat.</p>"
+             "<p>What can't be legislated away is <b>being the agent people find and trust when everything is public</b> — the map-pack presence, the <a href='../services/local-seo.html'>neighborhood authority</a>, the reviews, and increasingly the <a href='../services/ai-citations.html'>AI citations</a> that make assistants name you. In a fully open market, visibility is the only exclusivity left. Agents who built their pipeline on access should start building it on being found.</p>"),
+        ],
+        "faqs": [
+            ("When does Connecticut's private listings law take effect?",
+             "October 1, 2026. SB 340 was signed by Governor Ned Lamont on May 27, 2026, and applies to marketing of residential listings of one to four units."),
+            ("Does SB 340 ban office exclusives completely?",
+             "No — a seller can still choose no public marketing by signing a standardized opt-out form. What the law bans is selective marketing: promoting a listing to some audience while withholding it from the general public."),
+            ("Do social media teasers count as marketing under the law?",
+             "Yes — social posts, email campaigns, yard signs, digital ads, and brokerage-network promotion all trigger the requirement that the listing be publicly available at the same time. Confirm specifics with your broker or counsel; this is reporting, not legal advice."),
+            ("Will other states pass similar laws?",
+             "New York's similar bill was headed to the governor as of mid-2026, and industry coverage reports several states considering the same approach. The trend since the Clear Cooperation fights has been toward mandated exposure, not away from it."),
+        ],
+    },
+    {
+        "slug": "nar-coming-soon-listings-rules",
+        "img": "img/nar-coming-soon-listings-rules.jpg",
+        "img_alt": "Illustration of a house glowing softly behind a partially lifted curtain",
+        "cat": "news",
+        "title": "NAR's Statement on Coming-Soon Listings: What the Rules Actually Allow",
+        "date": "2026-07-20",
+        "excerpt": "NAR clarified where pre-marketing and coming-soon listings stand under Clear Cooperation and the new seller options. The rules are looser than most agents think — and more local.",
+        "tldr": "In a March 20, 2026 statement, NAR clarified that the Clear Cooperation Policy does not prohibit pre-marketing approaches like coming-soon listings or office exclusives; CCP requires submitting a listing to the MLS within one business day of public marketing, and the Multiple Listing Options for Sellers policy (March 2025) lets sellers choose delayed-marketing paths with delay periods set by each MLS. NAR also clarified that national policy doesn't mandate tracking days-on-market or price cuts — that's local MLS discretion. Practical translation: coming-soon is a legitimate tool, the controlling rules are your local MLS's, and the pre-launch window is a marketing opportunity most agents waste.",
+        "sections": [
+            ("What NAR actually said",
+             "<p>NAR's <a href='https://www.nar.realtor/news/real-estate-news/law-and-ethics/nar-releases-statement-on-pre-marketing-and-coming-soon-listings' rel='nofollow'>March 2026 statement</a> pushed back on the idea that national policy forbids pre-marketing. The through-line: the MLS system exists to let sellers market \"in accordance with their interest,\" and each MLS has flexibility to set local rules. Coming-soon listings and office exclusives are not prohibited by the Clear Cooperation Policy.</p>"
+             "<p>Two clarifications matter most. First, CCP's actual mechanism: once a listing is publicly marketed, it must be submitted to the MLS within one business day — that's a sequencing rule, not a ban. Second, NAR's FAQ confirmed that tracking days-on-market and price reductions is local discretion, not national mandate (though where an MLS does track it, participants may share it with consumers).</p>"),
+            ("The policy stack, decoded",
+             "<ul><li><b>Clear Cooperation Policy (CCP):</b> public marketing starts a one-business-day clock to MLS submission. Pre-marketing statuses exist within it, not against it.</li>"
+             "<li><b>Multiple Listing Options for Sellers (MLOS, March 2025):</b> gives sellers formal delayed-marketing choices — listed in the MLS but with distribution delayed — with each MLS setting its own delay periods.</li>"
+             "<li><b>Local MLS rules:</b> the actual controlling document. Coming-soon status mechanics, showing restrictions during pre-market, and DOM tracking all vary by market — read yours before building a launch process. (And note the direction of state law: Connecticut now <i>requires</i> public availability the moment marketing starts — covered in our SB 340 breakdown.)</li></ul>"),
+            ("The marketing opportunity hiding in the pre-launch window",
+             "<p>Here's what most coverage misses: a coming-soon window is the one phase of a listing where the <b>agent</b> is the only way in. The property isn't browsable on portals yet — so curious neighbors and buyers who hear about it Google <i>you</i>. If that search finds a worked <a href='../services/google-business-profile.html'>Google Business Profile</a>, a real page for that neighborhood, and reviews from nearby sellers, the pre-launch window converts twice: demand for the house, and listing appointments from every neighbor watching how you launch.</p>"
+             "<p>Run it with substance: a genuine coming-soon post cadence, the neighborhood page updated with the upcoming listing, and launch-day timing that respects your MLS's one-business-day clock. Pre-marketing done inside the rules is a demand tool; done sloppily it's a compliance complaint.</p>"),
+        ],
+        "faqs": [
+            ("Are coming-soon listings allowed under NAR's Clear Cooperation Policy?",
+             "Yes. NAR's March 2026 statement explicitly says CCP does not prohibit pre-marketing approaches like coming-soon listings or office exclusives. CCP's requirement is that once public marketing begins, the listing is submitted to the MLS within one business day. Local MLS rules govern the details."),
+            ("Do coming-soon days count toward days on market?",
+             "It depends on your MLS. NAR clarified that national policy doesn't require DOM or price-reduction tracking at all — it's local discretion. Where an MLS does track it, participants may share that data with consumers. Check your local rules before promising a seller anything about DOM."),
+            ("Can I post a coming-soon listing on social media?",
+             "Generally yes — but social promotion is public marketing, which starts CCP's one-business-day MLS submission clock, and in some states (Connecticut, from October 2026) the listing must be publicly available simultaneously. Know both your MLS rules and your state law; this is reporting, not legal advice."),
+        ],
+    },
     {
         "slug": "real-estate-ai-search-statistics",
         "img": "img/real-estate-ai-search-statistics.jpg",

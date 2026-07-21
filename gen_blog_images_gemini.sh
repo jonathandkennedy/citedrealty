@@ -8,6 +8,8 @@ mkdir -p "$OUT"; cd "$OUT"
 STYLE="Editorial illustration for a real estate marketing blog. Flat modern vector style, minimal, elegant. Very dark indigo background (#0B0B14) with glowing indigo-to-violet-to-lilac gradient accents (#4F46E5, #8B5CF6, #C084FC) and a single warm amber glow accent, subtle thin grid lines. No text, no letters, no words, no logos. Wide composition, generous margins."
 
 typeset -A PROMPTS
+PROMPTS[connecticut-private-listings-ban]="A charming house stepping out from behind a velvet rope barrier into warm open public light, small crowd of abstract figures welcoming it. $STYLE"
+PROMPTS[nar-coming-soon-listings-rules]="A glowing house partially revealed behind an elegant theater curtain being lifted, soft spotlight. $STYLE"
 PROMPTS[how-do-new-agents-get-first-clients]="An open upturned hand holding a tiny glowing house with a small sprout growing beside it. $STYLE"
 PROMPTS[is-door-knocking-worth-it]="A single glowing front door with soft concentric sound ripples radiating outward from a knock. $STYLE"
 PROMPTS[are-open-houses-worth-it]="A house with its front door wide open, warm light spilling out onto a welcoming path, small footprints approaching. $STYLE"
