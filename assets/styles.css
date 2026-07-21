@@ -208,3 +208,30 @@ footer a:hover{color:var(--text)}
 .article-body pre{background:var(--panel2); border:1px solid var(--line); border-radius:12px; padding:18px 20px; overflow-x:auto; margin:0 0 18px}
 .article-body pre code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:12.5px; line-height:1.55; color:var(--text)}
 .article-body :not(pre)>code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.9em; background:var(--panel2); border:1px solid var(--line); border-radius:6px; padding:1px 6px}
+
+/* free tools */
+.tool-card{max-width:640px; background:var(--panel); border:1px solid var(--line); border-radius:20px; padding:30px; box-shadow:var(--shadow-card)}
+.tool-card label{display:flex; flex-direction:column; gap:7px; font-size:13px; font-weight:600; color:var(--muted); margin-bottom:16px}
+.tool-card input,.tool-card textarea,.tool-card select{background:var(--ink); border:1px solid var(--line); border-radius:10px; color:var(--text); font-family:var(--body); font-size:15px; padding:13px 14px}
+.tool-card input:focus,.tool-card textarea:focus,.tool-card select:focus{outline:2px solid var(--i2); outline-offset:0; border-color:transparent}
+.tool-card textarea{resize:vertical; min-height:110px}
+.tool-card .btn{width:100%; text-align:center; border:none; cursor:pointer}
+.tool-card .row2{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+@media(max-width:560px){.tool-card .row2{grid-template-columns:1fr}}
+.tool-result{max-width:640px; margin-top:26px; display:none}
+.tool-result.show{display:block}
+.tool-out{border:1px solid var(--line); border-radius:16px; background:var(--panel); padding:22px 24px; box-shadow:var(--shadow-card)}
+.tool-out h3{margin:0 0 10px; font-size:18px; font-family:var(--disp)}
+.tool-out p, .tool-out .txt{margin:0; color:var(--muted); font-size:14.5px; white-space:pre-wrap}
+.tool-out .big{font-family:var(--disp); font-size:40px; font-weight:800; color:var(--text); margin:4px 0}
+.copybtn{margin-top:14px; font-size:13px; font-weight:700; border:1px solid var(--line); background:none; color:var(--text); border-radius:9px; padding:8px 14px; cursor:pointer}
+.copybtn:hover{border-color:var(--i2)}
+.tool-note{color:var(--dim); font-size:12.5px; max-width:640px; margin-top:18px}
+.tool-note a{color:var(--i3)}
+.tool-spin{display:none; margin-top:18px; color:var(--muted); font-size:14.5px}
+.tool-spin.show{display:block}
+.quiz-q{border:1px solid var(--line); border-radius:14px; background:var(--panel); padding:16px 18px; margin-bottom:12px; box-shadow:var(--shadow-card)}
+.quiz-q p{margin:0 0 10px; font-weight:600; font-size:14.5px; color:var(--text)}
+.quiz-q .opts{display:flex; gap:10px}
+.quiz-q .opts label{flex-direction:row; align-items:center; gap:7px; margin:0; font-weight:500; cursor:pointer}
+.tools-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:20px}

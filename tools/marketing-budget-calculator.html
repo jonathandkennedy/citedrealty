@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Marketing Budget Calculator for Realtors | CitedRealty</title>
+<meta name="description" content="Enter your production, get your recommended monthly marketing budget and the owned-vs-rented split — free, instant, no email required.">
+<link rel="canonical" href="https://citedrealty.com/tools/marketing-budget-calculator.html">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="/assets/icon-square.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:title" content="Free Marketing Budget Calculator for Realtors">
+<meta property="og:description" content="What should you actually spend on marketing? Instant answer with the owned-vs-rented split.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://citedrealty.com/tools/marketing-budget-calculator.html">
+<meta property="og:image" content="https://citedrealty.com/assets/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<script src="../assets/theme.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"WebApplication","name":"Marketing Budget Calculator for Realtors","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@id":"https://citedrealty.com/#business"},"url":"https://citedrealty.com/tools/marketing-budget-calculator.html"},
+ {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://citedrealty.com/"},{"@type":"ListItem","position":2,"name":"Free Tools","item":"https://citedrealty.com/tools/"},{"@type":"ListItem","position":3,"name":"Marketing Budget Calculator","item":"https://citedrealty.com/tools/marketing-budget-calculator.html"}]}]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="../index.html" aria-label="CitedRealty home">
+      <img src="../assets/icon-square.svg" alt="" width="34" height="34">
+      <span>Cited<span class="r">Realty</span><sup>[1]</sup></span>
+    </a>
+    <a class="nav-cta" href="../index.html#contact">Free AI visibility audit</a>
+    <button class="theme-toggle" aria-label="Toggle theme">☀</button>
+  </div>
+</nav>
+
+<main id="main">
+<header class="page-hero" style="padding-bottom:40px">
+  <div class="wrap">
+    <p class="crumb"><a href="../index.html">Home</a> / <a href="index.html">Free Tools</a> / Marketing Budget Calculator</p>
+    <span class="cite-tag">Free tool</span>
+    <h1>What should you <span class="grad">actually spend?</span></h1>
+    <p class="lede">The classic rule of thumb, done for you: enter your production, get a monthly number and — more importantly — the owned-vs-rented split that makes it compound. Runs entirely in your browser.</p>
+  </div>
+</header>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <form class="tool-card" id="calcForm">
+      <div class="row2">
+        <label>Closings per year<input type="number" name="deals" min="0" max="500" value="12" required></label>
+        <label>Average sale price ($)<input type="number" name="price" min="0" step="10000" value="450000" required></label>
+      </div>
+      <div class="row2">
+        <label>Your average commission (%)<input type="number" name="comm" min="0.5" max="6" step="0.1" value="2.5" required></label>
+        <label>Career stage
+          <select name="stage">
+            <option value="build">Building (first 3 years / new market)</option>
+            <option value="grow" selected>Growing (steady production)</option>
+            <option value="maintain">Established (referral-heavy)</option>
+          </select>
+        </label>
+      </div>
+      <button class="btn btn-primary" type="submit">Calculate my budget</button>
+    </form>
+    <div class="tool-result" id="result"></div>
+    <p class="tool-note">Based on the widely used ~10% of gross commission income rule of thumb (12% while building, 8% when established) — a starting point, not gospel. The split logic and the math behind it: <a href="../blog/how-much-should-realtors-spend-on-marketing.html">How Much Should Realtors Spend on Marketing?</a> Judge every channel on cost per closing, never cost per lead.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-legal" style="border:none; margin:0; padding:0">
+      <span>© 2026 CitedRealty · <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a> · <a href="#" data-cookie-prefs>Cookie preferences</a> · <a href="https://www.google.com/preferences/source?q=citedrealty.com" target="_blank" rel="noopener"><span style="color:#F59E0B">★</span> Make us a preferred source on Google</a></span>
+      <span>When buyers ask AI, you're the answer.<sup>[1]</sup></span>
+    </div>
+  </div>
+</footer>
+<script src="../assets/app.js"></script>
+<script src="../assets/consent.js" defer></script>
+<script>
+(function(){
+  var form=document.getElementById('calcForm'), out=document.getElementById('result');
+  var fmt=function(n){return '$'+Math.round(n).toLocaleString('en-US')};
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var deals=+form.deals.value, price=+form.price.value, comm=+form.comm.value/100;
+    var gci=deals*price*comm;
+    var pct={build:0.12, grow:0.10, maintain:0.08}[form.stage.value];
+    var annual=gci*pct, monthly=annual/12;
+    var owned=monthly*0.6, rented=monthly*0.4;
+    var plan, planWhy;
+    if(monthly<1800){plan='Local Presence — $999/mo'; planWhy='keeps you under budget with the full owned stack: GBP, local SEO, AI citations, blog, 5 neighborhoods.';}
+    else if(monthly<5500){plan='Local Hero — $3,999/mo'; planWhy='the owned engine plus a custom website build included, 15 neighborhoods, and social guidance.';}
+    else {plan='Market Authority — $6,999/mo'; planWhy='full-market coverage: 30 neighborhoods, done-for-you social, weekly strategy.';}
+    out.innerHTML=
+      '<div class="tool-out"><h3>Your numbers</h3>'
+      +'<p>Gross commission income: <b style="color:var(--text)">'+fmt(gci)+'</b>/yr</p>'
+      +'<div class="big">'+fmt(monthly)+'<span style="font-size:16px;font-weight:500;color:var(--dim)">/month on marketing</span></div>'
+      +'<p>('+Math.round(pct*100)+'% of GCI for your stage — annual '+fmt(annual)+')</p></div>'
+      +'<div class="tool-out" style="margin-top:14px"><h3>The split that compounds</h3>'
+      +'<p><b style="color:var(--text)">'+fmt(owned)+' → owned assets</b> (website, neighborhood pages, GBP, content, reviews, AI citations — keeps working when you stop paying)<br><br>'
+      +'<b style="color:var(--text)">'+fmt(rented)+' → rented reach</b> (portals, ads — instant but evaporates). Shift further toward owned each quarter as assets mature.</p></div>'
+      +'<div class="tool-out" style="margin-top:14px"><h3>Where that budget fits here</h3>'
+      +'<p><b style="color:var(--text)">'+plan+'</b> — '+planWhy+'</p>'
+      +'<a class="btn btn-primary" style="display:block;text-align:center;margin-top:14px" href="../index.html#pricing">See what\'s included</a></div>';
+    out.classList.add('show');
+  });
+})();
+</script>
+</body>
+</html>

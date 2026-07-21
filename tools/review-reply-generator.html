@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Review Reply Generator for Realtors | CitedRealty</title>
+<meta name="description" content="Paste a client review, get a polished public response in your voice — free. Handles glowing reviews and rough ones, with the compliance guardrails built in.">
+<link rel="canonical" href="https://citedrealty.com/tools/review-reply-generator.html">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="/assets/icon-square.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:title" content="Free Review Reply Generator for Realtors">
+<meta property="og:description" content="Paste a review, get a reply worth posting — free.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://citedrealty.com/tools/review-reply-generator.html">
+<meta property="og:image" content="https://citedrealty.com/assets/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<script src="../assets/theme.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"WebApplication","name":"Review Reply Generator for Realtors","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@id":"https://citedrealty.com/#business"},"url":"https://citedrealty.com/tools/review-reply-generator.html"},
+ {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://citedrealty.com/"},{"@type":"ListItem","position":2,"name":"Free Tools","item":"https://citedrealty.com/tools/"},{"@type":"ListItem","position":3,"name":"Review Reply Generator","item":"https://citedrealty.com/tools/review-reply-generator.html"}]}]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="../index.html" aria-label="CitedRealty home">
+      <img src="../assets/icon-square.svg" alt="" width="34" height="34">
+      <span>Cited<span class="r">Realty</span><sup>[1]</sup></span>
+    </a>
+    <a class="nav-cta" href="../index.html#contact">Free AI visibility audit</a>
+    <button class="theme-toggle" aria-label="Toggle theme">☀</button>
+  </div>
+</nav>
+
+<main id="main">
+<header class="page-hero" style="padding-bottom:40px">
+  <div class="wrap">
+    <p class="crumb"><a href="../index.html">Home</a> / <a href="index.html">Free Tools</a> / Review Reply Generator</p>
+    <span class="cite-tag">Free tool</span>
+    <h1>Every review deserves <span class="grad">a good reply.</span></h1>
+    <p class="lede">Responses are read by your next seller and parsed by AI — an unanswered review is a wasted trust signal. Paste the review, get a reply worth posting.</p>
+  </div>
+</header>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <form class="tool-card" id="toolForm">
+      <label>The review (paste it exactly)<textarea name="review" required maxlength="1200" placeholder="Jane helped us sell our home in Arcadia and..."></textarea></label>
+      <div class="row2">
+        <label>Your name<input type="text" name="name" required maxlength="80" placeholder="Jane Rivera"></label>
+        <label>Tone
+          <select name="tone">
+            <option>Professional and warm</option>
+            <option>Friendly and casual</option>
+            <option>Brief and gracious</option>
+            <option>Calm and measured (for a negative review)</option>
+          </select>
+        </label>
+      </div>
+      <button class="btn btn-primary" type="submit">Write my reply</button>
+    </form>
+    <p class="tool-spin" id="spin">Drafting your reply…</p>
+    <div class="tool-result" id="result"></div>
+    <p class="tool-note">Always read before posting — you own every word published under your name. The reply follows review-response best practice: specific, no client details revealed, negatives taken offline. Full strategy in our <a href="../blog/get-more-google-reviews-real-estate-agent.html">review playbook</a>. Using this tool shares your name with our team. Reviews handled for you: <a href="../services/reviews.html">Reviews &amp; Reputation</a>.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-legal" style="border:none; margin:0; padding:0">
+      <span>© 2026 CitedRealty · <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a> · <a href="#" data-cookie-prefs>Cookie preferences</a> · <a href="https://www.google.com/preferences/source?q=citedrealty.com" target="_blank" rel="noopener"><span style="color:#F59E0B">★</span> Make us a preferred source on Google</a></span>
+      <span>When buyers ask AI, you're the answer.<sup>[1]</sup></span>
+    </div>
+  </div>
+</footer>
+<script src="../assets/app.js"></script>
+<script src="../assets/consent.js" defer></script>
+<script>
+(function(){
+  var form=document.getElementById('toolForm'), spin=document.getElementById('spin'), out=document.getElementById('result');
+  function esc(s){var d=document.createElement('div'); d.textContent=s; return d.innerHTML}
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var btn=form.querySelector('button[type=submit]'); btn.disabled=true; btn.textContent='Writing…';
+    out.classList.remove('show'); spin.classList.add('show');
+    fetch('/api/generate', {method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({mode:'review-reply', review:form.review.value, name:form.name.value, tone:form.tone.value})})
+      .then(function(r){return r.json().then(function(j){return {s:r.status,j:j}})})
+      .then(function(res){
+        spin.classList.remove('show'); btn.disabled=false; btn.textContent='Write my reply';
+        if(res.s!==200){ out.innerHTML='<div class="tool-out"><h3>Couldn\'t generate</h3><p>'+esc(res.j.message||'Try again shortly.')+'</p></div>'; }
+        else{ out.innerHTML='<div class="tool-out"><h3>Your reply</h3><p class="txt" id="genText">'+esc(res.j.text)+'</p><button class="copybtn" id="copyBtn">Copy reply</button></div>'
+          +'<a class="btn btn-ghost" style="display:block;text-align:center;margin-top:14px" href="../services/reviews.html">Want every review handled like this, automatically?</a>';
+          var c=document.getElementById('copyBtn'); c.addEventListener('click',function(){navigator.clipboard.writeText(document.getElementById('genText').textContent).then(function(){c.textContent='Copied ✓'})}); }
+        out.classList.add('show');
+      })
+      .catch(function(){ spin.classList.remove('show'); btn.disabled=false; btn.textContent='Write my reply';
+        out.innerHTML='<div class="tool-out"><h3>Network hiccup</h3><p>Try again in a moment.</p></div>'; out.classList.add('show'); });
+  });
+})();
+</script>
+</body>
+</html>

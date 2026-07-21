@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Listing Description Generator for Realtors | CitedRealty</title>
+<meta name="description" content="Turn property bullet points into a polished, fair-housing-safe listing description — free, with California AB 723 photo-disclosure reminders built in.">
+<link rel="canonical" href="https://citedrealty.com/tools/listing-description-generator.html">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="/assets/icon-square.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:title" content="Free Listing Description Generator for Realtors">
+<meta property="og:description" content="Bullet points in, listing description out — free.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://citedrealty.com/tools/listing-description-generator.html">
+<meta property="og:image" content="https://citedrealty.com/assets/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<script src="../assets/theme.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"WebApplication","name":"Listing Description Generator for Realtors","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@id":"https://citedrealty.com/#business"},"url":"https://citedrealty.com/tools/listing-description-generator.html"},
+ {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://citedrealty.com/"},{"@type":"ListItem","position":2,"name":"Free Tools","item":"https://citedrealty.com/tools/"},{"@type":"ListItem","position":3,"name":"Listing Description Generator","item":"https://citedrealty.com/tools/listing-description-generator.html"}]}]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="../index.html" aria-label="CitedRealty home">
+      <img src="../assets/icon-square.svg" alt="" width="34" height="34">
+      <span>Cited<span class="r">Realty</span><sup>[1]</sup></span>
+    </a>
+    <a class="nav-cta" href="../index.html#contact">Free AI visibility audit</a>
+    <button class="theme-toggle" aria-label="Toggle theme">☀</button>
+  </div>
+</nav>
+
+<main id="main">
+<header class="page-hero" style="padding-bottom:40px">
+  <div class="wrap">
+    <p class="crumb"><a href="../index.html">Home</a> / <a href="index.html">Free Tools</a> / Listing Description Generator</p>
+    <span class="cite-tag">Free tool</span>
+    <h1>Bullet points in, <span class="grad">listing copy out.</span></h1>
+    <p class="lede">Specific beats superlative, fair-housing rules are built in, and if your photos are virtually staged, we'll hand you the disclosure line too.</p>
+  </div>
+</header>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <form class="tool-card" id="toolForm">
+      <label>Property details (bullets are fine)<textarea name="details" required maxlength="1200" placeholder="4bd/3ba, 2,650 sqft, remodeled kitchen 2024, pool, 3-car garage, cul-de-sac, mountain views from primary"></textarea></label>
+      <div class="row2">
+        <label>Neighborhood (optional)<input type="text" name="neighborhood" maxlength="120" placeholder="McCormick Ranch, Scottsdale"></label>
+        <label>Tone
+          <select name="tone">
+            <option>Polished and inviting</option>
+            <option>Luxury / editorial</option>
+            <option>Straightforward and factual</option>
+            <option>Warm family home</option>
+          </select>
+        </label>
+      </div>
+      <label style="flex-direction:row; align-items:center; gap:10px"><input type="checkbox" name="staged" style="width:auto"> Photos are virtually staged or AI-altered</label>
+      <label>Your name &amp; market (optional — helps us help you)<input type="text" name="name" maxlength="80" placeholder="Jane Rivera — Scottsdale, AZ"></label>
+      <button class="btn btn-primary" type="submit">Write my description</button>
+    </form>
+    <p class="tool-spin" id="spin">Writing your listing description…</p>
+    <div class="tool-result" id="result"></div>
+    <p class="tool-note">Verify every fact before publishing — you're responsible for accuracy and MLS rules. The generator avoids fair-housing red flags by describing the property, never the buyer. Using this tool shares your entries with our team. Photo-editing law context: <a href="../blog/california-ai-listing-photo-law.html">California's AB 723</a>.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-legal" style="border:none; margin:0; padding:0">
+      <span>© 2026 CitedRealty · <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a> · <a href="#" data-cookie-prefs>Cookie preferences</a> · <a href="https://www.google.com/preferences/source?q=citedrealty.com" target="_blank" rel="noopener"><span style="color:#F59E0B">★</span> Make us a preferred source on Google</a></span>
+      <span>When buyers ask AI, you're the answer.<sup>[1]</sup></span>
+    </div>
+  </div>
+</footer>
+<script src="../assets/app.js"></script>
+<script src="../assets/consent.js" defer></script>
+<script>
+(function(){
+  var form=document.getElementById('toolForm'), spin=document.getElementById('spin'), out=document.getElementById('result');
+  function esc(s){var d=document.createElement('div'); d.textContent=s; return d.innerHTML}
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var btn=form.querySelector('button[type=submit]'); btn.disabled=true; btn.textContent='Writing…';
+    out.classList.remove('show'); spin.classList.add('show');
+    fetch('/api/generate', {method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({mode:'listing-description', details:form.details.value, neighborhood:form.neighborhood.value, tone:form.tone.value, name:form.name.value, market:form.name.value})})
+      .then(function(r){return r.json().then(function(j){return {s:r.status,j:j}})})
+      .then(function(res){
+        spin.classList.remove('show'); btn.disabled=false; btn.textContent='Write my description';
+        if(res.s!==200){ out.innerHTML='<div class="tool-out"><h3>Couldn\'t generate</h3><p>'+esc(res.j.message||'Try again shortly.')+'</p></div>'; }
+        else{
+          var html='<div class="tool-out"><h3>Your listing description</h3><p class="txt" id="genText">'+esc(res.j.text)+'</p><button class="copybtn" id="copyBtn">Copy description</button></div>';
+          if(form.staged.checked){
+            html+='<div class="tool-out" style="margin-top:14px"><h3>Your photo disclosure line (don\'t skip this)</h3><p class="txt" id="discText">Some images have been virtually staged or digitally altered. Original, unaltered photos are available on request.</p><button class="copybtn" id="copyDisc">Copy disclosure</button><p style="margin-top:10px; font-size:12.5px">Required by law in California (<a href="../blog/california-ai-listing-photo-law.html" style="color:var(--i3)">AB 723</a> — include access to originals); smart practice everywhere.</p></div>';
+          }
+          html+='<a class="btn btn-ghost" style="display:block;text-align:center;margin-top:14px" href="../services/content.html">Want all your marketing written like this?</a>';
+          out.innerHTML=html;
+          var c=document.getElementById('copyBtn'); c.addEventListener('click',function(){navigator.clipboard.writeText(document.getElementById('genText').textContent).then(function(){c.textContent='Copied ✓'})});
+          var d=document.getElementById('copyDisc'); if(d){d.addEventListener('click',function(){navigator.clipboard.writeText(document.getElementById('discText').textContent).then(function(){d.textContent='Copied ✓'})});}
+        }
+        out.classList.add('show');
+      })
+      .catch(function(){ spin.classList.remove('show'); btn.disabled=false; btn.textContent='Write my description';
+        out.innerHTML='<div class="tool-out"><h3>Network hiccup</h3><p>Try again in a moment.</p></div>'; out.classList.add('show'); });
+  });
+})();
+</script>
+</body>
+</html>
