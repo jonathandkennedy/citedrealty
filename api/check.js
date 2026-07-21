@@ -46,7 +46,8 @@ export default async function handler(req, res) {
     `You are helping run a real estate AI-visibility check. Use web search and answer in plain text with EXACTLY these three labeled sections:\n\n` +
     `AGENTS: List up to 6 real estate agents or teams that credible public sources most recommend for "${market}" (names only, comma-separated). If none clearly emerge, say "unclear".\n\n` +
     `TARGET: State whether public sources show that "${name}"${brokerage ? ` (${brokerage})` : ""} is a real estate agent active in ${market}, and whether any source would justify recommending them. One or two sentences, factual only.\n\n` +
-    `NOTE: One sentence on which kinds of sources dominated your results (portals, review sites, agent websites, press).`;
+    `NOTE: One sentence on which kinds of sources dominated your results (portals, review sites, agent websites, press).\n\n` +
+    `VERDICT: exactly one word on its own line — FOUND if credible public sources establish that person as an active agent in that market, otherwise NOT_FOUND.`;
 
   try {
     const r = await fetch(
@@ -64,15 +65,18 @@ export default async function handler(req, res) {
     if (!r.ok) throw new Error(`gemini ${r.status}`);
     const data = await r.json();
     const cand = data.candidates?.[0];
-    const text = (cand?.content?.parts || []).map(p => p.text || "").join("\n");
+    const text = (cand?.content?.parts || []).filter(p => !p.thought).map(p => p.text || "").join("\n");
 
     const sources = [];
     for (const ch of cand?.groundingMetadata?.groundingChunks || []) {
-      const uri = ch.web?.uri, title = ch.web?.title;
+      const uri = ch.web?.uri;
+      let title = ch.web?.title;
+      if (!title && uri) { try { title = new URL(uri).hostname; } catch {} }
       if (title && !sources.some(s => s.title === title)) sources.push({ title, uri });
     }
 
-    const named = text.toLowerCase().includes(name.toLowerCase());
+    const named = /VERDICT:\s*FOUND/i.test(text) && !/VERDICT:\s*NOT_FOUND/i.test(text);
+    const displayText = text.replace(/\n?VERDICT:.*$/is, "").trim();
 
     // Lead notification: every completed check goes to Formspree (emailed + stored
     // in the dashboard — same form as the site's lead form).
@@ -92,7 +96,7 @@ export default async function handler(req, res) {
       });
     } catch { /* never block the visitor's result on notification failure */ }
 
-    return res.status(200).json({ ok: true, named, text, sources: sources.slice(0, 10) });
+    return res.status(200).json({ ok: true, named, text: displayText, sources: sources.slice(0, 10) });
   } catch (e) {
     return res.status(502).json({ error: "upstream",
       message: "The AI check hit a snag. Try again in a minute — or grab the free full audit." });

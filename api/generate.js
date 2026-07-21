@@ -116,7 +116,7 @@ export default async function handler(req, res) {
     );
     if (!r.ok) throw new Error(`gemini ${r.status}`);
     const data = await r.json();
-    const text = (data.candidates?.[0]?.content?.parts || []).map(p => p.text || "").join("").trim();
+    const text = (data.candidates?.[0]?.content?.parts || []).filter(p => !p.thought).map(p => p.text || "").join("").trim();
     if (!text) throw new Error("empty");
 
     // Lead notification → Formspree (emailed + stored in dashboard)
