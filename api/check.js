@@ -76,7 +76,7 @@ export default async function handler(req, res) {
     }
 
     const named = /VERDICT:\s*FOUND/i.test(text) && !/VERDICT:\s*NOT_FOUND/i.test(text);
-    const displayText = text.replace(/\n?VERDICT:.*$/is, "").trim();
+    const displayText = text.replace(/\n?VERDICT:.*$/is, "").replace(/\s*\[[\d.,\s]+\]/g, "").trim();
 
     // Lead notification: every completed check goes to Formspree (emailed + stored
     // in the dashboard — same form as the site's lead form).
