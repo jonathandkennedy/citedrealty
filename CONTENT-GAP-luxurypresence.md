@@ -25,12 +25,11 @@ AI Citations) — so their content library shows what a mature GEO shop publishe
 comparisons, transparent pricing content, Agent Q&A. Our formats are more citation-bait;
 theirs are more authority-proof. A complete library needs both.
 
-**P1 how-to batch (realtor-specific versions beat their generic ones for our queries):**
-- [ ] "How to Optimize Your Google Business Profile as a Realtor: Step-by-Step"
-- [ ] "How to Get More Google Reviews as a Real Estate Agent (Ethical Playbook)"
-- [ ] "What Data Do ChatGPT & AI Overviews Use? (And How Realtors Get Into It)"
-- [ ] "How to Add RealEstateAgent Schema to Your Website: A Walkthrough"
-- [ ] "What Is E-E-A-T for Real Estate Agents — and How AI Uses It"
+**P1 how-to batch — SHIPPED 07-20 (all five, "How-To Guides" category):** GBP step-by-step
+(grounded in the localseoskills gbp-optimization skill, incl. 2026 engagement-shift facts),
+reviews ethical playbook, what-data-does-AI-use, RealEstateAgent schema walkthrough (with
+copy-paste JSON-LD + our own missing-brace war story), E-E-A-T explainer (evidence-tier
+honest: not a ranking factor). Stridec format gap CLOSED.
 **P2:** "How to Build a Neighborhood Page (With Template)", "How to Do a DIY AI Visibility
 Audit" (give away the method — the audit form converts the ones who want it done).
 **P3 (product, not content):** self-serve AI visibility checker tool; email newsletter.

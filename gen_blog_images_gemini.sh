@@ -8,6 +8,9 @@ mkdir -p "$OUT"; cd "$OUT"
 STYLE="Editorial illustration for a real estate marketing blog. Flat modern vector style, minimal, elegant. Very dark indigo background (#0B0B14) with glowing indigo-to-violet-to-lilac gradient accents (#4F46E5, #8B5CF6, #C084FC) and a single warm amber glow accent, subtle thin grid lines. No text, no letters, no words, no logos. Wide composition, generous margins."
 
 typeset -A PROMPTS
+PROMPTS[how-to-build-a-neighborhood-page]="A webpage frame being assembled like scaffolding around a charming cluster of small glowing houses and trees. $STYLE"
+PROMPTS[diy-ai-visibility-audit]="A large magnifying glass examining a glowing AI chat bubble, with a small scorecard of checkmarks and crosses floating beside it. $STYLE"
+PROMPTS[what-is-idx]="A stream of small listing cards with house icons flowing from a large office building into a smaller cozy website window. $STYLE"
 PROMPTS[optimize-google-business-profile-realtor]="A glowing map pin hovering above a charming storefront-style house, with three floating checklist cards beside it showing checkmarks. $STYLE"
 PROMPTS[get-more-google-reviews-real-estate-agent]="Five glowing stars rising from a house chimney like warm floating lanterns into the night. $STYLE"
 PROMPTS[what-data-do-ai-assistants-use]="Streams of glowing particles flowing from a document, a star, and a small globe, converging into a large AI chat bubble. $STYLE"

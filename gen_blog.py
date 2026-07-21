@@ -297,6 +297,105 @@ POSTS = [
         ],
     },
     {
+        "slug": "how-to-build-a-neighborhood-page",
+        "img": "img/how-to-build-a-neighborhood-page.jpg",
+        "img_alt": "Illustration of a webpage frame being assembled around a neighborhood of small houses",
+        "cat": "howto",
+        "title": "How to Build a Neighborhood Page That Ranks (With Template)",
+        "date": "2026-07-20",
+        "excerpt": "The exact section-by-section template we use for neighborhood pages — what goes in each block, where the data comes from, and the thin-page mistakes that get ignored by Google and AI alike.",
+        "tldr": "A neighborhood page that ranks and earns AI citations has seven blocks: a direct market-snapshot opener a machine can quote (what's happening in this neighborhood right now, with numbers); housing stock specifics only a local would know; honest buyer guidance; honest seller guidance; your provable track record there; a short FAQ; and place + FAQ schema underneath. Source the data from your MLS and keep it honest, refresh quarterly so the page stays citable, and interlink it with your other neighborhoods and services. The failure mode to avoid is the thin template page with a swapped city name — readers, Google, and AI all recognize it, and it can hurt more than help.",
+        "sections": [
+            ("Before you write: pick neighborhoods you can prove",
+             "<p>Start where you have evidence — closings, reviews, personal history. Five deep pages beat thirty thin ones (the full argument is in our <a href='what-are-neighborhood-pages.html'>neighborhood pages explainer</a>). For each area, gather the raw material first: last quarter's sales from your MLS, current actives, price bands, days on market, and two or three things about the area only someone who works it knows — the street noise pattern, the HOA quirk, which side floods in monsoon season.</p>"),
+            ("The template, block by block",
+             "<pre><code>1. H1 + market snapshot (the quotable opener)\n   \"[Neighborhood] Real Estate Guide — [Month Year]\"\n   2-3 sentences: median sale price, days on market,\n   inventory trend, one plain-language takeaway.\n\n2. Housing stock &amp; character\n   What actually exists here: eras, styles, lot sizes,\n   price bands. The specifics portals can't template.\n\n3. Buying in [Neighborhood]\n   What buyers should know BEFORE touring: competition\n   level, inspection gotchas common to this stock,\n   what moves fast vs. sits.\n\n4. Selling in [Neighborhood]\n   What prep actually pays here, realistic timelines,\n   pricing dynamics vs. adjacent areas.\n\n5. Your track record (proof, not adjectives)\n   Closings in/near the area, review excerpts from\n   neighborhood clients, years worked.\n\n6. FAQ (3-5 real questions)\n   \"Is [Neighborhood] a good place for families?\"\n   \"What do homes cost in [Neighborhood]?\"\n\n7. Schema underneath\n   Place markup + FAQPage + your RealEstateAgent @id.\n   CTA to contact — one, not five.</code></pre>"
+             "<p>Write the opener as a direct answer — it's what an AI Overview or assistant lifts when someone asks about the area. Numbers with a date beat adjectives every time: \"median sale $612K in Q2, 18 days on market, inventory up slightly\" is citable; \"a highly desirable community\" is wallpaper.</p>"),
+            ("The three mistakes that sink these pages",
+             "<ul><li><b>Template-swapping.</b> Same 500 words with the neighborhood name replaced — the classic doorway page. If two of your pages could trade H1s without anyone noticing, neither deserves to rank.</li>"
+             "<li><b>Inventory-mimicry.</b> Rebuilding a mini-Zillow with listing widgets and no knowledge. Your page's job is establishing the expert, not competing on inventory (see our <a href='what-is-idx.html'>IDX guide</a> for where listings belong).</li>"
+             "<li><b>Publish-and-forget.</b> A market snapshot from four quarters ago actively signals neglect. Refresh quarterly — it's an hour per page, and the refresh itself is content for your GBP posts and social.</li></ul>"),
+            ("Wire it in and let it compound",
+             "<p>Link each neighborhood page from your homepage and services, cross-link adjacent neighborhoods, add it to your sitemap, and mention it in your <a href='../services/google-business-profile.html'>Google Business Profile</a> posts when it updates. One well-built page works four jobs: it ranks for \"[neighborhood] realtor\" searches, gives AI a citable source tying you to the area, arms your listing presentations, and doubles as your quarterly mailer content. This is the core of our <a href='../services/local-seo.html'>local SEO service</a> — 5, 15, or 30 of these, built and maintained — but the template above is the whole method if you'd rather run it yourself.</p>"),
+        ],
+        "faqs": [
+            ("How long should a neighborhood page be?",
+             "As long as it is genuinely useful and no longer — typically 800–1,500 words when every block in the template is filled with real local substance. Length itself isn't the goal; unmatchable specificity is."),
+            ("Can I use MLS data on my neighborhood pages?",
+             "Aggregate market statistics (medians, days on market, counts) are generally fine and are exactly what makes the page citable — but check your MLS's data-use rules, especially before displaying individual listing data, which usually requires IDX licensing."),
+            ("How many neighborhood pages should I build first?",
+             "Start with five, in the areas where you have real evidence, and build them properly. Expand toward fifteen or thirty as each matures — matching how our plans scale, because that's genuinely how the work compounds."),
+        ],
+    },
+    {
+        "slug": "diy-ai-visibility-audit",
+        "img": "img/diy-ai-visibility-audit.jpg",
+        "img_alt": "Illustration of a magnifying glass examining an AI chat bubble beside a small scorecard",
+        "cat": "howto",
+        "title": "How to Do a DIY AI Visibility Audit (the Exact Method We Use)",
+        "date": "2026-07-20",
+        "excerpt": "Find out in one afternoon whether ChatGPT, Gemini, and Google's AI know you exist — the question set, the scoring sheet, and how to read the results.",
+        "tldr": "To audit your AI visibility: build a question set covering seller-intent, buyer-intent, and agent-intent prompts for your market; ask each one in fresh sessions across ChatGPT (with search), Gemini, Perplexity, and Google's AI Overviews; and score every answer on three things — are you named, is your site cited, and who IS being named and cited instead. The names are your competition; the cited sources are your target list (get mentioned where AI already looks). Repeat monthly with the same questions so you're tracking a trend, not a snapshot. The whole audit takes an afternoon, costs nothing, and tells you precisely where the gap is — which is exactly why we run this same loop, at scale, as a service.",
+        "sections": [
+            ("Step 1: Build the question set",
+             "<p>Ask what your clients actually ask — not what you wish they asked. Cover three intents, several phrasings each:</p>"
+             "<pre><code>SELLER-INTENT\n- Who should I hire to sell my home in [city]?\n- Best listing agent in [neighborhood]?\n- Who gets the best price for homes in [area]?\n\nBUYER-INTENT\n- Who's a good buyer's agent in [city]?\n- I'm relocating to [city] — which realtor should I use?\n- Best agent for first-time buyers in [area]?\n\nAGENT-INTENT / VALIDATION\n- Is [Your Name] a good realtor?\n- [Your Name] [city] reviews\n- Best real estate agents in [city] — list with reasons</code></pre>"
+             "<p>Ten to fifteen questions is enough. Write them down — the audit only becomes a trend line if you ask the identical set next month.</p>"),
+            ("Step 2: Run it clean",
+             "<p>Ask each question in ChatGPT (with web search enabled), Gemini, Perplexity, and a regular Google search (noting whether an AI Overview appears and what it says). Two hygiene rules: use fresh chats for each question — prior conversation contaminates answers — and don't argue with the AI or feed it your name mid-conversation; you're measuring what a stranger gets, not what you can coax. A logged-out or incognito pass for the Google checks avoids personalization skew.</p>"),
+            ("Step 3: Score it — three columns",
+             "<p>For every question × assistant, record: <b>Named?</b> (does your name appear at all), <b>Cited?</b> (does your website or profile appear as a source), and <b>Who instead?</b> (every agent named, every source cited). That third column is the gold. The agents named are your real AI-era competitors — often not who you'd guess. The cited sources (portals, directories, local press, review sites) are the places AI already trusts for your market: <b>your mention target list, ranked by the machine itself.</b></p>"),
+            ("Step 4: Read the gaps and act",
+             "<ul><li><b>Not named anywhere:</b> entity problem — your profiles disagree or barely exist. Fix consistency and schema first (our <a href='realestateagent-schema-walkthrough.html'>walkthrough</a>).</li>"
+             "<li><b>Named but never cited:</b> AI has heard of you but has nothing of yours worth quoting — you need citable content: direct answers, <a href='how-to-build-a-neighborhood-page.html'>neighborhood pages</a>, the sources machines lift.</li>"
+             "<li><b>Competitors cited via specific sources:</b> get present on those exact sources — that's your shortest path into the answers.</li>"
+             "<li><b>Invisible on ChatGPT specifically:</b> check Bing — ChatGPT's search runs on it (<a href='what-data-do-ai-assistants-use.html'>here's why</a>), and most agents have never verified there.</li></ul>"
+             "<p>Re-run monthly, same questions, and watch the Named column. That loop — run bigger, scored across phrasing variants, with the fixes done for you — is literally our <a href='../services/ai-citations.html'>AI citations service</a>. If the DIY version shows you the gap and you'd rather not spend the monthly afternoon, the <a href='../index.html#contact'>free audit</a> is us running it on your market.</p>"),
+        ],
+        "faqs": [
+            ("How often should I audit my AI visibility?",
+             "Monthly, with the identical question set. AI answers are volatile — a single snapshot can mislead in either direction, but a three-month trend on consistent questions is real signal."),
+            ("Why do I get different answers when I ask the same question twice?",
+             "The systems are probabilistic and their retrieval varies run to run. That's why the method uses multiple phrasings and tracks trends over months — one answer is noise; the pattern across a question set is data."),
+            ("What if AI says something wrong about me?",
+             "First fix the sources: wrong answers usually trace to stale or conflicting profile data somewhere the AI reads. Align your site, GBP, and directory listings, then re-check next cycle — retrieval-based answers correct when their sources do."),
+        ],
+    },
+    {
+        "slug": "what-is-idx",
+        "img": "img/what-is-idx.jpg",
+        "img_alt": "Illustration of listing cards flowing from a large building into a small website window",
+        "cat": "websites",
+        "title": "What Is IDX — and Does Your Website Actually Need It?",
+        "date": "2026-07-20",
+        "excerpt": "Every website vendor upsells IDX. Here's what it actually is, what it really costs, and the honest test for whether listing search belongs on your site at all.",
+        "tldr": "IDX (Internet Data Exchange) is the licensing framework that lets an agent's website display live MLS listings — powering the home-search features on agent sites, typically via vendor platforms connected to the MLS's data feed. It costs real money (MLS fees plus vendor fees, commonly $50–$100+/month) and carries compliance rules set by each MLS. The honest question is whether you need it: buyer-heavy teams with follow-up systems get genuine value from saved-search leads; listing-focused agents usually don't — buyers browse Zillow anyway, and your site's job is proving you're the expert, not competing on inventory. If you do add IDX, implement it carefully: thin auto-generated search pages should be noindexed so they don't drag down the authority pages that actually rank.",
+        "sections": [
+            ("What IDX actually is",
+             "<p>IDX is the arrangement under which MLS participants let each other display listings on their own websites. Practically, an IDX vendor connects your site to your MLS's data feed (modern feeds run on the RESO Web API standard) and renders searchable listings under your brand. It's how a solo agent's site can show every listing in the market, not just their own.</p>"
+             "<p>What it isn't: free, automatic, or unregulated. Expect MLS participation fees plus vendor fees — commonly $50–$100+ monthly depending on platform — and each MLS imposes display rules (attribution, update frequency, disclaimers) your vendor must honor.</p>"),
+            ("The case for IDX — and who it's actually for",
+             "<p>The genuine value is <b>buyer-lead capture and nurture</b>: visitors register to save searches and favorites, generating alerts that keep them returning to <i>your</i> site instead of a portal. Teams running buyer-heavy pipelines with real follow-up systems convert this well — the saved-search email is a legitimate nurture channel, and time-on-site from browsing is real engagement.</p>"
+             "<p>The honest caveat: you're offering a worse version of an experience buyers already have. Zillow's app is better than any agent site's search — buyers use both, and yours is rarely primary. IDX works when it's a capture-and-nurture tool attached to a strong site, not when it IS the site.</p>"),
+            ("The case against — and the test",
+             "<p>For listing-focused agents, IDX often subtracts: it costs monthly, it makes your site look like a generic portal clone, and badly implemented it floods your domain with thousands of thin, duplicate search pages that dilute the authority your <a href='how-to-build-a-neighborhood-page.html'>neighborhood pages</a> are building. Sellers choosing a listing agent aren't evaluating your search widget — they're evaluating your expertise and proof.</p>"
+             "<p>The test: <b>would removing listing search change what your ideal client hires you for?</b> If your business is buyers and you'll work the nurture, IDX earns its fee. If your business is listings and authority, spend the same money on content and reviews.</p>"),
+            ("If you add it, add it right",
+             "<ul><li><b>Noindex the thin pages.</b> Auto-generated search-result and cookie-cutter listing pages shouldn't compete with your real content in Google's eyes — your vendor should support this; ask before signing.</li>"
+             "<li><b>Keep authority pages primary.</b> Navigation should lead with your neighborhoods, services, and content; search is a feature, not the homepage.</li>"
+             "<li><b>Own the frame.</b> Prefer implementations on your own domain (not iframed subdomains) so any equity accrues to you — a standard consideration in how we scope <a href='../services/website-design.html'>website builds</a>, where IDX is optional by design.</li>"
+             "<li><b>Mind the exit.</b> IDX vendors are subscriptions; know what happens to your URLs if you switch.</li></ul>"),
+        ],
+        "faqs": [
+            ("How much does IDX cost for a realtor website?",
+             "Typically $50–$100+ per month in vendor fees, plus whatever your MLS charges for feed access, varying widely by market and platform. Confirm current pricing with your MLS and shortlisted vendors — and price the compliance obligations, not just the sticker."),
+            ("Does IDX help or hurt SEO?",
+             "Either, depending on implementation. Engagement from listing browsing helps; thousands of indexed thin search pages hurt. The safe pattern is noindexing auto-generated pages while building your rankings on original neighborhood and service content."),
+            ("Can I have a great agent website without IDX?",
+             "Absolutely — listing-focused agents often should. A site built on neighborhood authority, direct answers, and proof converts sellers without a search widget, and buyers will find inventory on the portals regardless. IDX is a tool for a specific pipeline, not a requirement."),
+        ],
+    },
+    {
         "slug": "real-estate-ai-search-statistics",
         "img": "img/real-estate-ai-search-statistics.jpg",
         "img_alt": "Illustration of a rising bar chart made of small glowing houses beside an AI chat bubble",
