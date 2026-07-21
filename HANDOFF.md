@@ -111,19 +111,14 @@ Fonts (Sora + Inter) load from Google Fonts; offline they fall back to system fo
 - `privacy.html` and `terms.html` (noindex, linked in all footers) are starting
   templates — **have an attorney review before launch.**
 
-## 5. The contact form (WIRED — one activation step left)
+## 5. The contact form (LIVE via Formspree)
 
-`#leadForm` posts via AJAX to **FormSubmit.co** (no account needed), delivering
-submissions by email with a honeypot spam trap and a mailto fallback if the request
-fails. Currently pointed at `jondkennedy.com@gmail.com`.
-
-**Before launch:**
-1. Submit the form once — FormSubmit emails a one-time activation link; click it.
-   Submissions flow after that.
-2. When `hello@citedrealty.com` exists, swap the address in the form `action`
-   (`https://formsubmit.co/ajax/<email>`) and re-activate.
-3. Optional: FormSubmit gives you a random alias string after activation — use it in
-   the action URL instead of the raw email to keep the address out of the page source.
+`#leadForm` posts via AJAX to **Formspree** (`https://formspree.io/f/mykrpold`) with a
+`_gotcha` honeypot and a mailto fallback if the request fails. Submissions are emailed
+AND stored in the Formspree dashboard (formspree.io → this form) — the AI Visibility
+Checker's lead notifications (§5b) go to the same form, so every checker run appears
+there too, flagged "NAMED" / "NOT NAMED — sales opportunity" in the subject.
+No activation step needed; manage notifications/spam settings in the Formspree dashboard.
 
 ## 5b. Free tool: AI Visibility Checker (needs one env var)
 

@@ -74,15 +74,14 @@ export default async function handler(req, res) {
 
     const named = text.toLowerCase().includes(name.toLowerCase());
 
-    // Lead notification: every completed check emails the details (same FormSubmit
-    // channel as the site's lead form — one activation covers both).
+    // Lead notification: every completed check goes to Formspree (emailed + stored
+    // in the dashboard — same form as the site's lead form).
     try {
-      await fetch("https://formsubmit.co/ajax/jondkennedy.com@gmail.com", {
+      await fetch("https://formspree.io/f/mykrpold", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
         body: JSON.stringify({
           _subject: `Checker lead: ${name} (${market}) — ${named ? "NAMED by AI" : "NOT NAMED — sales opportunity"}`,
-          _template: "table",
           tool: "AI Visibility Checker",
           agent_name: name,
           brokerage: brokerage || "(not given)",
