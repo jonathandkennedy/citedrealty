@@ -1,191 +1,168 @@
-# CitedRealty — Website Handoff
+# CitedRealty — Complete Handoff & Decision Log
 
-Last updated: 2026-07-19
+**Site:** https://citedrealty.com · **Repo:** github.com/jonathandkennedy/citedrealty (public, `main`) · **Host:** Vercel (auto-deploys on push) · **Last updated:** 2026-07-21
 
-A full marketing site for **CitedRealty** (citedrealty.com) — AI search marketing for
-**realtors and real estate brokers** who need more seller and buyer leads. Static
-HTML/CSS/JS, no build step; open the files in a browser or serve the folder.
-
-Tagline: **"When buyers ask AI, you're the answer."**
+This document records not just *what* the site is, but *why every non-obvious decision was made*, so anyone (including future-you or another dev/marketer) can extend it without re-litigating settled choices or breaking the strategy.
 
 ---
 
-## 1. What's in this package
+## 0. The one-paragraph summary
 
-```
-citedrealty.com/
-├── index.html                  # homepage (all styles + scripts inline)
-├── HANDOFF.md                  # this file
-├── assets/
-│   ├── styles.css              # shared stylesheet for interior pages (services/audiences/blog)
-│   ├── app.js                  # shared JS (nav blur, mobile menu, scroll reveal)
-│   ├── icon-square.svg         # bubble-house mark on gradient tile (used in nav/footer)
-│   ├── icon-512.png            # social/OG image + avatar source
-│   ├── apple-touch-icon.png    # 180px
-│   ├── favicon-32.png / favicon-16.png
-│   └── citedrealty-lockup-dark.svg / -light.svg   # full logo lockups
-├── services/                   # 6 pages, generated
-│   ├── ai-citations.html       # flagship: GEO / AI citation building
-│   ├── google-business-profile.html
-│   ├── local-seo.html          # local SEO + neighborhood pages
-│   ├── content.html            # blog & content engine
-│   ├── social-media.html
-│   └── reviews.html
-├── audiences/                  # ICP landing pages, generated
-│   ├── solo-agents.html  ├── teams.html
-│   ├── brokerages.html   └── listing-agents.html
-├── blog/                       # Resources & News (GEO content hub; see §8)
-│   ├── index.html              # filterable card grid (category chips)
-│   └── <slug>.html             # 6 articles (generated)
-├── robots.txt                  # allows all crawlers, points at sitemap
-├── sitemap.xml                 # all 18 URLs
-├── gen_services.py             # service-page generator
-├── gen_audiences.py            # audience-page generator
-└── gen_blog.py                 # blog generator (index + articles)
-```
+CitedRealty is a full digital-marketing agency for **realtors and real-estate brokers** whose wedge is **Generative Engine Optimization (GEO)** — getting agents *cited and recommended by AI assistants* (ChatGPT, Gemini, Perplexity, Google AI Overviews) rather than fighting Zillow/Redfin for classic SEO. Tagline: **"When buyers ask AI, you're the answer."** The site is a static HTML/CSS/JS build (no framework, no build step) plus two Vercel serverless functions for the interactive tools. It is deliberately a *proof of its own product*: it practices the GEO it sells (schema, TL;DR answers, neighborhood-style architecture, honest citable content), so that when someone asks an AI about real-estate marketing agencies, CitedRealty is what gets cited.
 
-> The **homepage** is fully self-contained (inline CSS/JS). Interior pages share
-> `assets/styles.css` + `assets/app.js` — edit a component once, every page updates.
+---
 
-## 2. How to view / run
+## 1. Positioning decisions (the strategic core — do not drift from these)
 
-- Quickest: open `index.html` in a browser.
-- Local server (recommended):
-  ```
-  cd citedrealty.com
-  python3 -m http.server 4601
-  # http://localhost:4601
-  ```
-  (A `citedrealty` entry exists in the repo's `.claude/launch.json` for Claude Code previews.)
+| Decision | Why |
+|---|---|
+| **Lead with AI citations (GEO), not classic SEO** | Zillow/Redfin/Realtor.com own portal SEO; an agent cannot win "homes for sale in [city]". The AI-answer layer names *individual agents* and nobody owns it yet. This is the entire reason the company exists. |
+| **ICP = realtors & brokers needing seller AND buyer leads** | Modeled on lucrativelegal.com (which does this for lawyers). Every page speaks to agents, never to consumers/home-shoppers. |
+| **Public pricing ($999 / $3,999 / $6,999)** | Luxury Presence and most competitors demo-gate pricing. Public pricing is (a) a trust wedge and (b) an AI-answer advantage — assistants can actually answer "how much does CitedRealty cost," competitors' can't. **Keep pricing public.** |
+| **"You own everything" ownership angle** | The core differentiator vs. Luxury Presence's rented SaaS. Websites, content, profiles, citations are assets the client keeps if they leave. This is the emotional spine of the whole site (see the "Why CitedRealty" homepage section). |
+| **Radical honesty as a citation strategy** | Every comparison/CRM/course post genuinely says when NOT to buy, names competitors fairly, and discloses our bias. This is not softness — fair, honest content is what AI systems cite and skeptical agents trust. It is a deliberate GEO tactic. Never write self-serving fluff. |
+| **"Eat our own cooking"** | The site itself runs the full GEO playbook. This is both the product demo and the reason the blog exists. |
 
-Fonts (Sora + Inter) load from Google Fonts; offline they fall back to system fonts.
+**Three pricing tiers (user-decided, do not change without the user):**
+- **Local Presence — $999/mo:** GBP + local SEO + AI citations + blog + 5 neighborhoods. Website build available as add-on project.
+- **Local Hero — $3,999/mo** *(flagged "Most Popular"):* everything + **custom website build included** + 15 neighborhoods + social guidance + AI visibility tracking.
+- **Market Authority — $6,999/mo:** everything + 30 neighborhoods + full done-for-you social + weekly 1-hr consultation.
+- The "30 neighborhoods" figure was the AI's read of the user's shorthand "last 3)"; **confirm with user** if ever revisited. Website-build inclusion (Local Hero+) was an explicit user decision.
 
-## 3. Design system
+---
 
-- **Palette:** ink `#0B0B14`, panel `#12121D`, hairline `#23233A`, text `#F0F0F8`,
-  muted `#9494AE`, gradient accent indigo→violet→lilac `#4F46E5 → #8B5CF6 → #C084FC`.
-- **Type:** Sora (display/headings), Inter (body).
-- **Brand motif:** the `[1]` citation marker — in the logo (`CitedRealty[1]`), service
-  numbering, pricing tiers, and pillar headings. Keep it purposeful, not sprinkled.
-- **Logo:** bubble-house mark (AI answer bubble + house + spark). Source SVGs in
-  `assets/` and the design exploration in `../citedrealty/` (concept board, alternates).
-- **Motion:** nav blurs solid on scroll, scroll-reveal sections, marquee ticker on the
-  homepage. All respect `prefers-reduced-motion`.
-- **Light/dark mode:** LIGHT ("day mode") is the default for new visitors; a sun/moon
-  toggle in every nav switches to dark (the brand's original look). Implemented as token
-  overrides (`:root[data-theme="light"]` in `assets/styles.css` and the homepage's inline
-  CSS) + `assets/theme.js` (loaded synchronously in `<head>` so the saved choice —
-  localStorage `cr-theme` — applies before first paint). The consent banner themes
-  automatically via CSS variables. If you add new colors, use the existing tokens.
-- **Premium type accent:** gradient words inside `h1`/`h2` (`<span class="grad">`) render
-  in *Instrument Serif italic* — the editorial counterpoint to Sora. Loaded from Google
-  Fonts on every page. Wrap any headline phrase in `.grad` to get the treatment.
-- **Material layer:** `--shadow-card` token (flat in dark, layered violet-tinted soft
-  shadow in light) applied to all cards; button lift/glow hovers; `::selection` in brand
-  violet; light nav goes glassy with shadow on scroll.
+## 2. Brand & design system
 
-## 4. Homepage sections (top to bottom)
+- **Name/logo:** CitedRealty with a superscript **[1]** citation marker — the brand's signature motif (appears in the logo `CitedRealty[1]`, service numbering, pricing tiers, section eyebrows). The `[1]` is *the* brand device; use it purposefully, never sprinkle it. Logo mark = an AI answer bubble containing a house + spark (the "answer bubble"), chosen from 4 concepts explored at project start (design exploration lives in `../citedrealty/`).
+- **Palette:** dark ink `#0B0B14`, panel `#12121D`, hairline `#23233A`; **gradient accent** indigo→violet→lilac `#4F46E5 → #8B5CF6 → #C084FC` (the one hot accent — everything else stays quiet). Light-mode tokens: ground `#FAF9FC`, panel `#FFFFFF`, ink `#14142B`.
+- **Type:** **Sora** (display/headings, 700-800 weight), **Inter** (body). **Instrument Serif italic** is used *only* for the gradient words inside `h1`/`h2` (`<span class="grad">`) — the editorial serif counterpoint that gives the site its "expensive" feel and fits the citation/editorial brand. Wrap any headline phrase in `.grad` to get the treatment automatically. Loaded via Google Fonts on every page.
+- **Why the serif accent:** requested "6-figure website" feel. The bold-geometric-sans against italic-serif contrast is the signature of high-end editorial brands, and a serif literally suits a company named after citations. One CSS rule restyled the whole site because headlines already wrapped gradient phrases in `.grad`.
+- **Light/dark mode:** **LIGHT is the default** for new visitors (user decision — "day mode"; agents browse in daylight offices, light reads as trust). Dark is the toggle (the brand's original look). Implemented as CSS-token overrides under `:root[data-theme="light"]` + `assets/theme.js` loaded **synchronously in `<head>`** so the saved choice (localStorage `cr-theme`) applies before first paint (no flash). Both themes get equal design care.
+- **Material layer:** `--shadow-card` token (flat/none in dark, layered violet-tinted soft shadow in light) on all cards; button lift+glow on hover with an inset top highlight; brand-violet `::selection`; light nav goes glassy with a shadow on scroll. These make light mode feel premium rather than flat.
+- **Motion:** floating pill nav blurs solid on scroll; scroll-reveal on sections; homepage marquee ticker. All respect `prefers-reduced-motion`.
 
-1. Floating pill nav (blurs on scroll) + mobile menu
-2. Hero — tagline headline + mock AI answer citing an example agent ("This becomes you")
-3. Marquee — services ticker
-4. The portal trap — why classic SEO loses to Zillow, why AI answers are winnable
-5. The CitedRealty system — bento flywheel (Cited → Found → Known → Trusted → Chosen)
-6. Services — 6 cards linking to service pages
-7. Rent vs. own compare
-8. Who we help — 4 audience cards
-9. Pricing — $999 Local Presence / $3,999 Local Hero (most popular, website build included) / $6,999 Market Authority
-10. Process — 5 steps · 11. Why CitedRealty — the four promises (ownership manifesto)
-12. FAQ accordion · 13. Contact/lead form · 14. Footer (Privacy/Terms/Cookie preferences) + sticky mobile CTA
+---
 
-## 5a. Cookie & pixel consent
+## 3. Technical architecture & WHY
 
-`assets/consent.js` runs on every page (self-injecting banner + styles):
-- First visit: banner offers **Accept all** / **Essentials only**; choice stored in
-  localStorage (`cr-consent` = "all" | "essential").
-- Marketing pixels load **only after Accept all** — configure IDs at the top of
-  `consent.js` (`META_PIXEL_ID`, `GA4_ID`, `GTM_ID`; empty = never loads). GA4 is
-  configured with `anonymize_ip`.
-- Every footer has a "Cookie preferences" link (`data-cookie-prefs`) that clears the
-  choice and reopens the banner; JS API: `window.crConsent.open()` / `.status()`.
-- `privacy.html` and `terms.html` (noindex, linked in all footers) are starting
-  templates — **have an attorney review before launch.**
+- **Static HTML/CSS/JS, no framework, no build step.** Reasons: (1) fastest possible pages = Core Web Vitals win, which is part of what we sell; (2) trivially portable/ownable — the client-ownership ethos applies to our own site; (3) anyone can edit it; (4) it's what we'd build for a client.
+- **Three Python generators** produce the repetitive pages from data (edit the data list, run the script, commit):
+  - `gen_services.py` → the 7 `services/*.html` pages (SERVICES list)
+  - `gen_audiences.py` → the 4 `audiences/*.html` pages (AUDIENCES list)
+  - `gen_blog.py` → `blog/index.html` + all 40 `blog/*.html` articles (POSTS list, newest first)
+  - **Why generators:** consistent nav/footer/schema across dozens of pages; change a shared component once and regenerate. **The homepage `index.html` is hand-authored and self-contained** (inline CSS/JS) — it's the one page different enough to justify not templating.
+- **Interior pages share** `assets/styles.css` + `assets/app.js`. Homepage inlines its own copy of the CSS/JS (intentional — keeps the homepage a single self-contained file).
+- **Two Vercel serverless functions** in `api/` (auto-deployed by Vercel from the repo, no config):
+  - `api/check.js` — the AI Visibility Checker. Calls Gemini **with Google Search grounding** to test whether an agent is named/recommended in their market.
+  - `api/generate.js` — shared endpoint for the 4 AI content tools (review-reply, listing-description, social-hook, attention-anchor) via a `mode` param.
+- **Model:** both functions call **`gemini-flash-latest`** (an alias). **CRITICAL LESSON:** we originally used `gemini-2.5-flash`, which Google **retired for new API users** mid-2026 → caused 502s. The `-latest` alias auto-tracks the current model so this can't recur. If you ever hardcode a version, expect it to get retired.
+- **Gemini "thinking" gotcha:** newer Gemini models return reasoning as parts with `thought:true`. **Both endpoints filter these out** (`.filter(p => !p.thought)`) or the tools leak their own chain-of-thought into output. Keep that filter.
+- **Checker "named" detection:** we ask the model for an explicit `VERDICT: FOUND / NOT_FOUND` token and regex that, because naive string-matching the agent's name gave false positives (the model repeats a name even while saying it was *not* found). Also strips `[n.n]` grounding markers from display text.
+- **Env var:** `GEMINI_API_KEY` in Vercel → Settings → Environment Variables (must be checked for **Production**). If absent, every tool degrades gracefully to a friendly "warming up" 503 that routes to the human audit form — nothing looks broken. (Debugging note: it took several deploys for the var to take; the fix was confirming the exact name + Production scope.)
+- **Guardrails on the functions:** per-IP rate limits (5/hr checker, 10/hr generator — per warm instance, MVP-grade), input sanitization (`clean()` strips `<>{}\`), token caps, CORS locked to `https://citedrealty.com`. Each call costs a fraction of a cent.
 
-## 5. The contact form (LIVE via Formspree)
+---
 
-`#leadForm` posts via AJAX to **Formspree** (`https://formspree.io/f/mykrpold`) with a
-`_gotcha` honeypot and a mailto fallback if the request fails. Submissions are emailed
-AND stored in the Formspree dashboard (formspree.io → this form) — the AI Visibility
-Checker's lead notifications (§5b) go to the same form, so every checker run appears
-there too, flagged "NAMED" / "NOT NAMED — sales opportunity" in the subject.
-No activation step needed; manage notifications/spam settings in the Formspree dashboard.
+## 4. Lead capture (LIVE) — Formspree
 
-## 5b. Free tool: AI Visibility Checker (needs one env var)
+- Both the homepage `#leadForm` **and every tool** POST to **Formspree** (`https://formspree.io/f/mykrpold`). Submissions are **emailed AND stored in the Formspree dashboard** (a browsable lead list).
+- We switched from FormSubmit.co → Formspree because Formspree stores + emails (FormSubmit was email-only) and needs no activation dance. Honeypot field is `_gotcha`; there's a mailto fallback if the request fails.
+- **Every tool run is a lead.** Subjects self-triage, e.g. `Checker lead: Jane Rivera (Scottsdale) — NOT NAMED — sales opportunity`. The "NOT NAMED" ones are the call list — agents who just learned AI ignores them. **This is disclosed** on each tool page and in the privacy policy (capturing silently would be a trust landmine for an honesty brand).
+- **Watch the Formspree free-tier submission cap** (≈50/mo). With the contact form + every tool feeding one endpoint, a busy month could hit it — upgrade Formspree or split tools onto a second form if volume grows.
 
-`tools/ai-visibility-checker.html` + `api/check.js` (a Vercel serverless function).
-Visitor enters name/brokerage/market → the function asks Gemini (with live Google
-Search grounding) who AI recommends there and whether the visitor is named →
-result shows the verdict, the agents named, and the sources cited, with audit CTAs.
+---
 
-**To activate:** Vercel dashboard → Project → Settings → Environment Variables →
-add `GEMINI_API_KEY` (same key as the image scripts) → redeploy. Until then the
-tool degrades gracefully ("warming up") and routes to the audit form.
-Guardrails: 5 checks/IP/hour (per instance), input sanitization, 900-token cap,
-CORS locked to citedrealty.com. Each check costs a fraction of a cent on the key.
+## 5. Cookie/pixel consent + theme + preferred-source (shared JS)
 
-## 6. Generators — how to edit pages
+- `assets/consent.js` self-injects a themed banner on every page (Accept all / Essentials only; choice in localStorage `cr-consent`). **Marketing pixels load ONLY after "Accept all."** Pixel IDs are configured at the top of `consent.js` (`META_PIXEL_ID`, `GA4_ID`, `GTM_ID` — all empty until the user adds them; GA4 gets `anonymize_ip`). Footer "Cookie preferences" link reopens the choice.
+- `assets/theme.js` — the light/dark switch (see §2), synchronous in `<head>`.
+- Every footer has a **"★ Make us a preferred source on Google"** link → `google.com/preferences/source?q=citedrealty.com`. Lets logged-in Google users star the brand as a Preferred Source (weights our articles in their Top Stories — most relevant to the Industry News posts). User must be logged into Google for the page to work; that's Google's behavior, not a bug.
 
-- **Service pages:** edit the `SERVICES` list in `gen_services.py`, run
-  `python3 gen_services.py`. All six regenerate.
-- **Audience pages:** edit `AUDIENCES` in `gen_audiences.py`, run it.
-- **Blog:** append a post dict to `POSTS` in `gen_blog.py` (newest first), run it —
-  rebuilds `blog/index.html` and every article. Write original answers only.
-- **Homepage / pricing:** edit `index.html` directly (pricing cards in `.plans`; also
-  update the offer catalog in the homepage JSON-LD if prices change).
+---
 
-## 7. Technical SEO / schema
+## 6. Page inventory (as of 2026-07-21)
 
-- Homepage `@graph`: `ProfessionalService`+`Organization` (`#business`) with
-  `hasOfferCatalog` (3 retainers), `areaServed`, `knowsAbout`; `WebSite`; `FAQPage`
-  matching the on-page FAQ.
-- Service pages: `Service` + `BreadcrumbList`. Audience pages: `WebPage` + `BreadcrumbList`.
-- Articles: `BlogPosting` + `FAQPage` + `BreadcrumbList`; TL;DR answer block up top
-  (60–130 words, liftable by AI), sticky "On this page" TOC, FAQ per post.
-- Every page has `<link rel="canonical">`; robots.txt + sitemap.xml cover all URLs.
-- No fabricated stats, testimonials, or `aggregateRating` — add real proof as it exists.
-- Accessibility: skip links, keyboard-operable nav/menu/FAQ, focus styles,
-  reduced-motion support.
+- **Homepage** (`index.html`): nav → hero (tagline + mock AI answer citing an example agent with "This becomes you" pill) → marquee → "portal trap" problem → flywheel bento (Cited→Found→Known→Trusted→Chosen) → 7 services → rent-vs-own compare → 4 audiences → pricing → 5-step process → "Why CitedRealty" ownership promises → FAQ → contact form → footer + sticky mobile CTA.
+- **7 service pages** (`services/`): ai-citations `[1]` (flagship), website-design `[2]`, google-business-profile `[3]`, local-seo `[4]`, content `[5]`, social-media `[6]`, reviews `[7]`. (Website Design was added after launch as service [2] — the Luxury Presence competitive response; everything renumbered.)
+- **4 audience pages** (`audiences/`): solo-agents, teams, brokerages, listing-agents.
+- **7 free tools** (`tools/`) + hub `tools/index.html`: ai-visibility-checker, review-reply-generator, listing-description-generator, marketing-budget-calculator (client-side), gbp-grader (client-side, 11 weighted questions), social-hook-generator, attention-anchor-generator.
+- **40 blog posts** (`blog/`) across 9 categories (Industry News, How-To Guides, Agent Q&A, Websites, Seller Leads, Buyer Leads, AI Search, Local SEO, Strategy).
+- **Legal:** privacy.html, terms.html (both `noindex`, attorney-review templates).
+- **SEO infra:** robots.txt, sitemap.xml (61 URLs — every indexable page; privacy/terms are noindex and excluded).
 
-## 8. Blog / content workflow (GEO)
+---
 
-Audience: **realtors and brokers asking marketing questions** (not consumers). Goal:
-when an agent asks ChatGPT/Google "how do I get seller leads" or "how do agents show up
-in ChatGPT", CitedRealty's article is the cited source — the site practices the GEO it
-sells. Question-first titles, TL;DR answer up top, FAQs + schema on every post.
-Current set: **10 posts** across Seller Leads / Buyer Leads / AI Search / Local SEO / Strategy,
-including comparison ("vs"), budget, and ranked-list formats. Comparison posts avoid
-hard-coded competitor pricing (it goes stale) — keep them structural and honest.
+## 7. Content strategy & the rules behind it
 
-**Hero images:** every post has a branded illustration in `blog/img/` (1200w JPEG, wired
-via each post's `img`/`img_alt` fields — feeds the article figure, card thumbnail,
-og:image, and schema image). Two generator scripts:
-- `gen_blog_images.sh` — OpenAI gpt-image-1 (used for the first 6 posts)
-- `gen_blog_images_gemini.sh` — Gemini `gemini-2.5-flash-image` (used for the 4 newer posts; preferred going forward)
-Both read keys from `../citedrealty/.env`; add a slug + prompt to the script, run it, then
-downscale: `sips -Z 1200 -s format jpeg <slug>.png --out <slug>.jpg` and re-run `gen_blog.py`.
+**Why a blog at all:** it's the GEO engine. When an agent asks ChatGPT "how do I get seller leads," a CitedRealty article should be the cited source — proving the product by being the product.
 
-## 9. Pre-launch checklist
+**Every post follows a fixed anatomy** (enforced by `gen_blog.py`): question-first title, a **TL;DR block** (60-130 words, written to be liftable by an AI as a snippet), H2 sections, a sticky "On this page" TOC (auto-built from H2s), an **FAQ** section, a branded hero image, and **BlogPosting + FAQPage + BreadcrumbList schema**. This structure is *itself* the GEO tactic — it's what makes posts citable.
 
-- [x] Lead form wired to FormSubmit (§5) — **activate it with one test submission.**
-- [ ] Deploy: the site is fully static — drag the `citedrealty.com/` folder into
-      Cloudflare Pages, Netlify, or Vercel (any free tier works), then point the
-      citedrealty.com domain's DNS at it. No build step, no server.
-- [ ] Confirm pricing and 30-neighborhood count on the Authority tier ("last 3)" was read as 30).
-- [ ] Set real social profile URLs in `sameAs` (homepage schema) and footer if added.
-- [ ] Add `telephone`/`address` to `#business` schema once the GBP/NAP is set — must match GBP exactly.
-- [ ] Point the domain, then verify canonicals/sitemap URLs (already set to https://citedrealty.com).
-- [ ] Submit sitemap in Google Search Console; run pages through the Rich Results Test.
-- [ ] Have an attorney review privacy.html + terms.html (templates in place, linked in footers).
-- [ ] Add real pixel IDs to assets/consent.js (Meta / GA4 or GTM) — they stay dormant until set.
-- [ ] Replace the example agent in hero mock ("Jordan Blake") only if a real client agrees to be featured.
-- [ ] Rotate the OpenAI key that was used during logo generation (../citedrealty/.env).
+**Content rules (do not break — they are the brand):**
+1. **Honest or don't publish.** Every comparison names competitors fairly and says when not to buy. The CRM post says "you don't need a CRM if your problem is lead-gen"; the courses post says "we'd rather be the resource you trust than sell you a course." This honesty is why the content earns citations.
+2. **No fabricated stats, quotes, testimonials, or `aggregateRating`.** Real numbers only, each attributed to its primary source with an outbound link. The stats roundup was built from a deep-research pass that verified 24 of 120 claims and *published which ones failed* — that transparency section is a feature, not a bug.
+3. **Contextual internal links** with descriptive anchor text from every post to relevant service/audience pages (mapped in `gen_blog.py`). New posts should include 1-2. This was a deliberate internal-linking-architecture fix (see §8).
+4. **Compliance hedging** on legal/news posts: "reporting, not legal advice," no unverified penalty figures.
+5. **Images:** generated via `gen_blog_images_gemini.sh` (Gemini `gemini-2.5-flash-image`, preferred) or `gen_blog_images.sh` (OpenAI, older). Prompts request the brand palette + a warm amber accent, "NO text/letters/watermarks" (Gemini occasionally sneaks in a hex-code watermark — regenerate if so). Downscale to 1200w JPEG with `sips` before committing.
+
+**How the content was built (chronology, so you understand the clusters):**
+- Core launch set (buyer/seller leads, AI visibility, neighborhood pages, local SEO).
+- **Luxury Presence gap analysis** (`CONTENT-GAP-luxurypresence.md`) → website-design service + comparison posts (best-website-companies, LP-alternatives, website-cost, do-you-need-a-website) + the verified stats roundup.
+- **Agent Q&A** batch (Reddit-perennial questions: door knocking, open houses, cold calling, postcards, first clients) — the forum-question format LP doesn't do.
+- **Industry News** batch (newsjacking, links back to source): CT SB 340 private-listings ban, CA AB 723 AI-photo law, NAR coming-soon statement. This is a repeatable rhythm — send any industry article, it becomes a fact-checked source-linked post.
+- **How-To Guides** batch (closing the Stridec/GEO-agency gap): GBP step-by-step, reviews playbook, what-data-AI-uses, schema walkthrough, E-E-A-T, neighborhood-page template, DIY audit, IDX.
+- **TopicalMap.ai diff batch:** from a 1,120-keyword export we extracted only 6 on-ICP, non-duplicative posts (AI-tools-vs-cited, 3-3-3 rule, mistakes, ROI, best-CRM, courses) and ignored ~1,000 rows of padding + the off-ICP courses pillar.
+- **Local-SEO map diff:** wrote only 2 genuinely-new comprehensive pages (GBP Posts, on-page SEO — which absorbed 5 micro-topics) and skipped ~18 thin <10/mo topics. **Lesson for future maps:** these keyword tools are worth ~2-6 real posts each after filtering for overlap and micro-volume; writing one-post-per-keyword is the doorway-page mistake our own content warns against. Filtering IS the value.
+
+---
+
+## 8. Internal-linking architecture (deliberate, audited)
+
+An audit was run (money pages = 11: 7 services + 4 audiences). Decisions:
+- **URLs left flat and unchanged.** URL depth/slashes are **not** a Google ranking factor (Google-confirmed). We never restructure healthy URLs or add 301s to fix a non-problem. The levers are click depth, navigation, and the link graph — those we fixed instead.
+- **Server-rendered header dropdowns** (Services + Who-we-help) list all 11 money pages → every money page is 1 click from every page. Pure HTML/CSS, no JS injection (so crawlers see them).
+- **30+ contextual body links** from blog posts to services/audiences with descriptive anchors.
+- **Homepage ItemList schema** for services.
+- Result: inbound links per money page went from 4-10 → 33.
+
+---
+
+## 9. How to do common tasks
+
+- **Add a blog post:** append a dict to `POSTS` in `gen_blog.py` (newest first) with slug, img, img_alt, cat, title, date, excerpt, tldr, sections `[(h2, html)…]`, faqs `[(q,a)…]`. Include 1-2 contextual links to service/audience pages in the body (use **single-quoted** HTML attrs inside the double-quoted Python strings, e.g. `<a href='../services/x.html'>`). Add the image prompt to `gen_blog_images_gemini.sh`, run it, downscale, run `python3 gen_blog.py`, add to `sitemap.xml`, commit, push.
+- **Edit a service/audience page:** edit the data list in the generator, run it.
+- **Edit pricing/homepage:** hand-edit `index.html`. If pricing changes, also update the OfferCatalog in the homepage JSON-LD.
+- **VALIDATE JSON-LD before every push.** A single missing brace in hand-authored schema made the entire homepage graph unparsable (Google Search Console flagged it within hours of launch). Generated pages can't have this bug; hand-edits can. Run `json.loads` on every `<script type="application/ld+json">` block. Also validate `sitemap.xml` XML (a stray `</locs>` typo was caught pre-push once).
+- **Deploy:** `git push` → Vercel auto-deploys in ~30-60s. Committing straight to `main` (no PR flow, by default). Everything is verified with a live crawl after each push.
+
+---
+
+## 10. Pre-launch / open items (things only the user can do)
+
+- [ ] **Rotate the API keys** — the OpenAI and Gemini keys were pasted in chat during the build; treat as exposed. New values go in `../citedrealty/.env` (local, gitignored) and the Vercel env var.
+- [ ] **Google Search Console:** the homepage FAQ-schema bug is fixed; re-request indexing of `/`. Submit `sitemap.xml`. (There was a "Couldn't fetch" cosmetic delay on the brand-new property — normal.) An indexing priority list was provided (homepage + money pages + citation-bait posts first, ~10/day).
+- [ ] **Bing Webmaster Tools** — imports from Search Console in 2 clicks. **Matters more than usual:** ChatGPT web search runs on Bing's index, so Bing indexing is a prerequisite for some of the AI citations we sell.
+- [ ] **Attorney review** of privacy.html + terms.html before relying on them.
+- [ ] **Pixel IDs** into `assets/consent.js` if/when running Meta/Google ads.
+- [ ] **Real NAP** (phone/address) into the homepage `#business` schema `sameAs`/`telephone`/`address` once the Google Business Profile exists — must match GBP exactly.
+- [ ] **`hello@citedrealty.com`** — used in copy; set it up (or swap to a real address).
+- [ ] Consider making the repo **private** or stripping the strategy docs (`CONTENT-GAP-luxurypresence.md`, this file) — they're the competitive playbook and the repo is public. Vercel works identically with private repos.
+- [ ] **Watch Formspree submission cap** (§4).
+
+---
+
+## 11. Roadmap / ideas parked (not built)
+
+- **Content:** agent-website teardowns (recurring format), best-lead-gen-companies listicle, more Industry News as laws/news drop, email/scheduling/video *tools* comparisons (each needs a research pass for real vendor facts).
+- **Product:** an **email newsletter** (the last unbuilt item from the Stridec gap — owned audience + nurture). Case-studies + design-portfolio + testimonials sections — **all gated on real clients; never fabricate.** Treat the first 2-3 clients as documented case studies from day one.
+- **The real remaining gap is proof, not content or product.** The content and tool gaps vs. every competitor are closed; what can't be built is client results. That closes one client at a time.
+
+---
+
+## 12. Where things live outside this repo
+
+- Design exploration (logo concepts, alternates, the OpenAI-generated concept board): `../citedrealty/`
+- API keys (local, gitignored): `../citedrealty/.env`
+- This project's running memory/decisions: the user's Claude memory (`project_citedrealty.md`).
+- The TopicalMap.ai export analyzed: session scratchpad `topicalmap/`.
+</content>
