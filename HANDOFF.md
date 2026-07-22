@@ -1,6 +1,6 @@
 # CitedRealty — Complete Handoff & Decision Log
 
-**Site:** https://citedrealty.com · **Repo:** github.com/jonathandkennedy/citedrealty (public, `main`) · **Host:** Vercel (auto-deploys on push) · **Last updated:** 2026-07-21
+**Site:** https://citedrealty.com · **Repo:** github.com/jonathandkennedy/citedrealty (public, `main`) · **Host:** Vercel (auto-deploys on push) · **Last updated:** 2026-07-22
 
 This document records not just *what* the site is, but *why every non-obvious decision was made*, so anyone (including future-you or another dev/marketer) can extend it without re-litigating settled choices or breaking the strategy.
 
@@ -129,7 +129,8 @@ An audit was run (money pages = 11: 7 services + 4 audiences). Decisions:
 
 ## 9. How to do common tasks
 
-- **Add a blog post:** append a dict to `POSTS` in `gen_blog.py` (newest first) with slug, img, img_alt, cat, title, date, excerpt, tldr, sections `[(h2, html)…]`, faqs `[(q,a)…]`. Include 1-2 contextual links to service/audience pages in the body (use **single-quoted** HTML attrs inside the double-quoted Python strings, e.g. `<a href='../services/x.html'>`). Add the image prompt to `gen_blog_images_gemini.sh`, run it, downscale, run `python3 gen_blog.py`, add to `sitemap.xml`, commit, push.
+- **Add a blog post:** append a dict to `POSTS` in `gen_blog.py` (newest first) with slug, img, img_alt, cat, title, date, excerpt, tldr, sections `[(h2, html)…]`, faqs `[(q,a)…]`. Include 1-2 contextual links to service/audience pages in the body (use **single-quoted** HTML attrs inside the double-quoted Python strings, e.g. `<a href='../services/x.html'>`). Add the image prompt to `gen_blog_images_gemini.sh`, run it, downscale, run `python3 gen_blog.py`, add to `sitemap.xml`, commit, push. **After the deploy is live, ping IndexNow** for the new URL (see below).
+- **Ping IndexNow after publishing/changing pages:** `python3 submit_indexnow.py https://citedrealty.com/blog/your-new-post.html` (pass any changed URLs), or `python3 submit_indexnow.py` with no args to resubmit the whole `sitemap.xml`. Use `--dry-run` to preview. This pushes the pages to Bing/Yandex/etc. instantly — and Bing indexing is a prerequisite for ChatGPT's web-search citations (§10). **Run it only after the page is live** (the engines verify ownership by fetching the public key file `78f577…​.txt` at the site root). That key file is public *by design* — commit it; it is NOT a secret like the Gemini/OpenAI keys.
 - **Edit a service/audience page:** edit the data list in the generator, run it.
 - **Edit pricing/homepage:** hand-edit `index.html`. If pricing changes, also update the OfferCatalog in the homepage JSON-LD.
 - **VALIDATE JSON-LD before every push.** A single missing brace in hand-authored schema made the entire homepage graph unparsable (Google Search Console flagged it within hours of launch). Generated pages can't have this bug; hand-edits can. Run `json.loads` on every `<script type="application/ld+json">` block. Also validate `sitemap.xml` XML (a stray `</locs>` typo was caught pre-push once).
@@ -141,7 +142,7 @@ An audit was run (money pages = 11: 7 services + 4 audiences). Decisions:
 
 - [ ] **Rotate the API keys** — the OpenAI and Gemini keys were pasted in chat during the build; treat as exposed. New values go in `../citedrealty/.env` (local, gitignored) and the Vercel env var.
 - [ ] **Google Search Console:** the homepage FAQ-schema bug is fixed; re-request indexing of `/`. Submit `sitemap.xml`. (There was a "Couldn't fetch" cosmetic delay on the brand-new property — normal.) An indexing priority list was provided (homepage + money pages + citation-bait posts first, ~10/day).
-- [ ] **Bing Webmaster Tools** — imports from Search Console in 2 clicks. **Matters more than usual:** ChatGPT web search runs on Bing's index, so Bing indexing is a prerequisite for some of the AI citations we sell.
+- [ ] **Bing Webmaster Tools** — imports from Search Console in 2 clicks. **Matters more than usual:** ChatGPT web search runs on Bing's index, so Bing indexing is a prerequisite for some of the AI citations we sell. **IndexNow is now wired up** (key file `78f577…​.txt` at root + `submit_indexnow.py`) so pages get pushed to Bing instantly on publish — but still claim the property in Bing Webmaster Tools for the reporting/coverage view (IndexNow submits; it doesn't report).
 - [ ] **Attorney review** of privacy.html + terms.html before relying on them.
 - [ ] **Pixel IDs** into `assets/consent.js` if/when running Meta/Google ads.
 - [ ] **Real NAP** (phone/address) into the homepage `#business` schema `sameAs`/`telephone`/`address` once the Google Business Profile exists — must match GBP exactly.
