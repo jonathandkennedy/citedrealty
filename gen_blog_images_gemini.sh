@@ -8,6 +8,12 @@ mkdir -p "$OUT"; cd "$OUT"
 STYLE="Editorial illustration for a real estate marketing blog. Flat modern vector style, minimal, elegant. Very dark indigo background (#0B0B14) with glowing indigo-to-violet-to-lilac gradient accents (#4F46E5, #8B5CF6, #C084FC) and a single warm amber glow accent, subtle thin grid lines. No text, no letters, no words, no logos. Wide composition, generous margins."
 
 typeset -A PROMPTS
+PROMPTS[ai-tools-vs-getting-cited-by-ai]="Split composition: on the left a small robot arm writing on a document, on the right a glowing trophy with a tiny house on it; a subtle divider between them. $STYLE"
+PROMPTS[the-3-3-3-rule-real-estate-marketing]="Three glowing clock faces in a neat row, each slightly larger, above a small warm house. $STYLE"
+PROMPTS[digital-marketing-mistakes-realtors-make]="A small charming house with several little warning-sign flags planted in the ground around it, one flag glowing. $STYLE"
+PROMPTS[real-estate-marketing-roi]="A balance scale: a small house on one pan, a rising stack of gradient coins on the other, tipping toward the coins. $STYLE"
+PROMPTS[best-crm-for-realtors]="Stylized contact cards with tiny person icons flowing along glowing lines into a central house-shaped hub. $STYLE"
+PROMPTS[are-real-estate-marketing-courses-worth-it]="A graduation cap beside a small glowing house, with a subtle forking path leading two directions in front of them. $STYLE"
 PROMPTS[how-to-build-a-neighborhood-page]="A webpage frame being assembled like scaffolding around a charming cluster of small glowing houses and trees. $STYLE"
 PROMPTS[diy-ai-visibility-audit]="A large magnifying glass examining a glowing AI chat bubble, with a small scorecard of checkmarks and crosses floating beside it. $STYLE"
 PROMPTS[what-is-idx]="A stream of small listing cards with house icons flowing from a large office building into a smaller cozy website window. $STYLE"

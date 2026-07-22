@@ -29,6 +29,203 @@ CATS = {
 
 POSTS = [
     {
+        "slug": "ai-tools-vs-getting-cited-by-ai",
+        "img": "img/ai-tools-vs-getting-cited-by-ai.jpg",
+        "img_alt": "Illustration of a robot arm writing on one side and a glowing trophy with a house on the other",
+        "cat": "ai",
+        "title": "AI Tools for Realtors vs. Getting Recommended BY AI: Two Different Games",
+        "date": "2026-07-21",
+        "excerpt": "Almost every agent now uses AI to write listings and posts. Almost none work on being the agent AI recommends. Those are opposite games — and only one of them gets you hired.",
+        "tldr": "There are two completely different \"AI for real estate\" plays, and agents conflate them. The first is using AI tools — ChatGPT to draft listings, AI writers for social, AI schedulers — which makes you faster and is now table stakes (NAR's 2025 survey shows ~69% of Realtors already use AI at least monthly). The second is Generative Engine Optimization: making AI assistants name and recommend YOU when buyers and sellers ask who to work with. The first is a productivity upgrade every competitor also has; the second is a visibility moat almost nobody is building. Using AI to write a listing does not make ChatGPT recommend you — that requires citable content, consistent entities, reviews, and third-party mentions. The winners in 2026 do both, but treat the second as the actual competitive edge.",
+        "sections": [
+            ("Game one: using AI to do the work faster",
+             "<p>This is the game everyone's playing. Draft a listing description in ChatGPT, spin up captions with an AI writer, schedule a month of posts, generate a market-update graphic. It's genuinely useful — our own <a href='../tools/index.html'>free tools</a> exist to make it faster — and it's now expected: <a href='real-estate-ai-search-statistics.html'>NAR's 2025 Technology Survey</a> found roughly 69% of Realtors use AI at least monthly, and a 2026 brokerage survey put agent AI use at 97%.</p>"
+             "<p>But read that adoption number again. When nearly every agent uses the same tools to produce the same kind of content, the tools stop being an advantage and become the baseline. Faster listing descriptions don't win listings when your competitor also has faster listing descriptions.</p>"),
+            ("Game two: getting recommended BY the AI",
+             "<p>Here's the game almost nobody is playing. When a seller opens ChatGPT and types \"who should I list my home with in [your city]?\", the assistant names <b>specific agents</b> and cites its sources. That answer is being written right now, for your market, whether or not you're in it.</p>"
+             "<p>Getting into that answer is a different discipline entirely — <a href='../services/ai-citations.html'>Generative Engine Optimization</a>. It's built from citable content, consistent entity data across your profiles, reviews at volume, and independent third-party mentions (the full mechanics are in our guide on <a href='what-data-do-ai-assistants-use.html'>what data AI assistants actually use</a>). None of it comes from using AI tools. You can generate a thousand AI-written posts and remain completely invisible to the assistant answering that seller's question.</p>"),
+            ("Why agents confuse the two — and why it's costly",
+             "<p>The phrase \"AI marketing for realtors\" covers both, so agents check the box by using tools and assume they're covered on AI. They're not. It's like confusing \"I use a camera\" with \"I rank on Google Images\" — same technology, opposite outcomes. One is input; the other is visibility.</p>"
+             "<p>The cost of the confusion is real. Our <a href='real-estate-ai-search-statistics.html'>verified stats roundup</a> found that when an AI answer appears, brands cited inside it earn roughly 120% more clicks than brands that aren't — while uncited brands lost 67% of their click-through. The agent generating AI content all day while invisible in AI answers is optimizing the game that doesn't decide who gets hired.</p>"),
+            ("Do both — but know which one is the moat",
+             "<p>This isn't an argument against AI tools. Use them; they save hours, and hours matter. The argument is about where your <i>edge</i> comes from. Tool use is a productivity gain your competitors already have. AI visibility is a moat almost none of them are building, because it takes months of citable-asset work instead of a monthly subscription.</p>"
+             "<p>Practical split: let AI tools handle production speed, and put your real strategic effort into being the answer. Run our free <a href='../tools/ai-visibility-checker.html'>AI Visibility Checker</a> to see which game you're actually winning — if AI names your competitors and not you, all the AI-written content in the world won't fix it. That gap is exactly what <a href='../services/ai-citations.html'>our citation work</a> closes.</p>"),
+        ],
+        "faqs": [
+            ("Does using ChatGPT to write my listings help me show up in ChatGPT?",
+             "No — those are unrelated. Using ChatGPT to draft content is a production tool; it doesn't affect whether ChatGPT recommends you when someone asks for an agent. Showing up in AI recommendations requires citable published content, consistent profile data, reviews, and third-party mentions — the assistant has to find and trust sources about you, which AI-drafting your own posts doesn't create."),
+            ("What are the best AI tools for real estate agents?",
+             "The genuinely useful categories are content drafting (ChatGPT/Gemini), listing descriptions, social scheduling, and video scripting — we offer several as free tools. But choosing tools is the easy, low-stakes decision; every agent has access to the same ones. The harder, higher-value question is whether AI assistants recommend you, which no tool subscription answers."),
+            ("Is it worth paying for AI marketing software as a realtor?",
+             "For production speed, often yes — if it saves you real hours. Just don't mistake the subscription for a competitive advantage; it's a baseline every competitor can buy too. The durable edge is AI visibility (being recommended), which is earned through owned assets, not purchased through software."),
+        ],
+    },
+    {
+        "slug": "the-3-3-3-rule-real-estate-marketing",
+        "img": "img/the-3-3-3-rule-real-estate-marketing.jpg",
+        "img_alt": "Illustration of three glowing clock faces in a row above a small house",
+        "cat": "strategy",
+        "title": "What Is the 3-3-3 Rule in Real Estate Marketing? (And Does It Actually Work?)",
+        "date": "2026-07-21",
+        "excerpt": "You'll see the '3-3-3 rule' quoted as gospel and defined three different ways. Here's what it actually means, which version matters, and the honest limit of any follow-up formula.",
+        "tldr": "The \"3-3-3 rule\" in real estate is an informal follow-up heuristic, not an official standard — and it's defined several ways. The most common version is a lead-nurture cadence: contact a new lead 3 times in the first 3 days, then 3 times over the next 3 weeks, then 3 times across the following 3 months, tapering persistence as the lead cools. A second common version is a prospecting-time rule (spend focused blocks split three ways: new leads, active clients, and sphere). The exact numbers matter less than the principle they encode: fast first contact plus structured, persistent, decreasing follow-up dramatically improves conversion of leads you already have. The catch no formula fixes: a follow-up cadence converts demand — it doesn't generate it.",
+        "sections": [
+            ("What the 3-3-3 rule actually says",
+             "<p>First, honesty: there is no official, industry-sanctioned \"3-3-3 rule.\" It's coaching shorthand that circulates in different forms, which is exactly why agents argue about it. The version you'll hear most is a <b>follow-up cadence</b>: after a new lead comes in, make contact 3 times in the first 3 days, then 3 more times over the next 3 weeks, then 3 more across the following 3 months. Persistence high and immediate, then tapering as the lead ages.</p>"
+             "<p>A second common version is a <b>prospecting-time</b> rule — divide your daily prospecting into three focused blocks (new leads, active clients, past clients/sphere) — and you'll occasionally see a \"3 hours, 3 ways\" phrasing. When someone quotes \"the\" 3-3-3 rule at you, ask which one they mean; they may not know there are others.</p>"),
+            ("Why the cadence version works",
+             "<p>The follow-up version endures because it fixes the two things that actually kill lead conversion: <b>slow first contact</b> and <b>giving up too early</b>. Speed-to-lead is brutally real — a lead contacted in the first few minutes converts far better than one contacted hours later — and most agents quit after one or two unanswered attempts, right before the point where persistence pays. The 3-3-3 structure forces both fast initial contact and a written reason to keep touching a lead for months.</p>"
+             "<p>The tapering matters too: nine touches front-loaded into three days would annoy; nine touches spread across a decaying schedule reads as attentive. The formula is really just a memorable container for \"respond instantly, then follow up persistently but with decreasing frequency.\"</p>"),
+            ("The honest limit every follow-up formula shares",
+             "<p>Here's what no 3-3-3 rule, script, or CRM cadence will do: <b>create leads that don't exist.</b> A follow-up system is a conversion tool — it makes the most of demand you already have. It's downstream of the actual constraint for most agents, which is <i>generating</i> that demand in the first place.</p>"
+             "<p>This is the same trap as buying leads and working them harder: you're optimizing conversion while the pipeline stays thin. The compounding fix sits upstream — being the agent buyers and sellers <a href='how-realtors-get-seller-leads-without-buying-them.html'>find and contact directly</a>, so your follow-up cadence is applied to warm inbound instead of cold purchased lists.</p>"),
+            ("How to actually use it",
+             "<p>Adopt the cadence — it's genuinely good practice. Put the 3-3-3 follow-up sequence into your CRM as an automated-plus-personal rhythm, and hold yourself to fast first contact. Then spend your <i>strategic</i> energy one level up: on the <a href='../services/local-seo.html'>neighborhood authority</a>, reviews, and <a href='../services/ai-citations.html'>AI visibility</a> that fill the top of the funnel the 3-3-3 rule works at the bottom of. A great cadence on a thin pipeline is a fast car with an empty tank.</p>"),
+        ],
+        "faqs": [
+            ("What is the 3-3-3 rule in real estate?",
+             "It's an informal follow-up heuristic — most commonly: contact a new lead 3 times in 3 days, then 3 times in 3 weeks, then 3 times over 3 months, tapering persistence as the lead cools. It's coaching shorthand, not an official standard, and you'll also hear a prospecting-time version (three focused daily blocks). The principle it encodes — fast first contact plus structured, decreasing follow-up — is what actually matters."),
+            ("Does the 3-3-3 rule really improve conversion?",
+             "The cadence principle does help, because it fixes the two biggest lead-conversion killers: slow first contact and quitting after one or two attempts. But it only converts leads you already have — it can't generate demand. Pair it with lead generation that produces warm inbound, or you'll have a great system working a thin pipeline."),
+            ("Is there an official 3-3-3 rule in real estate?",
+             "No. It's popular coaching shorthand with several competing definitions, not an industry standard. If someone cites it authoritatively, clarify which version they mean — the follow-up cadence and the prospecting-time rule are different things that share a catchy name."),
+        ],
+    },
+    {
+        "slug": "digital-marketing-mistakes-realtors-make",
+        "img": "img/digital-marketing-mistakes-realtors-make.jpg",
+        "img_alt": "Illustration of a house with several small warning-sign flags planted around it",
+        "cat": "strategy",
+        "title": "7 Digital Marketing Mistakes Realtors Make (and What to Do Instead)",
+        "date": "2026-07-21",
+        "excerpt": "Most agent marketing fails the same predictable ways: renting instead of owning, posting into a void, and measuring the wrong number. Here's the honest list — and the fix for each.",
+        "tldr": "The seven most common real estate digital marketing mistakes: (1) renting all your demand from portals instead of building owned assets; (2) treating a thin, template website as \"done\"; (3) measuring cost per lead instead of cost per closing; (4) ignoring your Google Business Profile, the highest-leverage free asset in local search; (5) chasing follower counts instead of the profile-and-review layer people check before hiring you; (6) publishing generic national content instead of hyperlocal, question-answering content AI and Google can cite; and (7) being invisible to AI assistants entirely. The through-line: agents optimize activity (posting, buying leads, collecting followers) instead of assets (profiles, neighborhood pages, reviews, citations) that compound and get them found.",
+        "sections": [
+            ("Mistakes 1–3: the strategy-level errors",
+             "<ul><li><b>1. Renting all your demand.</b> Pouring the whole budget into portal leads and ads means the pipeline stops the day you stop paying, and you never build equity. Fix: cap paid at what's provably profitable and redirect the rest into <a href='zillow-leads-vs-owning-your-pipeline.html'>owned assets that compound</a>.</li>"
+             "<li><b>2. Treating a template website as done.</b> A pretty brochure site machines can't read and that ranks for nothing isn't marketing — it's a business card. Fix: a <a href='../services/website-design.html'>schema-first site</a> with real neighborhood pages, or at minimum <a href='what-is-idx.html'>the right structure</a>.</li>"
+             "<li><b>3. Measuring cost per lead.</b> Cost per lead is the metric platforms sell because it flatters them. Fix: measure <a href='real-estate-marketing-roi.html'>cost per closing</a> — the number your P&L actually feels.</li></ul>"),
+            ("Mistakes 4–5: the visibility errors",
+             "<ul><li><b>4. Ignoring your Google Business Profile.</b> The single highest-leverage <i>free</i> asset in local search, and most agents leave it half-built. Fix: work it properly — our <a href='optimize-google-business-profile-realtor.html'>step-by-step guide</a> covers the 2026 changes, or <a href='../tools/gbp-grader.html'>grade yours in three minutes</a>.</li>"
+             "<li><b>5. Chasing followers over trust signals.</b> A big Instagram following feels like marketing, but sellers hire based on the profile, reviews, and search results they check — not your follower count. Fix: build the <a href='../services/reviews.html'>review and reputation layer</a> people actually vet you on; treat social as the multiplier, not the engine.</li></ul>"),
+            ("Mistakes 6–7: the content and AI errors",
+             "<ul><li><b>6. Publishing generic national content.</b> \"5 tips for buyers\" blog posts that could belong to any agent in any market rank for nothing and get cited by no one. Fix: hyperlocal, question-answering content — <a href='how-to-build-a-neighborhood-page.html'>neighborhood pages</a> and direct answers to what your market actually asks.</li>"
+             "<li><b>7. Being invisible to AI.</b> The newest and least-crowded mistake: buyers and sellers increasingly ask ChatGPT and Google's AI who to work with, and most agents aren't in the answer. Fix: <a href='../services/ai-citations.html'>AI citation work</a> — and first, <a href='../tools/ai-visibility-checker.html'>check whether AI names you</a> at all.</li></ul>"),
+            ("The pattern behind all seven",
+             "<p>Notice what these share: every mistake is optimizing <b>activity</b> instead of building <b>assets</b>. Buying leads, posting daily, collecting followers, running ads — all activity, all evaporating the moment you stop. Profiles, neighborhood pages, reviews, and citations are assets: they compound, they get you found, and they keep working while you're at a closing. Agents who feel like they're \"doing marketing\" but not getting results are almost always busy with activity and light on assets. Shift the ratio and the results follow.</p>"),
+        ],
+        "faqs": [
+            ("What's the single biggest digital marketing mistake realtors make?",
+             "Renting all their demand from portals and ads instead of building owned assets. It feels productive because leads arrive, but nothing compounds — stop paying and the pipeline stops the same day, and years of spend leave you with no equity. The fix isn't to abandon paid channels; it's to cap them at what's profitable and reinvest the rest in assets that keep working."),
+            ("Why isn't my real estate social media generating leads?",
+             "Usually because social is being treated as the engine rather than the multiplier. Followers and likes don't convert directly; social's real job is confirming your credibility when someone checks you out after hearing your name elsewhere. If the underlying layer — profile, reviews, search presence — is thin, social has nothing to amplify. Build that first, then social makes it convert better."),
+            ("How do I know if my marketing is actually working?",
+             "Measure cost per closing per channel, tracked quarterly, not cost per lead. Also watch leading indicators of owned visibility: are you in the map pack, do neighborhood searches surface you, and do AI assistants name you? Activity metrics (posts, impressions, followers) feel like progress but don't reliably predict closings; asset metrics do."),
+        ],
+    },
+    {
+        "slug": "real-estate-marketing-roi",
+        "img": "img/real-estate-marketing-roi.jpg",
+        "img_alt": "Illustration of a house on one side of a balance scale and rising gradient coins on the other",
+        "cat": "strategy",
+        "title": "How to Measure Real Estate Marketing ROI (the Number That Actually Matters)",
+        "date": "2026-07-21",
+        "excerpt": "Cost per lead is the metric that flatters your vendors. Cost per closing is the one your bank account feels. Here's how to measure marketing ROI honestly — and why the trend line matters more than the snapshot.",
+        "tldr": "To measure real estate marketing ROI properly, track cost per closing by channel — not cost per lead, which platforms push because it hides poor conversion. Calculate it as total channel spend divided by closings that channel actually produced over a period (a quarter smooths out the lumpiness of real estate). Then judge each channel two ways: its current cost per closing, and its trend. Rented channels (portals, ads) tend to hold flat or rise as competition bids costs up; owned channels (profile, content, reviews, citations) start expensive per closing and fall as assets mature. The highest-ROI realization for most agents isn't a better ad — it's shifting budget from channels that stay expensive toward assets whose cost per closing keeps dropping.",
+        "sections": [
+            ("Why cost per lead lies to you",
+             "<p>Every lead vendor reports cost per lead because it's the number that makes them look good. But a lead isn't revenue — a closing is. Two channels can have identical cost per lead and wildly different real value if one converts at 8% and the other at 1%. Cost per lead deliberately hides the conversion step where most of the truth lives.</p>"
+             "<p>The honest metric is <b>cost per closing</b>: total spend on a channel divided by the closings it actually produced. It's less flattering, harder to game, and it's the number that maps to your P&L. If a channel costs $600 per lead-you-love or $9,000 per closing-you-banked, only the second tells you whether to keep paying.</p>"),
+            ("How to actually calculate it",
+             "<pre><code>Cost per closing (per channel, per quarter) =\n   total channel spend  ÷  closings attributed to it\n\nExample:\n  Portal spend this quarter:      $6,000\n  Closings traced to portal:      1\n  → $6,000 per closing\n\n  Owned-marketing spend (retainer): $12,000/qtr\n  Closings traced to owned:         3 (and rising)\n  → $4,000 per closing, trending down</code></pre>"
+             "<p>Use a quarter, not a month — real estate is too lumpy for monthly ROI to mean much. Attribute honestly: ask every client how they found you and log it, imperfect as that is. And count the compounding channels' <i>trend</i>, because a single quarter understates an asset that's still maturing.</p>"),
+            ("The trend line matters more than the snapshot",
+             "<p>Here's the insight most ROI advice misses: the two channel types move in opposite directions over time. <b>Rented</b> channels (portal leads, paid ads) tend to hold flat or drift <i>more</i> expensive per closing — competition bids up the auction, and you re-buy every closing at market rate. <b>Owned</b> channels (your <a href='../services/local-seo.html'>site and neighborhood pages</a>, <a href='../services/google-business-profile.html'>profile</a>, reviews, <a href='../services/ai-citations.html'>citations</a>) start <i>more</i> expensive per closing — you're paying for work before it produces — then fall, because the same assets keep converting without new spend.</p>"
+             "<p>Judge paid channels on this month; judge owned channels on the slope across quarters. An owned program that looks expensive in Q1 and is trending down by Q3 is doing exactly what it should — and comparing its Q1 snapshot to a portal's is measuring a sprout against a tree.</p>"),
+            ("What high ROI actually looks like",
+             "<p>The highest-ROI move for most agents isn't optimizing an ad — it's reallocation. Keep whatever paid spend is genuinely profitable, cap it there, and shift the rest toward assets whose cost per closing keeps dropping. Over a few years the math compounds: rented channels cost roughly the same per closing forever, while owned ones approach near-zero marginal cost as the library of pages, reviews, and citations does the converting.</p>"
+             "<p>This is the measurement companion to our <a href='how-much-should-realtors-spend-on-marketing.html'>budgeting guide</a> — that one answers <i>how much</i> to spend, this one answers <i>whether it worked</i>. Run both on a quarterly rhythm and the reallocation decisions make themselves.</p>"),
+        ],
+        "faqs": [
+            ("What's a good marketing ROI for a real estate agent?",
+             "Framed as cost per closing, it depends on your average commission — a channel is worth keeping when its cost per closing is comfortably below what you net per deal, with margin to spare. More useful than a universal benchmark is the trend: owned channels should show a falling cost per closing over quarters, while rented channels that keep rising signal it's time to cap and reallocate."),
+            ("Should I measure cost per lead or cost per closing?",
+             "Cost per closing. Cost per lead hides the conversion step where channels differ most, and it's the metric vendors push precisely because it flatters them. Cost per closing — spend divided by deals that channel actually produced — is the number your P&L feels and the one that should drive budget decisions."),
+            ("How do I attribute closings to marketing channels?",
+             "Ask every client how they first found you and log it in your CRM — self-reported and imperfect, but far better than guessing. Track it consistently over quarters so patterns emerge, and accept that owned/brand channels are under-credited by last-touch attribution (someone \"found you on Google\" after also seeing your name three other places). Trend and directional honesty matter more than false precision."),
+        ],
+    },
+    {
+        "slug": "best-crm-for-realtors",
+        "img": "img/best-crm-for-realtors.jpg",
+        "img_alt": "Illustration of stylized contact cards flowing into a glowing house-shaped hub",
+        "cat": "strategy",
+        "title": "The Best CRM for Realtors in 2026 (Honest Comparison)",
+        "date": "2026-07-21",
+        "excerpt": "Follow Up Boss, kvCORE, Wise Agent, Top Producer — and one big name that quietly shut down. Which real estate CRM fits which agent, judged on the things that actually matter.",
+        "tldr": "The best real estate CRM in 2026 depends on your stage. Follow Up Boss is the widely-cited overall leader for lead management and teams (Grow around $69/mo per user, Pro around $499/mo for up to 10 users), thanks to 250+ lead-source integrations and speed-to-lead automation. Wise Agent is the value pick for solo agents (around $49/mo) with contact management, transactions, and drip campaigns included. kvCORE (from around $499/mo) is an all-in-one for brokerages and large teams — powerful but heavy, and most users engage only 30–40% of what they pay for. Note: LionDesk was discontinued in September 2025 and migrated to Lone Wolf Relationships, so ignore older \"LionDesk\" recommendations. Pricing and tiers change often — confirm current terms directly. And remember: a CRM converts leads; it doesn't generate them.",
+        "sections": [
+            ("First, what a CRM is actually for",
+             "<p>A real estate CRM's core job is simple: catch every lead, remind you to follow up, and keep the relationship warm over the years between transactions. The best one is the one you'll <i>actually use daily</i> — a powerful CRM you ignore loses to a simple one you work. Match it to your stage, not to the longest feature list.</p>"
+             "<p>Pricing below comes from mid-2026 vendor and comparison sources (<a href='https://www.jamilacademy.com/blog/best-crm-for-real-estate-agents' rel='nofollow'>Jamil Academy</a>, <a href='https://netpartners.marketing/best-crm-real-estate-agents-2026-comparison-features-pricing/' rel='nofollow'>NetPartners</a>); CRM tiers change frequently, so confirm current numbers before you buy.</p>"),
+            ("The honest shortlist",
+             "<ul>"
+             "<li><b>Follow Up Boss — best overall for lead management and teams.</b> Widely cited as the 2026 leader for its 250+ lead-source integrations and speed-to-lead automation. Grow is around $69/mo per user; Pro around $499/mo for up to 10 users; a Platform tier for larger teams. Not the cheapest, but the accountability and routing features earn it for teams that live in their CRM.</li>"
+             "<li><b>Wise Agent — best value for solo agents.</b> Around $49/mo with contact management, transaction tracking, email marketing, and drip campaigns included at a price point where competitors charge more or bolt features on. The pragmatic solo pick.</li>"
+             "<li><b>kvCORE — best all-in-one for brokerages.</b> From around $499/mo; bundles IDX websites, marketing automation, and lead gen. The honest caveat reviewers repeat: it does so much that most users engage only 30–40% of what they pay for, and onboarding takes weeks. Great for large teams with someone to run it; overkill for a solo agent.</li>"
+             "<li><b>Top Producer — a long-standing option</b> worth a look for its market reports and follow-up coaching features, though often compared unfavorably on modern UX.</li>"
+             "<li><b>LionDesk — discontinued.</b> Once the budget favorite, it was shut down by parent Lone Wolf Technologies in late September 2025 and users migrated to <i>Lone Wolf Relationships</i>. Ignore any 2024-era guide still recommending it.</li>"
+             "</ul>"),
+            ("How to choose without overbuying",
+             "<p>The most expensive CRM mistake isn't picking the \"wrong\" one — it's buying an enterprise platform you use at 30% and abandon. Choose by stage: <b>solo, cash-conscious</b> → Wise Agent (or Follow Up Boss Grow if lead volume justifies it). <b>Growing team that lives on lead speed</b> → Follow Up Boss. <b>Brokerage wanting one system for sites, leads, and marketing</b> → kvCORE, if you'll staff someone to actually run it.</p>"
+             "<p>Two rules that outlast any specific product: pick the one whose daily workflow you'll genuinely adopt, and make sure it exports your data cleanly — CRMs get discontinued (see LionDesk), and your contact database should always be portable.</p>"),
+            ("The thing a CRM won't do",
+             "<p>Here's the part no CRM comparison mentions: a CRM is a <b>conversion</b> tool, not a <b>generation</b> tool. It makes the most of the leads you have — it does not create new ones. Agents shopping CRMs to fix a lead-flow problem are solving the wrong layer; a better follow-up system on a thin pipeline is still a thin pipeline.</p>"
+             "<p>Pair whatever CRM you pick with something that actually fills the top of the funnel — the <a href='../services/local-seo.html'>owned visibility</a>, reviews, and <a href='../services/ai-citations.html'>AI citations</a> that generate warm inbound for your CRM to nurture. The CRM converts; the marketing generates. Get both, and know which is which.</p>"),
+        ],
+        "faqs": [
+            ("What is the best CRM for real estate agents in 2026?",
+             "For most agents and teams, Follow Up Boss is the widely-cited overall leader thanks to its lead-source integrations and speed-to-lead features (Grow around $69/mo per user). Solo agents on a budget often do better with Wise Agent (around $49/mo, features included), and brokerages wanting an all-in-one platform look at kvCORE (from around $499/mo). The best one is ultimately the one you'll use daily — confirm current pricing before buying, as tiers change often."),
+            ("Is LionDesk still available?",
+             "No. LionDesk was discontinued by parent company Lone Wolf Technologies in late September 2025, with users migrated to a platform called Lone Wolf Relationships. Any guide still recommending LionDesk is out of date — a useful signal that the guide hasn't been refreshed recently."),
+            ("Do I really need a real estate CRM?",
+             "If you have any lead flow or a sphere worth nurturing, yes — even a simple CRM beats a spreadsheet and a good memory, because follow-up is where most deals are won or lost. But a CRM only converts demand; it won't generate it. If your actual problem is not enough leads, invest in lead generation first and let the CRM organize what comes in."),
+        ],
+    },
+    {
+        "slug": "are-real-estate-marketing-courses-worth-it",
+        "img": "img/are-real-estate-marketing-courses-worth-it.jpg",
+        "img_alt": "Illustration of a graduation cap beside a small house with a fork in the road",
+        "cat": "strategy",
+        "title": "Are Real Estate Marketing Courses Worth It? (DIY vs. Done-For-You)",
+        "date": "2026-07-21",
+        "excerpt": "Before you buy that $2,000 marketing course, the honest question isn't which course — it's whether you should be learning this at all, or spending those hours selling homes.",
+        "tldr": "Real estate marketing courses can be worth it for agents who genuinely enjoy marketing and have time to execute what they learn — a good course compresses months of trial and error. But for most agents the real question is opportunity cost: the hours spent learning and doing marketing are hours not spent on the dollar-productive work of listing appointments and client relationships. Three honest options: DIY with a course (cheapest in dollars, most expensive in your time), hire it done (highest dollar cost, frees your hours for selling), or a hybrid (learn enough to direct and judge the work, delegate execution). The right choice depends on what your hour is worth and whether marketing energizes or drains you. A course only pays off if you actually execute it — and most don't.",
+        "sections": [
+            ("The question courses don't want you to ask",
+             "<p>Marketing course pages sell you on which course. The more useful question comes first: <b>should you be the one learning this at all?</b> Your scarce resource as an agent isn't information — most of what these courses teach is free on YouTube and in guides like the ones on this site. Your scarce resource is <i>time</i>, and every hour spent learning and doing marketing is an hour not spent on listing appointments, showings, and client relationships that directly produce commission.</p>"
+             "<p>That's opportunity cost, and it's the honest frame. A $2,000 course isn't really a $2,000 decision — it's a $2,000-plus-dozens-of-hours decision, and the hours usually cost more than the tuition.</p>"),
+            ("When a course genuinely is worth it",
+             "<p>Courses pay off for a specific agent: one who <b>actually enjoys marketing</b>, has time to execute, and will finish and apply what they learn. If that's you, a good course compresses months of expensive trial-and-error into a structured path, and the skills compound over a career. New agents with more time than money often fit here too — early on, sweat equity in marketing is a rational trade.</p>"
+             "<p>The brutal caveat: <b>a course only pays off if you execute it</b>, and completion-then-implementation rates for self-paced courses are famously low. The graveyard of half-watched marketing courses is enormous. Buying the course feels like progress; only doing the work is progress.</p>"),
+            ("The three honest paths",
+             "<ul><li><b>DIY with a course.</b> Cheapest in dollars, most expensive in time. Right for agents who like marketing, have the hours, and will actually implement. Our free <a href='../blog/index.html'>guides</a> and <a href='../tools/index.html'>tools</a> cover most of what a course would, at zero cost.</li>"
+             "<li><b>Done-for-you.</b> Highest dollar cost, but it buys back your hours for the selling only you can do — and you get professional execution instead of a beginner's first attempt. Right for producing agents whose hour is worth more than the delegation cost.</li>"
+             "<li><b>Hybrid.</b> Learn enough to <i>direct and judge</i> the work — so you're a smart client, not a helpless one — then delegate execution. Often the best of both: you keep strategic control without spending your calendar on implementation.</li></ul>"),
+            ("How to actually decide",
+             "<p>Two honest questions settle it. First, <b>what's your hour worth?</b> Divide your annual income by your working hours; if marketing execution costs you many hours at that rate, done-for-you is often cheaper than \"free.\" Second, <b>does marketing energize or drain you?</b> Skills you resent rarely get executed well or consistently, and inconsistent marketing underperforms no matter how good the course was.</p>"
+             "<p>If the honest answers point toward delegation, that's what our <a href='../index.html#pricing'>plans</a> exist for — the same strategies a course would teach, executed by people who do only this. And if they point toward DIY, genuinely: use our <a href='../blog/index.html'>free guides</a> and skip the $2,000. We'd rather be the resource you trust than sell you a course you won't finish.</p>"),
+        ],
+        "faqs": [
+            ("Are real estate marketing courses worth the money?",
+             "For agents who genuinely enjoy marketing, have time to execute, and will actually finish and apply the material — yes, a good course compresses months of trial and error. For most producing agents, the bigger cost is time, not tuition: the hours spent learning and doing marketing often outweigh the course price, making done-for-you or a hybrid approach the better math. And any course is worthless if you don't execute it, which most buyers don't."),
+            ("Should I learn digital marketing myself or hire someone?",
+             "It comes down to what your hour is worth and whether marketing energizes or drains you. If your time is better spent on listing appointments and client work — and marketing feels like a chore — hiring it out is often cheaper than the opportunity cost of DIY, and you get professional execution. If you enjoy it and have the hours, DIY with free guides can work well. A hybrid (learn enough to direct, delegate execution) suits many producing agents."),
+            ("What's the best free way to learn real estate marketing?",
+             "Honestly, structured free guides plus doing the work. Most of what paid courses teach — local SEO, Google Business Profile, reviews, content, AI visibility — is available free, including throughout this site's guides and tools. The bottleneck is rarely access to information; it's execution and consistency. Start with one area (your Google Business Profile is highest-leverage), implement it fully, then move to the next."),
+        ],
+    },
+    {
         "slug": "connecticut-private-listings-ban",
         "img": "img/connecticut-private-listings-ban.jpg",
         "img_alt": "Illustration of a house stepping out from behind a velvet rope into open public light",
