@@ -8,6 +8,8 @@ mkdir -p "$OUT"; cd "$OUT"
 STYLE="Editorial illustration for a real estate marketing blog. Flat modern vector style, minimal, elegant. Very dark indigo background (#0B0B14) with glowing indigo-to-violet-to-lilac gradient accents (#4F46E5, #8B5CF6, #C084FC) and a single warm amber glow accent, subtle thin grid lines. No text, no letters, no words, no logos. Wide composition, generous margins."
 
 typeset -A PROMPTS
+PROMPTS[google-business-profile-posts-for-realtors]="Small update cards and photo cards pinned in a neat feed to the side of a glowing storefront-style house. $STYLE"
+PROMPTS[on-page-seo-real-estate-listing-pages]="A clean webpage wireframe with glowing highlight labels on its title bar, an image block, and a link, a small house icon in the layout. $STYLE"
 PROMPTS[ai-tools-vs-getting-cited-by-ai]="Split composition: on the left a small robot arm writing on a document, on the right a glowing trophy with a tiny house on it; a subtle divider between them. $STYLE"
 PROMPTS[the-3-3-3-rule-real-estate-marketing]="Three glowing clock faces in a neat row, each slightly larger, above a small warm house. $STYLE"
 PROMPTS[digital-marketing-mistakes-realtors-make]="A small charming house with several little warning-sign flags planted in the ground around it, one flag glowing. $STYLE"

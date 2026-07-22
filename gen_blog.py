@@ -29,6 +29,75 @@ CATS = {
 
 POSTS = [
     {
+        "slug": "google-business-profile-posts-for-realtors",
+        "img": "img/google-business-profile-posts-for-realtors.jpg",
+        "img_alt": "Illustration of small update cards pinned to a glowing storefront-style house",
+        "cat": "seo",
+        "title": "Google Business Profile Posts for Realtors: What to Post and How Often",
+        "date": "2026-07-21",
+        "excerpt": "Your Google Business Profile isn't a set-and-forget listing — it's a feed. Here's what to post, how often, and why a quiet profile now loses to an active one.",
+        "tldr": "Google Business Profile posts are short updates (listings, sold announcements, market notes, neighborhood spotlights, events, offers) that appear on your profile in Google Search and Maps. They matter more in 2026 because Google's local algorithm has shifted weight toward activity and engagement signals — a regularly-posted profile now outranks an established-but-dormant one, and the same freshness feeds Google's AI-generated local answers. Post weekly at minimum, rotate through listing/sold/market/neighborhood content, always include a photo and a clear call to action, and avoid keyword-stuffing or anything that looks like an ad Google would reject. Think of it as the lowest-effort, highest-consistency ranking habit available to an agent — three minutes, once a week.",
+        "sections": [
+            ("What GBP posts are and why they moved up the priority list",
+             "<p>Google Business Profile posts are the little updates that show on your profile when someone finds you in Search or Maps — a new listing, a just-sold, a market stat, a neighborhood note. For years agents ignored them. That was defensible once; it isn't now.</p>"
+             "<p>The reason is the 2026 shift covered in our <a href='optimize-google-business-profile-realtor.html'>GBP optimization guide</a>: Google's local ranking has moved weight toward <b>activity and engagement</b> signals and away from static prominence. A profile that posts weekly reads as a live business; one that hasn't posted in six months reads as neglected — and increasingly ranks like it. The same fresh, structured content also feeds Google's AI-generated local answers, so posting does double duty for <a href='../services/ai-citations.html'>AI visibility</a>.</p>"),
+            ("What to actually post (the weekly rotation)",
+             "<ul><li><b>New listing</b> — photo, key details, a \"schedule a tour\" call to action. The obvious one, and it works.</li>"
+             "<li><b>Just sold</b> — social proof that you close, ideally with the neighborhood named (\"Sold in [neighborhood], 6 days, over asking\").</li>"
+             "<li><b>Market update</b> — one real local number and what it means. This is the most citable type and the least-used by competitors.</li>"
+             "<li><b>Neighborhood spotlight</b> — ties your name to an area you farm; pairs perfectly with your <a href='how-to-build-a-neighborhood-page.html'>neighborhood pages</a>.</li>"
+             "<li><b>Event or open house</b> — the \"event\" post type with real dates.</li>"
+             "<li><b>Tip / FAQ answer</b> — a common buyer or seller question, answered briefly.</li></ul>"
+             "<p>Rotate through these so the profile shows range, not just listings. Every post: one clear photo, a few tight sentences, one call to action.</p>"),
+            ("Cadence and the rules that keep you out of trouble",
+             "<p><b>Weekly is the floor</b>; more is fine if it's genuine. Consistency beats volume — four real posts a month steadily beats twelve in one burst then silence. Note that standard \"update\" posts don't expire from your profile the way older Google Posts once did, but freshness is still what signals activity, so keep them coming.</p>"
+             "<p>What to avoid: keyword-stuffing (\"best realtor Scottsdale top agent homes for sale\"), anything that reads as a hard ad Google might reject, misleading claims, and phone numbers crammed into the body. Write like a person updating clients, not like a billboard.</p>"),
+            ("Make it sustainable",
+             "<p>The only version of this that works is the one you'll actually keep doing. Batch it: spend twenty minutes at the start of the month drafting four posts, schedule or diary them, done. Reuse across channels — a market-update post is also a <a href='../tools/social-hook-generator.html'>social post</a> and a line in your email. And measure: a profile you can't tell is being worked probably isn't — grade yours with our free <a href='../tools/gbp-grader.html'>GBP Grader</a>, where posting cadence is one of the weighted factors.</p>"
+             "<p>If weekly posting is the habit that never sticks, it's exactly the kind of thing our <a href='../services/google-business-profile.html'>Google Business Profile service</a> runs for you — but the rotation above is the whole method if you'd rather do it yourself.</p>"),
+        ],
+        "faqs": [
+            ("How often should realtors post on Google Business Profile?",
+             "Weekly at minimum. In 2026 Google's local algorithm rewards profiles that show ongoing activity, so a steady weekly cadence — rotating listings, sold announcements, market updates, and neighborhood notes — outperforms both a dormant profile and an inconsistent burst-then-silence pattern. Consistency matters more than volume."),
+            ("Do Google Business Profile posts actually help ranking?",
+             "They contribute as part of the activity and engagement signals Google's local algorithm has weighted more heavily in 2026 — an actively-posted profile tends to outrank a neglected one, all else equal. Posts also feed Google's AI-generated local content. They're not a magic lever on their own, but as a consistent habit they're one of the highest-return, lowest-effort things an agent can do."),
+            ("What should real estate agents post on Google Business Profile?",
+             "Rotate through new listings, just-sold announcements (with the neighborhood named), local market updates with a real number, neighborhood spotlights, open houses/events, and brief answers to common buyer/seller questions. Always include a photo and one clear call to action, and write like you're updating clients — not like an ad."),
+        ],
+    },
+    {
+        "slug": "on-page-seo-real-estate-listing-pages",
+        "img": "img/on-page-seo-real-estate-listing-pages.jpg",
+        "img_alt": "Illustration of a webpage wireframe with glowing labels on its title, image, and link elements",
+        "cat": "seo",
+        "title": "On-Page SEO for Real Estate Listing & Location Pages: A Practical Guide",
+        "date": "2026-07-21",
+        "excerpt": "Title tags, meta descriptions, image alt text, internal links, headings — the unglamorous on-page details that decide whether your listing and neighborhood pages rank or vanish.",
+        "tldr": "On-page SEO for real estate is the set of controllable, per-page details that help search engines and AI understand and rank a page: a specific title tag (under ~60 characters, keyword and location near the front), a compelling meta description (under ~155 characters — it drives clicks, not rankings directly), one clear H1 plus logical H2s, descriptive image alt text and compressed image files, internal links with descriptive anchor text, and structured data. For listing pages, lead with the address/neighborhood and unique details; for location pages, lead with the neighborhood and real local specifics. Done consistently, on-page SEO is what makes your <a href='how-to-build-a-neighborhood-page.html'>neighborhood pages</a> and listings winnable — and it's entirely within your control, unlike backlinks or competition.",
+        "sections": [
+            ("Title tags and meta descriptions: the two you can't skip",
+             "<p>The <b>title tag</b> is the clickable headline in search results and the single most important on-page element. Keep it under ~60 characters, put the important words (what + where) near the front, and make every page's title unique: <code>Arcadia Homes for Sale &amp; Market Guide | Jane Rivera</code> beats <code>Home | Jane Rivera Real Estate</code>. Don't stuff — one clear primary phrase per page.</p>"
+             "<p>The <b>meta description</b> (under ~155 characters) doesn't directly move rankings, but it's the sales pitch that earns the click — write it like ad copy with a reason to visit. If you leave it blank, Google writes its own from the page, usually worse. One per page, no duplicates.</p>"),
+            ("Headings, content structure, and internal links",
+             "<p>Every page gets exactly <b>one H1</b> (the page's real title), then <b>H2s</b> that organize the content logically — for a neighborhood page, that's your market snapshot, housing stock, buyer guidance, seller guidance (the full template is in our <a href='how-to-build-a-neighborhood-page.html'>neighborhood page guide</a>). Clear heading structure helps both readers and the machines deciding what your page is about.</p>"
+             "<p><b>Internal links</b> are the most underused on-page lever agents have. Link your pages to each other with <i>descriptive anchor text</i> — \"our <a href='how-to-build-a-neighborhood-page.html'>Arcadia neighborhood guide</a>,\" not \"click here.\" This spreads ranking signal across your site and tells search engines how your pages relate. (It's exactly the fix we made across this site — descriptive internal links from every article to the relevant pages.)</p>"),
+            ("Images: alt text and file size both matter",
+             "<p>Real estate is image-heavy, which makes image SEO a real lever. Two things: <b>descriptive alt text</b> on meaningful images (\"kitchen with quartz island in Arcadia remodel,\" not \"IMG_4821\") — it helps accessibility, image search, and machine understanding — and <b>compressed file sizes</b>, because bloated listing photos tank your page speed, and speed is a ranking and conversion factor. Aim for web-optimized JPEGs, not the 8MB straight-from-camera originals.</p>"
+             "<p>One honest note: decorative images can use empty alt text; save descriptive alt for images that carry information. And if your photos are virtually staged, that's a disclosure issue too — see our <a href='california-ai-listing-photo-law.html'>AB 723 coverage</a>.</p>"),
+            ("Listing pages vs. location pages",
+             "<p>The on-page priorities shift slightly by page type. <b>Listing pages:</b> lead with address and neighborhood, write a genuine (fair-housing-safe) description — our <a href='../tools/listing-description-generator.html'>listing description generator</a> handles this — add property schema, and don't let hundreds of thin auto-generated listing pages dilute your site (noindex them if they're template duplicates, per our <a href='what-is-idx.html'>IDX guide</a>). <b>Location pages:</b> lead with the neighborhood and real local specifics, add place and FAQ schema, and interlink with adjacent areas.</p>"
+             "<p>Underneath both sits <a href='realestateagent-schema-walkthrough.html'>structured data</a> — the machine-readable layer that ties your on-page work together. Get the fundamentals here right and your pages become winnable; skip them and even great content stays invisible. It's the least glamorous, most controllable part of SEO — which is exactly why the agents who do it consistently win.</p>"),
+        ],
+        "faqs": [
+            ("What is on-page SEO for a real estate website?",
+             "It's the set of per-page elements you directly control to help search engines and AI understand and rank a page: title tags, meta descriptions, headings (one H1 plus logical H2s), descriptive image alt text, compressed images, internal links with descriptive anchor text, and structured data. Unlike backlinks or competition, on-page SEO is fully within your control — which makes it the highest-leverage place to start."),
+            ("How do I write a good title tag for a real estate page?",
+             "Keep it under ~60 characters, put the key words (what and where) near the front, and make it unique per page. For a neighborhood page: '[Neighborhood] Homes for Sale & Market Guide | [Your Name]'. Avoid keyword-stuffing and generic titles like 'Home' — every page should have a distinct, descriptive title that tells both searchers and Google exactly what the page is about."),
+            ("Does image alt text matter for real estate SEO?",
+             "Yes, on two fronts: descriptive alt text on meaningful images helps accessibility, image search, and how machines understand your page, while compressed image file sizes protect the page speed that affects both rankings and conversions. Describe informative images specifically ('quartz kitchen island, Arcadia remodel'), use empty alt for purely decorative ones, and never ship 8MB originals straight from the camera."),
+        ],
+    },
+    {
         "slug": "ai-tools-vs-getting-cited-by-ai",
         "img": "img/ai-tools-vs-getting-cited-by-ai.jpg",
         "img_alt": "Illustration of a robot arm writing on one side and a glowing trophy with a house on the other",
