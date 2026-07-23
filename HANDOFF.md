@@ -1,6 +1,6 @@
 # CitedRealty — Complete Handoff & Decision Log
 
-**Site:** https://citedrealty.com · **Repo:** github.com/jonathandkennedy/citedrealty (public, `main`) · **Host:** Vercel (auto-deploys on push) · **Last updated:** 2026-07-22
+**Site:** https://citedrealty.com · **Repo:** github.com/jonathandkennedy/citedrealty (public, `main`) · **Host:** Vercel (auto-deploys on push) · **Last updated:** 2026-07-23
 
 This document records not just *what* the site is, but *why every non-obvious decision was made*, so anyone (including future-you or another dev/marketer) can extend it without re-litigating settled choices or breaking the strategy.
 
@@ -87,6 +87,7 @@ CitedRealty is a full digital-marketing agency for **realtors and real-estate br
 - **4 audience pages** (`audiences/`): solo-agents, teams, brokerages, listing-agents.
 - **7 free tools** (`tools/`) + hub `tools/index.html`: ai-visibility-checker, review-reply-generator, listing-description-generator, marketing-budget-calculator (client-side), gbp-grader (client-side, 11 weighted questions), social-hook-generator, attention-anchor-generator.
 - **40 blog posts** (`blog/`) across 9 categories (Industry News, How-To Guides, Agent Q&A, Websites, Seller Leads, Buyer Leads, AI Search, Local SEO, Strategy).
+- **Landing page** (`method.html`): "The GEO Method" — a long-form direct-response conversion page for paid/direct traffic (modeled on a LandersRX-style "free offer" funnel: problem → reframe → 3-step method → free offer → qualification → urgency → timeline → close). Sells the existing **free AI Visibility Audit** as the hook → public plans as the upsell. `noindex, follow` and **excluded from sitemap.xml** (it overlaps the homepage; flip both if you ever want it organic). Self-contained but links the shared `styles.css`/`theme.js`/`consent.js` and POSTs to the same Formspree endpoint with a hidden `_source: method-landing-page` field so its leads self-triage. **Honesty rules honored:** no fabricated stats/logos/testimonials — the "proof" leans on the mechanism, the "eat our own cooking" argument, and the free audit itself. The month-to-month scarcity line ("limited spots each month") is a soft, editable offer term — confirm/adjust to a real number if you want.
 - **Legal:** privacy.html, terms.html (both `noindex`, attorney-review templates).
 - **SEO infra:** robots.txt, sitemap.xml (61 URLs — every indexable page; privacy/terms are noindex and excluded).
 
