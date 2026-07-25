@@ -29,6 +29,83 @@ CATS = {
 
 POSTS = [
     {
+        "slug": "real-estate-agent-websites-guide",
+        "img": "img/real-estate-agent-websites-guide.jpg",
+        "img_alt": "Illustration of a glowing browser window framing a small warm house and neighborhood",
+        "cat": "websites",
+        "title": "Real Estate Agent Websites: The Complete 2026 Guide (Build, Buy, or Skip)",
+        "date": "2026-07-25",
+        "excerpt": "Do you even need your own site? Build, template, or hire? What should it cost — and why do most agent websites stay invisible? The complete, honest guide, every question answered.",
+        "tldr": "A real estate agent website is worth it when it's an asset you own that AI and Google can actually read — and a waste when it's a pretty brochure or a rented template that ranks for nothing. Most agents do need one, because portal and social profiles are rented while your site is the hub everything else feeds. But you don't need a five-figure build to start: your real choices are a DIY builder, a template, or a custom build, and the right one depends on budget and how many neighborhoods you'll farm. Whatever you pick, the features that decide whether it works are the boring ones — speed, schema, neighborhood pages, and IDX done right. Skip those and even a beautiful site stays invisible.",
+        "sections": [
+            ("Do you even need your own website?",
+             "<p>Short answer: almost always yes — but not for the reason you'd guess. Your Zillow, Realtor.com, and social profiles are <b>rented</b>: they can change the rules, bury you, or charge more tomorrow, and they show buyers your competitors on the very same page. Your own site is the one place that's an <b>asset you own</b> — the hub every other channel and every AI citation points back to. We make the full case, and the honest exceptions, in <a href='do-realtors-need-their-own-website.html'>do realtors need their own website?</a></p>"),
+            ("Build it yourself, buy a template, or hire a pro?",
+             "<p>Three real paths, and the right one is about budget and ambition, not prestige:</p>"
+             "<ul>"
+             "<li><b>DIY builder</b> (Squarespace, Wix, WordPress) — cheapest, and fine for a clean brochure site if your needs are simple. We rank the options honestly in <a href='real-estate-website-builders-for-agents.html'>the best website builders for agents</a>.</li>"
+             "<li><b>Real-estate platform or template</b> (Luxury Presence, Placester, and the like) — fast to launch with IDX built in, but many <b>rent</b> you the site. See <a href='luxury-presence-alternatives.html'>Luxury Presence alternatives</a> and our roundup of <a href='best-real-estate-website-design-companies.html'>the best website companies</a>.</li>"
+             "<li><b>Custom build</b> — the most control, and the only path that truly bakes in neighborhood architecture and schema. It's what <a href='../services/website-design.html'>our website design service</a> does, and you own it outright.</li>"
+             "</ul>"),
+            ("What should a real estate website cost?",
+             "<p>Anywhere from nearly free (a DIY builder subscription) to five figures (a custom build) — and the honest truth is you don't need the expensive one to start. What you pay for at the top end is neighborhood architecture, schema, and speed done right: the things that make a site actually <i>rank</i>, not just exist. We break the real numbers down in <a href='real-estate-agent-website-cost.html'>what a real estate website costs</a>.</p>"),
+            ("The features that actually decide whether it works",
+             "<p>Design gets the attention; these unglamorous features decide whether the site earns anything:</p>"
+             "<ul>"
+             "<li><b>Speed</b> — a slow site loses rankings and buyers. Lean and fast beats plugin-heavy and pretty.</li>"
+             "<li><b>Schema</b> — the machine-readable layer that tells Google and AI who you are; see our <a href='realestateagent-schema-walkthrough.html'>schema walkthrough</a>.</li>"
+             "<li><b>Neighborhood pages</b> — the structure every ranking and citation hangs on (<a href='how-to-build-a-neighborhood-page.html'>how to build one</a>).</li>"
+             "<li><b>IDX done right</b> — MLS search that helps you without drowning the site in thin duplicate pages; read <a href='what-is-idx.html'>what IDX is</a> first.</li>"
+             "</ul>"
+             "<p>Get the <a href='on-page-seo-real-estate-listing-pages.html'>on-page basics</a> right and the site becomes winnable; skip them and even a gorgeous design stays invisible.</p>"),
+            ("The mistake that keeps a beautiful site invisible",
+             "<p>Here's the trap nearly every agent falls into: judging a website by how it <i>looks</i>. But the visitors who now decide your business include machines — Google's crawler and the AI assistants buyers ask for a recommendation. A stunning site built as one big image or a locked template is, to them, a blank wall. The sites that win are the ones AI can <b>read and cite</b>: clean structure, real text, schema, honest local content. That's the whole point of <a href='../services/ai-citations.html'>our AI citations work</a>, and why a site should be built to show up in <a href='how-real-estate-agents-show-up-in-chatgpt.html'>ChatGPT's answers</a> — not just to look expensive. Own it, and build it to be read.</p>"),
+        ],
+        "faqs": [
+            ("Do real estate agents need their own website?",
+             "Almost always yes. Your portal and social profiles are rented — they can change the rules or send buyers to competitors — while your own site is an asset you own and the hub every other channel and AI citation points back to. The main exception is a brand-new agent with no budget, who should focus first on their sphere; even then, plan to build one as soon as you have income."),
+            ("How much does a real estate agent website cost?",
+             "It ranges from the cost of a DIY builder subscription (tens of dollars a month) to five figures for a custom build. You don't need the expensive option to start. At the higher end you're paying for neighborhood architecture, schema, and speed — the things that make a site actually rank rather than just exist. Match the spend to how many neighborhoods you'll farm and how much you can do yourself."),
+            ("Should I build my own real estate website or hire someone?",
+             "Build it yourself if your needs are simple, budget is tight, and you're comfortable with a builder like Squarespace. Hire a pro when you want to farm multiple neighborhoods, need real schema and IDX, or can't afford for the site to quietly rank for nothing. Either way, make sure you own the site outright and that it's built to be read by AI, not just admired."),
+        ],
+    },
+    {
+        "slug": "real-estate-website-builders-for-agents",
+        "img": "img/real-estate-website-builders-for-agents.jpg",
+        "img_alt": "Illustration of glowing modular building blocks assembling into a website window that frames a house",
+        "cat": "websites",
+        "title": "The Best Real Estate Website Builders for Agents (and When to Skip Them)",
+        "date": "2026-07-25",
+        "excerpt": "Squarespace, Wix, WordPress, or a real-estate-specific platform? An honest rundown of DIY website builders for agents — what each is good at, and when you're better off not building it yourself.",
+        "tldr": "The best website builder for a real estate agent depends on how much you'll do yourself. Squarespace is the easiest for a clean, fast, brochure-style site; Wix is more flexible but easy to make slow; WordPress is the most powerful and the most work; and real-estate-specific platforms like Luxury Presence and Placester hand you IDX and templates but often rent you the site instead of selling it. A builder is the right call when your needs are simple and budget is tight. It's the wrong call when you want to farm many neighborhoods, need real schema and IDX, or can't afford to have your site quietly rank for nothing. Whatever you choose, make sure you own it and that it's built to be read by AI, not just admired.",
+        "sections": [
+            ("First: do you even need a builder?",
+             "<p>Before you compare builders, be honest about whether you need to build at all. If you're brand new with no budget, your <a href='do-realtors-need-their-own-website.html'>sphere matters more than a website</a> for now. But most working agents do want their own site, because portal profiles are rented and your site is the one asset you own. If that's you, the question becomes: which builder — and when is a builder the wrong tool entirely?</p>"),
+            ("The general builders: Squarespace, Wix, WordPress",
+             "<ul>"
+             "<li><b>Squarespace</b> — the easiest path to a clean, fast, good-looking brochure site. Limited for heavy IDX or dozens of neighborhood pages, but excellent for a simple, professional presence you can run yourself.</li>"
+             "<li><b>Wix</b> — the most flexible drag-and-drop, and the one with the most ways to accidentally make your site slow and bloated. Fine in disciplined hands.</li>"
+             "<li><b>WordPress</b> — the most powerful and the most work. Endless plugins and real estate themes, but you own the maintenance, security, and speed problems too. Great if you're technical or have help; a time sink if not.</li>"
+             "</ul>"
+             "<p>All three can produce a perfectly good agent site. None of them, out of the box, gives you the schema and neighborhood architecture that make a site actually <i>rank</i> — that part is on you to add (start with our <a href='on-page-seo-real-estate-listing-pages.html'>on-page SEO guide</a>).</p>"),
+            ("The real-estate-specific platforms (and the rent-vs-own trap)",
+             "<p>Platforms like Luxury Presence and Placester are built for agents: templates, IDX, and lead tools out of the box, so you launch fast. The catch is ownership — with many of them you're <b>renting</b> the site, and if you leave, it (and sometimes your content and URL equity) can go with them. That's the exact tradeoff we dig into in <a href='luxury-presence-alternatives.html'>Luxury Presence alternatives</a> and our <a href='best-real-estate-website-design-companies.html'>best website companies roundup</a>. If you go this route, read the contract on who owns what, and understand <a href='what-is-idx.html'>how their IDX works</a> before you commit.</p>"),
+            ("Templates: the shortcut and its ceiling",
+             "<p>A template — from a builder or a marketplace — is a legitimate shortcut to a decent-looking site fast. Its ceiling is sameness: a template every other agent also uses gives search engines and AI little reason to pick you, and generic template copy is the opposite of the specific, citable local content that ranks. Use a template for the frame if you must, but fill it with real writing about your actual market — the <a href='on-page-seo-real-estate-listing-pages.html'>on-page details</a> are what turn a template into a page that earns.</p>"),
+            ("When to stop DIYing and hire",
+             "<p>Be honest about the tipping point. A builder is the right call when your needs are simple and budget is tight. It's the wrong call when you want to farm many <a href='how-to-build-a-neighborhood-page.html'>neighborhoods</a>, need proper schema and IDX, or your DIY site is quietly ranking for nothing while you spend hours fighting a page builder. At that point a <a href='../services/website-design.html'>custom build</a> you own — see <a href='real-estate-agent-website-cost.html'>what it costs</a> — stops being an expense and starts being the hub your whole marketing compounds on. Not sure which path fits? Start with <a href='real-estate-agent-websites-guide.html'>our complete guide to agent websites</a>.</p>"),
+        ],
+        "faqs": [
+            ("What is the best website builder for real estate agents?",
+             "It depends on how much you'll do yourself. Squarespace is the easiest for a clean, fast brochure site; Wix is more flexible but easy to make slow; WordPress is the most powerful and the most work; and real-estate-specific platforms (Luxury Presence, Placester) give you IDX and templates but often rent you the site. For a simple, owned presence most agents are well served by Squarespace; for serious neighborhood farming and ranking, a custom build wins."),
+            ("Is Squarespace or Wix better for a realtor website?",
+             "For most agents, Squarespace — it's easier to get a clean, fast, professional site without accidentally bloating it, and speed affects both rankings and conversions. Wix is more flexible if you want granular design control, but it's also easier to make slow. Neither gives you real estate schema or neighborhood architecture out of the box, so you'll need to add those to actually rank."),
+            ("Should I use a real estate website builder or hire a designer?",
+             "Use a builder if your needs are simple, your budget is tight, and you're comfortable doing it yourself. Hire a designer when you want to farm multiple neighborhoods, need proper schema and IDX, or when your DIY site isn't ranking and you're spending more time fighting the tool than selling homes. The deciding factors are ownership, ranking needs, and your time — not prestige."),
+        ],
+    },
+    {
         "slug": "ai-tools-for-real-estate-agents",
         "img": "img/ai-tools-for-real-estate-agents.jpg",
         "img_alt": "Illustration of robotic hands offering a glowing toolbox of app icons to a small house, with an AI chat bubble containing a house and a spark",

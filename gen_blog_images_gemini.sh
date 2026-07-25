@@ -46,6 +46,8 @@ PROMPTS[best-seller-lead-sources-for-listing-agents]="A winners' podium with thr
 PROMPTS[ai-tools-for-real-estate-agents]="A friendly robotic hand offering a glowing toolbox of tiny app icons toward a small warm house, a single AI chat bubble above containing a tiny house and a spark. $STYLE"
 PROMPTS[new-real-estate-agent-playbook]="A tiny glowing house sprouting like a seedling with two small leaves from its rooftop, held above fresh soil in an open hand, a sense of a new beginning. $STYLE"
 PROMPTS[best-real-estate-lead-sources-reddit]="Several glowing upward arrows and small chat-bubble icons funneling and converging up into a single warm house at the top, like leads flowing toward it. $STYLE"
+PROMPTS[real-estate-agent-websites-guide]="A glowing browser window framing a small warm house and a little neighborhood, with subtle structural wireframe lines suggesting a well-built site. $STYLE"
+PROMPTS[real-estate-website-builders-for-agents]="Glowing modular building blocks and drag-and-drop panels assembling into a small website window that frames a house, a sense of construction. $STYLE"
 
 slugs=("$@")
 if [ ${#slugs[@]} -eq 0 ]; then slugs=(${(k)PROMPTS}); fi
