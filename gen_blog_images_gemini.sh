@@ -42,6 +42,11 @@ PROMPTS[zillow-vs-realtor-com-vs-homes-com-leads]="Three large abstract doorways
 PROMPTS[zillow-premier-agent-vs-local-seo]="A forked road: one branch leads to a big flashy billboard, the other winds toward a warmly glowing neighborhood of small houses on a hill. $STYLE"
 PROMPTS[how-much-should-realtors-spend-on-marketing]="A house-shaped piggy bank with gradient coins stacked beside it forming an ascending bar chart. $STYLE"
 PROMPTS[best-seller-lead-sources-for-listing-agents]="A winners' podium with three glowing houses on first, second and third place steps, confetti sparkles. $STYLE"
+# --- New posts (currently shipping with SVG placeholder heroes in blog/img/*.svg;
+#     generate these, downscale to 1200w JPG, then change the post img key from .svg to .jpg). ---
+PROMPTS[ai-tools-for-real-estate-agents]="A friendly robotic hand offering a glowing toolbox of tiny app icons toward a small warm house, a single AI chat bubble above containing a tiny house and a spark. $STYLE"
+PROMPTS[new-real-estate-agent-playbook]="A tiny glowing house sprouting like a seedling with two small leaves from its rooftop, held above fresh soil in an open hand, a sense of a new beginning. $STYLE"
+PROMPTS[best-real-estate-lead-sources-reddit]="Several glowing upward arrows and small chat-bubble icons funneling and converging up into a single warm house at the top, like leads flowing toward it. $STYLE"
 
 slugs=("$@")
 if [ ${#slugs[@]} -eq 0 ]; then slugs=(${(k)PROMPTS}); fi
