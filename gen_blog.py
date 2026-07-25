@@ -30,8 +30,8 @@ CATS = {
 POSTS = [
     {
         "slug": "ai-tools-for-real-estate-agents",
-        "img": "img/ai-tools-for-real-estate-agents.svg",
-        "img_alt": "Illustration of an AI answer bubble containing a house and a spark",
+        "img": "img/ai-tools-for-real-estate-agents.jpg",
+        "img_alt": "Illustration of robotic hands offering a glowing toolbox of app icons to a small house, with an AI chat bubble containing a house and a spark",
         "cat": "ai",
         "title": "Which AI Tools Are Actually Worth It for Real Estate Agents in 2026?",
         "date": "2026-07-24",
@@ -66,8 +66,8 @@ POSTS = [
     },
     {
         "slug": "new-real-estate-agent-playbook",
-        "img": "img/new-real-estate-agent-playbook.svg",
-        "img_alt": "Illustration of a house with a young sprout growing from the roof",
+        "img": "img/new-real-estate-agent-playbook.jpg",
+        "img_alt": "Illustration of an open hand holding soil with a small glowing house sprouting a green seedling",
         "cat": "strategy",
         "title": "How Does a New Real Estate Agent Get Their First Clients? The Honest 90-Day Playbook",
         "date": "2026-07-24",
@@ -96,8 +96,8 @@ POSTS = [
     },
     {
         "slug": "best-real-estate-lead-sources-reddit",
-        "img": "img/best-real-estate-lead-sources-reddit.svg",
-        "img_alt": "Illustration of rising arrows funneling up into a house",
+        "img": "img/best-real-estate-lead-sources-reddit.jpg",
+        "img_alt": "Illustration of glowing arrows and chat bubbles converging upward into a single house",
         "cat": "seller-leads",
         "title": "The Best Real Estate Lead Sources, According to Reddit (2026) — and the Honest Take",
         "date": "2026-07-24",
