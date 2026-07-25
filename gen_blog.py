@@ -1396,26 +1396,45 @@ POSTS = [
         "cat": "ai",
         "title": "How Do Real Estate Agents Show Up in ChatGPT's Recommendations?",
         "date": "2026-07-07",
-        "excerpt": "AI assistants name specific agents and cite their sources. Here's what those systems actually look at — and how to become the name they give.",
-        "tldr": "AI assistants like ChatGPT, Gemini, and Perplexity recommend real estate agents based on the sources they can find and trust: consistent business profiles, structured data that identifies who you are and where you work, third-party mentions, reviews, and content that directly answers the questions people ask. Agents show up in AI recommendations by making their identity machine-readable (entity consistency plus schema), earning independent mentions, and publishing genuinely useful local answers that AI can cite. This is called Generative Engine Optimization (GEO).",
+        "updated": "2026-07-25",
+        "excerpt": "AI assistants name specific agents and cite their sources. Here's what those systems actually look at — the full checklist — and how to become the name they give.",
+        "tldr": "When someone asks ChatGPT, Gemini, or Google's AI for a real estate agent, it doesn't read a secret database — it synthesizes an answer from the sources it can find and trust: your Google Business Profile, your Zillow and Realtor.com profiles, agent directories like HomeLight and FastExpert, reviews, local press, and your own website. To become the name it gives, make those sources exist, say the same thing about you, and connect to each other — consistent entity data, RealEstateAgent schema with a sameAs graph linking your profiles, reviews that name neighborhoods, and genuinely useful local content. Nobody can buy placement in AI recommendations; you earn them with citable evidence. Running a team? Link every agent's profile to their Zillow, and back, so the whole roster is legible to AI. This is called Generative Engine Optimization (GEO).",
         "sections": [
             ("What AI actually does when someone asks for an agent",
-             "<p>Ask an assistant \"who's a good realtor in [city]?\" and it doesn't search a secret database of agents. It synthesizes from what it has learned and what it can retrieve: profiles, directories, reviews, local press, and content — then names people and often cites sources.</p>"
-             "<p>That means the question \"how do I rank in ChatGPT?\" is really \"what would ChatGPT cite about me — and does it exist?\" For most agents, the honest answer today is: almost nothing. That's the opportunity.</p>"),
-            ("The signals that make AI name you",
-             "<ul><li><b>Entity consistency.</b> Your name, brokerage, markets, and specialties saying the same thing everywhere AI looks. Contradictions read as noise; consistency reads as fact.</li>"
-             "<li><b>Structured data.</b> RealEstateAgent schema and a sameAs graph turn your website from prose into facts a machine can quote.</li>"
-             "<li><b>Independent mentions.</b> Local press, community sites, and directories are treated as evidence. Your own website alone is a claim; a third-party mention is a citation.</li>"
-             "<li><b>Reviews at volume and specificity.</b> \"Sold our home in [neighborhood] over asking\" teaches AI exactly what to recommend you for.</li>"
-             "<li><b>Answerable content.</b> Direct, question-first answers about your market give assistants something liftable — with your name attached.</li></ul>"),
+             "<p>Ask an assistant \"who's a good realtor in [city]?\" and it doesn't search a secret database of agents. Modern AI search <b>fans the question out</b> into smaller queries — best listing agent, top-reviewed, sells fastest, works [neighborhood] — retrieves sources for each, and synthesizes a shortlist, usually citing where each name came from.</p>"
+             "<p>So \"how do I rank in ChatGPT?\" is really <b>\"what would an AI find and trust about me — and does it exist?\"</b> For most agents the honest answer today is: almost nothing. That gap is the opportunity, and it's closing as more agents wake up to it.</p>"),
+            ("The sources AI pulls from (your citable-source checklist)",
+             "<p>AI assembles its answer from a predictable set of sources. Make sure you exist, accurately, on each — this is the single most useful checklist an agent can work through:</p>"
+             "<ul>"
+             "<li><b>Google Business Profile</b> — the anchor for local and map results; <a href='optimize-google-business-profile-realtor.html'>optimize it</a> and keep it active.</li>"
+             "<li><b>Zillow and Realtor.com profiles</b> — high-authority sources AI leans on heavily. Complete them fully and earn reviews there, not just on Google.</li>"
+             "<li><b>Agent directories</b> — HomeLight, FastExpert, EffectiveAgents and similar are exactly the \"top agents in [city]\" lists AI cross-references.</li>"
+             "<li><b>Your own website</b> — the one source you control, with <a href='how-to-build-a-neighborhood-page.html'>neighborhood pages</a> and <a href='realestateagent-schema-walkthrough.html'>schema</a> so it's machine-readable.</li>"
+             "<li><b>Reviews, at volume and specificity</b> — across Google, Zillow, and Facebook. A review that says \"sold our home in [neighborhood] over asking\" teaches AI exactly what to recommend you for; <a href='get-more-google-reviews-real-estate-agent.html'>get more of them</a>.</li>"
+             "<li><b>Local press and community sites</b> — independent mentions AI treats as evidence, not advertising.</li>"
+             "</ul>"
+             "<p>The pattern: the more of these that exist and agree, the more confidently AI names you. One profile is a claim; a consistent web of them is a fact.</p>"),
+            ("Connect your profiles with a sameAs graph (and, for teams, link every agent to Zillow)",
+             "<p>Existing on those sources isn't enough — AI has to know they're all <b>you</b>. That's what a <code>sameAs</code> graph does: structured data on your website that explicitly links your identity to every profile you own, turning a scattered set of pages into one connected entity a machine can resolve with confidence.</p>"
+             "<p>Drop this into your site's <code>RealEstateAgent</code> schema (full walkthrough <a href='realestateagent-schema-walkthrough.html'>here</a>), listing every profile — Zillow first, for its authority:</p>"
+             "<pre><code>&lt;script type=&quot;application/ld+json&quot;&gt;\n{\n  &quot;@context&quot;: &quot;https://schema.org&quot;,\n  &quot;@type&quot;: &quot;RealEstateAgent&quot;,\n  &quot;name&quot;: &quot;Jane Rivera&quot;,\n  &quot;url&quot;: &quot;https://janerivera.com/&quot;,\n  &quot;sameAs&quot;: [\n    &quot;https://www.zillow.com/profile/JaneRivera&quot;,\n    &quot;https://www.realtor.com/realestateagents/jane-rivera&quot;,\n    &quot;https://www.homelight.com/agents/jane-rivera&quot;,\n    &quot;https://g.page/jane-rivera-realty&quot;\n  ]\n}\n&lt;/script&gt;</code></pre>"
+             "<p><b>If you run a team or brokerage, do this for every agent.</b> Each agent's bio page should link to that agent's Zillow profile — and their other profiles — with its own <code>sameAs</code> graph, and where you can, make sure the Zillow profile points back to the team site. That two-way link makes the entire roster legible to AI, so an assistant can recommend the right teammate for the right neighborhood instead of missing the team altogether. Building every agent profile this way is a core part of how we build <a href='../services/website-design.html'>team websites</a>.</p>"),
+            ("What makes those sources actually count",
+             "<p>Being listed everywhere only helps if the listings are <i>consistent</i> and <i>machine-readable</i>. Two signals decide whether your sources earn a citation:</p>"
+             "<ul><li><b>Entity consistency</b> — your name, brokerage, markets, and specialties saying the same thing on every source. Contradictions read as noise; agreement reads as fact.</li>"
+             "<li><b>Answerable content</b> — direct, question-first answers about your market give assistants something liftable, with your name attached. National-trend filler gives them nothing.</li></ul>"),
             ("What doesn't work",
              "<p>Keyword-stuffing your bio, spamming \"best realtor\" on your own site, or publishing AI-generated filler about national market trends. Answer engines synthesize across sources — self-praise with no independent corroboration doesn't survive the synthesis.</p>"
              "<p>Be equally skeptical of anyone guaranteeing placement in AI answers. These systems change constantly and nobody controls them. What's durable is the underlying evidence: real expertise, made machine-readable and independently confirmed.</p>"),
             ("How to start this week",
              "<p>Run the audit yourself: ask ChatGPT, Gemini, and Perplexity the questions your clients would ask — \"best listing agent in [your area]\", \"who should I use to buy in [neighborhood]\". Note who gets named and which sources get cited.</p>"
-             "<p>Then work the gap: fix your <a href='../services/ai-citations.html'>entity consistency</a>, add schema, deepen your reviews, and publish one genuinely excellent local answer per month. The agents doing this now are building a moat while the shortlist is still short.</p>"),
+             "<p>Then work the checklist above: claim and complete your <a href='optimize-google-business-profile-realtor.html'>Google Business Profile</a>, Zillow, Realtor.com, and directory profiles; connect them with a sameAs graph; fix your <a href='../services/ai-citations.html'>entity consistency</a>; deepen your reviews; and publish one genuinely excellent local answer per month. The agents doing this now are building a moat while the shortlist is still short.</p>"),
         ],
         "faqs": [
+            ("Does linking my Zillow profile to my website help me show up in ChatGPT?",
+             "Yes, indirectly but meaningfully. Zillow is a high-authority source AI leans on, and adding your Zillow profile (and your others) to your website's sameAs schema tells the model they're all the same person, which helps it recognize and cite you with confidence. For a team, link every agent's profile to their Zillow the same way so the whole roster is legible. It isn't a magic switch — it's one strong connection in the web of evidence AI synthesizes from."),
+            ("Which profiles matter most for AI recommendations?",
+             "The ones AI cross-references most: your Google Business Profile, Zillow, and Realtor.com, plus agent directories like HomeLight, FastExpert, and EffectiveAgents, and your own schema-marked website. Prioritize completing those and earning reviews on them, then connect them all with a sameAs graph so AI reads them as one identity rather than scattered pages."),
             ("Can I pay to be recommended by ChatGPT?",
              "No. There's no ad placement inside organic AI recommendations today. Recommendations are synthesized from sources the model trusts, which is why the work is building citable evidence rather than buying position."),
             ("Does this replace SEO?",
@@ -1859,7 +1878,7 @@ def build_article(p: dict) -> str:
                 "headline": p["title"],
                 "description": p["excerpt"],
                 "datePublished": p["date"],
-                "dateModified": p["date"],
+                "dateModified": p.get("updated", p["date"]),
                 "url": url,
                 "image": og_image,
                 "author": {"@type": "Organization", "name": "CitedRealty", "@id": BRAND_URL + "/#business"},
