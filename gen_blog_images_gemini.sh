@@ -11,7 +11,7 @@ typeset -A PROMPTS
 PROMPTS[best-social-media-platforms-for-realtors]="Four floating smartphone screens showing abstract social feed cards, each glowing a slightly different accent hue, arranged in an arc around a small warm house. $STYLE"
 PROMPTS[what-should-real-estate-agents-blog-about]="An open notebook whose right page morphs into a glowing webpage layout, small question-mark speech bubbles floating above, a tiny house beside it. $STYLE"
 PROMPTS[email-marketing-for-real-estate-agents]="A trail of glowing envelopes flying like paper planes from a small warm house toward a neat row of mailboxes. $STYLE"
-PROMPTS[google-ads-for-real-estate-agents]="A glowing search bar with a small ad badge hovering above a charming house, a short stack of gradient coins beside it. $STYLE"
+PROMPTS[google-ads-for-real-estate-agents]="A large glowing search bar with soft rounded filled shapes and a small empty amber pill badge at its corner, hovering above a charming softly-lit house, a neat short stack of violet gradient coins beside the house. $STYLE"
 PROMPTS[google-business-profile-posts-for-realtors]="Small update cards and photo cards pinned in a neat feed to the side of a glowing storefront-style house. $STYLE"
 PROMPTS[on-page-seo-real-estate-listing-pages]="A clean webpage wireframe with glowing highlight labels on its title bar, an image block, and a link, a small house icon in the layout. $STYLE"
 PROMPTS[ai-tools-vs-getting-cited-by-ai]="Split composition: on the left a small robot arm writing on a document, on the right a glowing trophy with a tiny house on it; a subtle divider between them. $STYLE"
