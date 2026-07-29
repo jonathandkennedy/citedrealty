@@ -61,7 +61,7 @@ SERVICES = [
             ("Launch & grow", "The content engine and neighborhood pages plug straight in. The site compounds from day one."),
         ],
         "outcome_h2": "Not a brochure. A citation source.",
-        "outcome_p": "Your website becomes the hub every other channel feeds — the source Google ranks and AI assistants quote. Custom builds are included with Local Hero and Market Authority, and available as a standalone project on Local Presence.",
+        "outcome_p": "Your website becomes the hub every other channel feeds — the source Google ranks and AI assistants quote. Custom builds are included with Local Hero and Market Authority. If you're not on a retainer, the same architecture is available as a $1,999 one-time project with 5 neighborhood pages built in — you own it outright, with no monthly fee.",
         "related": ["local-seo", "ai-citations", "content"],
     },
     {
@@ -199,6 +199,103 @@ SERVICES = [
         "outcome_p": "The AI's recommendation, the map-pack snippet, and the seller's gut check all read the same reviews. Make them count.",
         "related": ["google-business-profile", "ai-citations", "social-media"],
     },
+    {
+        "slug": "one-time-projects",
+        "cite": "[8]",
+        "nav": "One-Time Projects",
+        "title": "One-Time Real Estate Marketing Projects — Website from $1,999 | CitedRealty",
+        "desc": "Fixed-price, one-time projects for realtors and brokers: a $1,999 website with neighborhood pages built in, plus neighborhood page packs, Google Business Profile setup, and schema/GEO retrofits. No retainer required — you own everything.",
+        "tag": "Fixed-price, no retainer",
+        "h1": "No retainer. Just the thing <span class='grad'>you need built.</span>",
+        "lede": "Not every agent is ready for a monthly retainer — and not every agent needs one. These are <b>fixed-price, one-time projects</b>: we build the asset, hand it over, and you own it outright. No contract, no platform fee, nothing that switches off when you stop paying.",
+        # Only the $1,999 website carries a public number today. The rest are scoped-and-quoted
+        # until the user sets real prices — we do not invent pricing (see HANDOFF §1, §7 rule 2).
+        "pricing": [
+            {
+                "k": "Project 01",
+                "name": "Website + Neighborhood Pages",
+                "amount": "$1,999",
+                "unit": "one-time",
+                "terms": "One-time build. No monthly fee. You own the site and the domain.",
+                "blurb": "A fast, schema-first agent website with your farm areas built into the architecture — the version of a real estate website that search engines and AI assistants can actually read.",
+                "hot": True,
+                "items": [
+                    "<b>Custom design</b> around your brand, market, and listings",
+                    "<b>5 neighborhood pages</b> for the areas you farm, written as real local resources",
+                    "<b>Schema-first build</b> — RealEstateAgent, place, and FAQ markup wired in from day one",
+                    "Home, about, contact, and a <b>lead-capture form</b> that routes wherever you want",
+                    "Fast by construction — no plugin stack, passes Core Web Vitals",
+                    "<b>Full handoff:</b> the files, the domain, the analytics. Yours outright.",
+                ],
+            },
+            {
+                "k": "Project 02",
+                "name": "Neighborhood Page Pack",
+                "amount": None,
+                "unit": "quoted per project",
+                "terms": "Priced on how many areas you want and what data each needs.",
+                "blurb": "You already have a website. What it doesn't have is a page for every community you farm — the page framework local rankings and AI citations hang on.",
+                "hot": False,
+                "items": [
+                    "A dedicated page per neighborhood, written as a genuine local resource",
+                    "Place and FAQ schema on every page",
+                    "Internal links wired into your existing site architecture",
+                    "Built on your current platform — no rebuild required",
+                    "Written to be quoted by answer engines, not stuffed with keywords",
+                ],
+            },
+            {
+                "k": "Project 03",
+                "name": "Google Business Profile Build",
+                "amount": None,
+                "unit": "quoted per project",
+                "terms": "One-time setup and overhaul. Ongoing management is a retainer service.",
+                "blurb": "The map pack is the one piece of Google the portals can't own. Most agent profiles are half-filled and mis-categorized — this is the one-time fix.",
+                "hot": False,
+                "items": [
+                    "Claim, verify, clean duplicates, and fix categories and service areas",
+                    "Every field, attribute, and description rebuilt against what actually ranks",
+                    "First set of posts, photos, and Q&amp;A published",
+                    "A review-request system installed in your closing workflow",
+                    "A written playbook so you can run it yourself afterward",
+                ],
+            },
+            {
+                "k": "Project 04",
+                "name": "Schema &amp; GEO Retrofit",
+                "amount": None,
+                "unit": "quoted per project",
+                "terms": "Priced on site size and platform.",
+                "blurb": "Your site looks fine to people and reads as nothing to a machine. This is the technical pass that makes an existing site citable without rebuilding it.",
+                "hot": False,
+                "items": [
+                    "RealEstateAgent schema and a <b>sameAs</b> graph tying your profiles into one entity",
+                    "FAQ and breadcrumb markup across the pages that deserve it",
+                    "TL;DR answer blocks added to the pages worth quoting",
+                    "Crawlability, canonicals, and speed problems found and fixed",
+                    "A before/after AI visibility check so you can see what moved",
+                ],
+            },
+        ],
+        "features": [
+            ("Fixed price, fixed scope", "You know the number and the deliverable before we start. No hourly creep, no surprise change orders."),
+            ("You own the output", "Files, domain, content, analytics — handed over at the end. Nothing rents, nothing switches off."),
+            ("Built the way we'd build it anyway", "A project client gets the same schema-first, answer-engine-ready construction as a retainer client. The difference is scope, not care."),
+            ("No retainer required", "Take the asset and run it yourself. If you want it worked every month afterward, the plans are public and you can start any time."),
+            ("Honest scoping", "If a project won't fix your actual problem, we say so before you pay. Sometimes the answer is that you don't need a new website."),
+            ("Upgrade path, not a trap", "Everything we build one-time plugs straight into a retainer later — same architecture, no rework."),
+        ],
+        "steps": [
+            ("Scope", "A short call to pin down what you actually need and confirm the project is the right fix."),
+            ("Build", "We design, write, and construct it — reviewed with you at each pass."),
+            ("Wire", "Schema, internal links, forms, and analytics — the invisible layer that does the ranking."),
+            ("Hand off", "Files, access, and a walkthrough. It's yours, and it keeps working whether or not we do."),
+        ],
+        "steps_h2": "Four moves, <span class=\"grad\">then it's yours.</span>",
+        "outcome_h2": "An asset, not a subscription.",
+        "outcome_p": "A one-time project ends with you owning something that keeps earning — the opposite of a rented platform that takes your pages back when you stop paying. Every plan we offer is public, so you can add monthly work later without a demo or a sales cycle.",
+        "related": ["website-design", "local-seo", "ai-citations"],
+    },
 ]
 
 BY_SLUG = {s["slug"]: s for s in SERVICES}
@@ -212,6 +309,7 @@ NAV_LINKS = """      <li><a href="../index.html#services" aria-haspopup="true">S
           <li><a href="../services/content.html">Blog &amp; Content</a></li>
           <li><a href="../services/social-media.html">Social Media</a></li>
           <li><a href="../services/reviews.html">Reviews &amp; Reputation</a></li>
+          <li><a href="../services/one-time-projects.html">One-Time Projects</a></li>
         </ul>
       </li>
       <li><a href="../index.html#who" aria-haspopup="true">Who we help</a>
@@ -282,6 +380,7 @@ PAGE = """<!DOCTYPE html>
   <a class="mm-sub" href="../services/content.html">Blog &amp; Content</a>
   <a class="mm-sub" href="../services/social-media.html">Social Media</a>
   <a class="mm-sub" href="../services/reviews.html">Reviews &amp; Reputation</a>
+  <a class="mm-sub" href="../services/one-time-projects.html">One-Time Projects</a>
   <a href="../index.html#who">Who we help</a>
   <a class="mm-sub" href="../audiences/solo-agents.html">Solo Agents</a>
   <a class="mm-sub" href="../audiences/teams.html">Teams</a>
@@ -319,11 +418,12 @@ PAGE = """<!DOCTYPE html>
   </div>
 </section>
 
+{pricing_block}
 <section>
   <div class="wrap">
     <div class="sec-head reveal">
       <p class="eyebrow">How it works</p>
-      <h2>Four moves, <span class="grad">repeated monthly.</span></h2>
+      <h2>{steps_h2}</h2>
     </div>
     <div class="steps">
 {steps}
@@ -372,6 +472,7 @@ PAGE = """<!DOCTYPE html>
         <ul>
           <li><a href="../index.html#who">Who we help</a></li>
           <li><a href="../index.html#pricing">Pricing</a></li>
+          <li><a href="../strategy-session.html">Free Broker Strategy Session</a></li>
           <li><a href="../blog/index.html">Resources &amp; News</a></li>
           <li><a href="../tools/index.html">Free Tools for Agents</a></li>
           <li><a href="../index.html#faq">FAQ</a></li>
@@ -399,6 +500,47 @@ def strip_tags(s: str) -> str:
     return re.sub(r"<[^>]+>", "", s)
 
 
+PRICING_SECTION = """<section class="alt" id="pricing">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <p class="eyebrow">Project pricing</p>
+      <h2>Public prices. <span class="grad">No demo required.</span></h2>
+      <p>Every plan and project we sell is priced in the open — because an agent comparing options shouldn't have to sit through a sales call to learn a number, and neither should an AI answering the question for them.</p>
+    </div>
+    <div class="proj-grid">
+{cards}
+    </div>
+    <p class="proj-note">Projects are one-time and month-to-month retainers are separate — you can do either, both, or start with a project and add monthly work later. <a href="../index.html#pricing">See the monthly plans</a>.</p>
+  </div>
+</section>
+"""
+
+
+def build_pricing(svc: dict) -> str:
+    """Render the optional fixed-price project band. Empty for services without a `pricing` key."""
+    if not svc.get("pricing"):
+        return ""
+    cards = []
+    for p in svc["pricing"]:
+        amount = (f'      <p class="amt">{p["amount"]}<small> {p["unit"]}</small></p>'
+                  if p.get("amount") else
+                  f'      <p class="quoted">{p["unit"].capitalize()}</p>')
+        items = "\n".join(f"        <li>{i}</li>" for i in p["items"])
+        cards.append(
+            f'      <div class="proj{" hot" if p.get("hot") else ""} reveal">\n'
+            f'        <div class="k">{p["k"]}</div>\n'
+            f'        <h3>{p["name"]}</h3>\n'
+            f'{amount}\n'
+            f'        <p class="terms">{p["terms"]}</p>\n'
+            f'        <p class="blurb">{p["blurb"]}</p>\n'
+            f'        <ul>\n{items}\n        </ul>\n'
+            f'        <a class="btn {"btn-primary" if p.get("hot") else "btn-ghost"}" href="../index.html#contact">'
+            f'{"Start this project" if p.get("hot") else "Get it scoped"}</a>\n'
+            f'      </div>'
+        )
+    return PRICING_SECTION.format(cards="\n".join(cards))
+
+
 def build(svc: dict) -> str:
     url = f"{BRAND_URL}/services/{svc['slug']}.html"
     features = "\n".join(
@@ -415,19 +557,43 @@ def build(svc: dict) -> str:
         for r in (BY_SLUG[s] for s in svc["related"])
     )
     import json
+    service_node = {
+        "@type": "Service",
+        "@id": url + "#service",
+        "name": strip_tags(svc["nav"]),
+        "serviceType": strip_tags(svc["nav"]) + " for real estate agents",
+        "description": svc["desc"],
+        "url": url,
+        "provider": {"@id": BRAND_URL + "/#business"},
+        "areaServed": {"@type": "Country", "name": "United States"},
+    }
+    # Publish real numbers as Offers so assistants can answer "what does it cost".
+    # Quoted-per-project items are deliberately omitted rather than given invented prices.
+    if svc.get("pricing"):
+        offers = []
+        for p in svc["pricing"]:
+            offer = {
+                "@type": "Offer",
+                "name": h.unescape(p["name"]),
+                "description": p["blurb"],
+                "category": "One-time project",
+                "url": url,
+            }
+            if p.get("amount"):
+                offer["price"] = p["amount"].replace("$", "").replace(",", "")
+                offer["priceCurrency"] = "USD"
+            else:
+                offer["availability"] = "https://schema.org/InStock"
+            offers.append(offer)
+        service_node["hasOfferCatalog"] = {
+            "@type": "OfferCatalog",
+            "name": "One-time projects for real estate agents",
+            "itemListElement": offers,
+        }
     schema = json.dumps({
         "@context": "https://schema.org",
         "@graph": [
-            {
-                "@type": "Service",
-                "@id": url + "#service",
-                "name": strip_tags(svc["nav"]),
-                "serviceType": strip_tags(svc["nav"]) + " for real estate agents",
-                "description": svc["desc"],
-                "url": url,
-                "provider": {"@id": BRAND_URL + "/#business"},
-                "areaServed": {"@type": "Country", "name": "United States"},
-            },
+            service_node,
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
@@ -442,6 +608,8 @@ def build(svc: dict) -> str:
         title=h.escape(svc["title"]), desc=h.escape(svc["desc"]), url=url, brand=BRAND_URL,
         schema=schema, nav=h.escape(svc["nav"]), cite=svc["cite"], tag=h.escape(svc["tag"]),
         h1=svc["h1"], lede=svc["lede"], features=features, steps=steps,
+        steps_h2=svc.get("steps_h2", 'Four moves, <span class="grad">repeated monthly.</span>'),
+        pricing_block=build_pricing(svc),
         outcome_h2=h.escape(svc["outcome_h2"]), outcome_p=h.escape(svc["outcome_p"]),
         related=related, nav_links=NAV_LINKS, foot_services=FOOT_SERVICES,
     )

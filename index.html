@@ -37,7 +37,9 @@
         "itemListElement": [
           {"@type": "Offer", "name": "Local Presence", "price": "999", "priceCurrency": "USD", "description": "Google Business Profile, local SEO, AI citation building, blog content, and 5 neighborhood pages. Monthly retainer."},
           {"@type": "Offer", "name": "Local Hero", "price": "3999", "priceCurrency": "USD", "description": "Everything in Local Presence plus a custom website build, 15 neighborhoods, social media guidance, and AI visibility tracking. Monthly retainer."},
-          {"@type": "Offer", "name": "Market Authority", "price": "6999", "priceCurrency": "USD", "description": "Everything in Local Hero (custom website build included) plus 30 neighborhoods, full social media management, and a weekly 1-hour strategy consultation. Monthly retainer."}
+          {"@type": "Offer", "name": "Market Authority", "price": "6999", "priceCurrency": "USD", "description": "Everything in Local Hero (custom website build included) plus 30 neighborhoods, full social media management, and a weekly 1-hour strategy consultation. Monthly retainer."},
+          {"@type": "Offer", "name": "Website + Neighborhood Pages", "price": "1999", "priceCurrency": "USD", "category": "One-time project", "url": "https://citedrealty.com/services/one-time-projects.html", "description": "One-time, fixed-price website build for real estate agents: custom schema-first design, 5 neighborhood pages, and lead capture. No monthly fee — the agent owns the site outright."},
+          {"@type": "Offer", "name": "Free Online Marketing Strategy Session", "price": "0", "priceCurrency": "USD", "url": "https://citedrealty.com/strategy-session.html", "description": "A free 1-hour online marketing strategy session for real estate brokers and team leaders who want more traffic and leads. No pitch deck, no obligation."}
         ]
       }
     },
@@ -59,7 +61,8 @@
         {"@type": "ListItem", "position": 4, "name": "Local SEO & Neighborhoods", "url": "https://citedrealty.com/services/local-seo.html"},
         {"@type": "ListItem", "position": 5, "name": "Blog & Content", "url": "https://citedrealty.com/services/content.html"},
         {"@type": "ListItem", "position": 6, "name": "Social Media", "url": "https://citedrealty.com/services/social-media.html"},
-        {"@type": "ListItem", "position": 7, "name": "Reviews & Reputation", "url": "https://citedrealty.com/services/reviews.html"}
+        {"@type": "ListItem", "position": 7, "name": "Reviews & Reputation", "url": "https://citedrealty.com/services/reviews.html"},
+        {"@type": "ListItem", "position": 8, "name": "One-Time Projects", "url": "https://citedrealty.com/services/one-time-projects.html"}
       ]
     },
     {
@@ -269,6 +272,33 @@
   .plan .btn{margin-top:auto; text-align:center}
   .pricing-note{text-align:center; color:var(--dim); font-size:13.5px; margin-top:26px}
 
+  /* one-time projects band (inside #pricing) */
+  .oneoff{margin-top:64px; padding-top:52px; border-top:1px solid var(--line)}
+  .oneoff .oh{text-align:center; max-width:62ch; margin:0 auto 34px}
+  .oneoff .oh h3{font-size:clamp(23px,3vw,31px); margin:0 0 10px; font-weight:800; letter-spacing:-.02em}
+  .oneoff .oh p{color:var(--muted); font-size:15.5px; margin:0}
+  .oneoff-grid{display:grid; grid-template-columns:1.35fr 1fr; gap:22px; align-items:stretch}
+  @media(max-width:860px){.oneoff-grid{grid-template-columns:1fr}}
+  .oneoff-lead{position:relative; border:1px solid transparent; border-radius:20px; background:var(--panel2); padding:32px 28px; display:flex; flex-direction:column}
+  .oneoff-lead::before{content:""; position:absolute; inset:-1px; border-radius:20px; padding:1.5px; background:var(--grad); -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0); -webkit-mask-composite:xor; mask-composite:exclude; pointer-events:none}
+  .oneoff-lead .tier{font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--dim); font-weight:700; margin:0 0 6px}
+  .oneoff-lead .tier sup{background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; margin-right:6px}
+  .oneoff-lead h4{margin:0 0 12px; font-size:23px; font-family:var(--disp); font-weight:800}
+  .oneoff-lead .for{color:var(--muted); font-size:13.5px; margin:6px 0 22px}
+  .oneoff-lead ul{list-style:none; margin:0 0 28px; padding:0; display:flex; flex-direction:column; gap:11px}
+  .oneoff-lead li{font-size:14.5px; color:var(--muted); padding-left:26px; position:relative}
+  .oneoff-lead li::before{content:"✓"; position:absolute; left:0; font-weight:700; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .oneoff-lead li b{color:var(--text); font-weight:600}
+  .oneoff-lead .btn{margin-top:auto; text-align:center}
+  .oneoff-side{border:1px solid var(--line); border-radius:20px; background:var(--panel); padding:32px 28px; display:flex; flex-direction:column}
+  .oneoff-side h4{margin:0 0 8px; font-size:18px; font-family:var(--disp); font-weight:800}
+  .oneoff-side > p{color:var(--muted); font-size:14px; margin:0 0 20px}
+  .oneoff-side ul{list-style:none; margin:0 0 24px; padding:0; display:flex; flex-direction:column; gap:14px}
+  .oneoff-side li{font-size:14.5px; color:var(--muted); padding-left:22px; position:relative; line-height:1.45}
+  .oneoff-side li::before{content:"→"; position:absolute; left:0; font-weight:700; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .oneoff-side li b{color:var(--text); font-weight:600; display:block; margin-bottom:2px}
+  .oneoff-side .btn{margin-top:auto; text-align:center}
+
   /* process */
   .steps{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:18px; counter-reset:step}
   .stepc{border:1px solid var(--line); border-radius:var(--r); background:var(--panel); padding:24px}
@@ -346,6 +376,7 @@
           <li><a href="services/content.html">Blog &amp; Content</a></li>
           <li><a href="services/social-media.html">Social Media</a></li>
           <li><a href="services/reviews.html">Reviews &amp; Reputation</a></li>
+          <li><a href="services/one-time-projects.html">One-Time Projects</a></li>
         </ul>
       </li>
       <li><a href="#who" aria-haspopup="true">Who we help</a>
@@ -375,6 +406,7 @@
   <a class="mm-sub" href="services/content.html">Blog &amp; Content</a>
   <a class="mm-sub" href="services/social-media.html">Social Media</a>
   <a class="mm-sub" href="services/reviews.html">Reviews &amp; Reputation</a>
+  <a class="mm-sub" href="services/one-time-projects.html">One-Time Projects</a>
   <a href="#who">Who we help</a>
   <a class="mm-sub" href="audiences/solo-agents.html">Solo Agents</a>
   <a class="mm-sub" href="audiences/teams.html">Teams</a>
@@ -463,7 +495,7 @@
     <div class="sec-head reveal">
       <p class="eyebrow">Services</p>
       <h2>Full-stack marketing, <span class="grad">citation-first.</span></h2>
-      <p>Seven disciplines, one team, all pointed at the same outcome: when someone in your market asks — anywhere — the answer is you.</p>
+      <p>Eight disciplines, one team, all pointed at the same outcome: when someone in your market asks — anywhere — the answer is you. Take them as a monthly retainer, or take one as a fixed-price project.</p>
     </div>
     <div class="svc-grid">
       <a class="svc hot reveal" href="services/ai-citations.html"><div class="cite">[1]</div><h3>AI Citations (GEO)</h3><p>Get named by ChatGPT, Gemini, Perplexity, and Google AI Overviews when sellers and buyers ask who to work with. Our flagship.</p><span class="more">Learn more →</span></a>
@@ -473,6 +505,7 @@
       <a class="svc reveal" href="services/content.html"><div class="cite">[5]</div><h3>Blog &amp; Content Engine</h3><p>Question-first articles that answer what your market asks — written to be cited by AI and read by humans.</p><span class="more">Learn more →</span></a>
       <a class="svc reveal" href="services/social-media.html"><div class="cite">[6]</div><h3>Social Media</h3><p>From guidance and calendars to full done-for-you management — presence that makes the recommendation feel inevitable.</p><span class="more">Learn more →</span></a>
       <a class="svc reveal" href="services/reviews.html"><div class="cite">[7]</div><h3>Reviews &amp; Reputation</h3><p>Systematic review generation and responses — the trust signal AI, Google, and referrals all weigh most.</p><span class="more">Learn more →</span></a>
+      <a class="svc hot reveal" href="services/one-time-projects.html"><div class="cite">[8]</div><h3>One-Time Projects</h3><p>Not ready for a retainer? Fixed-price builds you own outright — starting with a <b>$1,999</b> website with 5 neighborhood pages built in.</p><span class="more">Learn more →</span></a>
     </div>
   </div>
 </section>
@@ -579,6 +612,41 @@
       </div>
     </div>
     <p class="pricing-note">Month-to-month retainers. No long-term contracts — the work should earn the renewal.</p>
+
+    <!-- One-time projects: for agents who want the asset without the retainer -->
+    <div class="oneoff reveal">
+      <div class="oh">
+        <h3>Not ready for a retainer? <span class="grad">Buy the asset instead.</span></h3>
+        <p>Some agents don't need someone working their market every month — they need one thing built properly, once. These are fixed-price projects with a full handoff at the end. You own everything.</p>
+      </div>
+      <div class="oneoff-grid">
+        <div class="oneoff-lead">
+          <p class="tier"><sup>[8]</sup>One-time project</p>
+          <h4>Website + Neighborhood Pages</h4>
+          <p class="price">$1,999<small> one-time</small></p>
+          <p class="for">A real estate website AI can actually read — with your farm areas built into the architecture.</p>
+          <ul>
+            <li><b>Custom design</b> around your brand, market &amp; listings</li>
+            <li><b>5 neighborhood pages</b> for the areas you farm</li>
+            <li><b>Schema-first build</b> — wired for search engines and AI from day one</li>
+            <li>Home, about, contact &amp; a <b>lead-capture form</b></li>
+            <li>Fast by construction — passes Core Web Vitals</li>
+            <li><b>You own it outright.</b> No monthly fee, nothing switches off.</li>
+          </ul>
+          <a class="btn btn-primary" href="#contact">Start this project</a>
+        </div>
+        <div class="oneoff-side">
+          <h4>Other one-time projects</h4>
+          <p>Scoped and quoted per project — tell us what you've got and we'll price it.</p>
+          <ul>
+            <li><b>Neighborhood Page Pack</b>Add farm-area pages to the website you already have.</li>
+            <li><b>Google Business Profile Build</b>A one-time claim, clean-up, and full optimization — plus the playbook to run it.</li>
+            <li><b>Schema &amp; GEO Retrofit</b>Make your existing site citable without rebuilding it.</li>
+          </ul>
+          <a class="btn btn-ghost" href="services/one-time-projects.html">See all projects</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -681,6 +749,7 @@
           <li><a href="services/content.html">Blog &amp; Content</a></li>
           <li><a href="services/social-media.html">Social Media</a></li>
           <li><a href="services/reviews.html">Reviews &amp; Reputation</a></li>
+          <li><a href="services/one-time-projects.html">One-Time Projects</a></li>
         </ul>
       </div>
       <div>
@@ -688,6 +757,7 @@
         <ul>
           <li><a href="#who">Who we help</a></li>
           <li><a href="#pricing">Pricing</a></li>
+          <li><a href="strategy-session.html">Free Broker Strategy Session</a></li>
           <li><a href="blog/index.html">Resources &amp; News</a></li>
           <li><a href="tools/index.html">Free Tools for Agents</a></li>
           <li><a href="#faq">FAQ</a></li>
