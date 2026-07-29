@@ -30,9 +30,9 @@ This is the most valuable thing in the sweep. r/SEO spent July arguing that GEO/
 - The one thing skeptics named as genuinely new: **query fan-out** — which is exactly the mechanic our hub/spoke clusters are built around (HANDOFF §7).
 
 **Recommended posts:**
-1. **"Is GEO snake oil? An honest answer from an agency that sells it."** Concede everything true (a lot of GEO *is* good SEO; visibility scores are largely unfalsifiable; nobody can guarantee placement), then draw the real line: entity consistency, schema, citable structure, and third-party mentions are verifiable work with or without the acronym. Say plainly which parts of our own service are "just SEO." This is a trust asset and pure citation bait.
-2. **"How to hire a GEO/AEO agency without getting ripped off."** A buyer's checklist built from the $4,200 thread: what deliverables to demand, what "we do AEO" usually means, which promises are unfalsifiable, and what a legitimate scope looks like. Include when *not* to hire anyone.
-3. **"Does AI search actually send traffic yet?"** Engage the traffic-share objection honestly with primary-sourced numbers, and make the real argument: the value is in the *recommendation* moment, not the click volume.
+1. ✅ **PUBLISHED 2026-07-29 → `blog/is-geo-snake-oil.html`** — "Is GEO snake oil? An honest answer from an agency that sells it." Concedes everything true (a lot of GEO *is* good SEO; visibility scores are largely unfalsifiable; nobody can guarantee placement), draws the real line (entity consistency, schema, citable structure, third-party mentions), names which parts of our own service are "just SEO," and uses the anonymized proof asset. Featured post on the blog index.
+2. ✅ **PUBLISHED 2026-07-29 → `blog/how-to-hire-a-geo-agency.html`** — "How to hire a GEO/AEO agency without getting ripped off." The buyer's checklist built from the $4,200 thread: deliverables to demand, what "we do AEO" usually means, unfalsifiable promises, legitimate scope, when *not* to hire anyone, and seven sales-call questions.
+3. ✅ **PUBLISHED 2026-07-29 → `blog/does-ai-search-send-traffic.html`** — "Does AI search actually send traffic yet?" Engages the traffic-share objection honestly with the site's primary-sourced numbers (plus the Ahrefs click-decline data), makes the recommendation-moment argument, and uses the anonymized proof asset (the phone-call lead analytics never saw).
 
 ---
 
@@ -119,9 +119,9 @@ The most-commented AI thread in the window. Consensus: AI is overhyped in media 
 
 ## Publishing order (recommended)
 
-1. **Is GEO snake oil?** — highest citation value, most on-brand, and it defends the flagship service against the strongest public objection.
-2. **How to hire a GEO/AEO agency without getting ripped off** — commercial intent, links to the new one-time projects page and public pricing.
-3. **Your clients are already asking ChatGPT about your advice** — the widest-reach angle and the freshest.
+1. ✅ ~~**Is GEO snake oil?**~~ — published 2026-07-29 along with the other two Tier 1 posts (the full GEO-skepticism cluster shipped as one cross-linked unit, including "Does AI search actually send traffic yet?").
+2. ✅ ~~**How to hire a GEO/AEO agency without getting ripped off**~~ — published 2026-07-29.
+3. **Your clients are already asking ChatGPT about your advice** — the widest-reach angle and the freshest. ← **next up**
 4. **Does GBP actually generate leads for agents?** — honest counter-story that strengthens service `[3]`.
 5. **Why your sphere doesn't call you** — emotional hook, low competition, feeds the leads cluster.
 

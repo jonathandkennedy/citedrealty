@@ -58,6 +58,9 @@ PROMPTS[real-estate-lead-generation-guide]="Glowing lead signals and small perso
 PROMPTS[real-estate-lead-magnets]="A large glowing horseshoe magnet drawing small house icons and person icons toward it through the air, clean minimal composition. $STYLE"
 PROMPTS[real-estate-niche-marketing]="One glowing house singled out and spotlighted with a warm beam of light, standing out among many faint dim houses around it, a sense of focus and standing out. $STYLE"
 PROMPTS[exclusive-real-estate-leads]="A single glowing person-marker icon highlighted under a soft spotlight and encircled by a gentle ring, set apart from a faint crowd of similar dim icons, a sense of one-to-one exclusivity. $STYLE"
+PROMPTS[is-geo-snake-oil]="A large elegant magnifying glass inspecting a glowing AI chat bubble: under the lens one half of the bubble resolves into solid geometric building blocks, the other half drifts away as faint smoke wisps, a small warm house beside the solid blocks. $STYLE"
+PROMPTS[how-to-hire-a-geo-agency]="A glowing checklist card with several confident checkmarks and one small amber warning flag on its lowest row, hovering protectively beside a small warm house, a sense of careful vetting before a handshake. $STYLE"
+PROMPTS[does-ai-search-send-traffic]="A large glowing AI chat bubble with a single thin winding light path leading from it to a small warm house, beside a modest bar chart of tiny dim bars with one taller warmly glowing bar, a sense of few but valuable visits. $STYLE"
 
 slugs=("$@")
 if [ ${#slugs[@]} -eq 0 ]; then slugs=(${(k)PROMPTS}); fi
