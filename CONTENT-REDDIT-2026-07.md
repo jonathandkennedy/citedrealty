@@ -36,6 +36,19 @@ This is the most valuable thing in the sweep. r/SEO spent July arguing that GEO/
 
 ---
 
+## Proof asset — a documented AI-referred lead (logged 2026-07-29)
+
+A business owner in the founder's network — a specialty surety-bond agency, kept anonymous here — reported his **first-ever online lead** this week: the prospect had asked ChatGPT, and it recommended his firm by name. A screenshot of the AI answer shows the firm recommended over a generalist insurance agency **specifically because of its dedicated specialization** — the generalist's "broader insurance focus" was cited as the reason to prefer the specialist.
+
+**Why this matters to the Tier 1 posts:**
+- **Post 1 (Is GEO snake oil?)** currently has to argue mechanism; this is a receipt. Use it the radical-honesty way: one documented lead, not a promise — "here is what the recommendation moment looks like when it lands, and no, we can't guarantee you one."
+- **Post 3 (Does AI traffic exist?)** — this lead arrived as a phone call, not a tracked referral click. It's the concrete version of the argument that the value is the *recommendation moment*, and that AI-referred leads are systematically undercounted by analytics.
+- The AI's stated reason (specialist beats generalist) is the entity-clarity thesis working in the wild, and it's from **outside real estate** — which strengthens the claim that this is how AI answers work, not a cherry-picked realtor anecdote.
+
+**Usage rules:** the screenshot and the owner's message are held privately by the founder and stay out of this repo. Anonymized use ("a specialty insurance business we know") is fine immediately. Naming the firm, quoting the message, or publishing the screenshot requires the owner's written permission first — with it, this graduates to a named mini-case-study on `strategy-session.html` and `method.html`; without it, it stays out of site pages entirely, because pages only carry verifiable claims.
+
+---
+
 ## Tier 2 — AI is already inside the transaction ⭐ strongest ICP evidence
 
 **[Worse than parents - Chat GPT](https://reddit.com/r/realtors/comments/1v023kq/worse_than_parents_chat_gpt/)** — r/realtors, 07-18, **222 pts · 69 cmt** (top-scoring agent thread in the window).
