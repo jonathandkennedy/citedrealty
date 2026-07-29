@@ -29,6 +29,100 @@ CATS = {
 
 POSTS = [
     {
+        "slug": "real-estate-postcards-guide",
+        "img": "img/real-estate-postcards-guide.jpg",
+        "img_alt": "Illustration of real estate postcards fanning out toward a glowing neighborhood of houses",
+        "cat": "howto",
+        "title": "Real Estate Postcards: The Complete 2026 Guide (Ideas, Templates, and What Actually Works)",
+        "date": "2026-07-29",
+        "excerpt": "Do postcards still work in 2026? What should you send, how often, and where do you get templates? The complete, honest guide — with ideas that get calls and the real math on ROI.",
+        "tldr": "Real estate postcards still work in 2026 — but only as a consistent, targeted campaign, not a one-off. The agents who win with direct mail farm a specific neighborhood, mail the same area repeatedly for months, and rotate just-listed, just-sold, market-update, and value-add cards, each with one clear call to action. A postcard's job isn't to sell a house; it's to make you the familiar name when someone on that street decides to move. Response rates run well under 1% per mailing, so the math only works with repetition and a tight farm. Use a proven template, put a real local number or offer on it, and track which cards drive calls. If you can't commit to at least six months of the same neighborhood, skip it.",
+        "sections": [
+            ("Do real estate postcards still work in 2026?",
+             "<p>Yes — with a caveat that decides everything: postcards work as a <b>sustained farming campaign</b>, and fail as a one-off blast. A single mailing to a random list is money set on fire. The same budget aimed at one neighborhood, mailed every month for a year, builds the name recognition that wins the listing. We dig into the evidence and the honest ROI in <a href='do-real-estate-postcards-work.html'>do real estate postcards work?</a> — the short version is that repetition and targeting, not the card itself, are what pay off.</p>"),
+            ("The postcard types that actually get calls",
+             "<p>Rotate a mix so your farm sees range, not just \"for sale\" signs. The types that earn responses:</p>"
+             "<ul>"
+             "<li><b>Just listed</b> — a new listing in or near the farm, with one strong photo.</li>"
+             "<li><b>Just sold</b> — social proof that you close, with the result named (\"sold in 6 days, over asking\").</li>"
+             "<li><b>Market update</b> — one real local number and what it means. The most useful and least-used type.</li>"
+             "<li><b>Home value / equity</b> — \"curious what your home is worth?\" — the classic seller-lead trigger.</li>"
+             "<li><b>Neighborhood expert</b> — you, tied to the area, pairing with your <a href='how-to-build-a-neighborhood-page.html'>neighborhood pages</a> online.</li>"
+             "<li><b>Value-add</b> — a local guide, event calendar, or seasonal tip people actually keep.</li>"
+             "</ul>"
+             "<p>Whatever the type, one clear call to action per card. A postcard asking for three things gets none of them.</p>"),
+            ("Farming: mail the same neighborhood, on repeat",
+             "<p>The single biggest predictor of postcard success is <b>farm discipline</b>: pick one neighborhood you can realistically own, and mail it consistently for months. Recognition compounds — the fifth card lands very differently than the first. Pick your farm the way you'd pick a <a href='how-to-build-a-neighborhood-page.html'>neighborhood page</a> to build: enough turnover to matter, few enough competitors to win. Postcards and a farm strategy are a natural first channel for a <a href='new-real-estate-agent-playbook.html'>new agent</a> who'll commit to the long game.</p>"),
+            ("Design and templates: what to put on the card",
+             "<p>You don't need a designer. Keep it simple: one clear photo, a headline a driver could read in two seconds, one call to action, and your contact info. Put something <i>real</i> on it — a local sold price, a market stat, an actual offer — not \"your neighborhood expert!\" in three fonts. For templates, Canva's free real-estate templates and print services like ProspectsPLUS or a local printer cover most agents; we round up the free options in our <a href='free-real-estate-marketing-templates.html'>free marketing templates &amp; tools</a> guide. Match the card's design to your website and profiles so the person who Googles your name after getting it finds a consistent brand.</p>"),
+            ("The honest math (and when to skip postcards)",
+             "<p>Expect response rates well under 1% per mailing — often 0.5% or lower — which is exactly why single mailings disappoint and consistent farming works. Do the arithmetic before you start: cost per card times mailings times months, against the commission from one listing. For most farms the math works only with repetition. <b>Skip postcards</b> if you can't commit six months to one neighborhood, or if your problem is really lead conversion, not lead volume — in that case, fixing how you <a href='how-realtors-get-seller-leads-without-buying-them.html'>generate and own seller leads</a> beats more mail.</p>"),
+            ("Postcards drive a search — make sure you're ready for it",
+             "<p>Here's what most direct-mail advice misses in 2026: a postcard rarely gets a call directly. It gets your name <b>Googled</b>. The prospect sees your card, then looks you up — and increasingly asks an AI \"is [your name] a good agent?\" If your website, reviews, and profiles are thin or inconsistent, the card just sent a warm lead to judge you on a bad first impression. Make the mail work by making sure you <a href='how-real-estate-agents-show-up-in-chatgpt.html'>show up well when AI and Google are asked about you</a>. Direct mail plus an owned, citable online presence is a loop; either one alone leaks. That connection is the core of our <a href='../services/ai-citations.html'>AI citations work</a>.</p>"),
+        ],
+        "faqs": [
+            ("Do real estate postcards still work?",
+             "Yes, but only as a consistent farming campaign, not a one-off. A single mailing to a broad list rarely pays; the same budget aimed at one neighborhood and mailed monthly for six to twelve months builds the name recognition that wins listings. Response rates run under 1% per mailing, so repetition and tight targeting — not the card design — are what make the math work."),
+            ("How often should I send real estate postcards?",
+             "Monthly to the same farm is the common floor, and consistency matters more than volume. Recognition compounds with repetition, so a steady monthly cadence to one neighborhood for at least six to twelve months beats a bigger one-time blast. Rotate the type of card — just listed, just sold, market update, value-add — so the farm sees range rather than the same message every time."),
+            ("What should a real estate postcard say?",
+             "One clear message with one call to action, built around something real: a local sold price, a market stat, a home-value offer, or a genuinely useful neighborhood tip. Include one strong photo, a headline readable in two seconds, and your contact info. Avoid cramming multiple asks or generic 'your neighborhood expert' filler — specificity and a single next step are what earn a response."),
+            ("Where can I get real estate postcard templates?",
+             "Canva's free tier has solid real-estate postcard templates, and print-and-mail services like ProspectsPLUS include designs you can customize. A local printer can also handle design and mailing. We collect the free options — templates, tools, and social graphics — in our free real estate marketing templates and tools guide. Whatever you use, match the card's look to your website and profiles for a consistent brand."),
+        ],
+    },
+    {
+        "slug": "free-real-estate-marketing-templates",
+        "img": "img/free-real-estate-marketing-templates.jpg",
+        "img_alt": "Illustration of glowing template cards, social graphics, and tool icons arranged around a house",
+        "cat": "strategy",
+        "title": "Free Real Estate Marketing Templates & Tools (2026): The Honest Resource List",
+        "date": "2026-07-29",
+        "excerpt": "Every free real estate marketing resource worth your time in one place — social templates, listing tools, postcard designs, and 40+ ready-to-use post ideas. No email wall.",
+        "tldr": "You don't need to pay for most real estate marketing materials — the free options are genuinely good if you know where to look. For social graphics and flyers, Canva's free tier plus real-estate templates covers most agents. For listing descriptions, social captions, and review replies, free AI tools do the drafting. For postcards and flyers, template libraries and print services include free designs. This page collects the free resources worth using, plus 40+ ready-to-use social media post ideas you can start with today. The one thing free templates can't give you is an ownable website and the local content that actually gets you found — that's the part worth investing in. Everything else, start free.",
+        "sections": [
+            ("Free social media templates &amp; graphics",
+             "<p><b>Canva's free tier</b> is the honest answer for most agents — its real-estate template library covers just-listed and just-sold graphics, story templates, flyers, and social posts you can brand in minutes. You do not need a paid design tool to look professional. Supplement it with your brokerage's approved assets and free stock photography. The trap isn't the tool; it's using a template so generic that every other agent has the same one — always swap in your real photos, your market, and your voice.</p>"),
+            ("Free AI tools that replace paid marketing software",
+             "<p>A lot of the paid \"real estate marketing tools\" sold to agents are wrappers around things you can do free. We built several, no login or card required:</p>"
+             "<ul>"
+             "<li><a href='../tools/listing-description-generator.html'>Listing description generator</a> — fair-housing-safe MLS copy in seconds.</li>"
+             "<li><a href='../tools/social-hook-generator.html'>Social hook generator</a> and <a href='../tools/attention-anchor-generator.html'>attention-anchor generator</a> — scroll-stopping openers.</li>"
+             "<li><a href='../tools/review-reply-generator.html'>Review reply writer</a> — on-brand responses to every review.</li>"
+             "<li><a href='../tools/gbp-grader.html'>Google Business Profile grader</a> and <a href='../tools/ai-visibility-checker.html'>AI visibility checker</a> — see where you actually stand.</li>"
+             "<li><a href='../tools/marketing-budget-calculator.html'>Marketing budget calculator</a> — sanity-check the spend.</li>"
+             "</ul>"
+             "<p>Browse them all on the <a href='../tools/index.html'>free tools hub</a>. They handle the repetitive production so your time goes to the work that actually compounds.</p>"),
+            ("Free postcard, flyer &amp; print templates",
+             "<p>For direct mail and open-house collateral, Canva again covers most needs, and print-and-mail services (ProspectsPLUS, a local printer) bundle free customizable designs. Before you invest in a postcard campaign, read the honest ROI math in our <a href='real-estate-postcards-guide.html'>real estate postcards guide</a> — the template is the easy part; the farm discipline is what pays.</p>"),
+            ("40+ real estate social media post ideas (steal these)",
+             "<p>The hardest part of social isn't design — it's knowing what to post. Here's a rotation you can pull from all year. Mix across the five buckets so your feed isn't just listings.</p>"
+             "<p><b>Listings &amp; sales</b></p>"
+             "<ul><li>Just listed — lead with the best feature, not the address</li><li>Just sold, days on market, over asking</li><li>Coming soon teaser</li><li>Open house invite with the one reason to come</li><li>Price improvement</li><li>A listing's before-and-after prep</li><li>Behind-the-scenes of a photo shoot</li><li>Under contract in X days</li></ul>"
+             "<p><b>Local expertise</b></p>"
+             "<ul><li>Neighborhood spotlight</li><li>Local business shoutout</li><li>Market update with one real number</li><li>What $X buys in [your area] right now</li><li>New development or construction news</li><li>Best park / coffee / taco in [area]</li><li>This month's local events</li><li>A hidden-gem street most buyers miss</li></ul>"
+             "<p><b>Education &amp; value</b></p>"
+             "<ul><li>First-time buyer tip</li><li>One staging change that adds value</li><li>How mortgage rates actually affect a payment</li><li>Closing costs, line by line</li><li>A common inspection surprise</li><li>Rent vs. buy math for your market</li><li>How to win a bidding war</li><li>The real timeline of a sale</li></ul>"
+             "<p><b>Proof &amp; personal</b></p>"
+             "<ul><li>Client closing photo (with permission)</li><li>Why you became an agent</li><li>A day in your life</li><li>Meet the team</li><li>A lesson from a hard deal</li><li>Community or charity involvement</li><li>A client's move-in celebration</li><li>Ask me anything</li></ul>"
+             "<p><b>Engagement &amp; fun</b></p>"
+             "<ul><li>This-or-that (kitchen A vs. B)</li><li>Guess the sale price</li><li>Poll: buy now or wait?</li><li>Bust a common real estate myth</li><li>Local trivia</li><li>Fill in the blank: my dream home has ___</li><li>Swipe for the transformation</li><li>Caption this home</li></ul>"
+             "<p>Turn any of these into a finished caption with the <a href='../tools/social-hook-generator.html'>social hook generator</a>, and keep the cadence realistic — a few consistent posts beat a burst then silence.</p>"),
+            ("What's actually worth paying for",
+             "<p>Here's the honest part free templates won't tell you: templates and tools make you <i>faster</i>, but they don't make you <i>found</i>. Every agent has the same free Canva templates. The things that compound — and that a template can't give you — are an <a href='../services/website-design.html'>ownable website</a> with real local content, and the <a href='../services/ai-citations.html'>citable presence</a> that gets you recommended when buyers ask Google or AI who to hire. Start free on everything above; invest where it builds an asset you keep. If you're weighing that, our <a href='real-estate-agent-websites-guide.html'>agent websites guide</a> and <a href='do-realtors-need-their-own-website.html'>do realtors need a website?</a> lay out the tradeoffs honestly.</p>"),
+        ],
+        "faqs": [
+            ("Where can I get free real estate marketing templates?",
+             "Canva's free tier is the best starting point — its real-estate library covers social graphics, just-listed/just-sold posts, flyers, and postcards you can brand quickly. Print-and-mail services like ProspectsPLUS include free postcard designs, and your brokerage likely has approved assets too. The key is to customize: swap in your real photos, market, and voice so your template doesn't look identical to every other agent's."),
+            ("What are the best free tools for real estate agents?",
+             "For production, the genuinely useful free ones are a general AI assistant (ChatGPT or Gemini) plus purpose-built tools for the repetitive jobs — listing descriptions, social hooks, review replies — which CitedRealty offers with no login. Add a free Google Business Profile grader and an AI visibility checker to see where you stand. Most agents get the majority of the value before paying for anything; save spend for an ownable website and getting found."),
+            ("Are Canva real estate templates any good?",
+             "Yes — Canva's free real-estate templates are more than good enough for professional-looking social posts, flyers, and postcards, and most agents never need a paid design tool. The only caution is sameness: because the templates are free and popular, many agents use the identical layout. Always customize with your own photos, your market's numbers, and your voice so your brand doesn't blend into everyone else's."),
+            ("Do I need to pay for real estate marketing software?",
+             "Usually not, at least to start. Most 'real estate marketing tools' are wrappers around things free tools already do — drafting listings, captions, and graphics. Start free and only pay when a specific tool reliably saves you real hours. The spending that actually compounds isn't software; it's an ownable website and the local content and citations that get you recommended by Google and AI."),
+        ],
+    },
+    {
         "slug": "real-estate-agent-websites-guide",
         "img": "img/real-estate-agent-websites-guide.jpg",
         "img_alt": "Illustration of a glowing browser window framing a small warm house and neighborhood",
@@ -1022,7 +1116,7 @@ POSTS = [
         "sections": [
             ("Why 'zero calls from 5,000 postcards' is normal",
              "<p>Nobody interrupts dinner to call a postcard. Measured as direct response, real estate mail has always been dismal — the forum horror stories are accurately describing the wrong metric. Mail is a <b>frequency medium</b>: its job is that when a homeowner in your farm reaches the selling moment, your name is the one that feels familiar and local.</p>"
-             "<p>That takes a year of consistent presence, which is why the one-and-done spring blast \"proves postcards don't work\" every single spring.</p>"),
+             "<p>That takes a year of consistent presence, which is why the one-and-done spring blast \"proves postcards don't work\" every single spring. Deciding whether to run a campaign at all? Start with our <a href='real-estate-postcards-guide.html'>complete guide to real estate postcards</a> — types, templates, cadence, and the honest math.</p>"),
             ("The mail that earns the fridge",
              "<p>The glamour headshot with \"#1 Agent\" goes straight to recycling. What survives: a quarterly one-pager of <i>that neighborhood's</i> actual numbers — what sold, for how much, days on market, what it means. Homeowners keep market intelligence about their own street; it's the same content as a <a href='../services/local-seo.html'>neighborhood page</a>, printed.</p>"
              "<p>Which is the efficient secret: one well-built neighborhood update is a mailer, a web page, a social post, and an open-house handout. Agents who farm well don't create four things; they create one thing four ways.</p>"),

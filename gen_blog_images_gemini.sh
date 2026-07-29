@@ -48,6 +48,8 @@ PROMPTS[new-real-estate-agent-playbook]="A tiny glowing house sprouting like a s
 PROMPTS[best-real-estate-lead-sources-reddit]="Several glowing upward arrows and small chat-bubble icons funneling and converging up into a single warm house at the top, like leads flowing toward it. $STYLE"
 PROMPTS[real-estate-agent-websites-guide]="A glowing browser window framing a small warm house and a little neighborhood, with subtle structural wireframe lines suggesting a well-built site. $STYLE"
 PROMPTS[real-estate-website-builders-for-agents]="Glowing modular building blocks and drag-and-drop panels assembling into a small website window that frames a house, a sense of construction. $STYLE"
+PROMPTS[real-estate-postcards-guide]="Several glowing real estate postcards fanning out through the air toward a warm neighborhood of small houses, a subtle sense of direct mail in motion. $STYLE"
+PROMPTS[free-real-estate-marketing-templates]="A tidy arrangement of glowing template cards, social-post graphics, and small tool icons floating around a central warm house, a free-resource toolkit feel. $STYLE"
 
 slugs=("$@")
 if [ ${#slugs[@]} -eq 0 ]; then slugs=(${(k)PROMPTS}); fi
