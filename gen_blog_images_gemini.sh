@@ -52,6 +52,8 @@ PROMPTS[real-estate-postcards-guide]="Several glowing real estate postcards fann
 PROMPTS[free-real-estate-marketing-templates]="A tidy arrangement of glowing template cards, social-post graphics, and small tool icons floating around a central warm house, a free-resource toolkit feel. $STYLE"
 PROMPTS[real-estate-lead-generation-guide]="Glowing lead signals and small person icons flowing along light paths from all directions into a central warm house-shaped hub, a sense of leads converging. $STYLE"
 PROMPTS[real-estate-lead-magnets]="A large glowing horseshoe magnet drawing small house icons and person icons toward it through the air, clean minimal composition. $STYLE"
+PROMPTS[real-estate-niche-marketing]="One glowing house singled out and spotlighted with a warm beam of light, standing out among many faint dim houses around it, a sense of focus and standing out. $STYLE"
+PROMPTS[exclusive-real-estate-leads]="A single glowing person-marker icon highlighted under a soft spotlight and encircled by a gentle ring, set apart from a faint crowd of similar dim icons, a sense of one-to-one exclusivity. $STYLE"
 
 slugs=("$@")
 if [ ${#slugs[@]} -eq 0 ]; then slugs=(${(k)PROMPTS}); fi
