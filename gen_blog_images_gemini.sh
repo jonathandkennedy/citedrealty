@@ -61,6 +61,17 @@ PROMPTS[exclusive-real-estate-leads]="A single glowing person-marker icon highli
 PROMPTS[is-geo-snake-oil]="A large elegant magnifying glass inspecting a glowing AI chat bubble: under the lens one half of the bubble resolves into solid geometric building blocks, the other half drifts away as faint smoke wisps, a small warm house beside the solid blocks. $STYLE"
 PROMPTS[how-to-hire-a-geo-agency]="A glowing checklist card with several confident checkmarks and one small amber warning flag on its lowest row, hovering protectively beside a small warm house, a sense of careful vetting before a handshake. $STYLE"
 PROMPTS[does-ai-search-send-traffic]="A large glowing AI chat bubble with a single thin winding light path leading from it to a small warm house, beside a modest bar chart of tiny dim bars with one taller warmly glowing bar, a sense of few but valuable visits. $STYLE"
+PROMPTS[expired-listings-guide]="A faded tilted for-sale yard sign being relit by a warm amber glow beside a small house, a calendar page curling away, sense of a second chance. $STYLE"
+PROMPTS[real-estate-scripts]="Several glowing dialogue speech-bubble cards fanned like playing cards beside a vintage telephone handset, a small warm house in the background. $STYLE"
+PROMPTS[real-estate-listing-presentation]="An elegant open presentation folder with softly glowing pages and a rising line chart, facing a small warm house across a table, sense of a confident pitch. $STYLE"
+PROMPTS[closing-gifts-for-realtors]="A warmly glowing wrapped gift box with a ribbon placed on the doorstep of a charming small house, gentle sparkles, sense of gratitude. $STYLE"
+PROMPTS[real-estate-farming]="A small neighborhood of houses inside a soft glowing boundary ring, one house warmly lit at the center, faint sprouting leaves at the ring's edge, sense of tending a territory. $STYLE"
+PROMPTS[real-estate-branding]="A small warm house whose glowing silhouette repeats identically across several floating panels and screens of different sizes, sense of one consistent identity everywhere. $STYLE"
+PROMPTS[real-estate-slogans]="An elegant glowing blank ribbon banner unfurling above a small warm house, abstract sparkles along the ribbon, completely blank ribbon with no text. $STYLE"
+PROMPTS[real-estate-agent-bio]="A glowing profile card with a portrait circle and soft blank text-line placeholders, standing beside a small warm house, sense of a trustworthy introduction. $STYLE"
+PROMPTS[real-estate-newsletters]="A glowing folded newsletter page emerging from an open envelope, an abstract small house shape on the page, a trail of soft envelopes behind. $STYLE"
+PROMPTS[open-house-ideas-for-realtors]="A charming house with its front door open spilling warm light onto a path lined with small glowing directional yard signs, welcoming footprints approaching. $STYLE"
+PROMPTS[real-estate-video-marketing]="A glowing smartphone on a small tripod filming a charming warm house, a soft play-button badge floating above, gentle spotlight. $STYLE"
 
 slugs=("$@")
 if [ ${#slugs[@]} -eq 0 ]; then slugs=(${(k)PROMPTS}); fi
