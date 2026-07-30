@@ -72,6 +72,17 @@ PROMPTS[real-estate-agent-bio]="A glowing profile card with a portrait circle an
 PROMPTS[real-estate-newsletters]="A glowing folded newsletter page emerging from an open envelope, an abstract small house shape on the page, a trail of soft envelopes behind. $STYLE"
 PROMPTS[open-house-ideas-for-realtors]="A charming house with its front door open spilling warm light onto a path lined with small glowing directional yard signs, welcoming footprints approaching. $STYLE"
 PROMPTS[real-estate-video-marketing]="A glowing smartphone on a small tripod filming a charming warm house, a soft play-button badge floating above, gentle spotlight. $STYLE"
+PROMPTS[real-estate-referral-fees]="Two elegant glowing hands gently exchanging a small warm house token above a softly split coin, clean and balanced. $STYLE"
+PROMPTS[luxury-real-estate-marketing]="A grand elegant house under one refined narrow spotlight, restrained gold accent details, deep calm negative space. $STYLE"
+PROMPTS[new-construction-real-estate-agent]="A house half-assembled from glowing wireframe lines beside its finished warmly-lit twin, a subtle crane silhouette behind. $STYLE"
+PROMPTS[how-do-real-estate-teams-work]="Several small glowing house tokens arranged in an orbit around one warm central house, connected by soft light lines. $STYLE"
+PROMPTS[how-to-recruit-real-estate-agents]="A warm central house drawing several small glowing person markers toward it along gentle curved paths, welcoming. $STYLE"
+PROMPTS[what-is-a-real-estate-isa]="A glowing headset resting beside a neat stack of contact cards and a small warm house, calm and orderly desk scene. $STYLE"
+PROMPTS[buyer-agency-agreement-guide]="A glowing document with a soft pen beside two small abstract figures and a warm house, calm and reassuring. $STYLE"
+PROMPTS[real-estate-name-ideas]="Several glowing blank name cards floating above a small warm house, one card lit brighter than the rest, completely blank cards with no text. $STYLE"
+PROMPTS[divorce-real-estate-agent]="A house gently dividing into two soft glowing paths that curve apart kindly, handled with calm and care, no harsh imagery. $STYLE"
+PROMPTS[veteran-real-estate-agent]="A warm house with a gentle abstract star emblem above the door and a path of soft glowing footsteps arriving home. $STYLE"
+PROMPTS[probate-real-estate-leads]="A quiet house with a gentle glowing document and a single key resting before it, soft respectful light. $STYLE"
 
 slugs=("$@")
 if [ ${#slugs[@]} -eq 0 ]; then slugs=(${(k)PROMPTS}); fi
