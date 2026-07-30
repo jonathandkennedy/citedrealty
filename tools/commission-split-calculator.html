@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Real Estate Commission Split Calculator | CitedRealty</title>
+<meta name="description" content="Sale price in, your actual take-home out — after the brokerage split, franchise fees, transaction fees, and any referral fee. Free, instant, runs in your browser.">
+<link rel="canonical" href="https://citedrealty.com/tools/commission-split-calculator.html">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="/assets/icon-square.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:title" content="Free Real Estate Commission Split Calculator">
+<meta property="og:description" content="What do you actually take home per deal? Gross to net in one click — split, fees, and referral included.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://citedrealty.com/tools/commission-split-calculator.html">
+<meta property="og:image" content="https://citedrealty.com/assets/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<script src="../assets/theme.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"WebApplication","name":"Real Estate Commission Split Calculator","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@id":"https://citedrealty.com/#business"},"url":"https://citedrealty.com/tools/commission-split-calculator.html"},
+ {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://citedrealty.com/"},{"@type":"ListItem","position":2,"name":"Free Tools","item":"https://citedrealty.com/tools/"},{"@type":"ListItem","position":3,"name":"Commission Split Calculator","item":"https://citedrealty.com/tools/commission-split-calculator.html"}]}]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="../index.html" aria-label="CitedRealty home">
+      <img src="../assets/icon-square.svg" alt="" width="34" height="34">
+      <span>Cited<span class="r">Realty</span><sup>[1]</sup></span>
+    </a>
+    <a class="nav-cta" href="../index.html#contact">Free AI visibility audit</a>
+    <button class="theme-toggle" aria-label="Toggle theme">☀</button>
+  </div>
+</nav>
+
+<main id="main">
+<header class="page-hero" style="padding-bottom:40px">
+  <div class="wrap">
+    <p class="crumb"><a href="../index.html">Home</a> / <a href="index.html">Free Tools</a> / Commission Split Calculator</p>
+    <span class="cite-tag">Free tool</span>
+    <h1>What do you <span class="grad">actually take home?</span></h1>
+    <p class="lede">Gross commission is a vanity number. Enter a deal and watch it flow through the referral fee, franchise fee, brokerage split, and transaction fee to your real net — per deal and per year. Runs entirely in your browser; nothing is stored or sent.</p>
+  </div>
+</header>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <form class="tool-card" id="calcForm">
+      <div class="row2">
+        <label>Sale price ($)<input type="number" name="price" min="0" step="any" value="450000" required></label>
+        <label>Your side's commission (%)<input type="number" name="comm" min="0" max="10" step="any" value="2.5" required></label>
+      </div>
+      <div class="row2">
+        <label>Your split of commission (%)
+          <input type="number" name="split" min="0" max="100" step="any" value="70" required>
+        </label>
+        <label>Franchise / royalty fee (% of gross)
+          <input type="number" name="franchise" min="0" max="20" step="any" value="0">
+        </label>
+      </div>
+      <div class="row2">
+        <label>Transaction / desk fee ($ per deal)
+          <input type="number" name="txfee" min="0" step="any" value="0">
+        </label>
+        <label>Referral fee out, if any (% of gross)
+          <input type="number" name="referral" min="0" max="50" step="any" value="0">
+        </label>
+      </div>
+      <div class="row2">
+        <label>Deals like this per year<input type="number" name="deals" min="1" max="500" value="12" required></label>
+        <label>Capped for the year?
+          <select name="capped">
+            <option value="no" selected>No — split applies</option>
+            <option value="yes">Yes — 100% after cap (split ignored)</option>
+          </select>
+        </label>
+      </div>
+      <button class="btn btn-primary" type="submit">Calculate my net</button>
+    </form>
+    <div class="tool-result" id="result"></div>
+    <p class="tool-note">Order of operations used: referral fee comes off the gross first, then the franchise/royalty fee, then your brokerage split, then flat per-deal fees — the most common structure, but brokerages differ, so check yours. Typical referral fees and how they work: <a href="../blog/real-estate-referral-fees.html">the referral-fees guide</a>. What a fair team split looks like: <a href="../blog/how-do-real-estate-teams-work.html">how teams work</a>. And what to do with the number: <a href="../blog/how-much-should-realtors-spend-on-marketing.html">how much to spend on marketing</a>.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-legal" style="border:none; margin:0; padding:0">
+      <span>© 2026 CitedRealty · <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a> · <a href="#" data-cookie-prefs>Cookie preferences</a> · <a href="https://www.google.com/preferences/source?q=citedrealty.com" target="_blank" rel="noopener"><span style="color:#F59E0B">★</span> Make us a preferred source on Google</a></span>
+      <span>When buyers ask AI, you're the answer.<sup>[1]</sup></span>
+    </div>
+  </div>
+</footer>
+<script src="../assets/app.js"></script>
+<script src="../assets/consent.js" defer></script>
+<script>
+(function(){
+  var form=document.getElementById('calcForm'), out=document.getElementById('result');
+  var fmt=function(n){return '$'+Math.round(n).toLocaleString('en-US')};
+  var pct=function(n){return (Math.round(n*10)/10)+'%'};
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var price=+form.price.value, comm=+form.comm.value/100;
+    var split=+form.split.value/100, fran=+form.franchise.value/100;
+    var tx=+form.txfee.value, ref=+form.referral.value/100;
+    var deals=+form.deals.value, capped=form.capped.value==='yes';
+    var gross=price*comm;
+    var afterRef=gross*(1-ref);
+    var afterFran=afterRef*(1-fran);
+    var agentShare=capped ? afterFran : afterFran*split;
+    var net=Math.max(0, agentShare-tx);
+    var eff=gross>0 ? (net/gross*100) : 0;
+    var annualNet=net*deals, annualGross=gross*deals;
+    var rows='';
+    rows+='<p>Gross commission ('+pct(comm*100)+' of '+fmt(price)+'): <b style="color:var(--text)">'+fmt(gross)+'</b></p>';
+    if(ref>0) rows+='<p>− Referral fee ('+pct(ref*100)+' of gross): <b style="color:var(--text)">−'+fmt(gross-afterRef)+'</b></p>';
+    if(fran>0) rows+='<p>− Franchise/royalty ('+pct(fran*100)+'): <b style="color:var(--text)">−'+fmt(afterRef-afterFran)+'</b></p>';
+    rows+= capped
+      ? '<p>Brokerage split: <b style="color:var(--text)">capped — you keep 100%</b></p>'
+      : '<p>− Brokerage keeps ('+pct((1-split)*100)+' of remainder): <b style="color:var(--text)">−'+fmt(afterFran-agentShare)+'</b></p>';
+    if(tx>0) rows+='<p>− Transaction/desk fee: <b style="color:var(--text)">−'+fmt(tx)+'</b></p>';
+    out.innerHTML=
+      '<div class="tool-out"><h3>This deal</h3>'+rows
+      +'<div class="big">'+fmt(net)+'<span style="font-size:16px;font-weight:500;color:var(--dim)"> net to you ('+pct(eff)+' of gross)</span></div></div>'
+      +'<div class="tool-out" style="margin-top:14px"><h3>At '+deals+' deals/year</h3>'
+      +'<p>Annual gross commission: <b style="color:var(--text)">'+fmt(annualGross)+'</b><br>'
+      +'Annual net to you: <b style="color:var(--text)">'+fmt(annualNet)+'</b></p>'
+      +'<p style="margin-top:8px">Before taxes, MLS/board dues, E&amp;O, and your marketing spend — the number above is what funds all of it. If the gross-to-net gap surprised you, the two levers that move it are your split terms and how many deals carry referral fees.</p></div>'
+      +'<div class="tool-out" style="margin-top:14px"><h3>Make the next deal cheaper to win</h3>'
+      +'<p>Referred and portal deals rent your pipeline at a percentage. The deals that come from being <b style="color:var(--text)">found on your own name</b> — search, maps, AI answers — carry no fee at all. That\'s the pipeline we build.</p>'
+      +'<a class="btn btn-primary" style="display:block;text-align:center;margin-top:14px" href="../tools/ai-visibility-checker.html">Check if AI recommends you — free</a></div>';
+    out.classList.add('show');
+  });
+})();
+</script>
+</body>
+</html>
