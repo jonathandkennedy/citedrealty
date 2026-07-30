@@ -164,6 +164,7 @@ PAGE = """<!DOCTYPE html>
           <li><a href="../services/content.html">Blog &amp; Content</a></li>
           <li><a href="../services/social-media.html">Social Media</a></li>
           <li><a href="../services/reviews.html">Reviews &amp; Reputation</a></li>
+          <li><a href="../services/one-time-projects.html">One-Time Projects</a></li>
         </ul>
       </li>
       <li><a href="../index.html#who" aria-haspopup="true">Who we help</a>
@@ -193,6 +194,7 @@ PAGE = """<!DOCTYPE html>
   <a class="mm-sub" href="../services/content.html">Blog &amp; Content</a>
   <a class="mm-sub" href="../services/social-media.html">Social Media</a>
   <a class="mm-sub" href="../services/reviews.html">Reviews &amp; Reputation</a>
+  <a class="mm-sub" href="../services/one-time-projects.html">One-Time Projects</a>
   <a href="../index.html#who">Who we help</a>
   <a class="mm-sub" href="../audiences/solo-agents.html">Solo Agents</a>
   <a class="mm-sub" href="../audiences/teams.html">Teams</a>
@@ -283,6 +285,7 @@ PAGE = """<!DOCTYPE html>
         <ul>
           <li><a href="../index.html#services">Services</a></li>
           <li><a href="../index.html#pricing">Pricing</a></li>
+          <li><a href="../strategy-session.html">Free Broker Strategy Session</a></li>
           <li><a href="../blog/index.html">Resources &amp; News</a></li>
           <li><a href="../tools/index.html">Free Tools for Agents</a></li>
           <li><a href="../index.html#faq">FAQ</a></li>
