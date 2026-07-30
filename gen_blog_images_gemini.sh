@@ -83,6 +83,9 @@ PROMPTS[real-estate-name-ideas]="Several glowing blank name cards floating above
 PROMPTS[divorce-real-estate-agent]="A house gently dividing into two soft glowing paths that curve apart kindly, handled with calm and care, no harsh imagery. $STYLE"
 PROMPTS[veteran-real-estate-agent]="A warm house with a gentle abstract star emblem above the door and a path of soft glowing footsteps arriving home. $STYLE"
 PROMPTS[probate-real-estate-leads]="A quiet house with a gentle glowing document and a single key resting before it, soft respectful light. $STYLE"
+PROMPTS[zillow-lawsuits-explained]="A large glowing portal doorway beside a calm balanced scale of justice, soft documents floating between them, a small warm house in the distance. $STYLE"
+PROMPTS[zillow-flex]="A large glowing portal archway sending a single lead path toward a small warm house, a coin with a slice removed hovering at the gate. $STYLE"
+PROMPTS[pay-at-closing-real-estate-leads]="Several soft lead paths converging on a small warm house whose doorway holds a gently splitting golden coin, sense of paying only at the finish. $STYLE"
 
 slugs=("$@")
 if [ ${#slugs[@]} -eq 0 ]; then slugs=(${(k)PROMPTS}); fi
