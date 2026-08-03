@@ -29,6 +29,175 @@ CATS = {
 
 POSTS = [
     {
+        "slug": "what-digital-marketing-works-for-real-estate",
+        "img": "img/what-digital-marketing-works-for-real-estate.jpg",
+        "img_alt": "Illustration of several glowing channel paths of different widths converging on a single warm house",
+        "cat": "strategy",
+        "title": "What Digital Marketing Methods Work Best for Real Estate? An Honest Ranking",
+        "date": "2026-08-03",
+        "excerpt": "Every version of this question gets the same five-item list back: SEO, social, email, ads, content. That list is correct and nearly useless. Here's the honest ordering, and what it depends on.",
+        "tldr": "Ask any marketing forum what works for real estate and you get the same answer — SEO, social media, email, paid ads, content — which is true and almost useless, because it has no ordering and no \"for whom.\" For a solo agent the honest ranking is: your Google Business Profile and reviews first (highest leverage, lowest cost), then neighborhood-level content on a site you own, then email to your sphere, then one prospecting channel you will actually sustain. Paid ads work but rent attention and stop when you stop. Social media converts people who already know you more than it discovers new ones. The method most threads still miss is being the agent AI assistants recommend, which no ad platform sells.",
+        "sections": [
+            ("Why the standard answer is useless",
+             "<p>The list is always the same: search, social, email, ads, content. Nothing on it is wrong. The problem is that it is an <i>inventory</i>, not a <i>strategy</i> — it tells you what exists, not what to do first, and not what to skip while you're doing it.</p>"
+             "<p>Two agents can run the identical five channels and get opposite results, because what actually decides the outcome isn't the channel list. It's the order you build them in, whether you picked channels that match how you actually work, and whether you stayed in one long enough for it to compound. Most marketing advice for agents skips all three.</p>"),
+            ("The honest ranking for a solo agent",
+             "<ol><li><b>Google Business Profile and reviews.</b> Free, fastest to show results, and it's what people check when they've already heard your name. An agent with a thin profile loses deals they never learn about. Start here — <a href='optimize-google-business-profile-realtor.html'>the full walkthrough is here</a> — and systematize asking for reviews.</li>"
+             "<li><b>Content on a domain you own.</b> Specifically neighborhood-level pages and direct answers to the questions your market asks. This is the slowest to pay off and the only one that compounds into an asset you keep. See <a href='real-estate-agent-websites-guide.html'>our websites guide</a> for what \"a real site\" means now.</li>"
+             "<li><b>Email to your sphere.</b> Unglamorous, cheap, and the highest-converting list you will ever have, because these people already trust you. Most agents have this asset and never use it.</li>"
+             "<li><b>One prospecting channel you'll actually sustain.</b> Open houses, farming, calls, postcards — the specific channel matters far less than whether you'll still be doing it in month six.</li>"
+             "<li><b>Paid ads.</b> They work. They also stop the day you stop paying, and you're bidding against every other agent for the same attention. Useful as a bridge while the compounding channels mature; expensive as a permanent strategy.</li></ol>"
+             "<p>The ordering is the actual advice. Nearly every agent who says \"digital marketing didn't work for me\" started at step 5 and skipped steps 1 through 4.</p>"),
+            ("What's genuinely oversold",
+             "<ul><li><b>Follower growth as a goal.</b> Audience size and client acquisition are different problems that happen to share a platform. A big following with no local trust signals converts worse than a small one attached to a strong profile and real reviews.</li>"
+             "<li><b>Posting listings as a content strategy.</b> Your listings are interesting to you and to the seller. They're wallpaper to everyone else, and they answer none of the questions buyers and sellers are actually searching.</li>"
+             "<li><b>Buying more leads to fix a conversion problem.</b> If the leads you already have aren't closing, more of them is an expensive way to avoid diagnosing follow-up. <a href='real-estate-lead-generation-guide.html'>Generating your own</a> and buying more are not the same fix.</li>"
+             "<li><b>Doing all five channels at once.</b> Five channels at 20% effort produces less than one at full effort, because none of them reach the point where they compound. This is the most common failure and it looks like diligence.</li></ul>"),
+            ("The method the threads keep missing",
+             "<p>Every version of this question was written for a world where people find agents by searching Google or scrolling a feed. Increasingly they ask an assistant instead — \"who's a good listing agent in this area,\" \"should I sell now or wait\" — and the assistant answers with specific names.</p>"
+             "<p>No ad platform sells placement in that answer. It's assembled from what's publicly findable and consistent about you: your profile data, reviews, published content, and independent mentions. That makes it the one channel where a solo agent can outrank a portal, because portals aren't the ones being named — individuals are. It's also why <a href='../services/ai-citations.html'>citation work</a> exists as a discipline, and you can <a href='../tools/ai-visibility-checker.html'>check where you currently stand</a> for free.</p>"
+             "<p>Fair caveat: this is early, and it doesn't replace steps 1 through 4 — it's built <i>from</i> them. The profile, reviews, and content that earn AI mentions are the same assets that work in classic search. That's the argument for doing them in order.</p>"),
+            ("How to actually pick",
+             "<p>Two questions settle it faster than any comparison chart. <b>Which channel will you still be running in six months?</b> Consistency beats optimality by a wide margin, and a channel you resent is a channel you'll quit. <b>What do you already have that's underused?</b> Most agents have an unworked Google profile, an unmailed sphere list, and years of local knowledge nobody has written down — three assets that cost nothing and outperform anything you could buy this month.</p>"
+             "<p>Pick two. Run them properly for six months. Add the third only when the first two are genuinely on autopilot. And if the honest answer is that you won't run any of them consistently, that's worth knowing before you spend anything — we laid out <a href='should-realtors-hire-marketing-agency.html'>when hiring help makes sense and when it doesn't</a>, including the cases where we'd tell you not to.</p>"),
+        ],
+        "faqs": [
+            ("What is the single best digital marketing method for real estate agents?",
+             "For most individual agents it's a fully worked Google Business Profile with a systematic review process — it's free, it's fastest to show results, and it's what people check after they hear your name from any other source. It isn't the most exciting answer, but it's the one that reliably changes outcomes for agents who haven't done it yet."),
+            ("Do real estate agents need to run paid ads?",
+             "No. Paid ads work and can be worth running, but they rent attention and stop producing the day the budget stops. They're most defensible as a bridge while slower compounding channels mature, or when you need transactions immediately. An agent with no owned presence who only runs ads is renting their entire pipeline."),
+            ("How long does digital marketing take to produce leads for a realtor?",
+             "It depends entirely on the channel. Profile and review work can shift inbound within weeks. Content and local search typically take months to compound, and longer on a brand-new domain. Paid ads produce immediately and stop immediately. Mixing these timelines is why agents conclude \"it doesn't work\" at the two-month mark."),
+            ("Should I hire someone or learn digital marketing myself?",
+             "Both are legitimate — it turns on what your hour is worth and whether marketing energizes or drains you. If executing marketing yourself costs many hours at your effective hourly rate, delegation is often cheaper than doing it free. If it energizes you and you'll stay consistent, DIY genuinely outperforms a retainer you're not ready to use."),
+        ],
+    },
+    {
+        "slug": "does-social-media-get-realtors-clients",
+        "img": "img/does-social-media-get-realtors-clients.jpg",
+        "img_alt": "Illustration of glowing social reaction bubbles orbiting a house, with one thin path leading in",
+        "cat": "questions",
+        "title": "Does Social Media Actually Get Realtors Clients?",
+        "date": "2026-08-03",
+        "excerpt": "The recurring answer in agent forums is \"yes, but not how you think.\" Social rarely discovers new clients — it confirms the ones who already heard your name. That changes what you should post.",
+        "tldr": "For most agents, social media converts far more than it discovers. The typical path isn't a stranger seeing a reel and calling you — it's someone who got your name from a referral, a sign, or a search, then checking your profile to decide whether you look like a professional. That's a real and valuable job, but it's a trust-confirmation job, not a lead-generation one. Social becomes a genuine lead engine only under specific conditions: heavy video consistency, a narrow niche, or a market where you're the only agent producing useful local content. If you keep social, post what answers questions and proves local knowledge — not listings.",
+        "sections": [
+            ("The honest answer: it confirms more than it discovers",
+             "<p>Ask agents whether social media gets them clients and the answers split until you ask a follow-up question: <i>how did that client first hear your name?</i> Overwhelmingly the answer is a referral, a past client, a sign, an open house, or a search — and then they looked you up.</p>"
+             "<p>That lookup is where social does its work. A prospect who was already 70% sold on calling you sees a profile that looks active and competent, and calls. Or sees one with three posts from 2023 and quietly keeps looking. Both outcomes are invisible to you, which is exactly why agents argue about whether social \"works.\"</p>"),
+            ("What social is actually doing in the decision",
+             "<p>Sellers vetting an interview shortlist and buyers deciding who to trust with the biggest purchase of their lives both do the same thing: they check whether you're real. Social is one of three or four surfaces they check, alongside your reviews, your website, and whatever a search turns up.</p>"
+             "<p>Judged as a discovery channel, social looks like a poor investment for most agents. Judged as the surface that decides whether a warm prospect converts, it's cheap insurance. The mistake isn't posting — it's expecting posting to <i>create</i> demand that the rest of your presence hasn't earned yet.</p>"),
+            ("When social genuinely is a lead engine",
+             "<p>There are real exceptions, and they share a shape:</p>"
+             "<ul><li><b>Sustained video, not occasional posting.</b> The agents who genuinely source clients from social are almost always producing video consistently for a year or more. This is a full channel commitment, not a supplement.</li>"
+             "<li><b>A narrow, specific niche.</b> Content aimed at one identifiable group outperforms general market updates by a wide margin, because the algorithm and the viewer both know who it's for. This is the same logic behind <a href='real-estate-niche-marketing.html'>niching down</a> generally.</li>"
+             "<li><b>Being the only one doing it locally.</b> In markets where no agent produces genuinely useful local content, the first one to do it well can own the attention. This window closes as competitors catch up.</li></ul>"
+             "<p>If none of those describe your situation, social is a confirmation layer. Budget your effort accordingly — that's not a reason to abandon it, it's a reason to stop measuring it by lead count.</p>"),
+            ("The follower-count trap",
+             "<p>Follower count is the most available number and the least connected to income. An agent with 800 local followers who all live within ten miles has a more valuable audience than one with 20,000 scattered across the country, and the second number looks far better in a screenshot.</p>"
+             "<p>The metric that actually correlates with business is whether people who already know your name come away more confident after checking you out. That's not measurable in the app, which is precisely why the vanity metric wins so often.</p>"),
+            ("What to post if you keep it",
+             "<p>Post the things that survive the vetting check: answers to questions your market actually asks, evidence you know specific neighborhoods, straightforward market explanation without hype, and enough of your face that you read as a person rather than a logo. Listings can appear — as proof of activity, not as the content strategy.</p>"
+             "<p>If the blank page is the obstacle, our <a href='free-real-estate-marketing-templates.html'>free templates and social post ideas</a> cover a few dozen prompts, and <a href='../services/social-media.html'>our social work</a> exists for agents who'd rather it just ran. Either way, the standard is the same: would this make a skeptical seller more likely to interview you?</p>"),
+        ],
+        "faqs": [
+            ("How many followers does a realtor need to get clients?",
+             "There's no threshold, and the question misframes the problem. A few hundred genuinely local followers who see you as competent are worth more than tens of thousands of scattered ones. Follower count is the easiest number to see and among the weakest predictors of closed business."),
+            ("Which social platform is best for real estate agents?",
+             "The one you'll post to consistently, weighted toward wherever your actual market spends time. For most residential agents that's Instagram and Facebook, with local Facebook groups often outperforming a personal feed. Consistency on one platform beats presence on four."),
+            ("Is posting my listings enough for social media?",
+             "No. Listings are interesting to you and to that seller; to everyone else they're wallpaper, and they answer none of the questions buyers and sellers are actually asking. Use listings as occasional proof of activity, and spend the rest on questions, local knowledge, and market explanation."),
+            ("Should I pay for social media ads instead of posting organically?",
+             "They solve different problems. Ads buy reach immediately and stop when the budget stops; organic posting builds the trust surface people check before they call. If you can only do one, most agents get more durable value from a credible organic presence plus a strong profile than from ads pointed at a thin one."),
+        ],
+    },
+    {
+        "slug": "should-realtors-hire-marketing-agency",
+        "img": "img/should-realtors-hire-marketing-agency.jpg",
+        "img_alt": "Illustration of a forked glowing path, one branch toward a toolkit and one toward a team of figures",
+        "cat": "questions",
+        "title": "Should Realtors Hire a Marketing Agency or Do It Themselves?",
+        "date": "2026-08-03",
+        "excerpt": "We're an agency, so read this with appropriate skepticism. Here's the honest version — including the situations where we'd tell you not to hire anyone, and the red flags worth walking away from.",
+        "tldr": "We sell marketing services, so treat this as a biased source and check the reasoning rather than the conclusion. Honestly: don't hire anyone if your problem is conversion rather than visibility, if you can't yet describe who you serve, or if you're new and cash-constrained — free profile and review work outperforms paid help at that stage. Hiring makes sense when your hour is worth more than the delegation cost, when the work requires skills you won't acquire, or when the bottleneck is consistency you've repeatedly failed to sustain. Whoever you hire, insist that you own the domain, content, and profiles outright.",
+        "sections": [
+            ("Our bias, stated plainly",
+             "<p>CitedRealty is a marketing agency for real estate professionals. Every incentive we have points toward \"yes, hire an agency.\" You should weigh this article accordingly, and the useful test is whether the reasoning holds up on its own — not whether we sound trustworthy while making it.</p>"
+             "<p>So here's the version we'd give a friend: most agents asking this question shouldn't hire anyone yet, and the ones who should are usually not the ones asking.</p>"),
+            ("When doing it yourself is genuinely right",
+             "<ul><li><b>Your problem is conversion, not visibility.</b> If leads are arriving and not closing, marketing spend makes the leak bigger. Fix follow-up first — it costs nothing and it's usually the actual bottleneck.</li>"
+             "<li><b>You can't yet describe who you serve.</b> No agency can find your audience for you. Positioning has to come from you, and paying someone to market an undefined offer produces expensive, generic output.</li>"
+             "<li><b>You're new and cash-constrained.</b> The highest-return work available to a new agent is free: fully work the Google Business Profile, get reviews systematically, show up where your market already gathers. Spending retainer money before those are done is buying the second-best thing.</li>"
+             "<li><b>You actually enjoy marketing.</b> If it energizes you and you'll be consistent, the free guides and tools cover most of what an early-stage retainer would — ours are <a href='../blog/index.html'>here</a> and <a href='../tools/index.html'>here</a>, at no cost.</li></ul>"),
+            ("When hiring genuinely makes sense",
+             "<p>Three situations, all measurable. <b>The hour math.</b> Divide your annual income by hours worked. If executing marketing yourself consumes many hours at that rate, delegation is often cheaper than \"free\" — and the hours go back into the selling only you can do.</p>"
+             "<p><b>The skill gap you won't close.</b> Schema markup, technical site work, and structured local content are learnable, but learning them costs months you may not want to spend. Buying execution is a legitimate trade.</p>"
+             "<p><b>The consistency you've repeatedly failed to sustain.</b> If you've started and abandoned the same channel three times, the honest read is that it won't happen without external structure. That's not a character flaw; it's information about how to spend money.</p>"),
+            ("What you must own no matter who you hire",
+             "<p>This is the part worth being inflexible about. Whoever does the work, you should end up owning: <b>the domain</b>, registered in your name; <b>the content</b>, exportable and yours; <b>the profiles</b>, with you as primary owner on the Google Business Profile; and <b>the analytics</b>, in accounts you control.</p>"
+             "<p>The failure mode is renting: platforms that host your site so the design and pages vanish when you leave, agencies that own the profile they built, content locked in a proprietary system. Years of accumulated authority reset every time you switch vendors. We wrote about this pattern in the <a href='real-estate-agent-website-cost.html'>rent-versus-own math</a>, and it's the single question we'd push hardest on with any provider — including us.</p>"),
+            ("Red flags when you're shopping",
+             "<ul><li><b>Guaranteed rankings or guaranteed lead counts.</b> Nobody controls the ranking systems. A guarantee is either meaningless or measuring something trivial.</li>"
+             "<li><b>No public pricing and no straight answer when asked.</b> If it takes three calls to learn the price, the price is \"whatever they think you'll pay.\"</li>"
+             "<li><b>Ownership they won't put in writing.</b> Ask directly what happens to your site, content, and profile if you cancel next month. Hesitation is the answer.</li>"
+             "<li><b>Deliverables measured in volume.</b> \"Twenty blog posts a month\" describes activity, not outcomes, and thin volume actively hurts you.</li>"
+             "<li><b>No willingness to say what they won't do.</b> A provider who says yes to everything hasn't thought about what actually works for your situation.</li></ul>"
+             "<p>Ours are public — <a href='../index.html#pricing'>plans and prices are on the site</a> — partly because we think demo-gating pricing is a bad practice, and partly because it's the easiest way to prove the point above.</p>"),
+        ],
+        "faqs": [
+            ("How much do real estate marketing agencies charge?",
+             "The range is wide: roughly a few hundred dollars a month for narrow single-channel help, up to several thousand for full done-for-you programs including a website build. Many providers don't publish pricing at all. Ours are listed publicly on the pricing section of this site, which we'd argue should be the norm rather than the exception."),
+            ("Is hiring a real estate marketing agency worth it?",
+             "It depends on whether your bottleneck is visibility or something else. If leads arrive and don't close, or you can't yet articulate who you serve, an agency will not fix that and may obscure it. If your hour is genuinely worth more than the delegation cost and the bottleneck is consistent execution, it usually is worth it."),
+            ("What should I never outsource as a real estate agent?",
+             "Relationships and positioning. Nobody can decide who you serve for you, and no one should be answering your clients as though they were you. Outsource production and technical execution; keep the parts where your judgment and your voice are the product."),
+            ("Can I hire an agency and still do some marketing myself?",
+             "Yes, and it's often the best arrangement — learn enough to direct and judge the work so you're a smart client rather than a dependent one, then delegate execution. Agents who understand what's being done for them get noticeably better results from the same retainer."),
+        ],
+    },
+    {
+        "slug": "broker-social-media-clients-or-recruiting",
+        "img": "img/broker-social-media-clients-or-recruiting.jpg",
+        "img_alt": "Illustration of one glowing broadcast splitting into two divergent paths leading to two different audiences",
+        "cat": "strategy",
+        "title": "Should Brokers Market to Clients or Recruit Agents on Social Media?",
+        "date": "2026-08-03",
+        "excerpt": "Most brokerage social accounts are quietly trying to do both — attract buyers and sellers while recruiting agents. The two audiences want opposite things, and the account ends up persuading neither.",
+        "tldr": "A brokerage has two possible social audiences: consumers (buyers and sellers) and agents you want to recruit. They want opposite things. Consumers want evidence you'll handle the biggest transaction of their life carefully; agents want evidence you'll make them more money with better support. Content that persuades one actively undercuts the other — splits and cap structures read as \"this company sells to agents, not for me\" to a seller, and polished listing content reads as \"nothing here for me\" to a recruit. Pick one audience per channel. If you need both, run separate accounts with separate content, not alternating posts on one.",
+        "sections": [
+            ("The two audiences want opposite things",
+             "<p>A seller checking out your brokerage is asking one question: <i>will these people handle the largest financial transaction of my life competently?</i> They're looking for care, local knowledge, and evidence of successful outcomes.</p>"
+             "<p>An agent considering joining is asking a completely different question: <i>will this company make me more money and make my job easier?</i> They're looking at splits, lead flow, training, technology, and culture.</p>"
+             "<p>These aren't merely different topics. They're different <b>promises</b>. One says \"we serve clients exceptionally.\" The other says \"we're a good place to build your business.\" A single account trying to make both promises makes neither one credible.</p>"),
+            ("Why alternating posts doesn't solve it",
+             "<p>The common workaround is to mix: a listing post, then a recruiting post, then a market update, then an agent spotlight. It feels like efficient use of one channel. In practice it's the worst of both.</p>"
+             "<p>Anyone who follows the account sees the full mix, not the post you meant for them. A seller scrolling your feed encounters commission splits and \"now hiring\" graphics — which reads, fairly, as a company whose main product is recruiting agents rather than selling homes. An agent evaluating you wades through listing carousels to find the two posts actually aimed at them, and concludes there isn't much substance here.</p>"
+             "<p>There's a mechanical problem too: engagement signals from one audience shape who gets shown the other content. An account that trains its distribution on consumer engagement will deliver recruiting posts to consumers. You end up paying to reach the wrong people with both messages.</p>"),
+            ("What each audience actually responds to",
+             "<ul><li><b>Consumers (buyers and sellers):</b> neighborhood knowledge, honest market explanation, process clarity, proof of outcomes, individual agents who read as real people. Anything that reduces the fear of getting this decision wrong.</li>"
+             "<li><b>Agent recruits:</b> economics stated plainly, what support actually exists, training and mentorship specifics, technology and lead flow, and — most persuasively — current agents visibly doing well. Anything that reduces the risk of a bad move.</li></ul>"
+             "<p>Notice that the single most persuasive recruiting content is <i>agents succeeding publicly</i>, which is produced on the agents' own channels rather than the brokerage's. That's a strong argument for pushing consumer marketing down to individual agents and reserving brokerage channels for the recruiting story — see <a href='../audiences/brokerages.html'>how we think about brokerage marketing</a>.</p>"),
+            ("The fix: separate the channel, not the brand",
+             "<p>You don't need a second brand. You need a second <b>channel</b>, with an explicit audience.</p>"
+             "<p>The structure that works: brokerage consumer presence stays focused on market authority and local knowledge, and consumer lead generation lives primarily with individual agents (whose personal brands convert better anyway). Recruiting gets its own destination — a separate account, a careers page, or a dedicated landing page — where you can be direct about economics without a seller reading it.</p>"
+             "<p>Recruiting content also belongs on different platforms. LinkedIn is where professional-move research actually happens; Instagram and Facebook are where consumers vet you. Same brand, different rooms.</p>"),
+            ("If you only have resources for one",
+             "<p>Pick by your economics, honestly. If your revenue is a percentage of agent production and your growth constraint is headcount, recruiting is the higher-leverage channel and consumer marketing should be pushed to your agents with support and templates. If you're a small brokerage where the principals still sell, consumer marketing is the direct revenue channel and recruiting can wait.</p>"
+             "<p>What doesn't work is refusing to choose. The half-and-half account is the most common brokerage social presence and the least effective, precisely because it looks like activity while persuading nobody. If you want the consumer side handled properly while you focus on recruiting, that's the split <a href='../services/social-media.html'>our social work</a> is usually asked to cover — and for teams facing the same tension, <a href='../audiences/teams.html'>the team version is here</a>.</p>"),
+        ],
+        "faqs": [
+            ("Can a brokerage use one social account for both clients and recruiting?",
+             "You can, but it tends to underperform both goals. Followers see the whole feed rather than the posts intended for them, so sellers encounter recruiting material and recruits wade through listing content. Engagement from one audience also shapes who the platform shows the other content to. Separate accounts with clearly separate purposes work better."),
+            ("Should broker recruiting content go on LinkedIn instead?",
+             "Usually yes. LinkedIn is where people research professional moves, and it keeps commission and culture content away from consumers vetting your brokerage. Many brokerages get the cleanest split by running recruiting on LinkedIn and consumer-facing content on Instagram and Facebook."),
+            ("Does a brokerage need a separate website for agent recruiting?",
+             "A separate page is usually enough; a separate site is rarely necessary. What matters is that recruiting has a destination you can send people to directly — with the economics, support, and training laid out plainly — rather than asking a prospective agent to infer it from a consumer-facing site."),
+            ("Who should generate consumer leads, the brokerage or its agents?",
+             "Mostly the agents, with brokerage support. Consumers hire individuals rather than companies, and personal agent brands convert better than brokerage accounts. The brokerage's higher-leverage role is providing the systems, templates, and training that make every agent's marketing better — which is also the most persuasive recruiting proof you can produce."),
+        ],
+    },
+    {
         "slug": "zillow-lawsuits-explained",
         "img": "img/zillow-lawsuits-explained.jpg",
         "img_alt": "Illustration of a large glowing portal doorway beside a balanced scale, calm documents floating between them",
@@ -2073,7 +2242,7 @@ POSTS = [
              "<li><b>Multiple Listing Options for Sellers (MLOS, March 2025):</b> gives sellers formal delayed-marketing choices — listed in the MLS but with distribution delayed — with each MLS setting its own delay periods.</li>"
              "<li><b>Local MLS rules:</b> the actual controlling document. Coming-soon status mechanics, showing restrictions during pre-market, and DOM tracking all vary by market — read yours before building a launch process. (And note the direction of state law: Connecticut now <i>requires</i> public availability the moment marketing starts — covered in our SB 340 breakdown.)</li></ul>"),
             ("The marketing opportunity hiding in the pre-launch window",
-             "<p>Here's what most coverage misses: a coming-soon window is the one phase of a listing where the <b>agent</b> is the only way in. The property isn't browsable on portals yet — so curious neighbors and buyers who hear about it Google <i>you</i>. If that search finds a worked <a href='../services/google-business-profile.html'>Google Business Profile</a>, a real page for that neighborhood, and reviews from nearby sellers, the pre-launch window converts twice: demand for the house, and listing appointments from every neighbor watching how you launch.</p>"
+             "<p>Here's what most coverage misses: a coming-soon window is the one phase of a listing where the <b>agent</b> is the only way in — the same scarcity logic behind <a href='exclusive-real-estate-leads.html'>exclusive lead sources</a>. The property isn't browsable on portals yet — so curious neighbors and buyers who hear about it Google <i>you</i>. If that search finds a worked <a href='../services/google-business-profile.html'>Google Business Profile</a>, a real page for that neighborhood, and reviews from nearby sellers, the pre-launch window converts twice: demand for the house, and listing appointments from every neighbor watching how you launch.</p>"
              "<p>Run it with substance: a genuine coming-soon post cadence, the neighborhood page updated with the upcoming listing, and launch-day timing that respects your MLS's one-business-day clock. Pre-marketing done inside the rules is a demand tool; done sloppily it's a compliance complaint.</p>"),
         ],
         "faqs": [
@@ -2382,7 +2551,7 @@ POSTS = [
             ("The real estate twist: insulated where it doesn't matter",
              "<p>Here's the number agents will quote at each other: <b>real estate is among the industries least affected by AI Overviews — under 3% of tracked real estate keywords trigger one</b> (vs ~26% for the most-affected category). (<a href='https://www.semrush.com/blog/semrush-ai-overviews-study/' rel='nofollow'>Semrush, Nov 2025</a>)</p>"
              "<p>Before you relax, look at <i>which</i> queries do trigger AI answers: <b>95.4% of \"X vs Y\" comparison queries and 85.9% of question-format queries</b> — versus only ~5–8% of transactional ones. (<a href='https://www.seerinteractive.com/insights/aio-impact-on-google-ctr-2026-update' rel='nofollow'>Seer Interactive, 2026</a>)</p>"
-             "<p>Translation: listing searches (\"homes for sale in…\") stay classic — Zillow keeps winning those. But <b>\"best listing agent in [city]\", \"should I sell now or wait\", \"Zillow vs local agent\"</b> — the questions that decide who gets hired — are exactly the query shapes AI answers dominate. The insulation covers the portals' turf, not yours.</p>"),
+             "<p>Translation: listing searches (\"homes for sale in…\") stay classic — Zillow keeps winning those. But <b>\"best listing agent in [city]\", \"should I sell now or wait\", \"Zillow vs local agent\"</b> — the questions that decide who gets hired — are exactly the query shapes AI answers dominate. The insulation covers the portals' turf, not yours — which is why <a href='how-real-estate-agents-show-up-in-chatgpt.html'>showing up in ChatGPT's answers</a> is the part that actually decides hiring.</p>"),
             ("Meanwhile, agents are adopting AI faster than they're being found by it",
              "<ul>"
              "<li><b>69% of Realtors use AI at least monthly</b> (20% daily, 22% weekly, 27% a few times monthly); 32% haven't used it. <b>58% of surveyed Realtors have used ChatGPT</b> — Gemini (20%) and Copilot (15%) trail far behind. 50% report a positive business impact. (<a href='https://www.nar.realtor/newsroom/realtors-embrace-ai-digital-tools-to-enhance-client-service-nar-survey-finds' rel='nofollow'>NAR 2025 Technology Survey</a>, 1,241 respondents)</li>"
@@ -2455,9 +2624,9 @@ POSTS = [
              "<p>The agents who make door knocking pay share a pattern: they pick a farm small enough to cover repeatedly (300–500 doors, not 3,000), they show up quarterly so the third visit isn't a cold one, and they carry something worth opening the door for — a one-page neighborhood market update with real numbers beats any script.</p>"
              "<p>It's a repetition-and-familiarity play, not a conversion event. The yield comes in year one-plus, when \"the agent who keeps bringing the market update\" is who a homeowner thinks of at listing time. If you can't commit to the repetition, the first pass is wasted.</p>"),
             ("When it's a waste of your calendar",
-             "<p>If the thought of it drains you, skip it guiltlessly — reluctance reads at the door, and the same hours put into open houses, community answering, or content compound just as well. It also underperforms in security-building-heavy areas, gated communities, and no-solicitation neighborhoods, where the math never had a chance.</p>"),
+             "<p>If the thought of it drains you, skip it guiltlessly — reluctance reads at the door, and the same hours put into <a href='are-open-houses-worth-it.html'>open houses</a>, community answering, or content compound just as well. It also underperforms in security-building-heavy areas, gated communities, and no-solicitation neighborhoods, where the math never had a chance.</p>"),
             ("The part every door-knocking thread misses",
-             "<p>What happens after a good doorstep conversation? The homeowner looks you up. If they find a bare profile, three reviews, and no evidence you know their neighborhood, the conversation dies online — you paid the hardest marketing cost (showing up in person) and lost the cheapest conversion (being credible when checked).</p>"
+             "<p>What happens after a good doorstep conversation? The homeowner looks you up. (This is why door knocking pairs well with <a href='real-estate-postcards-guide.html'>a farm-area postcard program</a> — repetition plus something to look up.) If they find a bare profile, three reviews, and no evidence you know their neighborhood, the conversation dies online — you paid the hardest marketing cost (showing up in person) and lost the cheapest conversion (being credible when checked).</p>"
              "<p>So the real answer to \"is door knocking worth it\" is: it's a <b>traffic source</b>, and like every traffic source — ads, open houses, referrals — it converts through your name's online layer. Build the <a href='../services/local-seo.html'>neighborhood page</a> for the farm you knock. The postcard-and-doorstep agents who seem unusually lucky almost always have the strongest Google presence in the farm.</p>"),
         ],
         "faqs": [
@@ -2516,7 +2685,7 @@ POSTS = [
              "<p>If calling drains you, the same hours in open houses, community answering, or content produce with none of the regulatory risk. Forcing dread into your calendar five mornings a week is how agents quit the business.</p>"),
             ("The variable the debate ignores",
              "<p>Watch what a prospect does during a decent cold call: they put you on speaker and Google you. Mid-call. The agent with <a href='../services/reviews.html'>reviews</a>, a real site, and a page about the prospect's own neighborhood survives that check; the invisible agent gets the polite brush-off — same script, same list.</p>"
-             "<p>So the honest verdict: cold calling is a personality-fit specialist channel that, like every outreach channel, converts through your owned visibility. If you love the phone, work expireds with clean compliance and a strong online layer. If you don't, nothing about 2026 says you have to.</p>"),
+             "<p>So the honest verdict: cold calling is a personality-fit specialist channel that, like every outreach channel, converts through your owned visibility. If you love the phone, work expireds with clean compliance and a strong online layer. If you don't, nothing about 2026 says you have to — <a href='real-estate-lead-generation-guide.html'>the inbound alternatives</a> convert at least as well without the dread.</p>"),
         ],
         "faqs": [
             ("Do I have to check the Do-Not-Call registry as a realtor?",
@@ -2616,7 +2785,7 @@ POSTS = [
              "<li><b>CitedRealty — best for being found by AI, and for ownership.</b> <a href='../services/website-design.html'>Custom, schema-first sites</a> with neighborhood architecture built in, designed to be the source ChatGPT and AI Overviews cite. Included with our $3,999/mo Local Hero plan (or as a standalone project); you own the site outright. We're new and website design is one piece of our retainer — if you want a website alone with no marketing engine, Agent Image or AgentFire may fit better.</li>"
              "</ul>"),
             ("The two questions that sort the whole market",
-             "<p><b>Ownership:</b> platforms (Luxury Presence, Sierra, Real Geeks) rent you a site that vanishes when you churn; builders (Agent Image, CitedRealty) hand you the keys. Renting is fine for speed; just price in the rebuild when you leave.</p>"
+             "<p><b>Ownership</b> (the question <a href='real-estate-agent-websites-guide.html'>our websites guide</a> is built around)<b>:</b> platforms (Luxury Presence, Sierra, Real Geeks) rent you a site that vanishes when you churn; builders (Agent Image, CitedRealty) hand you the keys. Renting is fine for speed; just price in the rebuild when you leave.</p>"
              "<p><b>Machine readability:</b> in 2026 your website's biggest audience might be AI systems deciding who to recommend. Ask any vendor: what structured data ships by default? How do neighborhood pages work? Can you show me a site being cited in AI answers? Blank stares are data.</p>"),
         ],
         "faqs": [
@@ -2661,7 +2830,7 @@ POSTS = [
              "<li><b>Want the marketing done, with AI visibility as the goal:</b> that's us — website + GBP + local SEO + AI citations + content in one public-priced retainer. Bias disclosed; compare us as skeptically as anyone.</li>"
              "</ul>"),
             ("If you switch: the 30-minute checklist",
-             "<p>Before leaving any platform: export your content and blog posts; inventory which pages rank (Search Console → top pages); set up 301 redirects from old URLs on day one; keep your domain registration in <i>your</i> name, always; and re-verify your site in Search Console after migration. Most \"we switched and rankings died\" stories are missing redirects, not vendor magic.</p>"),
+             "<p>Before leaving any platform (and before you shortlist <a href='real-estate-website-builders-for-agents.html'>a replacement builder</a>): export your content and blog posts; inventory which pages rank (Search Console → top pages); set up 301 redirects from old URLs on day one; keep your domain registration in <i>your</i> name, always; and re-verify your site in Search Console after migration. Most \"we switched and rankings died\" stories are missing redirects, not vendor magic.</p>"),
         ],
         "faqs": [
             ("Can I keep my website if I leave Luxury Presence?",
@@ -2695,7 +2864,7 @@ POSTS = [
             ("What actually drives the price",
              "<p>Four things: <b>design depth</b> (template reskin vs. real custom work), <b>IDX/MLS integration</b> (live listing search adds platform costs and compliance work), <b>content architecture</b> (neighborhood pages, guides, and schema are labor — and the part that makes a site findable), and <b>who does the marketing after launch</b>. A site is a printing press; most quotes don't include anyone writing the newspaper.</p>"),
             ("The rent-vs-own math nobody shows you",
-             "<p>A $500/month platform costs $18,000 over three years and leaves you with nothing portable. A $9,000 owned build costs half that over the same period and leaves you holding a ranking, cited asset — plus every dollar of authority it accumulated. Platforms win on month one; ownership wins on every month after the first year.</p>"
+             "<p>A $500/month <a href='real-estate-website-builders-for-agents.html'>platform or site builder</a> costs $18,000 over three years and leaves you with nothing portable. A $9,000 owned build costs half that over the same period and leaves you holding a ranking, cited asset — plus every dollar of authority it accumulated. Platforms win on month one; ownership wins on every month after the first year.</p>"
              "<p>The exception: if you genuinely need a full CRM/app suite and will use it, a platform's bundle can pencil out. Just price the exit before you sign — the rebuild-and-redirect cost is part of the platform's true price.</p>"),
             ("What we charge (since we're arguing everyone should publish pricing)",
              "<p>A custom, schema-first, AI-citable site is included with our $3,999/month Local Hero retainer (which also covers GBP, local SEO, 15 neighborhoods, content, and social guidance), available as a standalone project if you're on the $999 plan. You own the site outright either way. That's the whole answer — no discovery call required to hear a number.</p>"),
@@ -2730,9 +2899,9 @@ POSTS = [
              "</ul>"
              "<p>Each is a fine <i>satellite</i>. None can be the home base, because none is yours.</p>"),
             ("When you can honestly wait",
-             "<p>If you're brand-new and cash-constrained, the right sequence is: fully work your free Google Business Profile first (it's the highest-leverage free asset in local search), systematize reviews from your first closings, and buy the domain for your name today even if it just parks. Add the real site when you can do it properly — a thin template site helps almost nothing and false-signals \"done.\"</p>"),
+             "<p>If you're brand-new and cash-constrained, the right sequence is: <a href='optimize-google-business-profile-realtor.html'>fully work your free Google Business Profile</a> first (it's the highest-leverage free asset in local search), systematize reviews from your first closings, and buy the domain for your name today even if it just parks. Add the real site when you can do it properly — a thin template site helps almost nothing and false-signals \"done.\"</p>"),
             ("What 'a real website' means now",
-             "<p>Not a digital business card: an owned domain with pages for the neighborhoods you actually work, direct answers to the questions your market asks, RealEstateAgent and FAQ schema underneath, and speed that doesn't fight you. That's the checklist whether you build it yourself, hire a design shop, or run it through a <a href='../services/website-design.html'>retainer like ours</a> — the standard is machine-readable local authority, not prettiness.</p>"),
+             "<p>Not a digital business card: an owned domain — see <a href='real-estate-agent-websites-guide.html'>our full guide to agent websites</a> — with pages for the neighborhoods you actually work, direct answers to the questions your market asks, RealEstateAgent and FAQ schema underneath, and speed that doesn't fight you. That's the checklist whether you build it yourself, hire a design shop, or run it through a <a href='../services/website-design.html'>retainer like ours</a> — the standard is machine-readable local authority, not prettiness.</p>"),
         ],
         "faqs": [
             ("Isn't my Google Business Profile enough?",
@@ -2757,7 +2926,7 @@ POSTS = [
              "<p>Agents talk about \"portal leads\" as one thing, but the business models differ. Zillow's flagship programs center on visibility — paying for share of buyer attention in chosen ZIP codes — and in many markets a referral-style model where the fee comes out of closed deals. Realtor.com has historically sold both direct leads and referral connections. Homes.com's recent pitch is agent branding: your listing, your lead, your brand.</p>"
              "<p>Terms, availability, and pricing change frequently and vary by market — treat any specific numbers you read (including in AI answers) as stale until you've confirmed them in a current quote for your ZIP codes.</p>"),
             ("How to actually compare them",
-             "<ul><li><b>Effective cost per closing</b> — not per lead. Model conversion honestly; shared or referred leads convert differently than exclusive ones.</li>"
+             "<ul><li><b>Effective cost per closing</b> — not per lead. Model conversion honestly; shared or referred leads convert differently than <a href='exclusive-real-estate-leads.html'>exclusive leads</a>.</li>"
              "<li><b>Exclusivity</b> — is the inquiry yours alone, or are you in a race?</li>"
              "<li><b>Who owns the relationship</b> — some models keep the consumer inside the portal's funnel and hand you a transaction, not a client.</li>"
              "<li><b>Follow-up burden</b> — speed-to-lead contests have a real staffing cost.</li>"
@@ -2766,7 +2935,7 @@ POSTS = [
              "<p>Every portal comparison quietly assumes the demand must be rented from someone. But the fastest-growing surface — AI assistants answering \"who should I work with?\" — doesn't belong to any portal, and it names individual agents, not marketplaces.</p>"
              "<p>That's the arbitrage this decade: while competitors argue over which rent is cheapest, the agents building <a href='../services/ai-citations.html'>owned visibility</a> (profiles, neighborhood authority, reviews, citations) are being handed the client before the portals see the search.</p>"),
             ("A practical verdict",
-             "<p>If a portal program is profitably closing deals for you today at current terms, keep it — profitable rent is still profit. Cap it at a level that doesn't crowd out investment in owned assets, and re-run the cost-per-closing math quarterly as terms change.</p>"
+             "<p>If a portal program is profitably closing deals for you today at current terms, keep it — profitable rent is still profit. Cap it at a level that doesn't crowd out investment in <a href='real-estate-lead-generation-guide.html'>lead generation you own</a>, and re-run the cost-per-closing math quarterly as terms change.</p>"
              "<p>If you're choosing between them fresh: get current quotes for your market, weight exclusivity and relationship ownership over raw lead volume, and treat every portal dollar as bridge financing while your owned engine matures.</p>"),
         ],
         "faqs": [
@@ -2798,7 +2967,7 @@ POSTS = [
              "<p>When buyers and sellers ask AI assistants who to work with, the answers cite profiles, reviews, local content, and independent mentions — the exact outputs of an owned program. Portal ad placements don't feed those answers.</p>"
              "<p>This tilts the long game further toward owned: the same work that ranks you in the map pack is building your presence in the answer layer portals can't buy into.</p>"),
             ("When each one wins",
-             "<ul><li><b>Premier Agent (or similar) makes sense:</b> new market entry, immediate cash-flow needs, team seats to feed while owned assets mature.</li>"
+             "<ul><li><b>Premier Agent (or similar) makes sense:</b> new market entry, immediate cash-flow needs, team seats to feed while your <a href='real-estate-lead-generation-guide.html'>owned lead engine</a> matures.</li>"
              "<li><b>Owned (SEO + GEO) makes sense:</b> defined farm areas, listing-side focus, any agent planning to be in the same market in three years.</li>"
              "<li><b>The usual right answer:</b> a phased split — start owned on day one (the clock only starts when you do), keep paid only where it's provably profitable, shift the ratio quarterly.</li></ul>"),
         ],
@@ -2980,13 +3149,13 @@ POSTS = [
              "<p>A portal lead is a moment of intent, auctioned. The portal built its audience with listings — including yours — and sells access back to agents by ZIP code. In competitive markets the same inquiry can go to multiple agents, and the connection fee keeps climbing because the auction rewards whoever tolerates the thinnest margin.</p>"
              "<p>None of this makes portal leads worthless. It makes them <b>rent</b>. Rent can be worth paying — but nobody builds equity paying it.</p>"),
             ("What owned demand looks like",
-             "<p>Owned demand is when the seller or buyer finds <i>you</i> — through the map pack, a neighborhood page, a review, an article, or an AI recommendation — and contacts you directly. No auction, no sharing, no per-lead fee.</p>"
+             "<p>Owned demand — the whole premise of <a href='real-estate-lead-generation-guide.html'>generating your own leads</a> — is when the seller or buyer finds <i>you</i> — through the map pack, a neighborhood page, a review, an article, or an AI recommendation — and contacts you directly. No auction, no sharing, no per-lead fee.</p>"
              "<p>The defining property is compounding: a <a href='../services/local-seo.html'>neighborhood page</a> written this year still ranks next year; reviews accumulate; every published answer is one more reason for AI to cite you. The work stacks instead of evaporating.</p>"),
             ("The math that matters: cost per closing over time",
              "<p>Compare the trajectories, not the first month. Portal cost per closing is roughly flat-to-rising forever — you re-buy every closing at market price. Owned cost per closing starts high (you're paying for work before it produces) and then falls, because the same assets keep converting without new spend.</p>"
              "<p>The crossover typically arrives within the first year for agents who commit to a defined territory — and after it, every portal-free closing widens the gap. The agents who feel trapped on portals are usually the ones who never started the owned clock.</p>"),
             ("A sane split for most agents",
-             "<p>Keep whatever portal spend is genuinely profitable for you today — treat it as bridge financing, not strategy. Redirect the rest into owned assets with a territory focus: one profile worked hard, a handful of neighborhoods, systematic reviews, and monthly answers.</p>"
+             "<p>Keep whatever portal spend is genuinely profitable for you today — treat it as bridge financing, not strategy. Redirect the rest into owned assets with a <a href='real-estate-niche-marketing.html'>territory or niche focus</a>: one profile worked hard, a handful of neighborhoods, systematic reviews, and monthly answers.</p>"
              "<p>Revisit quarterly. As owned demand grows, portal spend should shrink by choice — not because the leads stopped, but because you stopped needing to rent them.</p>"),
         ],
         "faqs": [
@@ -3061,7 +3230,7 @@ POSTS = [
              "<p>Portal buyer leads are a response-time contest for a stranger. Owned buyer leads invert it: the buyer read your neighborhood guide, saw your reviews, maybe heard an AI name you — then reached out. You start as the trusted expert, not one of five missed calls.</p>"
              "<p>The same entity and review work that wins sellers wins buyers; the difference is the content layer. Buyer-side content is questions-and-guides; seller-side is proof-and-results.</p>"),
             ("The open-house multiplier",
-             "<p>Open houses remain the best offline buyer-lead source — and they compound the online system. Every visitor who Googles you afterward should find a worked profile, neighborhood authority, and answers. The agents who convert open-house traffic best are the ones whose online presence confirms what the handshake started.</p>"),
+             "<p><a href='are-open-houses-worth-it.html'>Open houses</a> remain the best offline buyer-lead source — and they compound the online system. Every visitor who Googles you afterward should find a worked profile, neighborhood authority, and answers. The agents who convert open-house traffic best are the ones whose online presence confirms what the handshake started.</p>"),
         ],
         "faqs": [
             ("Aren't buyer leads less valuable than seller leads?",
@@ -3095,7 +3264,7 @@ POSTS = [
              "<p>Here's the part that surprises agents: neighborhood pages win listings even when the seller never searched. Sellers vet their interview shortlist online, and an agent with a serious page about <i>their street's</i> market walks in pre-credentialed. The CMA confirms what the page already argued: this person knows our neighborhood.</p>"
              "<p>Pair the page with reviews from the same area and the effect stacks — the page claims expertise, the reviews prove it, and Google shows both.</p>"),
             ("How many, and in what order",
-             "<p>Start with the neighborhoods where you have evidence: closings, reviews, personal history. Five deep pages beat thirty thin ones — thin location pages are the most common local SEO mistake in real estate.</p>"
+             "<p>Start with the neighborhoods where you have evidence: closings, reviews, personal history. Five deep pages beat thirty thin ones — thin location pages are the most common local SEO mistake in real estate. (<a href='how-to-build-a-neighborhood-page.html'>Our step-by-step build walkthrough</a> covers the structure.)</p>"
              "<p>Then expand outward in rings: adjacent areas where your evidence partially transfers, then the aspirational territories. Refresh each page quarterly with real market data so it stays citable. (Our <a href='../services/local-seo.html'>plans cover 5, 15, or 30 neighborhoods</a> for exactly this reason.)</p>"),
         ],
         "faqs": [

@@ -87,6 +87,12 @@ PROMPTS[zillow-lawsuits-explained]="A large glowing portal doorway beside a calm
 PROMPTS[zillow-flex]="A large glowing portal archway sending a single lead path toward a small warm house, a coin with a slice removed hovering at the gate. $STYLE"
 PROMPTS[pay-at-closing-real-estate-leads]="Several soft lead paths converging on a small warm house whose doorway holds a gently splitting golden coin, sense of paying only at the finish. $STYLE"
 
+# --- Reddit-question cluster + broker social (interim procedural heroes committed; regenerate with a key). ---
+PROMPTS[what-digital-marketing-works-for-real-estate]="Several glowing channel paths of clearly different widths and brightness converging from the left into one warm house on the right, the widest path brightest, a sense of ranked channels. $STYLE"
+PROMPTS[does-social-media-get-realtors-clients]="Many glowing social reaction and chat bubbles orbiting in a wide ring around a single warm house, with just one thin path actually leading inward to the house. $STYLE"
+PROMPTS[should-realtors-hire-marketing-agency]="A glowing path forking at a bright decision point: one branch leading to a neat stack of tool icons, the other to a small group of person figures, balanced composition. $STYLE"
+PROMPTS[broker-social-media-clients-or-recruiting]="A single glowing broadcast signal radiating from one point then splitting into two clearly divergent paths — one leading to a warm house, the other to a group of person figures — a sense of two separate audiences. $STYLE"
+
 slugs=("$@")
 if [ ${#slugs[@]} -eq 0 ]; then slugs=(${(k)PROMPTS}); fi
 
