@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>"Powered by CitedRealty" Badge Kit | CitedRealty</title>
+<meta name="description" content="Copy-paste footer badge for CitedRealty client sites. Light and dark variants, inline or hosted, with usage guidance.">
+<link rel="canonical" href="https://citedrealty.com/powered-by.html">
+<!-- Utility page for clients and their developers, not content marketing: noindex keeps it out of organic and out of sitemap.xml. -->
+<meta name="robots" content="noindex, follow">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="/assets/icon-square.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+<script src="/assets/theme.js"></script>
+<style>
+.pb-wrap{max-width:860px; margin:0 auto; padding:130px 22px 90px}
+.pb-wrap h1{font-size:clamp(30px,5vw,44px); line-height:1.1; margin:0 0 14px}
+.pb-lede{font-size:17px; color:var(--muted); max-width:60ch; margin:0 0 44px}
+.pb-wrap h2{font-size:23px; margin:52px 0 12px}
+.pb-wrap h3{font-size:16px; margin:26px 0 8px}
+.pb-wrap p{color:var(--muted); line-height:1.65; max-width:68ch}
+.pb-demo{display:flex; flex-wrap:wrap; gap:16px; margin:18px 0 6px}
+.pb-swatch{flex:1 1 300px; border:1px solid var(--line); border-radius:14px; overflow:hidden}
+.pb-swatch .pb-sky{padding:26px 24px; display:flex; align-items:center; justify-content:center}
+.pb-swatch .pb-cap{padding:9px 14px; font-size:12px; color:var(--muted); border-top:1px solid var(--line)}
+.pb-dark{background:#0B0B14}
+.pb-light{background:#FFFFFF}
+.pb-code{position:relative; margin:10px 0 4px}
+.pb-code pre{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px 16px; overflow-x:auto; font-size:12.5px; line-height:1.6; margin:0}
+.pb-code code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; color:var(--ink); white-space:pre}
+.pb-copy{position:absolute; top:10px; right:10px; font-size:12px; padding:6px 11px; border-radius:8px; border:1px solid var(--line); background:var(--ground); color:var(--muted); cursor:pointer}
+.pb-copy:hover{color:var(--ink)}
+.pb-note{border-left:3px solid #8B5CF6; padding:2px 0 2px 16px; margin:22px 0}
+.pb-note p{margin:0}
+ul.pb-list{color:var(--muted); line-height:1.7; padding-left:20px; max-width:68ch}
+ul.pb-list li{margin:7px 0}
+</style>
+</head>
+<body>
+<div class="pb-wrap">
+
+  <h1>The <span class="grad">"Powered by CitedRealty"</span> badge</h1>
+  <p class="pb-lede">A small footer credit for sites we build. Copy one snippet into the client's footer — no stylesheet, no script, nothing to maintain.</p>
+
+  <h2>Pick a variant</h2>
+  <div class="pb-demo">
+    <div class="pb-swatch">
+      <div class="pb-sky pb-dark"><img src="/assets/powered-by-citedrealty-dark.svg" width="190" height="44" alt="Powered by CitedRealty"></div>
+      <div class="pb-cap">For dark footers</div>
+    </div>
+    <div class="pb-swatch">
+      <div class="pb-sky pb-light"><img src="/assets/powered-by-citedrealty-light.svg" width="190" height="44" alt="Powered by CitedRealty"></div>
+      <div class="pb-cap">For light footers</div>
+    </div>
+  </div>
+
+  <h2>Option 1 — hosted image (easiest)</h2>
+  <p>One line. Works in any CMS footer widget, including WordPress, Squarespace, Wix, and Webflow. Swap <code>-dark</code> for <code>-light</code> to match the footer.</p>
+  <div class="pb-code">
+    <button class="pb-copy" data-copy="c1">Copy</button>
+    <pre><code id="c1">&lt;a href="https://citedrealty.com/" title="Real estate marketing by CitedRealty"&gt;
+  &lt;img src="https://citedrealty.com/assets/powered-by-citedrealty-dark.svg"
+       alt="Powered by CitedRealty" width="190" height="44" loading="lazy"&gt;
+&lt;/a&gt;</code></pre>
+  </div>
+
+  <h2>Option 2 — inline SVG (no extra request)</h2>
+  <p>Self-contained: nothing loads from our servers, so it can't slow the client's page or break if anything moves. Best for custom builds.</p>
+  <div class="pb-code">
+    <button class="pb-copy" data-copy="c2">Copy</button>
+    <pre><code id="c2">&lt;a href="https://citedrealty.com/" aria-label="Powered by CitedRealty"
+   style="display:inline-block;line-height:0;text-decoration:none"&gt;
+  &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 44" width="190" height="44"
+       role="img" aria-label="Powered by CitedRealty"
+       font-family="Inter,'Avenir Next',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif"&gt;
+    &lt;defs&gt;&lt;linearGradient id="cr-pb" x1="0" y1="0" x2="1" y2="1"&gt;
+      &lt;stop offset="0" stop-color="#4F46E5"/&gt;&lt;stop offset=".6" stop-color="#8B5CF6"/&gt;
+      &lt;stop offset="1" stop-color="#C084FC"/&gt;&lt;/linearGradient&gt;&lt;/defs&gt;
+    &lt;g transform="translate(4,5) scale(0.303) translate(-46,-48)"&gt;
+      &lt;path d="M 66 48 h 72 a 20 20 0 0 1 20 20 v 52 a 20 20 0 0 1 -20 20 h -50 l -22 20 v -20 h 0 a 20 20 0 0 1 -20 -20 v -52 a 20 20 0 0 1 20 -20 z" fill="url(#cr-pb)"/&gt;
+      &lt;path d="M 102 72 L 128 92 L 128 122 L 76 122 L 76 92 Z" fill="none" stroke="#fff" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/&gt;
+      &lt;path d="M 134 56 q 2 8 10 10 q -8 2 -10 10 q -2 -8 -10 -10 q 8 -2 10 -10 z" fill="#fff"/&gt;
+    &lt;/g&gt;
+    &lt;text x="47" y="18" font-size="8.5" font-weight="600" fill="#8E8EA8" letter-spacing="1.3"&gt;POWERED BY&lt;/text&gt;
+    &lt;text x="47" y="36" font-size="18" font-weight="700" fill="#F5F5FA" letter-spacing="-.4"&gt;Cited&lt;tspan fill="url(#cr-pb)"&gt;Realty&lt;/tspan&gt;&lt;tspan dx="2" dy="-7" font-size="9" letter-spacing="0" fill="url(#cr-pb)"&gt;[1]&lt;/tspan&gt;&lt;/text&gt;
+  &lt;/svg&gt;
+&lt;/a&gt;</code></pre>
+  </div>
+  <p><b>On a light footer,</b> change the two text fills: <code>#8E8EA8</code> → <code>#6B6B85</code> and <code>#F5F5FA</code> → <code>#14142B</code>.</p>
+
+  <h2>Option 3 — text only</h2>
+  <p>When the footer is tight or the client wants nothing but type.</p>
+  <div class="pb-code">
+    <button class="pb-copy" data-copy="c3">Copy</button>
+    <pre><code id="c3">&lt;a href="https://citedrealty.com/"
+   style="font:500 13px/1.4 Inter,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+          color:inherit;opacity:.75;text-decoration:none"&gt;Powered by CitedRealty&lt;/a&gt;</code></pre>
+  </div>
+
+  <h2>How to use it well</h2>
+  <ul class="pb-list">
+    <li><b>Only on sites we actually built or run.</b> A credit on work we did is normal practice; a link on a site we had nothing to do with is not, and it's the thing that makes footer links look manipulative.</li>
+    <li><b>Keep the anchor branded.</b> "Powered by CitedRealty" or "CitedRealty" — never keyword-stuffed anchor text like "best real estate marketing agency." Branded credits read as attribution; keyword anchors read as link building, and search engines treat them very differently.</li>
+    <li><b>One placement, in the footer.</b> Don't repeat it across a page or inject it into body content.</li>
+    <li><b>Ask, don't assume.</b> Put it in the build agreement or get a yes. A credit the client didn't agree to is a credit that gets ripped out later, and a conversation you'd rather not have.</li>
+    <li><b>Let them remove it.</b> If a client asks it to come off, take it off. The relationship is worth more than the link.</li>
+  </ul>
+
+  <div class="pb-note">
+    <p><b>What this is actually worth.</b> Site-wide footer credits are usually discounted heavily by search engines, so treat this as a brand and referral play rather than a ranking one — real people click it, and consistent brand mentions across genuinely related sites are exactly the kind of signal AI assistants use when deciding who to name. It supports the backlink strategy; it isn't a substitute for one.</p>
+  </div>
+
+  <p style="margin-top:44px"><a class="btn btn-ghost" href="/">← Back to CitedRealty</a></p>
+</div>
+
+<script>
+document.querySelectorAll('.pb-copy').forEach(function(b){
+  b.addEventListener('click', function(){
+    var el = document.getElementById(b.dataset.copy);
+    navigator.clipboard.writeText(el.textContent).then(function(){
+      var t = b.textContent; b.textContent = 'Copied';
+      setTimeout(function(){ b.textContent = t; }, 1400);
+    });
+  });
+});
+</script>
+<script src="/assets/consent.js"></script>
+</body>
+</html>
