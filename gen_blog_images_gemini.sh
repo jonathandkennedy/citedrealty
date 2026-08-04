@@ -93,6 +93,8 @@ PROMPTS[does-social-media-get-realtors-clients]="Many glowing social reaction an
 PROMPTS[should-realtors-hire-marketing-agency]="A glowing path forking at a bright decision point: one branch leading to a neat stack of tool icons, the other to a small group of person figures, balanced composition. $STYLE"
 PROMPTS[broker-social-media-clients-or-recruiting]="A single glowing broadcast signal radiating from one point then splitting into two clearly divergent paths — one leading to a warm house, the other to a group of person figures — a sense of two separate audiences. $STYLE"
 
+PROMPTS[will-a-website-rebuild-hurt-my-rankings]="A glowing line chart rising steadily then falling off a sharp cliff at a marked vertical line, flat and low afterward, with a dashed arcing bridge of forward arrows spanning over the gap as if carrying the line across. $STYLE"
+
 slugs=("$@")
 if [ ${#slugs[@]} -eq 0 ]; then slugs=(${(k)PROMPTS}); fi
 

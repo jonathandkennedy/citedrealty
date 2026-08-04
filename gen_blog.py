@@ -29,6 +29,66 @@ CATS = {
 
 POSTS = [
     {
+        "slug": "will-a-website-rebuild-hurt-my-rankings",
+        "img": "img/will-a-website-rebuild-hurt-my-rankings.jpg",
+        "img_alt": "Illustration of a traffic line falling off a cliff at a rebuild marker, with a bridge of redirect arrows spanning the gap",
+        "cat": "websites",
+        "title": "Will a Website Rebuild Kill My Google Rankings?",
+        "date": "2026-08-04",
+        "excerpt": "It can — and when it does, the damage is usually permanent until someone fixes it. But the rebuild is almost never what causes it. Here's the actual mechanism, how to tell it happened to you, and the one thing to demand before you approve a new site.",
+        "tldr": "A rebuild doesn't cost you rankings. A bad <i>migration</i> does. The damage almost always comes from a handful of specific, preventable failures: old URLs that 404 because nobody built a redirect map, content that quietly didn't get moved, and staging settings (a blocking robots.txt or a leftover noindex tag) shipped to production. The tell is the shape of the graph — a cliff on launch day is a migration failure, while a gradual slope is competition or an algorithm change. Before you approve any new site, ask the builder for a URL-by-URL redirect map. If they can't produce one, they are not planning a migration; they are planning a launch.",
+        "sections": [
+            ("The honest answer: the rebuild isn't what hurts you",
+             "<p>Rebuilding your site is usually a good idea. Old agent sites are slow, unstructured, and invisible to the systems that now decide who gets recommended. The risk isn't the new design — it's the <b>migration</b>, the unglamorous work of making sure everything the old site earned carries over to the new one.</p>"
+             "<p>Search engines don't rank \"your website\" as one object. They rank individual <i>URLs</i>, and each one accumulates its own signals over time — links pointing to it, its history, its crawl record. When a rebuild changes or deletes a URL without telling anyone where it went, those signals don't transfer. They're just gone, and the new page starts from zero.</p>"
+             "<p>That's the whole story. Everything below is the specific ways it happens.</p>"),
+            ("The seven ways a rebuild loses your traffic",
+             "<ol><li><b>No redirect map.</b> The single biggest cause. Old URLs simply stop existing and return a 404. Every link, ranking, and bookmark pointing at them dies at once. The fix is a <a href='https://en.wikipedia.org/wiki/HTTP_301' rel='nofollow'>301 permanent redirect</a> from each old URL to its closest equivalent on the new site — which someone has to actually write out, page by page.</li>"
+             "<li><b>Redirecting everything to the homepage.</b> The lazy version of a redirect map, and it doesn't work. Google treats a mass redirect of unrelated pages to the homepage as a <i>soft 404</i> — functionally the same as deleting them. Each page needs its own destination.</li>"
+             "<li><b>Content that quietly didn't move.</b> The new design is \"cleaner,\" so the forty neighborhood pages and sixty blog posts don't make the cut. Those pages were the site's entire claim to local relevance, and the design conversation rarely surfaces the fact that they're being deleted.</li>"
+             "<li><b>Staging settings shipped to production.</b> A <code>Disallow: /</code> left in robots.txt, or a <code>noindex</code> meta tag from the staging environment. Catastrophic, invisible in the browser, and far more common than anyone admits — the site looks perfect and is instructing search engines to ignore it.</li>"
+             "<li><b>Structured data not rebuilt.</b> Schema markup is invisible to humans, so it's the first thing a redesign drops. It's also how machines — including AI assistants — understand who you are and what a page is about. We <a href='realestateagent-schema-walkthrough.html'>walk through the markup agents need</a> separately.</li>"
+             "<li><b>Internal links pointing at dead paths.</b> Body links written against the old URL structure now resolve to 404s, which both frustrates readers and severs the link graph that spreads authority across your pages.</li>"
+             "<li><b>Content moved behind JavaScript.</b> A prettier build often renders text and listings client-side. If the words only exist after a script runs, they may not be reliably indexed — and a site whose content can't be read is a brochure, not a search asset.</li></ol>"),
+            ("How to tell it already happened to you",
+             "<p><b>Look at the shape of the graph, not the size of the drop.</b> This distinction diagnoses the problem faster than any audit:</p>"
+             "<ul><li><b>A cliff</b> — traffic falls off within days of launch and then stays flat at the new low — is a migration failure. Something structural broke on a specific date. Flat-and-never-recovering is the signature: organic traffic doesn't heal on its own when the URLs are still broken.</li>"
+             "<li><b>A slope</b> — a gradual decline over months — is competition, an algorithm update, or seasonality. Different problem, different fix.</li></ul>"
+             "<p>To confirm a migration failure, open Google Search Console and check three things: the <b>Pages</b> report for a spike in \"Not found (404)\" starting at your launch date; <b>Why pages aren't indexed</b> for anything reading \"Blocked by robots.txt\" or \"Excluded by 'noindex' tag\"; and your top pages from before the launch, to see whether those specific URLs still resolve. Google's own <a href='https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes' rel='nofollow'>site move documentation</a> is the reference for how this is supposed to be done.</p>"),
+            ("Before you approve a new site: ask for the redirect map",
+             "<p>If you take one thing from this article, take this. Before signing off on any rebuild, ask the builder for a <b>URL-by-URL redirect map</b> — a plain spreadsheet with every existing URL in one column and its destination on the new site in the other.</p>"
+             "<p>It's a completely reasonable request and it's diagnostic in both directions. A team that plans migrations has one, or can produce it in a day. A team that can't isn't planning a migration at all — they're planning a launch, and your rankings are about to be collateral damage nobody warned you about.</p>"
+             "<p>The rest of the pre-launch list is short: confirm which existing pages are being kept versus deleted (and say no to deleting content that ranks), confirm schema is being rebuilt rather than dropped, and confirm someone will check robots.txt and the meta robots tag on the live site within an hour of launch. This is also worth asking about before you choose a builder at all — see <a href='real-estate-agent-websites-guide.html'>our guide to agent websites</a> and the <a href='best-real-estate-website-design-companies.html'>company comparison</a>.</p>"),
+            ("Launch week: the first 72 hours",
+             "<ul><li><b>Check robots.txt and the meta robots tag on the live domain.</b> First thing, before anything else. This is the one failure that makes everything else pointless.</li>"
+             "<li><b>Spot-check your old top URLs.</b> Take the ten pages that got the most traffic before launch and load each old address. Each should land on a relevant new page, not a 404 and not the homepage.</li>"
+             "<li><b>Submit the new sitemap</b> in Search Console, and ping the new URLs to Bing and other engines so they re-crawl quickly rather than waiting.</li>"
+             "<li><b>Watch the 404 report daily for two weeks.</b> Migration mistakes surface as a rising 404 count, and every day one goes unfixed is a day those pages are treated as gone.</li>"
+             "<li><b>Expect some fluctuation.</b> Even a well-executed migration usually sees a modest dip for a few weeks while engines re-crawl and re-evaluate. A dip that recovers is normal; a cliff that flatlines is not.</li></ul>"),
+            ("If it already happened: the recovery order",
+             "<p>The good news is that this is usually fixable, and the signals often come back. The order matters, because steps two through five are wasted effort if step one is still broken.</p>"
+             "<ol><li><b>Unblock first.</b> Remove any blocking robots.txt rule or stray <code>noindex</code>. Nothing else can work while these are in place.</li>"
+             "<li><b>Build the redirect map you never got.</b> Pull your pre-launch top pages from Search Console or analytics, and 301 each old URL to its closest match. Where there's no equivalent, redirect to the most relevant category page — not the homepage.</li>"
+             "<li><b>Restore the content that vanished.</b> If neighborhood pages or articles were deleted, republish them — ideally at their original URLs, which lets the old signals reattach directly. Our <a href='what-are-neighborhood-pages.html'>neighborhood page explainer</a> covers why those pages carry so much of an agent's local relevance.</li>"
+             "<li><b>Fix internal links</b> so they point at live URLs rather than relying on redirect chains.</li>"
+             "<li><b>Rebuild the schema</b> and re-check <a href='on-page-seo-real-estate-listing-pages.html'>on-page fundamentals</a> — titles, headings, alt text — since redesigns frequently flatten them.</li>"
+             "<li><b>Resubmit and wait.</b> Submit the sitemap, request indexing on the important pages, and give it time. Recovery is typically weeks to months, not days, and it's rarely instant even when every fix is correct.</li></ol>"
+             "<p>One honest caveat: recovery isn't guaranteed to be complete. Signals that sat broken for a long time can take a long while to return, and some may not fully. That's the argument for getting the redirect map <i>before</i> launch rather than reconstructing one afterward — and it's a large part of why <a href='../services/website-design.html'>our builds</a> treat migration as part of the project rather than an afterthought.</p>"),
+        ],
+        "faqs": [
+            ("How long does it take to recover from a bad website migration?",
+             "Typically weeks to months once the underlying problems are actually fixed, not days. Search engines have to re-crawl the old URLs, follow the new redirects, and re-evaluate the destination pages. The timeline depends heavily on how long the site sat broken — a migration fixed within a week usually recovers substantially, while one left broken for a year is a harder and slower repair."),
+            ("Should I keep my old URLs when I rebuild my website?",
+             "Wherever it's reasonable, yes. Keeping identical URLs is the single easiest way to avoid migration losses entirely, because there's nothing to redirect. Change a URL only when there's a real reason, and when you do, map it explicitly with a 301 to the new address."),
+            ("Is it worse to change my domain name or just rebuild the site?",
+             "A domain change moves every URL at once, so the redirect map has to be complete or the losses are total. A same-domain rebuild is lower risk because unchanged URLs simply carry on. Both are survivable with proper redirects; neither is survivable without them."),
+            ("Will my rankings drop even if the migration is done perfectly?",
+             "Often a little, and temporarily. Search engines need to re-crawl and re-assess the new pages, which commonly produces a modest dip for a few weeks before recovery. What should not happen is an immediate, permanent cliff — that indicates something structural broke rather than normal re-evaluation."),
+            ("How do I know whether my traffic drop was the rebuild or something else?",
+             "Compare the drop date to your launch date and look at the shape. A sharp fall within days of launch that then stays flat points to the migration. A gradual decline over months points to competition or an algorithm change. Google Search Console's Pages report will show a 404 spike at the launch date if URLs broke."),
+        ],
+    },
+    {
         "slug": "what-digital-marketing-works-for-real-estate",
         "img": "img/what-digital-marketing-works-for-real-estate.jpg",
         "img_alt": "Illustration of several glowing channel paths of different widths converging on a single warm house",
