@@ -3692,6 +3692,162 @@ def build_index() -> str:
     return INDEX.format(brand=BRAND_URL, chips=chips, cards="\n".join(cards))
 
 
+# --- Root 404 page -----------------------------------------------------------
+# Served by Vercel for any unmatched path, so EVERY href/src here must be
+# root-absolute ("/x") — a 404 at /blog/a/b/c would break relative paths.
+# Generated from POSTS so the recovery suggestions never go stale.
+NOT_FOUND = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page not found | CitedRealty</title>
+<meta name="description" content="That page doesn't exist or has moved. Find the guide, tool, or service you were looking for.">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="/assets/icon-square.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+<script src="/assets/theme.js"></script>
+<style>
+.nf-wrap{max-width:900px; margin:0 auto; padding:150px 22px 90px}
+.nf-code{font-size:13px; font-weight:600; letter-spacing:2px; color:var(--muted); text-transform:uppercase; margin:0 0 14px}
+.nf-wrap h1{font-size:clamp(30px,5.4vw,50px); line-height:1.08; margin:0 0 16px; max-width:17ch}
+.nf-lede{font-size:17px; color:var(--muted); line-height:1.65; max-width:60ch; margin:0 0 8px}
+.nf-path{display:inline-block; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:13px;
+  background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:4px 10px; color:var(--muted);
+  max-width:100%; overflow-wrap:anywhere; margin:6px 0 0}
+.nf-sect{margin:52px 0 0}
+.nf-sect h2{font-size:15px; letter-spacing:.4px; text-transform:uppercase; color:var(--muted); font-weight:600; margin:0 0 16px}
+.nf-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:12px}
+.nf-card{display:block; padding:16px 18px; border:1px solid var(--line); border-radius:14px; text-decoration:none;
+  background:var(--panel); box-shadow:var(--shadow-card); transition:transform .16s ease, border-color .16s ease}
+.nf-card:hover{transform:translateY(-2px); border-color:#8B5CF6}
+.nf-card b{display:block; color:var(--ink); font-size:15px; margin:0 0 4px}
+.nf-card span{display:block; color:var(--muted); font-size:13px; line-height:1.5}
+#nf-suggest{display:none}
+.nf-hint{margin:40px 0 0; padding:14px 18px; border-left:3px solid #8B5CF6; background:var(--panel); border-radius:0 12px 12px 0}
+.nf-hint p{margin:0; color:var(--muted); font-size:14.5px; line-height:1.6}
+</style>
+</head>
+<body>
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="/index.html" aria-label="CitedRealty home">
+      <img src="/assets/icon-square.svg" alt="" width="34" height="34">
+      <span>Cited<span class="r">Realty</span><sup>[1]</sup></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/index.html#services">Services</a></li>
+      <li><a href="/index.html#who">Who we help</a></li>
+      <li><a href="/index.html#pricing">Pricing</a></li>
+      <li><a href="/blog/index.html">Resources</a></li>
+      <li><a href="/tools/index.html">Free tools</a></li>
+    </ul>
+    <a class="nav-cta" href="/index.html#contact">Free AI visibility audit</a>
+    <button class="theme-toggle" aria-label="Switch to light mode">☀</button>
+  </div>
+</nav>
+
+<div class="nf-wrap">
+  <p class="nf-code">Error 404</p>
+  <h1>We're usually <span class="grad">the answer</span>. Not this time.</h1>
+  <p class="nf-lede">This page doesn't exist, or it moved and something didn't follow it here. Either way, let's get you to what you actually came for.</p>
+  <p class="nf-path" id="nf-path" hidden></p>
+
+  <div class="nf-sect" id="nf-suggest">
+    <h2>Did you mean one of these?</h2>
+    <div class="nf-grid" id="nf-suggest-grid"></div>
+  </div>
+
+  <div class="nf-sect">
+    <h2>Start here</h2>
+    <div class="nf-grid">
+      <a class="nf-card" href="/blog/index.html"><b>Guides &amp; answers</b><span>__POST_COUNT__+ honest articles on marketing, leads, websites, and AI search.</span></a>
+      <a class="nf-card" href="/tools/index.html"><b>Free tools</b><span>Check whether AI names you, grade your Google profile, and more.</span></a>
+      <a class="nf-card" href="/index.html#services"><b>What we do</b><span>GEO, local SEO, websites, content, reviews — and what each costs.</span></a>
+      <a class="nf-card" href="/index.html#pricing"><b>Pricing</b><span>Public, itemized, no demo required to see a number.</span></a>
+      <a class="nf-card" href="/index.html#contact"><b>Free AI visibility audit</b><span>See who AI recommends in your market today.</span></a>
+      <a class="nf-card" href="/index.html"><b>Home</b><span>Back to the start.</span></a>
+    </div>
+  </div>
+
+  <div class="nf-hint">
+    <p><b>Landed here from a link that used to work?</b> That usually means a site was rebuilt without redirects — the single most common way agents lose their rankings overnight. We wrote up <a href="/blog/will-a-website-rebuild-hurt-my-rankings.html">how it happens and how to fix it</a>.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-legal" style="border:none; margin:0; padding:0">
+      <span>© 2026 CitedRealty · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="#" data-cookie-prefs>Cookie preferences</a></span>
+      <span>When buyers ask AI, you're the answer.<sup>[1]</sup></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Recovery: match the attempted path against known pages and surface close hits.
+var NF_PAGES = __NF_PAGES__;
+(function () {
+  var path = location.pathname || '';
+  var el = document.getElementById('nf-path');
+  if (path && path !== '/') { el.textContent = path; el.hidden = false; }
+
+  var raw = path.split('/').filter(Boolean).pop() || '';
+  raw = raw.replace(/\.html?$/i, '').toLowerCase();
+  if (!raw) return;
+  var want = raw.split(/[^a-z0-9]+/).filter(function (t) { return t.length > 2; });
+  if (!want.length) return;
+
+  var scored = NF_PAGES.map(function (p) {
+    var hay = (p.s + ' ' + p.t).toLowerCase();
+    var hits = want.filter(function (t) { return hay.indexOf(t) !== -1; }).length;
+    if (p.s === raw) hits += 5;
+    return { p: p, score: hits / want.length };
+  }).filter(function (x) { return x.score >= 0.5; })
+    .sort(function (a, b) { return (b.score - a.score) || (a.p.s.length - b.p.s.length); })
+    .slice(0, 4);
+
+  if (!scored.length) return;
+  document.getElementById('nf-suggest-grid').innerHTML = scored.map(function (x) {
+    var a = document.createElement('a');
+    a.className = 'nf-card'; a.href = x.p.u;
+    var b = document.createElement('b'); b.textContent = x.p.t;
+    var s = document.createElement('span'); s.textContent = x.p.c;
+    a.appendChild(b); a.appendChild(s);
+    return a.outerHTML;
+  }).join('');
+  document.getElementById('nf-suggest').style.display = 'block';
+})();
+</script>
+<script src="/assets/app.js"></script>
+<script src="/assets/consent.js"></script>
+</body>
+</html>
+"""
+
+
+def build_404() -> str:
+    """Root 404 with URL-similarity suggestions built from POSTS + key pages."""
+    pages = [
+        {"s": p["slug"], "t": p["title"], "u": f"/blog/{p['slug']}.html", "c": CATS[p["cat"]]}
+        for p in POSTS
+    ]
+    pages += [
+        {"s": "tools", "t": "Free real estate marketing tools", "u": "/tools/index.html", "c": "Tools"},
+        {"s": "ai-visibility-checker", "t": "AI Visibility Checker", "u": "/tools/ai-visibility-checker.html", "c": "Tools"},
+        {"s": "pricing", "t": "Plans and pricing", "u": "/index.html#pricing", "c": "Pricing"},
+        {"s": "blog", "t": "All guides and answers", "u": "/blog/index.html", "c": "Resources"},
+    ]
+    return (NOT_FOUND
+            .replace("__POST_COUNT__", str(len(POSTS)))
+            .replace("__NF_PAGES__", json.dumps(pages, ensure_ascii=False)))
+
+
 if __name__ == "__main__":
     OUT.mkdir(exist_ok=True)
     for p in POSTS:
@@ -3699,3 +3855,5 @@ if __name__ == "__main__":
         print("wrote", p["slug"] + ".html")
     (OUT / "index.html").write_text(build_index())
     print("wrote index.html")
+    (OUT.parent / "404.html").write_text(build_404())
+    print("wrote 404.html")
